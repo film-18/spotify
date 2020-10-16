@@ -248,7 +248,7 @@
                 "Url": ""
             },
             {
-                "Image": "",
+                "Image": "https://i.scdn.co/image/ab67616d00001e02be813e62b1e1f5b8ea3dcb27",
                 "Title" : "anything 4 u",
                 "Artist": "LANY",
                 "Album": "mama's boy",
@@ -256,7 +256,7 @@
                 "Url": ""
             },
             {
-                "Image": "",
+                "Image": "https://i.scdn.co/image/ab67616d00001e02be813e62b1e1f5b8ea3dcb27",
                 "Title" : "sad",
                 "Artist": "LANY",
                 "Album": "mama's boy",
@@ -264,7 +264,7 @@
                 "Url": ""
             },
             {
-                "Image": "",
+                "Image": "https://i.scdn.co/image/ab67616d00001e02be813e62b1e1f5b8ea3dcb27",
                 "Title" : "(what i wish just one person would sat to me)",
                 "Artist": "LANY",
                 "Album": "mama's boy",
@@ -272,7 +272,7 @@
                 "Url": ""
             },
             {
-                "Image": "",
+                "Image": "https://i.scdn.co/image/ab67616d00001e02b4993adcf493566cfa67fac0",
                 "Title" : "New Thang",
                 "Artist": "Redfoo",
                 "Album": "New Thang",
@@ -280,7 +280,7 @@
                 "Url": ""
             },
             {
-                "Image": "",
+                "Image": "https://i.scdn.co/image/ab67616d00001e02d23f075965c0dfaa6a92e19b",
                 "Title" : "free love",
                 "Artist": "HONNE",
                 "Album": "no song without you",
@@ -296,16 +296,16 @@
                 "Image": "https://i.scdn.co/image/ab67616d00001e02fda74ae03a653f5d84010a79",
                 "Title" : "Not Shy",
                 "Artist": "ITZY",
-                "Album": "",
+                "Album": "Not Shy",
                 "Time": "2:57",
                 "Url": ""
             },
             {
                 "Image": "https://i.scdn.co/image/ab67616d00001e02ec2863b64149d3b1f1082006",
-                "Title" : "Shine Together",
-                "Artist": "SF9",
-                "Album": "SPECIAL HISTORY BOOK",
-                "Time": "3:30",
+                "Title" : "Blueming",
+                "Artist": "IU",
+                "Album": "Love poem",
+                "Time": "3:37",
                 "Url": ""
             },
             {
@@ -370,6 +370,46 @@
                 "Artist": "TREASURE",
                 "Album": "THE FIRST STEP : CHAPTER TWO",
                 "Time": "3:01",
+                "Url": ""
+            },
+            {
+                "Image": "https://i.scdn.co/image/ab67616d00001e020582daa99a6621b6ffd83525",
+                "Title" : "Zombie",
+                "Artist": "DAY6",
+                "Album": "The Book of Us : The Demon",
+                "Time": "3:29",
+                "Url": ""
+            },
+            {
+                "Image": "https://i.scdn.co/image/ab67616d00001e02e4d85babdbdecf2c21568ea0",
+                "Title" : "You Calling My Name",
+                "Artist": "GOT7",
+                "Album": "Call My Name",
+                "Time": "3:14",
+                "Url": ""
+            },
+            {
+                "Image": "https://i.scdn.co/image/ab67616d00001e02adcfd199652d2634cb361869",
+                "Title" : "Can't You See Me?",
+                "Artist": "TOMORROW X TOGETHER",
+                "Album": "The Dream Chapter: ETERNITY",
+                "Time": "3:21",
+                "Url": ""
+            },
+            {
+                "Image": "https://i.scdn.co/image/ab67616d00001e0228e649c0e2d1a3a98ccf8ea3",
+                "Title" : "MORE & MORE",
+                "Artist": "TWICE",
+                "Album": "MORE & MORE",
+                "Time": "3:19",
+                "Url": ""
+            },
+            {
+                "Image": "https://i.scdn.co/image/ab67616d00001e028612b3a74fefaf72ddc92d08",
+                "Title" : "gogobebe",
+                "Artist": "MAMAMOO",
+                "Album": "White Wind",
+                "Time": "3:15",
                 "Url": ""
             }
         ]
