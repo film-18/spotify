@@ -22,7 +22,7 @@
     <div ng-include="template" class="ng-scope">
         <div sp-header="" class="ng-scope">
             <div class="head ">
-                <a class="spotify-logo" tabindex="-1" title="Spotify" ng-href="/th-TH" href="/th-TH"></a>
+                <a class="spotify-logo" tabindex="-1" title="Spotify" href=""></a>
             </div>
         </div>
 
@@ -30,18 +30,18 @@
             <div class="content">
                 <div class="row ng-scope" ng-if="showContinueLabel">
                     <div class="col-xs-12 text-center">
-                        <h1 id="login-to-continue" class="h5 ng-binding">โปรดเข้าสู่ระบบ Spotify เพื่อดำเนินการต่อ</h1>
+                        <h1 id="login-to-continue" class="h5 ng-binding">To continue, log in to Spotify.</h1>
                     </div>
                 </div>
                 <form name="account" method="post" novalidate="">
                     <div class="row">
                         <div class="col-xs-12">
                             <label for="login-username" class="control-label ng-binding">
-                                อีเมลหรือชื่อผู้ใช้
+                               Email address or username
                             </label>
                             <input ng-model="form.username" type="text"
                                 class="form-control input-with-feedback ng-pristine ng-valid-sp-disallow-chars ng-empty ng-invalid ng-invalid-required ng-touched"
-                                name="username" id="login-username" placeholder="อีเมลหรือชื่อผู้ใช้" required=""
+                                name="username" id="login-username" placeholder="Email address or username" required=""
                                 sp-disallow-chars=":%&amp;'`´&quot;" sp-disallow-chars-model="usernameDisallowedChars"
                                 autocapitalize="off" autocomplete="off" autocorrect="off" autofocus="autofocus"
                                 ng-trim="false" ng-change="onInputChange()">
@@ -52,11 +52,11 @@
                         ng-class="{'has-error': (accounts.password.$dirty &amp;&amp; accounts.password.$invalid) || invalidCredentials}">
                         <div class="col-xs-12">
                             <label for="login-password" class="control-label ng-binding">
-                                รหัสผ่าน
+                                Password
                             </label>
                             <input ng-model="form.password" type="password"
                                 class="form-control input-with-feedback ng-pristine ng-empty ng-invalid ng-invalid-required ng-touched"
-                                name="password" id="login-password" placeholder="รหัสผ่าน" required=""
+                                name="password" id="login-password" placeholder="Password" required=""
                                 autocomplete="off" ng-trim="false" ng-change="onInputChange()">
 
                         </div>
@@ -68,7 +68,7 @@
                                 <a id="reset-password-link" ng-href="https://www.spotify.com/password-reset/"
                                     analytics-on="click" analytics-category="Login View" analytics-event="Forgot Button"
                                     analytics-label="" class="ng-binding"
-                                    href="https://www.spotify.com/password-reset/">ลืมรหัสผ่าน</a>
+                                    href="https://www.spotify.com/password-reset/">Forgot your password?</a>
                             </p>
                         </div>
                     </div>
@@ -80,14 +80,14 @@
                                     <input ng-model="form.remember" type="checkbox" name="remember"
                                         analytics-on="checked" analytics-category="Login View" id="login-remember"
                                         class="ng-valid ng-empty ng-dirty ng-valid-parse ng-touched">
-                                    จดจำฉัน
+                                    Remember me
                                     <span class="control-indicator"></span>
                                 </label>
                             </div>
                         </div>
                         <div class="col-xs-12 col-sm-6">
                             <button class="btn btn-block btn-green ng-binding" id="login-button"
-                                ng-click="onLoginClick($event)">เข้าสู่ระบบ</button>
+                                ng-click="onLoginClick($event)">LOG IN</button>
                         </div>
                     </div>
                 </form>
@@ -96,26 +96,23 @@
                     <div class="row">
                         <div class="col-xs-12">
                             <signup class="ng-isolate-scope">
-                                <!-- ngIf: showSignup -->
                                 <div ng-if="showSignup" class="ng-scope">
                                     <div ng-if="showButton" class="ng-scope">
                                         <div class="row">
                                             <div class="col-xs-12">
                                                 <div class="divider">
-
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="row text-center mt-0">
-                                            <h2 class="h4 ng-binding">ยังไม่มีบัญชีผู้ใช้ใช่ไหม</h2>
+                                            <h2 class="h4 ng-binding">Don't have an account?</h2>
                                         </div>
                                         <div>
                                             <div class="row">
                                                 <div class="col-xs-12">
                                                     <a id="sign-up-link"
-                                                        ng-href="/th-TH/login/signup?continue=https%3A%2F%2Fopen.spotify.com%2F"
                                                         class="btn btn-block btn-default ng-binding" role="button"
-                                                        href="/th-TH/login/signup?continue=https%3A%2F%2Fopen.spotify.com%2F">ลงทะเบียนใช้งาน
+                                                        href="">SIGN UP FOR SPOTIFY
                                                         Spotify</a>
                                                 </div>
                                             </div>
