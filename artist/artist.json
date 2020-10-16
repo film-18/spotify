@@ -370,5 +370,186 @@
                 "Url": ""
             }
         ]
+    },
+    {
+        "Artist": "ITZY",
+        "Songs": [
+            {
+                "Image": "https://i.scdn.co/image/ab67616d00001e02fda74ae03a653f5d84010a79",
+                "Title" : "Not Shy",
+                "Album": "Not Shy",
+                "Time": "2:57",
+                "Url": ""
+            }
+        ]
+    },
+    {
+        "Artist": "IU",
+        "Songs": [
+            {
+                "Image": "https://i.scdn.co/image/ab67616d00001e02ec2863b64149d3b1f1082006",
+                "Title" : "Blueming",
+                "Album": "Love poem",
+                "Time": "3:37",
+                "Url": ""
+            }
+        ]
+    },
+    {
+        "Artist": "BLACKPINK",
+        "Songs": [
+            {
+                "Image": "https://i.scdn.co/image/ab67616d00001e02dea19d0032ddc086dabbe3c8",
+                "Title" : "Ice Cream (with Selena Gomez)",
+                "Album": "Ice Cream (with Selena Gomez)",
+                "Time": "2:55",
+                "Url": ""
+            }
+        ]
+    },
+    {
+        "Artist": "KYUHYUN",
+        "Songs": [
+            {
+                "Image": "https://i.scdn.co/image/ab67616d00001e022640c144ab527d976623e319",
+                "Title" : "Daystar",
+                "Album": "Daystar",
+                "Time": "3:58",
+                "Url": ""
+            }
+        ]
+    },
+    {
+        "Artist": "CLC",
+        "Songs": [
+            {
+                "Image": "https://i.scdn.co/image/ab67616d00001e02c5011613476079ff2498bf4a",
+                "Title" : "HELICOPTER",
+                "Album": "HELICOPTER",
+                "Time": "3:45",
+                "Url": ""
+            }
+        ]
+    },
+    {
+        "Artist": "SOMI",
+        "Songs": [
+            {
+                "Image": "https://i.scdn.co/image/ab67616d00001e02637fd394e106b5af8b19f794",
+                "Title" : "What You Waiting For",
+                "Album": "What You Waiting For",
+                "Time": "2:55",
+                "Url": ""
+            }
+        ]
+    },
+    {
+        "Artist": "EVERGLOW",
+        "Songs": [
+            {
+                "Image": "https://i.scdn.co/image/ab67616d00001e02359024c678a5803e0677e684",
+                "Title" : "LA DI DA",
+                "Album": "-77.82x-78.29",
+                "Time": "3:30",
+                "Url": ""
+            }
+        ]
+    },
+    {
+        "Artist": "Stray Kids",
+        "Songs": [
+            {
+                "Image": "https://i.scdn.co/image/ab67616d00001e0221fa0c8c53c48dcf3c6c1874",
+                "Title" : "Back Door",
+                "Album": "IN LIFE",
+                "Time": "3:09",
+                "Url": ""
+            }
+        ]
+    },
+    {
+        "Artist": "BTS",
+        "Songs": [
+            {
+                
+                "Image": "https://i.scdn.co/image/ab67616d00001e02755995e9ff2b1b0c753f5eb8",
+                "Title" : "Dynamite",
+                "Album": "Dynamite",
+                "Time": "3:19",
+                "Url": ""
+            }
+        ]
+    },
+    {
+        "Artist": "TREASURE",
+        "Songs": [
+            {
+                "Image": "https://i.scdn.co/image/ab67616d00001e02e64e25e6327ccba025619750",
+                "Title" : "I LOVE YOU",
+                "Album": "THE FIRST STEP : CHAPTER TWO",
+                "Time": "3:01",
+                "Url": ""
+            }
+        ]
+    },
+    {
+        "Artist": "DAY6",
+        "Songs": [
+            {
+                "Image": "https://i.scdn.co/image/ab67616d00001e020582daa99a6621b6ffd83525",
+                "Title" : "Zombie",
+                "Album": "The Book of Us : The Demon",
+                "Time": "3:29",
+                "Url": ""
+            }
+        ]
+    },
+    {
+        "Artist": "GOT7",
+        "Songs": [
+            {
+                "Image": "https://i.scdn.co/image/ab67616d00001e02e4d85babdbdecf2c21568ea0",
+                "Title" : "You Calling My Name",
+                "Album": "Call My Name",
+                "Time": "3:14",
+                "Url": ""
+            }
+        ]
+    },
+    {
+        "Artist": "TOMORROW X TOGETHER",
+        "Songs": [
+            {
+                "Image": "https://i.scdn.co/image/ab67616d00001e02adcfd199652d2634cb361869",
+                "Title" : "Can't You See Me?",
+                "Album": "The Dream Chapter: ETERNITY",
+                "Time": "3:21",
+                "Url": ""
+            }
+        ]
+    },
+    {
+        "Artist": "TWICE",
+        "Songs": [
+            {
+                "Image": "https://i.scdn.co/image/ab67616d00001e0228e649c0e2d1a3a98ccf8ea3",
+                "Title" : "MORE & MORE",
+                "Album": "MORE & MORE",
+                "Time": "3:19",
+                "Url": ""
+            }
+        ]
+    },
+    {
+        "Artist": "MAMAMOO",
+        "Songs": [
+            {
+                "Image": "https://i.scdn.co/image/ab67616d00001e028612b3a74fefaf72ddc92d08",
+                "Title" : "gogobebe",
+                "Album": "White Wind",
+                "Time": "3:15",
+                "Url": ""
+            }
+        ]
     }
 ]
