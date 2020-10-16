@@ -246,7 +246,47 @@
                 "Album": "Birds In The Trap Sing McKnight",
                 "Time": "4:03",
                 "Url": ""
-            }
+            },
+            {
+                "Image": "",
+                "Title" : "anything 4 u",
+                "Artist": "LANY",
+                "Album": "mama's boy",
+                "Time": "3.14",
+                "Url": ""
+            },
+            {
+                "Image": "",
+                "Title" : "sad",
+                "Artist": "LANY",
+                "Album": "mama's boy",
+                "Time": "3.20",
+                "Url": ""
+            },
+            {
+                "Image": "",
+                "Title" : "(what i wish just one person would sat to me)",
+                "Artist": "LANY",
+                "Album": "mama's boy",
+                "Time": "3.34",
+                "Url": ""
+            },
+            {
+                "Image": "",
+                "Title" : "New Thang",
+                "Artist": "Redfoo",
+                "Album": "New Thang",
+                "Time": "3.47",
+                "Url": ""
+            },
+            {
+                "Image": "",
+                "Title" : "free love",
+                "Artist": "HONNE",
+                "Album": "no song without you",
+                "Time": "3.34",
+                "Url": ""
+            },
         ]
     },
     {
