@@ -1,0 +1,182 @@
+[
+    {
+        "Artist": "First Anuwat",
+        "Songs": [
+            {
+                "Image": "https://i.scdn.co/image/ab67616d00001e02c240b07e8b150e82e99c6ed6",
+                "Title" : "ถ้าเขาจะรัก (ยืนเฉยๆเขาก็รัก)",
+                "Album": "ถ้าเขาจะรัก (ยืนเฉยๆเขาก็รัก)",
+                "Time": "3:27",
+                "Url": ""
+            }
+        ]
+    },
+    {
+        "Artist": "YOUNGOHM",
+        "Songs": [
+            {
+                "Image": "https://i.scdn.co/image/ab67616d00001e02b4668d89ecb9c2f7e2e6189f",
+                "Title" : "ก่อนนอนคืนนี้",
+                "Album": "BANGKOK LEGACY",
+                "Time": "2:41",
+                "Url": ""
+            }
+        ]
+    },
+    {
+        "Artist": "Stamp",
+        "Songs": [
+            {
+                "Image": "https://i.scdn.co/image/ab67616d0000b27322b84d45ab6bf0f66417648a",
+                "Title" : "มันคงเป็นความรัก",
+                "Album": "Supermarket",
+                "Time": "3:55",
+                "Url": ""
+            }
+        ]
+    },
+    {
+        "Artist": "Mirrr",
+        "Songs": [
+            {
+                "Image": "https://i.scdn.co/image/ab67616d00001e0287cc1aef411c7e4a4e775a9e",
+                "Title" : "นิโคติน",
+                "Album": "นิโคติน",
+                "Time": "3:36",
+                "Url": ""
+            }
+        ]
+    },
+    {
+        "Artist": "YENTED",
+        "Songs": [
+            {
+                "Image": "https://i.scdn.co/image/ab67616d00001e0261be5564019beb3c8cb53265",
+                "Title" : "Her",
+                "Album": "Her",
+                "Time": "3:40",
+                "Url": ""
+            }
+        ]
+    },
+    {
+        "Artist": "Oat Pramote",
+        "Songs": [   
+            {
+                "Image": "https://i.scdn.co/image/ab67616d0000b273e0303669408ee0eede16d3ba",
+                "Title" : "เท่าที่ทำได้ feat. LAZYLOXY",
+                "Album": "เท่าที่ทำได้ feat. LAZYLOXY",
+                "Time": "3:37",
+                "Url": ""
+            }
+        ]
+    },
+    {
+        "Artist": "คิงส์ ชนาวิทย์",
+        "Songs": [
+            {
+                "Image": "https://i.scdn.co/image/ab67616d0000b273dbf9b440730cf935d4b722ad",
+                "Title" : "ปิดที่ปวด",
+                "Album": "ปิดที่ปวด",
+                "Time": "5:30",
+                "Url": ""
+            }
+        ]
+    },
+    {
+        "Artist": "Three Man Down",
+        "Songs": [
+            {
+                "Image": "https://i.scdn.co/image/ab67616d00001e027cdb9ebead2e749f5eee81ad",
+                "Title" : "ฝนตกไหม",
+                "Album": "ฝนตกไหม",
+                "Time": "4:22",
+                "Url": ""
+            }
+        ]
+    },
+    {
+        "Artist": "BOWKYLION",
+        "Songs": [
+            {
+                "Image": "https://i.scdn.co/image/ab67616d0000b273684150f9c9327b1a7e8f77e2",
+                "Title" : "คิดถึงแต่",
+                "Album": "คิดถึงแต่",
+                "Time": "3:06",
+                "Url": ""
+            }
+        ]
+    },
+    {
+        "Artist": "Tilly Birds",
+        "Songs": [
+            {
+                "Image": "https://i.scdn.co/image/ab67616d0000b273e4c3cc9230e81286c06babe1",
+                "Title" : "คิด(แต่ไม่)ถึง (Same Page?)",
+                "Album": "คิด(แต่ไม่)ถึง (Same Page?)",
+                "Time": "4:26",
+                "Url": ""
+            }
+        ]
+    },
+    {
+        "Artist": "MEAN",
+        "Songs": [
+            {
+                "Image": "https://i.scdn.co/image/ab67616d00001e02a599659cf1d34f824dbc0bd6",
+                "Title" : "เหมาะสม",
+                "Album": "เหมาะสม",
+                "Time": "3:27",
+                "Url": ""
+            }
+        ]
+    },
+    {
+        "Artist": "Polycat",
+        "Songs": [
+            {
+                "Image": "https://i.scdn.co/image/ab67616d00001e02b258636465e467ac527c860e",
+                "Title" : "ดูดี",
+                "Album": "ดูดี",
+                "Time": "4:00",
+                "Url": ""
+            }
+        ]
+    },
+    {
+        "Artist": "Season Five",
+        "Songs": [
+            {
+                "Image": "https://i.scdn.co/image/ab67616d00001e028cc2862d3b7cf67dbda4bacb",
+                "Title" : "ฉันมาบอกว่า",
+                "Album": "ฉันมาบอกว่า",
+                "Time": "4:41",
+                "Url": ""
+            }
+        ]
+    },
+    {
+        "Artist": "Two Popetorn",
+        "Songs": [
+            {
+                "Image": "https://i.scdn.co/image/ab67616d00001e028cad6622b6d99951c286fdd4",
+                "Title" : "แต่ยังคิดถึง",
+                "Album": "แต่ยังคิดถึง",
+                "Time": "3:50",
+                "Url": ""
+            }
+        ]
+    },
+    {
+        "Artist": "Blue Shade",
+        "Songs": [
+            {
+                "Image": "https://i.scdn.co/image/ab67616d00001e025f74bfae788568249e4a3a19",
+                "Title" : "ถ้าเธอเหงา",
+                "Album": "ถ้าเธอเหงา",
+                "Time": "4:32",
+                "Url": ""
+            }
+        ]
+    }
+]
