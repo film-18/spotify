@@ -178,5 +178,197 @@
                 "Url": ""
             }
         ]
+    },
+    {
+        "Artist": "Bruno Mars",
+        "Songs": [
+            {
+                "Image": "https://i.scdn.co/image/ab67616d0000b273232711f7d66a1e19e89e28c5",
+                "Title" : "Versace on the Floor",
+                "Album": "24K Magic",
+                "Time": "4:21",
+                "Url": ""
+            }
+        ]
+    },
+    {
+        "Artist": "Maroon 5",
+        "Songs": [
+            {
+                "Image": "https://i.scdn.co/image/ab67616d00001e0237677af5b4f23fe9dc8a3c04",
+                "Title" : "Maps",
+                "Album": "V (Asia Tour Edition)",
+                "Time": "3:09",
+                "Url": ""
+            }
+        ]
+    },
+    {
+        "Artist": "Imagine Dragon",
+        "Songs": [
+            {
+                "Image": "https://i.scdn.co/image/ab67616d00001e02da6f73a25f4c79d0e6b4a8bd",
+                "Title" : "Natural",
+                "Album": "Origins (Deluxe)",
+                "Time": "3:09",
+                "Url": ""
+            }
+        ]
+    },
+    {
+        "Artist": "HONNE",
+        "Songs": [
+            {
+                "Image": "https://i.scdn.co/image/ab67616d00001e02210933bff4e6e68dc23472b0",
+                "Title" : "Me & You",
+                "Album": "Love Me / Love Me Not",
+                "Time": "4:03",
+                "Url": ""
+            },
+            {
+                "Image": "https://i.scdn.co/image/ab67616d00001e02d23f075965c0dfaa6a92e19b",
+                "Title" : "free love",
+                "Album": "no song without you",
+                "Time": "3.34",
+                "Url": ""
+            }
+        ]
+    },
+    {
+        "Artist": "Lauv",
+        "Songs": [
+            {
+                "Image": "https://i.scdn.co/image/ab67616d00001e025355919e31efac9b14c45c49",
+                "Title" : "Paris in the Rain",
+                "Album": "I met you when I was 18. (the playlist)",
+                "Time": "3:24",
+                "Url": ""
+            }
+        ]
+    },
+    {
+        "Artist": "Charlie Puth",
+        "Songs": [
+            {
+                "Image": "https://i.scdn.co/image/ab67616d00001e02897f73256b9128a9d70eaf66",
+                "Title" : "Attention",
+                "Album": "Voicenotes",
+                "Time": "3:28",
+                "Url": ""
+            }
+        ]
+    },
+    {
+        "Artist": "Jeremy Zucker",
+        "Songs": [
+            {
+                "Image": "https://i.scdn.co/image/ab67616d00001e02cb16227d90152c2a5022bba1",
+                "Title" : "comethu",
+                "Album": "summer,",
+                "Time": "3:01",
+                "Url": ""
+            }
+        ]
+    },
+    {
+        "Artist": "Lukas Graham",
+        "Songs": [
+            {
+                "Image": "https://i.scdn.co/image/ab67616d0000b2732d94d0f04e9a58d1654b760b",
+                "Title" : "7 Years",
+                "Album": "Lukas Graham",
+                "Time": "3:57",
+                "Url": ""
+            }
+        ]
+    },
+    {
+        "Artist": "Ed Sheeran",
+        "Songs": [
+            {
+                "Image": "https://i.scdn.co/image/ab67616d00001e02ba5db46f4b838ef6027e6f96",
+                "Title" : "Shape of You",
+                "Album": "÷ (Deluxe)",
+                "Time": "3:53",
+                "Url": ""
+            }
+        ]
+    },
+    {
+        "Artist": "Post Malone",
+        "Songs": [
+            {
+                "Image": "https://i.scdn.co/image/ab67616d0000b2739478c87599550dd73bfa7e02",
+                "Title" : "Circles",
+                "Album": "Hollywood's Bleeding",
+                "Time": "3:35",
+                "Url": ""
+            }
+        ]
+    },
+    {
+        "Artist": "The Chainsmokers",
+        "Songs": [
+            {
+                "Image": "https://i.scdn.co/image/ab67616d00001e02495ce6da9aeb159e94eaa453",
+                "Title" : "Closer",
+                "Album": "Closer",
+                "Time": "4:04",
+                "Url": ""
+            }
+        ]
+    },
+    {
+        "Artist": "Travis Scott",
+        "Songs": [
+            {
+                "Image": "https://i.scdn.co/image/ab67616d00001e02f54b99bf27cda88f4a7403ce",
+                "Title" : "goosebumps",
+                "Album": "Birds In The Trap Sing McKnight",
+                "Time": "4:03",
+                "Url": ""
+            }
+        ]
+    },
+    {
+        "Artist": "Shawn Mandes",
+        "Songs": [
+            {
+                "Image": "https://i.scdn.co/image/ab67616d00001e02e6095c382c2853667c1623eb",
+                "Title" : "Señorita",
+                "Album": "Señorita",
+                "Time": "3:10",
+                "Url": ""
+            }
+        ]
+    },
+    {
+        "Artist": "LANY",
+        "Songs": [
+            {
+                "Image": "https://i.scdn.co/image/ab67616d00001e02be813e62b1e1f5b8ea3dcb27",
+                "Title" : "anything 4 u",
+                "Artist": "LANY",
+                "Album": "mama's boy",
+                "Time": "3.14",
+                "Url": ""
+            },
+            {
+                "Image": "https://i.scdn.co/image/ab67616d00001e02be813e62b1e1f5b8ea3dcb27",
+                "Title" : "sad",
+                "Artist": "LANY",
+                "Album": "mama's boy",
+                "Time": "3.20",
+                "Url": ""
+            },
+            {
+                "Image": "https://i.scdn.co/image/ab67616d00001e02be813e62b1e1f5b8ea3dcb27",
+                "Title" : "(what i wish just one person would sat to me)",
+                "Artist": "LANY",
+                "Album": "mama's boy",
+                "Time": "3.34",
+                "Url": ""
+            }
+        ]
     }
 ]
