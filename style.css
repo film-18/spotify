@@ -1,5 +1,5 @@
 * {
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .bgLeft {
@@ -16,3 +16,53 @@
     font-size: 50px;
     color: white;
 }
+<<<<<<< Updated upstream
+=======
+.spanhome{
+    font-size: 20px;
+    color: white;
+}
+.spansearch{
+    font-size: 20px;
+    color: white;
+}
+.spanlibrary{
+    font-size: 20px;
+    color: white;
+}
+.spancreat_playlist{
+    font-size: 25px;
+    color: white; 
+}
+.spanlink_song{
+    font-size: 25px;
+    color: white; 
+}
+.button:hover{
+    color: white;
+    background-color:gray;
+}
+.button{
+    background-color: #0d0d0d;
+    color:gray;
+    transition-duration: 0.4s;
+    cursor: pointer"
+}
+.rightarrow{
+    font-size: 20px;
+    color: white; 
+}
+.leftarrow{
+    font-size: 20px;
+    color: white; 
+}
+.buttonarrow{
+    background-color: #0d0d0d;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    padding: 0;
+    border-radius: 50%;
+}
+>>>>>>> Stashed changes
