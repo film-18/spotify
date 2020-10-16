@@ -1,0 +1,18 @@
+* {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.bgLeft {
+    background-color: #0d0d0d;
+    color: white;
+}
+
+.bgRight {
+    background-color: #1a1a1a;
+    color: white;
+}
+
+.spanSpotify {
+    font-size: 50px;
+    color: white;
+}
