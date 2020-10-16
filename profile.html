@@ -21,7 +21,7 @@
     <title>Profile</title>
     <!-- Font -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
-    
+
     <!-- Bootstrap core CSS -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
     <!-- Material Design Bootstrap -->
@@ -30,46 +30,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.0/animate.min.css" />
 
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
+    <link rel="stylesheet" href="style.css">
     <style>
-        * {
-            font-family: 'Ubuntu', sans-serif;
-        }
-        .bgLeft {
-            background-color: #0d0d0d;
-            color: white;
-        }
-        
-        .bgRight-top {
-            background-color: #1a1a1a;
-            color: white;
-        }
-        .bgRight-back {
-            background-color: #1a1a1a;
-        }
-        .spanSpotify {
-            font-size: 50px;
-            color: white;
-        }
-        .btn-lg,.btn-group-lg>.btn {
-            font-size: 16px;
-            line-height: 1;
-            border-radius: 500px;
-            padding: 19px 56px 21px;
-        }
-        
-        .plus {
-            font-size: 150px;
-        }
-        .button1{
-            background-color: #1DB954;
-        
-          }
-          .button1:hover {
-            background-color: #32CD56;
-            color: white;
-          }
-        
+
+
+
+
     </style>
 </head>
 
@@ -77,36 +43,96 @@
 <body>
     <div class="row">
         <!-- ฝั่งซ้าย -->
-        <div class="col-md-2 bgLeft">
-        </div>
-        <!-- ฝั่งซ้าย -->
+        <div class="col-md-3 bgLeft px-5">
+            <div class="d-inline">
+                <div class="row">
+                    <div class="col-3">
+                        <span class="spanSpotify d-inline"><i class="fab fa-spotify"></i></span>
+                    </div>
+                    <div class="col-9 mt-2">
+                        <p class="h2 d-inline">Spotify</p>
+                        <p style="font-size: 10px;">By Among Us Gangters</p>
+                    </div>
+                </div>
 
-        
-        <div class="col-md-10 bgRight-top">
-            <div><center>
-                <div class="mx-auto pt-5" style="width: 150px;">
-                    <img class="rounded-circle"><i class="fas fa-plus-circle plus"></i>
-                </div>
-                
-                <div class="pt-3">
-                    <p>Name</p>
-                </div>
-                <div>
-                    <button class="btn btn-lg button button1 ">Edit Profile
-                        <a href="#"></a>
+
+
+            </div>
+            <button class="py-3 rounded border-0 button w-100 text-left">
+                <span class="spanhome d-inline mr-3"><i class="fas fa-home"></i></span>
+                <p class="d-inline">Home</p>
+            </button>
+            <button class="pb-3 rounded border-0 button w-100 text-left">
+                <span class="spansearch d-inline mr-3"><i class="fas fa-search"></i></span>
+                <p class="d-inline">Search</p>
+            </button>
+            <button class="rounded border-0 button w-100 text-left">
+                <span class="spanlibrary d-inline mr-3"><i class="fas fa-book-open"></i></span>
+                <p class="d-inline">Your library</p>
+            </button>
+
+
+            <p class="mt-4 mb-3">PLAYLISTS</p>
+
+
+            <div class="row">
+                <div class="col">
+                    <button class="rounded border-0 button w-100 text-left">
+                        <span class="float-left">
+                            <span class="spancreat_playlist d-inline float-left mr-2"><i
+                                    class="fas fa-plus-square"></i></span>
+                        </span>
+                        <span>
+                            <p class="d-inline float-left mt-1">Creat Playlist</p>
+                        </span>
                     </button>
                 </div>
-                <div>
-                    <p>ทำ navber มีช่อง feed , playlist , follwer, follwering</p>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <button class="rounded border-0 button w-100 text-left">
+                        <span class="float-left">
+                            <span class="spanlink_song d-inline float-left mr-2"><i class="fab fa-gratipay"></i></span>
+                        </span>
+                        <span>
+                            <p class="d-inline float-left mt-1">Liked Songs</p>
+                        </span>
+                    </button>
                 </div>
             </div>
-            <div class="col-md-10 bgRight-back">
-                
-
-            </div>
+            <hr class="bg-success mt-0">
         </div>
-    </center>
-    </div>
+
+
+        <!-- ฝั่งขวา -->
+        <div class="col-md-9 bgRight-top">
+            <div>
+                <center>
+                    <div class="mx-auto pt-5" style="width: 150px;">
+                        <img class="rounded-circle"><i class="fas fa-plus-circle plus"></i>
+                    </div>
+
+                    <div class="pt-4 pb-3">
+                        <h4>Name</h4>
+                    </div>
+                    <div>
+                        <button class="btn btn-lg button button1" id="button1">Edit Profile
+                            <a href="#"></a>
+                        </button>
+                    </div>
+                    <br>
+            </div>
+            <div class="col bgRight-back">
+                <div class="topnav">
+                    <a class="active" href="#feed">FEEDS</a>
+                    <a href="#news">PUBLIC PLAYLISTS</a>
+                    <a href="#contact">FOLLOWING (num)</a>
+                    <a href="#about">FOLLOWER (num)</a>
+                </div>
+            </div>
+            </center>
+        </div>
 
 
 </body>
