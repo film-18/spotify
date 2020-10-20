@@ -161,22 +161,22 @@
         request.send();
         function dataReportStatus(data) {
             let rowFirst = document.createElement('div');
-            rowFirst.setAttribute("class", "row mx-5 ");
+            rowFirst.setAttribute("class", "row mx-2 mt-5");
 
             let rowSec = document.createElement('div');
-            rowSec.setAttribute("class", "row mx-5");
+            rowSec.setAttribute("class", "row mx-2 mt-5");
         
        
             for (let i=0; i<data.length; i++) {
 
                 let headText = document.createElement("div");
                 for (let j=0; j<data[i].Songs.length; j++) {
-                    for (let k=0; k<data[i].Songs.length; k++) {
+                    // for (let k=0; k<data[i].Songs.length; k++) {
                         
                         let row = document.createElement("div");
                         row.setAttribute("class", "row");
                         let col = document.createElement("col");
-                        col.setAttribute("class", "col-md-2");
+                        col.setAttribute("class", "col-md-4");
                         
                         let box = document.createElement("div");
                         box.setAttribute("class", "card");
@@ -184,12 +184,12 @@
                         
                         let pic = document.createElement('IMG');
                         pic.setAttribute("class", "card-img-top");
-                        pic.src = data[i].Songs[k].Image;
+                        pic.src = data[i].Songs[j].Image;
 
                         let nameText = document.createElement('b');
-                        nameText.innerHTML += data[i].Songs[k].Title + "<br>";
+                        nameText.innerHTML += data[i].Songs[j].Title + "<br>";
                         let nameText2 = document.createElement('p');
-                        nameText2.innerHTML += data[i].Songs[k].Artist + "<br>";
+                        nameText2.innerHTML += data[i].Songs[j].Artist + "<br>";
                         
                         col.append(box);
                         col.append(pic);
@@ -197,7 +197,7 @@
                         col.append(nameText2);
                         output.appendChild(col);
                         
-                        if (i < 6) {
+                        if (i < 3) {
                             rowFirst.append(col);
                         }
                         else {
@@ -207,7 +207,7 @@
                     output.appendChild(headText);
                     output.appendChild(rowFirst);
                     output.appendChild(rowSec);
-                }
+                // }
             }
         }
     </script>
