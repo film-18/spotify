@@ -190,11 +190,21 @@
                         nameText.innerHTML += data[i].Songs[j].Title + "<br>";
                         let nameText2 = document.createElement('p');
                         nameText2.innerHTML += data[i].Songs[j].Artist + "<br>";
+
+                        let audioBox = document.createElement('audio');
+                        audioBox.setAttribute("controls", "controls");
+                        let audioOne = document.createElement('source');
+                    
+                        //audioOne.type = "music-t/mpeg";
+                        audioOne.setAttribute("src", data[i].Songs[j].Url);
+                        audioBox.append(audioOne);
+
                         
                         col.append(box);
                         col.append(pic);
                         col.append(nameText);
                         col.append(nameText2);
+                        col.append(audioBox);
                         output.appendChild(col);
                         
                         if (i < 3) {
