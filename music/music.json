@@ -8,7 +8,11 @@
                 "Artist": "First Anuwat",
                 "Album": "ถ้าเขาจะรัก (ยืนเฉยๆเขาก็รัก)",
                 "Time": "3:27",
+<<<<<<< HEAD
                 "Url": "music/music-t/enough_l_first_anuwat.mp3"
+=======
+                "Url": "enough_l_first_anuwat.mp3"
+>>>>>>> main
             },
             {
                 "Image": "https://i.scdn.co/image/ab67616d00001e02b4668d89ecb9c2f7e2e6189f",
@@ -16,6 +20,30 @@
                 "Artist": "YOUNGOHM",
                 "Album": "BANGKOK LEGACY",
                 "Time": "2:41",
+                "Url": ""
+            },
+            {
+                "Image": "https://i.scdn.co/image/ab67616d00001e02b4668d89ecb9c2f7e2e6189f",
+                "Title" : "มาเฟียสเปน",
+                "Artist": "YOUNGOHM, Younggu, PEE CLOCK",
+                "Album": "BANGKOK LEGACY",
+                "Time": "4:51",
+                "Url": ""
+            },
+            {
+                "Image": "https://i.scdn.co/image/ab67616d00001e02b4668d89ecb9c2f7e2e6189f",
+                "Title" : "ไฟเย็น",
+                "Artist": "YOUNGOHM",
+                "Album": "BANGKOK LEGACY",
+                "Time": "4:45",
+                "Url": ""
+            },
+            {
+                "Image": "https://i.scdn.co/image/ab67616d00001e02b4668d89ecb9c2f7e2e6189f",
+                "Title" : "อัศวินรัตติกาล",
+                "Artist": "YOUNGOHM, DIAMOND MQT",
+                "Album": "BANGKOK LEGACY",
+                "Time": "4:52",
                 "Url": ""
             },
             {
@@ -161,7 +189,7 @@
             },
             {
                 "Image": "https://i.scdn.co/image/ab67616d00001e02210933bff4e6e68dc23472b0",
-                "Title" : "Me & You",
+                "Title" : "Me & You ◑",
                 "Artist": "HONNE, Tom Misch",
                 "Album": "Love Me / Love Me Not",
                 "Time": "4:03",
@@ -286,6 +314,54 @@
                 "Album": "no song without you",
                 "Time": "3.34",
                 "Url": ""
+            },
+            {
+                "Image": "https://i.scdn.co/image/ab67616d00001e02210933bff4e6e68dc23472b0",
+                "Title" : "Day 1 ◑",
+                "Artist": "HONNE",
+                "Album": "Love Me / Love Me Not",
+                "Time": "3:53",
+                "Url": ""
+            },
+            {
+                "Image": "https://i.scdn.co/image/ab67616d00001e02210933bff4e6e68dc23472b0",
+                "Title" : "Location Unknown ◑",
+                "Artist": "HONNE",
+                "Album": "Love Me / Love Me Not",
+                "Time": "4:50",
+                "Url": ""
+            },
+            {
+                "Image": "https://i.scdn.co/image/ab67616d00001e02210933bff4e6e68dc23472b0",
+                "Title" : "Feel So Good ◑",
+                "Artist": "HONNE",
+                "Album": "Love Me / Love Me Not",
+                "Time": "3:48",
+                "Url": ""
+            },   
+            {
+                "Image": "https://i.scdn.co/image/ab67616d00001e025355919e31efac9b14c45c49",
+                "Title" : "I Like Me Better",
+                "Artist": "Lauv",
+                "Album": "I met you when I was 18. (the playlist)",
+                "Time": "3:17",
+                "Url": ""
+            },   
+            {
+                "Image": "https://i.scdn.co/image/ab67616d00001e025355919e31efac9b14c45c49",
+                "Title" : "Paranoid",
+                "Artist": "Lauv",
+                "Album": "I met you when I was 18. (the playlist)",
+                "Time": "3:12",
+                "Url": ""
+            },   
+            {
+                "Image": "https://i.scdn.co/image/ab67616d00001e025355919e31efac9b14c45c49",
+                "Title" : "Easy Love",
+                "Artist": "Lauv",
+                "Album": "I met you when I was 18. (the playlist)",
+                "Time": "3:44",
+                "Url": ""
             }
         ]
     },
@@ -298,6 +374,38 @@
                 "Artist": "ITZY",
                 "Album": "Not Shy",
                 "Time": "2:57",
+                "Url": ""
+            },
+            {
+                "Image": "https://i.scdn.co/image/ab67616d00001e02fda74ae03a653f5d84010a79",
+                "Title" : "iD",
+                "Artist": "ITZY",
+                "Album": "Not Shy",
+                "Time": "3:26",
+                "Url": ""
+            },
+            {
+                "Image": "https://i.scdn.co/image/ab67616d00001e02fda74ae03a653f5d84010a79",
+                "Title" : "Louder",
+                "Artist": "ITZY",
+                "Album": "Not Shy",
+                "Time": "3:21",
+                "Url": ""
+            },
+            {
+                "Image": "https://i.scdn.co/image/ab67616d00001e02fda74ae03a653f5d84010a79",
+                "Title" : "SURF",
+                "Artist": "ITZY",
+                "Album": "Not Shy",
+                "Time": "3:13",
+                "Url": ""
+            },
+            {
+                "Image": "https://i.scdn.co/image/ab67616d00001e02fda74ae03a653f5d84010a79",
+                "Title" : "Be In Love",
+                "Artist": "ITZY",
+                "Album": "Not Shy",
+                "Time": "3:20",
                 "Url": ""
             },
             {
