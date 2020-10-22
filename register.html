@@ -24,9 +24,31 @@
     <script src="infomation.js"></script>
     <style>
         .Input-sc-1698ofb-0 {
-            border-radius: 6px; 
+            border-radius: 6px;
             border-color: white;
             border-style: groove;
+            width: 90%;
+        }
+
+        #button_signup {
+            background-color: #1DB954;
+            color: white;
+            letter-spacing: 1.2px;
+            height: 48px;
+            width: 95%;
+        }
+
+        #button_signup:hover {
+            background-color: #31d858;
+            color: white;
+            font-size: 17px;
+            height: 50px;
+            width: 100%;
+
+        }
+        a {
+            color:#1DB954; 
+            text-decoration: underline;
         }
     </style>
 </head>
@@ -46,23 +68,26 @@
             <form action="" id="myForm">
                 <div class="form-group mt-3">
                     <label for="email"><b>What's your email?</b></label>
-                    <input type="email" class="Input-sc-1698ofb-0 bROxuN StyledFormInput-xlq05f-0 bAggFt" style="height: 50px; width: 100%;" id="email"
-                        aria-describedby="emailHelp" placeholder="Enter your email." required>
+                    <input type="email" class="Input-sc-1698ofb-0 bROxuN StyledFormInput-xlq05f-0 bAggFt"
+                        style="height: 50px; width: 100%;" id="email" aria-describedby="emailHelp"
+                        placeholder="Enter your email." required>
                 </div>
                 <div class="form-group">
                     <label for="confirm"><b>Confirm your email</b></label>
-                    <input type="email" class="Input-sc-1698ofb-0 bROxuN StyledFormInput-xlq05f-0 bAggFt" style="height: 50px; width: 100%;" id="confirmEmail"
-                        aria-describedby="emailHelp" placeholder="Enter your email again." required>
+                    <input type="email" class="Input-sc-1698ofb-0 bROxuN StyledFormInput-xlq05f-0 bAggFt"
+                        style="height: 50px; width: 100%;" id="confirmEmail" aria-describedby="emailHelp"
+                        placeholder="Enter your email again." required>
                 </div>
                 <div class="form-group">
                     <label for="password"><b>Create a password</b></label>
-                    <input type="password" value aria-invalid="true" class="Input-sc-1698ofb-0 bROxuN StyledFormInput-xlq05f-0 bAggFt" style="height: 50px; width: 100%;" id="password"
-                        placeholder="Create a password." required>
+                    <input type="password" value aria-invalid="true"
+                        class="Input-sc-1698ofb-0 bROxuN StyledFormInput-xlq05f-0 bAggFt"
+                        style="height: 50px; width: 100%;" id="password" placeholder="Create a password." required>
                 </div>
                 <div class="form-group">
                     <label for="name"><b>What should we call you?</b></label>
-                    <input type="text" class="Input-sc-1698ofb-0 bROxuN StyledFormInput-xlq05f-0 bAggFt" style="height: 50px; width: 100%;" id="name"
-                        placeholder="Enter a profile name." required>
+                    <input type="text" class="Input-sc-1698ofb-0 bROxuN StyledFormInput-xlq05f-0 bAggFt"
+                        style="height: 50px; width: 100%;" id="name" placeholder="Enter a profile name." required>
                     <small id="namehelp" class="form-text text-muted">This appears on your profile.</small>
                 </div>
                 <div class="form-group mb-0">
@@ -71,12 +96,14 @@
                 <div class="form-row align-items-center">
                     <div class="col">
                         <label for="day">Day</label>
-                        <input type="text" value aria-invalid="true" maxlength="2" inputmode="numeric" class="Input-sc-1698ofb-0 bROxuN StyledFormInput-xlq05f-0 bAggFt" style="height: 50px; width: 100px" id="date" placeholder=" DD"
-                            required>
+                        <input type="text" value aria-invalid="true" maxlength="2" inputmode="numeric"
+                            class="Input-sc-1698ofb-0 bROxuN StyledFormInput-xlq05f-0 bAggFt"
+                            style="height: 50px; width: 100px" id="date" placeholder=" DD" required>
                     </div>
                     <div class="col pr-4">
                         <label for="month">Month</label>
-                        <select id="month" class="Select-sc-1g6lqw8-0 iDaTMY StyledFormSelect-sc-1aaikof-0 bVOBS" style="height: 50px; width: 200px; border-radius: 6px; border-color: rgb(173, 173, 173);" >
+                        <select id="month" class="Select-sc-1g6lqw8-0 iDaTMY StyledFormSelect-sc-1aaikof-0 bVOBS"
+                            style="height: 50px; width: 200px; border-radius: 6px; border-color: rgb(173, 173, 173);">
                             <option selected>Month</option>
                             <option value="1">January</option>
                             <option value="2">February</option>
@@ -94,8 +121,9 @@
                     </div>
                     <div class="col">
                         <label for="year">Year</label>
-                        <input required type="text" inputmode="numeric" maxlength="4" class="Input-sc-1698ofb-0 bROxuN StyledFormInput-xlq05f-0 bAggFt"  style="height: 50px; width: 120px" id="numyear" placeholder=" YYYY"
-                            >
+                        <input required type="text" inputmode="numeric" maxlength="4"
+                            class="Input-sc-1698ofb-0 bROxuN StyledFormInput-xlq05f-0 bAggFt"
+                            style="height: 50px; width: 120px" id="numyear" placeholder=" YYYY">
                     </div>
                 </div>
                 <div class="col-auto mt-3 pl-0">
@@ -120,21 +148,60 @@
                     </label>
                 </div>
 
-                <div class="row">
-                    <div class="col-12 mt-3">
-                        <button class="btn btn-block bg-success text-white ng-binding" style="border-radius: 20px;"
-                             onclick="register()"><b>SIGN UP</b></button>
-                    </div>
+                <div class="Group-sc-1lird8m-0 exjUsC pt-4"><label class="Checkbox-sc-1141y94-0 hGrZOT">
+                        <input type="checkbox" name="thirdParty" class="VisuallyHidden-sc-16hiv4t-0 gUnBy">
+                        <span class="Indicator-sc-11vkltc-0 dA-dPKg"></span>
+                        <span class="Label-sc-16kzp0w-0 jkgQwH">Share my registration data with Spotify's content
+                            providers for marketing purposes.</span>
+                    </label>
+                </div>
+                <center>
+                <div class="Group-sc-1lird8m-0 exjUsC pt-3">
+                    <div id="v2-container">
+                        <div style="width: 304px; height: 78px;">
+                            <div><iframe
+                                    src="https://www.google.com/recaptcha/api2/anchor?ar=2&amp;k=6Lenb9oUAAAAAO1Rqrm4KsoNH14OvMm6SWkQcdRj&amp;co=aHR0cHM6Ly93d3cuc3BvdGlmeS5jb206NDQz&amp;hl=th&amp;v=T9w1ROdplctW2nVKvNJYXH8o&amp;size=normal&amp;cb=tlvvyr9zb04"
+                                    width="304" height="78" role="presentation" name="a-r7iooe96rkta" frameborder="0"
+                                    scrolling="no"
+                                    sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox"></iframe>
+                            </div><textarea id="g-recaptcha-response" name="g-recaptcha-response"
+                                class="g-recaptcha-response"
+                                style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"></textarea>
+                        </div><iframe style="display: none;"></iframe>
+                    </div><input hidden="" name="recaptchaV2" required="" type="text" data-testid="recaptcha-input-test"
+                        value="">
                 </div>
 
                 <p class="text-center mt-4">
-                    <span>
-                        Have an account?
-                        <a href="login.html">Log in</a>
+                    <span style="font-size: 13px;">
+                        By clicking on Sign up, you agree to Spotify's
+                        <a href="https://www.spotify.com/th-en/legal/end-user-agreement/" target="_blank" >Terms and Conditions of Use.</a>
+                    </span><br>
+                    <span style="font-size: 13px;">
+                        To learn more about how Spotify collects, uses, shares and protects your <br>personal data please read Spotify's
+                        <a href="https://www.spotify.com/th-en/legal/end-user-agreement/" target="_blank" >Privacy Policy.</a>
                     </span>
                 </p>
+                
+                    <div class="row">
+                        <div class="col-12 mt-2">
+                            <button id="button_signup" class="btn btn-md" style="border-radius: 25px;"
+                                onclick="register()"><b>SIGN UP</b></button>
+                        </div>
+                    </div>
+                </center>
+
+                <p class="text-center mt-4" style="position: static;">
+                    <span>
+                        Have an account?
+                        <a href="login.html" >Log in</a>
+                    </span>
+                </p>
+
+
             </form>
         </div>
+
     </div>
 
     <script>
@@ -150,20 +217,20 @@
 
             let email = document.getElementById('email').value;
             let confirmEmail = document.getElementById('confirmEmail').value;
-    
+
             console.log(email);
-    
+
             db.collection("users").doc(email).set({
                 Email: email,
                 ConfirmEmail: confirmEmail
             })
-                // .then(function (docRef) {
-                //     console.log("Document written with ID: ", docRef.id);
-                // })
-                // .catch(function (error) {
-                //     console.error("Error adding document: ", error);
-                // });
-            
+            // .then(function (docRef) {
+            //     console.log("Document written with ID: ", docRef.id);
+            // })
+            // .catch(function (error) {
+            //     console.error("Error adding document: ", error);
+            // });
+
         }
 
 
