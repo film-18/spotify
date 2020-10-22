@@ -19,6 +19,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/94195324d2.js" crossorigin="anonymous"></script>
 
+    <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-firestore.js"></script>
+    <script src="infomation.js"></script>
+
 </head>
 
 <body>
@@ -36,21 +40,23 @@
             <form action="" id="myForm">
                 <div class="form-group mt-3">
                     <label for="email"><b>What's your email?</b></label>
-                    <input type="email" class="form-control" style="height: 50px;" id="email" aria-describedby="emailHelp"
-                        placeholder="Enter your email." required>
+                    <input type="email" class="form-control" style="height: 50px;" id="email"
+                        aria-describedby="emailHelp" placeholder="Enter your email." required>
                 </div>
                 <div class="form-group">
                     <label for="confirm"><b>Confirm your email</b></label>
-                    <input type="email" class="form-control" style="height: 50px;" id="email" aria-describedby="emailHelp"
-                        placeholder="Enter your email again." required>
+                    <input type="email" class="form-control" style="height: 50px;" id="confirmEmail"
+                        aria-describedby="emailHelp" placeholder="Enter your email again." required>
                 </div>
                 <div class="form-group">
                     <label for="password"><b>Create a password</b></label>
-                    <input type="password" class="form-control" style="height: 50px;" id="password" placeholder="Create a password." required>
+                    <input type="password" class="form-control" style="height: 50px;" id="password"
+                        placeholder="Create a password." required>
                 </div>
                 <div class="form-group">
                     <label for="name"><b>What should we call your?</b></label>
-                    <input type="text" class="form-control" style="height: 50px;" id="name" placeholder="Enter a profile name." required>
+                    <input type="text" class="form-control" style="height: 50px;" id="name"
+                        placeholder="Enter a profile name." required>
                     <small id="namehelp" class="form-text text-muted">This appears on your profile.</small>
                 </div>
                 <div class="form-group mb-0">
@@ -59,7 +65,8 @@
                 <div class="form-row align-items-center">
                     <div class="col">
                         <label for="day">Day</label>
-                        <input type="number" class="form-control" style="height: 50px;" id="date" placeholder="DD" required>
+                        <input type="number" class="form-control" style="height: 50px;" id="date" placeholder="DD"
+                            required>
                     </div>
                     <div class="col">
                         <label for="month">Month</label>
@@ -81,7 +88,8 @@
                     </div>
                     <div class="col">
                         <label for="year">Year</label>
-                        <input type="number" class="form-control" style="height: 50px;" id="numyear" placeholder="YYYY" required>
+                        <input type="number" class="form-control" style="height: 50px;" id="numyear" placeholder="YYYY"
+                            required>
                     </div>
                 </div>
                 <div class="col-auto mt-3 pl-0">
@@ -108,7 +116,8 @@
 
                 <div class="row">
                     <div class="col-12 mt-3">
-                        <button class="btn btn-block bg-success text-white ng-binding" style="border-radius: 20px;" id="login-button-regis"><b>SIGN UP</b></button>
+                        <button class="btn btn-block bg-success text-white ng-binding" style="border-radius: 20px;"
+                             onclick="register()"><b>SIGN UP</b></button>
                     </div>
                 </div>
 
@@ -121,6 +130,38 @@
             </form>
         </div>
     </div>
+
+    <script>
+        // Initialize Cloud Firestore through Firebase
+        firebase.initializeApp({
+            apiKey: 'AIzaSyAIlXUZEeQ9jwTaIGr5C9uEUQYOd8KEWpA',
+            projectId: 'spotify-8da9e'
+        });
+
+        var db = firebase.firestore();
+
+        function register() {
+
+            let email = document.getElementById('email').value;
+            let confirmEmail = document.getElementById('confirmEmail').value;
+    
+            console.log(email);
+    
+            db.collection("users").doc(email).set({
+                Email: email,
+                ConfirmEmail: confirmEmail
+            })
+                // .then(function (docRef) {
+                //     console.log("Document written with ID: ", docRef.id);
+                // })
+                // .catch(function (error) {
+                //     console.error("Error adding document: ", error);
+                // });
+            
+        }
+
+
+    </script>
 </body>
 
 </html>
