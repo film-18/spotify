@@ -22,7 +22,13 @@
     <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-firestore.js"></script>
     <script src="infomation.js"></script>
-
+    <style>
+        .Input-sc-1698ofb-0 {
+            border-radius: 6px; 
+            border-color: white;
+            border-style: groove;
+        }
+    </style>
 </head>
 
 <body>
@@ -40,22 +46,22 @@
             <form action="" id="myForm">
                 <div class="form-group mt-3">
                     <label for="email"><b>What's your email?</b></label>
-                    <input type="email" class="form-control" style="height: 50px;" id="email"
+                    <input type="email" class="Input-sc-1698ofb-0 bROxuN StyledFormInput-xlq05f-0 bAggFt" style="height: 50px; width: 100%;" id="email"
                         aria-describedby="emailHelp" placeholder="Enter your email." required>
                 </div>
                 <div class="form-group">
                     <label for="confirm"><b>Confirm your email</b></label>
-                    <input type="email" class="form-control" style="height: 50px;" id="confirmEmail"
+                    <input type="email" class="Input-sc-1698ofb-0 bROxuN StyledFormInput-xlq05f-0 bAggFt" style="height: 50px; width: 100%;" id="confirmEmail"
                         aria-describedby="emailHelp" placeholder="Enter your email again." required>
                 </div>
                 <div class="form-group">
                     <label for="password"><b>Create a password</b></label>
-                    <input type="password" class="form-control" style="height: 50px;" id="password"
+                    <input type="password" value aria-invalid="true" class="Input-sc-1698ofb-0 bROxuN StyledFormInput-xlq05f-0 bAggFt" style="height: 50px; width: 100%;" id="password"
                         placeholder="Create a password." required>
                 </div>
                 <div class="form-group">
                     <label for="name"><b>What should we call you?</b></label>
-                    <input type="text" class="form-control" style="height: 50px;" id="name"
+                    <input type="text" class="Input-sc-1698ofb-0 bROxuN StyledFormInput-xlq05f-0 bAggFt" style="height: 50px; width: 100%;" id="name"
                         placeholder="Enter a profile name." required>
                     <small id="namehelp" class="form-text text-muted">This appears on your profile.</small>
                 </div>
@@ -65,12 +71,12 @@
                 <div class="form-row align-items-center">
                     <div class="col">
                         <label for="day">Day</label>
-                        <input type="text" value aria-invalid="true" maxlength="2" inputmode="numeric" class="Input-sc-1698ofb-0 bROxuN StyledFormInput-xlq05f-0 bAggFt" style="height: 50px; width: 100px" id="date" placeholder="DD"
+                        <input type="text" value aria-invalid="true" maxlength="2" inputmode="numeric" class="Input-sc-1698ofb-0 bROxuN StyledFormInput-xlq05f-0 bAggFt" style="height: 50px; width: 100px" id="date" placeholder=" DD"
                             required>
                     </div>
                     <div class="col pr-4">
                         <label for="month">Month</label>
-                        <select id="month" class="Select-sc-1g6lqw8-0 iDaTMY StyledFormSelect-sc-1aaikof-0 bVOBS" style="height: 50px; width: 200px" >
+                        <select id="month" class="Select-sc-1g6lqw8-0 iDaTMY StyledFormSelect-sc-1aaikof-0 bVOBS" style="height: 50px; width: 200px; border-radius: 6px; border-color: rgb(173, 173, 173);" >
                             <option selected>Month</option>
                             <option value="1">January</option>
                             <option value="2">February</option>
@@ -88,7 +94,7 @@
                     </div>
                     <div class="col">
                         <label for="year">Year</label>
-                        <input required type="text" inputmode="numeric" maxlength="4" class="Input-sc-1698ofb-0 bROxuN StyledFormInput-xlq05f-0 bAggFt"  style="height: 50px; width: 120px" id="numyear" placeholder="YYYY"
+                        <input required type="text" inputmode="numeric" maxlength="4" class="Input-sc-1698ofb-0 bROxuN StyledFormInput-xlq05f-0 bAggFt"  style="height: 50px; width: 120px" id="numyear" placeholder=" YYYY"
                             >
                     </div>
                 </div>
