@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-    <title>Document</title>
+    <title>artist</title>
+    
 </head>
 <body>
     <div id="lists"></div>
@@ -36,8 +37,30 @@
             // let rowSec = document.createElement('div');
             // rowSec.setAttribute("class", "row mx-2 mt-5");
    
-            for (let i=0; i<data.length; i++) {
+            let table = document.createElement('table');
+                    table.setAttribute("class", "table table-borderless");
+                    // table.createTHead();
+                    let count = 1;
+                    let thead = document.createElement('thead');
+                    let tbody = document.createElement('tbody');
+                    let tr = document.createElement('tr');
+                    let no = document.createElement("th");
+                    no.innerHTML = "#";
+                    let title = document.createElement("th");
+                    title.innerHTML = "Title";
+                    let album = document.createElement("th");
+                    album.innerHTML = "Album";
+                    let time = document.createElement("th");
+                    time.innerHTML = "Time";
+                    tr.appendChild(no);
+                    tr.appendChild(title);
+                    tr.appendChild(album);
+                    tr.appendChild(time);
+                    thead.appendChild(tr);
+                    no.style.textAlign = "center";
 
+            for (let i=0; i<data.length; i++) {
+                
                 // let headText = document.createElement("div");
                 // headText.innerHTML = data[i].Artist;
                 // let pic = document.createElement('IMG');
@@ -45,13 +68,18 @@
   
                 for (let j=0; j<data[i].Songs.length; j++) {
 
-                    let table = document.createElement('table');
-                    table.setAttribute("class", "table");
-                    // table.createTHead();
-
                     let tr = document.createElement('tr');
-                    let thOne = document.createElement('th');
-                    thOne.innerHTML = "title";
+
+                    let thno = document.createElement('td');
+                    // thThree.innerHTML = "time";
+                    let boxno = document.createElement('div');
+                    let textno = document.createElement('p');
+                    textno = count;
+                    boxno.append(textno);
+                    thno.append(boxno);
+                
+                    let thOne = document.createElement('td');
+                    // thOne.innerHTML = "title";
 
                     let div = document.createElement('div');
                     div.setAttribute("class", "row");
@@ -68,39 +96,40 @@
                     textSong.innerHTML += data[i].Songs[j].Title + "<br>" + data[i].Artist;
 
 
-
                     colRight.append(textSong);
                     div.append(colImg);
                     div.append(colRight);
                     thOne.append(div);
                 
 
-
-                    let thTwo = document.createElement('th');
-                    thTwo.innerHTML = "Album";
+                    let thTwo = document.createElement('td');
+                    // thTwo.innerHTML = "Album";
                     let boxText = document.createElement('div');
                     let textAlbum = document.createElement('p');
                     textAlbum = data[i].Songs[j].Album;
                     boxText.append(textAlbum);
                     thTwo.append(boxText);
 
-                    let thThree = document.createElement('th');
-                    thThree.innerHTML = "time";
+                    let thThree = document.createElement('td');
+                    // thThree.innerHTML = "time";
                     let boxTime = document.createElement('div');
                     let textTime = document.createElement('p');
                     textTime = data[i].Songs[j].Time;
                     boxTime.append(textTime);
                     thThree.append(boxTime);
 
+                    tr.append(thno);
                     tr.append(thOne);
                     tr.append(thTwo);
                     tr.append(thThree);
-
-                    table.append(tr);
+                    thead.appendChild(tr);
+                    table.append(thead);
 
                     // output.appendChild(headText);
                     // output.appendChild(pic);
                     output.appendChild(table);
+                    count++;
+
                     }
  
                 
