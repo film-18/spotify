@@ -19,7 +19,7 @@
         integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
         crossorigin="anonymous"></script>
     <script>
-        let requestURL = 'artist/artist.json'; 
+        let requestURL = 'artist.json'; 
         let request = new XMLHttpRequest();
         let output = document.getElementById('lists');
         request.onreadystatechange = function () { 
@@ -30,84 +30,80 @@
         request.open("GET", requestURL, true); 
         request.send();
         function dataReportStatus(data) {
-            let rowFirst = document.createElement('div');
-            rowFirst.setAttribute("class", "row mx-2 mt-5");
+            // let rowFirst = document.createElement('div');
+            // rowFirst.setAttribute("class", "row mx-2 mt-5");
 
-            let rowSec = document.createElement('div');
-            rowSec.setAttribute("class", "row mx-2 mt-5");
-        
-       
+            // let rowSec = document.createElement('div');
+            // rowSec.setAttribute("class", "row mx-2 mt-5");
+   
             for (let i=0; i<data.length; i++) {
 
-                let headText = document.createElement("div");
+                // let headText = document.createElement("div");
+                // headText.innerHTML = data[i].Artist;
+                // let pic = document.createElement('IMG');
+                // pic.src = data[i].Picture;
+  
                 for (let j=0; j<data[i].Songs.length; j++) {
-                    // for (let k=0; k<data[i].Songs.length; k++) {
-                        
-                        let row = document.createElement("div");
-                        row.setAttribute("class", "row");
-                        // row.style.overflowX = "hidden";
-                        let col = document.createElement("col");
-                        col.setAttribute("class", "col-md-3 pb-4");
-                        col.style.overflowX = "hidden";
-                        
-                        let box = document.createElement("div");
-                        box.setAttribute("class", "card");
-                        box.style.backgroundColor = "#212121";
-                        
-                        
-                        let pic = document.createElement('IMG');
-                        pic.setAttribute("class", "card-img-top pl-3 pr-3 pt-3");
-                        
-                        pic.style.textAlign = "center";
-                        pic.setAttribute("class", "card-img-top");
-                        
-                        pic.src = data[i].Songs[j].Image;
 
-                        let textbox = document.createElement("div");
-                        textbox.setAttribute("class", "card-body");
+                    let table = document.createElement('table');
+                    table.setAttribute("class", "table");
+                    // table.createTHead();
 
-                        let nameText = document.createElement('b');
-                        nameText.style.whiteSpace = "nowrap";
-                        nameText.style.fontSize = "1.10vw";
-                        nameText.setAttribute("class", "font");
-                        nameText.innerHTML += data[i].Songs[j].Title + "<br>";
-                        let nameText2 = document.createElement('p');
-                        nameText2.style.whiteSpace = "nowrap";
-                        nameText2.innerHTML += data[i].Songs[j].Artist + "<br>";
+                    let tr = document.createElement('tr');
+                    let thOne = document.createElement('th');
+                    thOne.innerHTML = "title";
 
-                        let audioBox = document.createElement('audio');
-                        audioBox.setAttribute("controls", "controls");
-                        let audioOne = document.createElement('source');
-                    
-                        //audioOne.type = "music-t/mpeg";
-                        audioOne.setAttribute("src", data[i].Songs[j].Url);
-                        audioBox.append(audioOne);
-                        audioBox.style.width = "100%";
+                    let div = document.createElement('div');
+                    div.setAttribute("class", "row");
+                    let colImg = document.createElement('div');
+                    colImg.setAttribute("class", "col-3");
+                    let imgAblum = document.createElement('IMG');
+                    imgAblum.setAttribute("class", "rounded w-100");
+                    imgAblum.src = data[i].Picture;
+                    colImg.append(imgAblum);
 
-                        box.appendChild(pic);
-                        box.appendChild(textbox);
-                        textbox.appendChild(nameText);
-                        textbox.appendChild(nameText2);
-                        textbox.appendChild(audioBox);
-                        
-                        col.append(box);
-                        //col.append(pic);
-                        //col.append(nameText);
-                        //col.append(nameText2);
-                        //col.append(audioBox);
-                        output.appendChild(col);
-                        
-                        if (i < 4) {
-                            rowFirst.append(col);
-                        }
-                        else {
-                            rowSec.append(col);
-                        }
+                    let colRight = document.createElement("div");
+                    colRight.setAttribute("class", "col-9");
+                    let textSong = document.createElement('p');
+                    textSong.innerHTML += data[i].Songs[j].Title + "<br>" + data[i].Artist;
+
+
+
+                    colRight.append(textSong);
+                    div.append(colImg);
+                    div.append(colRight);
+                    thOne.append(div);
+                
+
+
+                    let thTwo = document.createElement('th');
+                    thTwo.innerHTML = "Album";
+                    let boxText = document.createElement('div');
+                    let textAlbum = document.createElement('p');
+                    textAlbum = data[i].Songs[j].Album;
+                    boxText.append(textAlbum);
+                    thTwo.append(boxText);
+
+                    let thThree = document.createElement('th');
+                    thThree.innerHTML = "time";
+                    let boxTime = document.createElement('div');
+                    let textTime = document.createElement('p');
+                    textTime = data[i].Songs[j].Time;
+                    boxTime.append(textTime);
+                    thThree.append(boxTime);
+
+                    tr.append(thOne);
+                    tr.append(thTwo);
+                    tr.append(thThree);
+
+                    table.append(tr);
+
+                    // output.appendChild(headText);
+                    // output.appendChild(pic);
+                    output.appendChild(table);
                     }
-                    output.appendChild(headText);
-                    output.appendChild(rowFirst);
-                    output.appendChild(rowSec);
-                // }
+ 
+                
             }
         }
     </script>
