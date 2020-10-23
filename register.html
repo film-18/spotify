@@ -133,22 +133,22 @@
                     <label for="gender"><b>What's your gender?</b></label>
                 </div>
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="choose" id="male" value="option1" required>
+                    <input class="form-check-input" type="radio" name="choose" value="male" onclick="register(this.value)" required>
                     <label class="form-check-label" for="male">
                         Male
                     </label>
                 </div>
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="choose" id="female" value="option2" required>
+                    <input class="form-check-input" type="radio" name="choose" value="female" onclick="register(this.value)" required>
                     <label class="form-check-label" for="female">
                         Female
                     </label>
                 </div>
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="choose" id="non" value="option3" required>
+                    <input class="form-check-input" type="radio" name="choose" value="Non-binary"onclick="register(this.value)" required>
                     <label class="form-check-label" for="non">
                         Non-binary
-                    </label>
+                    </label>w
                 </div>
 
                 <div class="Group-sc-1lird8m-0 exjUsC pt-4"><label class="Checkbox-sc-1141y94-0 hGrZOT">
@@ -220,12 +220,22 @@
 
             let email = document.getElementById('email').value;
             let confirmEmail = document.getElementById('confirmEmail').value;
+            let password = document.getElementById('password').value;
+            let day = document.getElementById('date').value;
+            let month = document.getElementById('').value;
+            let year = document.getElementById('').value;
+            let birth = day + "/" + month + "/" + year; 
+            let gender = document.getElementById('choose');
 
             console.log(email);
 
             db.collection("users").doc(email).set({
                 Email: email,
-                ConfirmEmail: confirmEmail
+                ConfirmEmail: confirmEmail,
+                Password: password,
+                Name: namehelp,
+                Birthday: birth,
+                Gender: gender
             })
             // .then(function (docRef) {
             //     console.log("Document written with ID: ", docRef.id);
