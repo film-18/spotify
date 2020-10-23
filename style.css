@@ -1,8 +1,13 @@
 * {
     font-family: 'Ubuntu', sans-serif;
 }
-.font {
-    font-family: 'Ubuntu', sans-serif;
+.divStyle {
+    /* font-family: 'Ubuntu', sans-serif; */
+    white-space: nowrap;
+    width: 190px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 1.10vw;
 }
 
 .bgLeft {
