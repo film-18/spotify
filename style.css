@@ -1,7 +1,9 @@
 * {
     font-family: 'Ubuntu', sans-serif;
 }
-
+.font {
+    font-family: 'Ubuntu', sans-serif;
+}
 
 .bgLeft {
     background-color: #0d0d0d;

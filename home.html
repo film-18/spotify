@@ -178,19 +178,29 @@
                         let row = document.createElement("div");
                         row.setAttribute("class", "row");
                         let col = document.createElement("col");
-                        col.setAttribute("class", "col-md-4");
+                        col.setAttribute("class", "col-md-3 pb-4");
                         
                         let box = document.createElement("div");
                         box.setAttribute("class", "card");
-                        box.style.width = "18rem";
+                        box.style.backgroundColor = "#212121";
+                        
                         
                         let pic = document.createElement('IMG');
-                        pic.setAttribute("class", "card-img-top");
+                        pic.setAttribute("class", "card-img-top pl-3 pr-3 pt-3");
+                        
+                        pic.style.textAlign = "center";
                         pic.src = data[i].Songs[j].Image;
 
+                        let textbox = document.createElement("div");
+                        textbox.setAttribute("class", "card-body");
+
                         let nameText = document.createElement('b');
+                        nameText.style.whiteSpace = "nowrap";
+                        nameText.style.fontSize = "1.10vw";
+                        nameText.setAttribute("class", "font");
                         nameText.innerHTML += data[i].Songs[j].Title + "<br>";
                         let nameText2 = document.createElement('p');
+                        nameText2.style.whiteSpace = "nowrap";
                         nameText2.innerHTML += data[i].Songs[j].Artist + "<br>";
 
                         let audioBox = document.createElement('audio');
@@ -200,16 +210,22 @@
                         //audioOne.type = "music-t/mpeg";
                         audioOne.setAttribute("src", data[i].Songs[j].Url);
                         audioBox.append(audioOne);
+                        audioBox.style.width = "100%";
 
+                        box.appendChild(pic);
+                        box.appendChild(textbox);
+                        textbox.appendChild(nameText);
+                        textbox.appendChild(nameText2);
+                        textbox.appendChild(audioBox);
                         
                         col.append(box);
-                        col.append(pic);
-                        col.append(nameText);
-                        col.append(nameText2);
-                        col.append(audioBox);
+                        //col.append(pic);
+                        //col.append(nameText);
+                        //col.append(nameText2);
+                        //col.append(audioBox);
                         output.appendChild(col);
                         
-                        if (i < 3) {
+                        if (i < 4) {
                             rowFirst.append(col);
                         }
                         else {
