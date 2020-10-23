@@ -273,3 +273,8 @@ input {
     color: #fff;
 }
 
+#frame {
+    display: block;
+    /* padding-right: 17px; */
+}
+
