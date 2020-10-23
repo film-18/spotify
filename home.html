@@ -36,8 +36,8 @@
 
     <!-- <div class="container"> -->
     <!-- ฝั่งซ้าย -->
-    <div class="row">
-        <div class="col-md-2 col-sm-5 bgLeft px-4 py-2">
+    <div class="row" style="overflow-x: hidden;">
+        <div class="col-md-2 col-sm-5 bgLeft px-4 py-2 ">
             <div class="d-inline">
                 <div class="row">
                     <div class="col">
@@ -52,9 +52,7 @@
                         </span>
                     </div>
                 </div>
-
             </div>
-
             <button class="rounded border-0 button w-100 text-left py-2">
                 <span class="spanhome d-inline mr-3"><i class="fas fa-home"></i></span>
                 <p class="d-inline" style="font-size: 13px;">Home</p>
@@ -130,15 +128,19 @@
 
         <!-- ฝั่งขวา -->
         <div class="col-md-10 bgRight-top pt-2">
-            <div class="pl-3 pr-3 d-inline">
-                <button class="border-0 text-left buttonarrow">
-                    <span class="leftarrow ml-2"><i class="fas fa-angle-left"></i></span>
-                </button>
-            </div>
-            <div class="d-inline">
-                <button class="border-0 text-left buttonarrow">
-                    <span class="rightarrow ml-2"><i class="fas fa-angle-right"></i></span>
-                </button>
+            <div class="row">
+                <div class="col-2 py-2">
+                    <div class="pl-3 pr-3 d-inline">
+                        <button class="border-0 text-left buttonarrow">
+                            <span class="leftarrow ml-2"><i class="fas fa-angle-left"></i></span>
+                        </button>
+                    </div>
+                    <div class="d-inline">
+                        <button class="border-0 text-left buttonarrow">
+                            <span class="rightarrow ml-3"><i class="fas fa-angle-right"></i></span>
+                        </button>
+                    </div>
+                </div>
             </div>
             <div id="lists">
             </div>
@@ -177,8 +179,14 @@
                         
                         let row = document.createElement("div");
                         row.setAttribute("class", "row");
+                        // row.style.overflowX = "hidden";
                         let col = document.createElement("col");
+<<<<<<< HEAD
                         col.setAttribute("class", "col-md-3 pb-4");
+=======
+                        col.setAttribute("class", "col-md-3");
+                        col.style.overflowX = "hidden";
+>>>>>>> main
                         
                         let box = document.createElement("div");
                         box.setAttribute("class", "card");
@@ -186,9 +194,14 @@
                         
                         
                         let pic = document.createElement('IMG');
+<<<<<<< HEAD
                         pic.setAttribute("class", "card-img-top pl-3 pr-3 pt-3");
                         
                         pic.style.textAlign = "center";
+=======
+                        pic.setAttribute("class", "card-img-top");
+                        
+>>>>>>> main
                         pic.src = data[i].Songs[j].Image;
 
                         let textbox = document.createElement("div");
@@ -225,7 +238,11 @@
                         //col.append(audioBox);
                         output.appendChild(col);
                         
+<<<<<<< HEAD
                         if (i < 4) {
+=======
+                        if (i < 5) {
+>>>>>>> main
                             rowFirst.append(col);
                         }
                         else {
