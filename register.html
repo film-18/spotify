@@ -269,22 +269,14 @@
             let email = document.getElementById('email').value;
             let confirmEmail = document.getElementById('confirmEmail').value;
             let password = document.getElementById('password').value;
+            let namehelp  = document.getElementById('name').value;
             let day = document.getElementById('date').value;
-            let month = document.getElementById('').value;
-            let year = document.getElementById('').value;
+            let month = document.getElementById('month').value;
+            let year = document.getElementById('numyear').value;
             let birth = day + "/" + month + "/" + year; 
             let gender = document.getElementById('choose');
 
             console.log(email);
-
-            db.collection("users").doc(email).set({
-                Email: email,
-                ConfirmEmail: confirmEmail,
-                Password: password,
-                Name: namehelp,
-                Birthday: birth,
-                Gender: gender
-            })
             // .then(function (docRef) {
             //     console.log("Document written with ID: ", docRef.id);
             // })
