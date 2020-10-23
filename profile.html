@@ -16,7 +16,7 @@
         integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
         crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap" rel="stylesheet">
-    
+
     <script src="https://kit.fontawesome.com/94195324d2.js" crossorigin="anonymous"></script>
 
     <title>Profile</title>
@@ -42,73 +42,74 @@
 
 
 <body>
- 
-        <!-- ฝั่งซ้าย -->
-        <div class="row">
-            <div class="col-md-2 col-sm-5 bgLeft px-4 py-2">
-                <div class="d-inline">
-                    <div class="row">
-                        <div class="col">
-                            <span class="float-left px-2 py-2">
-                                <span class="spanSpotify d-inline"><i class="fab fa-spotify"></i></span>
-                            </span>
-                            <span>
-                                <div class="py-2 px-2">
-                                    <p class="h4 d-inline">Spotify</p>
-                                    <p style="font-size: 10px;" class="m-0">By Among Us Gangters</p>
-                                </div>
-                            </span>
-                        </div>
-                    </div>
-                </div>
-
-                <button class="rounded border-0 button w-100 text-left py-2">
-                    <span class="spanhome d-inline mr-3"><i class="fas fa-home"></i></span>
-                    <p class="d-inline" style="font-size: 13px;">Home</p>
-                </button>
-                <button class=" rounded border-0 button w-100 text-left py-2">
-                    <span class="spansearch d-inline mr-3"><i class="fas fa-search"></i></span>
-                    <p class="d-inline" style="font-size: 13px;">Search</p>
-                </button>
-                <button class="rounded border-0 button w-100 text-left py-2">
-                    <span class="spanlibrary d-inline mr-3"><i class="fas fa-book-open"></i></span>
-                    <p class="d-inline" style="font-size: 13px;">Your library</p>
-                </button>
-                
-                
-    
-                <p class="mt-4 mb-3">PLAYLISTS</p>
-    
-    
+    <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-firestore.js"></script>
+    <!-- ฝั่งซ้าย -->
+    <div class="row">
+        <div class="col-md-2 col-sm-5 bgLeft px-4 py-2">
+            <div class="d-inline">
                 <div class="row">
                     <div class="col">
-                        <button class="rounded border-0 button w-100 text-left">
-                            <span class="float-left">
-                                <span class="spancreat_playlist d-inline float-left mr-2"><i
-                                        class="fas fa-plus-square"></i></span>
-                            </span>
-                            <span>
-                                <p class="d-inline float-left mt-2 mb-0" style="font-size: 13px;">Creat Playlist</p>
-                            </span>
-                        </button>
+                        <span class="float-left px-2 py-2">
+                            <span class="spanSpotify d-inline"><i class="fab fa-spotify"></i></span>
+                        </span>
+                        <span>
+                            <div class="py-2 px-2">
+                                <p class="h4 d-inline">Spotify</p>
+                                <p style="font-size: 10px;" class="m-0">By Among Us Gangters</p>
+                            </div>
+                        </span>
                     </div>
                 </div>
-    
-                <div class="row">
-                    <div class="col">
-                        <button class="rounded border-0 button w-100 text-left">
-                            <span class="float-left">
-                                <span class="spanlink_song d-inline float-left mr-2"><i class="fab fa-gratipay"></i></span>
-                            </span>
-                            <span>
-                                <p class="d-inline float-left mt-2 mb-0" style="font-size: 13px;">Liked Songs</p>
-                            </span>
-                        </button>
-                    </div>
-                </div>
-                <hr class="bg-success mt-0">
             </div>
-            
+
+            <button class="rounded border-0 button w-100 text-left py-2">
+                <span class="spanhome d-inline mr-3"><i class="fas fa-home"></i></span>
+                <p class="d-inline" style="font-size: 13px;">Home</p>
+            </button>
+            <button class=" rounded border-0 button w-100 text-left py-2">
+                <span class="spansearch d-inline mr-3"><i class="fas fa-search"></i></span>
+                <p class="d-inline" style="font-size: 13px;">Search</p>
+            </button>
+            <button class="rounded border-0 button w-100 text-left py-2">
+                <span class="spanlibrary d-inline mr-3"><i class="fas fa-book-open"></i></span>
+                <p class="d-inline" style="font-size: 13px;">Your library</p>
+            </button>
+
+
+
+            <p class="mt-4 mb-3">PLAYLISTS</p>
+
+
+            <div class="row">
+                <div class="col">
+                    <button class="rounded border-0 button w-100 text-left">
+                        <span class="float-left">
+                            <span class="spancreat_playlist d-inline float-left mr-2"><i
+                                    class="fas fa-plus-square"></i></span>
+                        </span>
+                        <span>
+                            <p class="d-inline float-left mt-2 mb-0" style="font-size: 13px;">Creat Playlist</p>
+                        </span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <button class="rounded border-0 button w-100 text-left">
+                        <span class="float-left">
+                            <span class="spanlink_song d-inline float-left mr-2"><i class="fab fa-gratipay"></i></span>
+                        </span>
+                        <span>
+                            <p class="d-inline float-left mt-2 mb-0" style="font-size: 13px;">Liked Songs</p>
+                        </span>
+                    </button>
+                </div>
+            </div>
+            <hr class="bg-success mt-0">
+        </div>
+
 
 
         <!-- ฝั่งขวา -->
@@ -120,7 +121,7 @@
                     </div>
 
                     <div class="pt-4 pb-3">
-                        <h6>Name</h6>
+                        <h6 id="profileName">Name</h6>
                     </div>
                     <div>
                         <button class="btn btn-md" id="button1">Edit Profile
@@ -139,8 +140,22 @@
             </div>
             </center>
         </div>
+        <script>
+            let getname = document.getElementById('profileName');
 
+            // Initialize Cloud Firestore through Firebase
+            firebase.initializeApp({
+                apiKey: 'AIzaSyAIlXUZEeQ9jwTaIGr5C9uEUQYOd8KEWpA',
+                projectId: 'spotify-8da9e'
+            });
 
+            var db = firebase.firestore();
+            db.collection("users").get().then(function (querySnapshot) {
+                querySnapshot.forEach(function (doc) {
+                    console.log(doc.id, " => ", doc.data());
+                });
+            });
+        </script>
 </body>
 
 </html>

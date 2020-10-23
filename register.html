@@ -236,7 +236,7 @@
                                             <div class="row">
                                                 <div class="col-xs-12">
                                                     <a id="button_signup" class="btn btn-block ng-binding"
-                                                        onclick="register()">SIGN UP
+                                                        onclick="register()" href="login.html">SIGN UP
                                                     </a>
                                                 </div></center>
                                                 <div class="col-xs-12">
@@ -288,7 +288,7 @@
             console.log(email);
             console.log(gender);
 
-            db.collection("users").doc(email).set({
+            db.collection("users").doc().set({
                 Email: email,
                 // ConfirmEmail: confirmEmail
                 Password: password,
