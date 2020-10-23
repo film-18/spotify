@@ -163,9 +163,10 @@
         </div>
     </div>
     <div class="row">
-        <nav class="navbar navbar-light bg-light w-100">
+        <nav id="nav_play" class="navbar fixed-bottom w-100">
             <span class="navbar-brand mb-0">Navbar</span>
-            <audio src="music/music-t/youngohm_official_audio.mp3" id="song"></audio>
+
+            <!-- <audio src="music/music-t/youngohm_official_audio.mp3" id="song"></audio>
             <div class="box"></div>
             <img src="https://i.scdn.co/image/ab67616d00001e02b4668d89ecb9c2f7e2e6189f" id="thumbnail" />
 
@@ -180,7 +181,7 @@
             <input type="range" id="progress-bar" min="0" max="" value="0" onchange="changeProgressBar()" />
 
             <div class="currentTime"></div>
-            <div class="durationTime"></div>
+            <div class="durationTime"></div> -->
         </nav>
     </div>
     <!-- </div> -->
@@ -237,7 +238,7 @@
 
                         let div = document.createElement("div");
                         div.setAttribute("class", "divStyle");
-                        let nameText = document.createElement('b');
+                        let nameText = document.createElement('b'); 
                         
 
                         nameText.innerHTML += data[i].Songs[j].Title + "<br>";

@@ -273,16 +273,19 @@ input {
     background-color: #1db954;
 }
 
-<<<<<<< Updated upstream
 .e6ed3359ee250e2ecc13253d4db86076-scss {
     background-color: transparent;
     color: #fff;
 }
-=======
->>>>>>> Stashed changes
 
 #frame {
     display: block;
     /* padding-right: 17px; */
 }
 
+#nav_play {
+    background-color: #282828;
+    height: 15%;
+    color: white;
+
+}
