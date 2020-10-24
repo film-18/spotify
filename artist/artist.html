@@ -59,6 +59,11 @@
                     thead.appendChild(tr);
                     no.style.textAlign = "center";
 
+                    title.style.width = "30%";
+                    album.style.width = "20%";
+                    time.style.width = "20%";
+
+
             for (let i=0; i<data.length; i++) {
                 
                 // let headText = document.createElement("div");
@@ -76,7 +81,9 @@
                     let textno = document.createElement('p');
                     textno = count;
                     boxno.append(textno);
+                    boxno.style.textAlign = "center";
                     thno.append(boxno);
+                    thno.style.verticalAlign = "middle";
                 
                     let thOne = document.createElement('td');
                     // thOne.innerHTML = "title";
@@ -84,22 +91,32 @@
                     let div = document.createElement('div');
                     div.setAttribute("class", "row");
                     let colImg = document.createElement('div');
-                    colImg.setAttribute("class", "col-3");
+                    colImg.setAttribute("class", "col-2");
+
                     let imgAblum = document.createElement('IMG');
-                    imgAblum.setAttribute("class", "rounded w-100");
+                    imgAblum.setAttribute("class", "img_song");
+                    imgAblum.style.width = "45px";
                     imgAblum.src = data[i].Picture;
                     colImg.append(imgAblum);
+                    
 
                     let colRight = document.createElement("div");
-                    colRight.setAttribute("class", "col-9");
+                    colRight.setAttribute("class", "col-10");
                     let textSong = document.createElement('p');
-                    textSong.innerHTML += data[i].Songs[j].Title + "<br>" + data[i].Artist;
-
+                    textSong.innerHTML += data[i].Songs[j].Title;
+                    textSong.style.marginBottom = "0px"; 
+                    let artist_name = document.createElement('p');
+                    artist_name.innerHTML += data[i].Artist;
+                    artist_name.style.marginBottom = "0px";
+                    textSong.style.whiteSpace = "nowrap";
 
                     colRight.append(textSong);
+                    colRight.append(artist_name);
                     div.append(colImg);
                     div.append(colRight);
                     thOne.append(div);
+                    thOne.style.verticalAlign = "middle";
+                    thOne.style.paddingBottom = "2px";
                 
 
                     let thTwo = document.createElement('td');
@@ -107,8 +124,11 @@
                     let boxText = document.createElement('div');
                     let textAlbum = document.createElement('p');
                     textAlbum = data[i].Songs[j].Album;
+                    boxText.style.whiteSpace = "nowrap";
+                    
                     boxText.append(textAlbum);
                     thTwo.append(boxText);
+                    thTwo.style.verticalAlign = "middle";
 
                     let thThree = document.createElement('td');
                     // thThree.innerHTML = "time";
@@ -117,6 +137,7 @@
                     textTime = data[i].Songs[j].Time;
                     boxTime.append(textTime);
                     thThree.append(boxTime);
+                    thThree.style.verticalAlign = "middle";
 
                     tr.append(thno);
                     tr.append(thOne);
