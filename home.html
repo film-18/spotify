@@ -163,6 +163,7 @@
             </div>
         </div>
     </div>
+<<<<<<< Updated upstream
     <div class="row fixed-bottom">
         <nav class="navbar navbar-light  bg-light w-100">
             <span class="navbar-brand mb-0">Navbar</span>
@@ -170,20 +171,63 @@
             <!-- <audio src="music/music-t/youngohm_official_audio.mp3" id="song"></audio>
             <div class="box"></div>
             <img src="https://i.scdn.co/image/ab67616d00001e02b4668d89ecb9c2f7e2e6189f" id="thumbnail" />
+=======
+>>>>>>> Stashed changes
 
-            <img src="./assets/icons/play.png" onclick="playPause()" id="play-pause" />
-            <img src="./assets/icons/forward.png" onclick="nextSong()" id="next-song" />
-            <img src="./assets/icons/backward.png" onclick="previousSong()" id="previous-song" />
+    <div class="row">
+        <div id="nav_play" class=" fixed-bottom w-100">
+            <!-- <span class="navbar-brand mb-0">Navbar</span> -->
+            <div class="row px-2 py-2">
+                <div class="col-md-4">
+                    <div class="row">
+                        <div class="col-md-3 py-1">
+                            <img src="https://i.scdn.co/image/ab67616d00001e02b4668d89ecb9c2f7e2e6189f" class="img-fluid w-100 rounded"/>
+                        </div>
+                        <div class="col-md-9 py-3 px-1">
+                            <span>
+                                <div class="song-title" style="font-size: 1.25vw;">ก่อนนอนคืนนี้</div>
+                            </span>
+                            <span>
+                                <div class="song-artist" style="font-size: 1.1vw;color: gray;">YoungOhm</div>
+                            </span>
+                        </div>
+                    </div>
+                </div>
 
-            <div class="song-artist">YoungOhm</div>
-            <div class="song-title">ก่อนนอนคืนนี้</div>
+                <div class="col-md-8">
+                    <div class="row">
+                        <span class="col-4">
+                            <img src="./assets/icons/backward.png" onclick="previousSong()" id="previous-song" />
+                        </span>
+                        <span class="col-4">
+                            <img src="./assets/icons/play.png" onclick="playPause()" id="play-pause" />
+                        </span>
+                        <span class="col-4">
+                            <img src="./assets/icons/forward.png" onclick="nextSong()" id="next-song" />
+                        </span>
+                    </div>
+        
+                    <div class="row pt-5">
+                        <div class="col-2">
+                            <div class="currentTime"></div>
+                        </div>
+                        <div class="col-8">
+                            <input type="range" id="progress-bar" min="0" max="" value="0" onchange="changeProgressBar()" />
+                        </div>
+                        <div class="col-2">
+                            <div class="durationTime"></div>
+                        </div>
+                    </div>
 
+                </div>
+                <!-- <div class="col-md-2">
+                </div> -->
 
-            <input type="range" id="progress-bar" min="0" max="" value="0" onchange="changeProgressBar()" />
+            </div>
 
-            <div class="currentTime"></div>
-            <div class="durationTime"></div> -->
-        </nav>
+            <audio src="music/music-t/youngohm_official_audio.mp3" id="song"></audio>
+            <!-- <div class="box"></div> -->
+        </div>
     </div>
     <!-- </div> -->
     <script src="player.js"></script>
