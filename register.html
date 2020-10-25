@@ -236,7 +236,7 @@
                                             <div class="row">
                                                 <div class="col-xs-12">
                                                     <a id="button_signup" class="btn btn-block ng-binding"
-                                                        onclick="register()" href="login.html">SIGN UP
+                                                        onclick="register()">SIGN UP
                                                     </a>
                                                 </div></center>
                                                 <div class="col-xs-12">
@@ -271,7 +271,7 @@
             apiKey: 'AIzaSyAIlXUZEeQ9jwTaIGr5C9uEUQYOd8KEWpA',
             projectId: 'spotify-8da9e'
         });
-
+        
         var db = firebase.firestore();
         function register() {
 
@@ -288,7 +288,7 @@
             console.log(email);
             console.log(gender);
 
-            db.collection("users").doc().set({
+            db.collection("users").doc(email).set({
                 Email: email,
                 // ConfirmEmail: confirmEmail
                 Password: password,
