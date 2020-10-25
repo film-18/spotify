@@ -42,18 +42,18 @@
     height: 50%;
     width: 103%;
     background: -webkit-linear-gradient(45deg, rgb(40, 40, 40), rgb(133, 133, 133));
-    z-index: 4;
+    z-index: 4; */
     /* bottom: -17%; */
 }
 
 /* album cover */
-#thumbnail {
+/* #thumbnail {
     position: absolute;
     width: 103%;
     top: -7%;
     transition: 1s;
     z-index: 3;
-}
+} */
 
 /* track artist */
 /* .song-artist {
@@ -81,8 +81,8 @@
 /* style for play and pause images */
 #play-pause {
     position: absolute;
-    height: 50px;
-    width: 50px;
+    /* height: 50px;
+    width: 50px; */
     filter: invert(1);
     cursor: pointer;
     /* bottom: 15%; */
@@ -94,8 +94,8 @@
 /* style for next and previous song images */
 #next-song, #previous-song {
     position: absolute;
-    height: 30px;
-    width: 30px;
+    /* height: 30px;
+    width: 30px; */
     filter: invert(1);
     cursor: pointer;
     /* bottom: 13.5%; */
@@ -104,44 +104,48 @@
 }
 
 /* unique style for next song image */
-#next-song {
+/* #next-song { */
     /* right: 10%; */
-}
+/* } */
 
 /* unique style for previous song image */
-#previous-song {
+/* #previous-song { */
     /* right: 10.3%; */
     /* bottom: 21.5%; */
-}
+/* } */
 
 /* style for current time of the track */
 .currentTime {
     position: absolute;
-    height: 50px;
-    width: 50px;
+    /* height: 50px;
+    width: 50px; */
     cursor: pointer;
     /* bottom: -7.5%; */
     /* left: 17%; */
     z-index: 4;
     font-family: 'Montserrat', sans-serif;
-    font-size: 13px;
+    font-size: 1.25vh;
     color: white;
-    align-items: center;
+    right: 19%;
+ 
+    /* align-items: center; */
 }
 
 /* style for the total length of the track */
 .durationTime {
     position: absolute;
-    height: 50px;
-    width: 50px;
+    /* height: 50px;
+    width: 50px; */
     cursor: pointer;
     /* bottom: -1%; */
     /* right: 11%; */
     z-index: 4;
     font-family: 'Montserrat', sans-serif;
-    font-size: 13px;
-    align-items: center;
+    font-size: 1.25vh;
+    /* align-items: center; */
     color: rgb(193, 255, 6);
+    /* top: 2px; */
+    right: 20%;
 }
 
 /* style for the progress bar */
@@ -152,9 +156,10 @@
     z-index: 4;
     height: 5px;
     background: #000000;
-    width: 350pt;
+    width: 40vw;
     /* bottom: 5%; */
     border-radius: 30px;
+    left: 10%;
     /* left: 17%; */
 }
 
@@ -184,3 +189,32 @@
 #progress-bar:focus {
     outline: none;
 }
+
+.spanBack {
+    font-size: 15px;
+    color: white;
+    /* filter: invert(1); */
+    cursor: pointer;
+    
+}
+
+.spanPlay {
+    font-size: 30px;
+    color: white;
+    /* filter: invert(1); */
+    cursor: pointer;
+}
+.player{
+    margin: 5px 0;
+  }
+
+
+.spanLike {
+    font-size: 15px;
+    color: white;
+}
+
+
+
+
+

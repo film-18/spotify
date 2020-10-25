@@ -88,14 +88,14 @@
             </div>
 
             <!-- Modal -->
-            <div class="modal " id="exampleModal" id="frame" role="dialog" aria-labelledby="exampleModalLabel"
+            <!-- <div class="modal " id="exampleModal" id="frame" role="dialog" aria-labelledby="exampleModalLabel"
                 aria-hidden="true" style="padding-top: 10%;">
                 <div class="text-center pt-5 pb-0">
                     <button class="div4 e6ed3359ee250e2ecc13253d4db86076-scss text-center" type="button"
                         data-dismiss="modal">
-                        <svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                        <svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"> -->
                             <!-- <title>Close</title> -->
-                            <path
+                            <!-- <path
                                 d="M31.098 29.794L16.955 15.65 31.097 1.51 29.683.093 15.54 14.237 1.4.094-.016 1.508 14.126 15.65-.016 29.795l1.414 1.414L15.54 17.065l14.144 14.143"
                                 fill="#fff" fill-rule="evenodd">
                             </path>
@@ -124,7 +124,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
 
             <div class="row">
                 <div class="col">
@@ -143,8 +143,8 @@
 
 
         <!-- ฝั่งขวา -->
-        <div class="col-md-2 col-sm-5 bgLeft px-4 py-2"></div>
-        <div class="col-md-10 bgRight-top pt-2 ">
+        <div class="col-md-2 col-sm-5 bgLeft px-0 py-2"></div>
+        <div class="col-md-10 bgRight-top pt-2 px-0 ">
             <div class="row">
                 <div class="col-2 py-2">
                     <div class="pl-3 pr-3 d-inline">
@@ -164,65 +164,105 @@
         </div>
     </div>
 
+    <audio src="music/music-t/youngohm_official_audio.mp3" id="song"></audio>
+    <div class="box"></div>
     <div class="row">
         <div id="nav_play" class=" fixed-bottom w-100">
             <!-- <span class="navbar-brand mb-0">Navbar</span> -->
-            <div class="row px-2 py-2">
+            <div class="row px-2">
+    
                 <div class="col-md-4">
-                    <div class="row">
-                        <div class="col-md-3 py-1">
+
+                    <div class="row py-2 px-2">
+                        <div class="col-md-3 py-2 px-1">
                             <img src="https://i.scdn.co/image/ab67616d00001e02b4668d89ecb9c2f7e2e6189f" class="img-fluid w-100 rounded"/>
                         </div>
-                        <div class="col-md-9 py-3 px-1">
-                            <span>
-                                <div class="song-title" style="font-size: 1.25vw;">ก่อนนอนคืนนี้</div>
-                            </span>
-                            <span>
-                                <div class="song-artist" style="font-size: 1.1vw;color: gray;">YoungOhm</div>
-                            </span>
+                        <div class="col-md-9 py-3">
+                            <div class="row">
+                                <div class="col-md-6 pl-3 pr-0">
+                                    <span>
+                                        <div class="song-title" style="font-size: 1.25vw;">ก่อนนอนคืนนี้</div>
+                                    </span>
+                                    <span>
+                                        <div class="song-artist" style="font-size: 1.1vw;color: gray;">YoungOhm</div>
+                                    </span>
+                                </div>
+                                <div class="col-md-6 px-0 pt-2">
+                                    <span class="spanLike">
+                                        <i class="fas fa-heart"></i>
+                                    </span>
+                                    <span class="spanLike px-2">
+                                        <i class="fas fa-globe-asia"></i>
+                                    </span>
+                                </div>
+                            </div>
                         </div>
+                        
                     </div>
+
                 </div>
 
                 <div class="col-md-8">
                     <div class="row">
-                        <span class="col-4">
-                            <img src="./assets/icons/backward.png" onclick="previousSong()" id="previous-song" />
-                        </span>
-                        <span class="col-4">
-                            <img src="./assets/icons/play.png" onclick="playPause()" id="play-pause" />
-                        </span>
-                        <span class="col-4">
-                            <img src="./assets/icons/forward.png" onclick="nextSong()" id="next-song" />
-                        </span>
-                    </div>
-        
-                    <div class="row pt-5">
-                        <div class="col-2">
-                            <div class="currentTime"></div>
-                        </div>
-                        <div class="col-8">
-                            <input type="range" id="progress-bar" min="0" max="" value="0" onchange="changeProgressBar()" />
-                        </div>
-                        <div class="col-2">
-                            <div class="durationTime"></div>
-                        </div>
-                    </div>
 
+                        <div class="container">
+                            <div class="player text-center">
+    
+                                <button  class="btn spanBack" onclick="previousSong()">
+                                    <i class="fas fa-step-backward"></i>
+                                  </button>
+                                  <button onclick="playPause()" class="btn spanPlay" >
+                                    <i class="far fa-play-circle"></i>
+                                  </button>
+                                  <button  class="btn spanBack" onclick="nextSong()">
+                                    <i class="fas fa-step-forward"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-2">
+                                        <span class="currentTime"></span>
+                                    </div>
+                                <div class="col-8 pt-1" >
+                                    <input type="range" id="progress-bar" min="0" max="" value="0" onchange="changeProgressBar()" />
+                                </div>
+                                <div class="col-2"> 
+                                    <span class="durationTime"></span>
+                            </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    </div>
                 </div>
-                <!-- <div class="col-md-2">
-                </div> -->
-
             </div>
+                    <!-- <div class="row">
+                        <div class="col-4">
+                            <span class="spanBack py-3 float-right" onclick="previousSong()"><i class="fas fa-step-backward"></i></span> -->
+                            <!-- <img src="./assets/icons/backward.png" onclick="previousSong()" id="previous-song"  class="img-fluid w-25" /> -->
+                        <!-- </div>
+                        <div class="col-2 text-center">
+                            <span class="spanPlay py-3" onclick="playPause()"><i class="far fa-play-circle"></i></span> -->
+                            <!-- <img src="./assets/icons/play.png" onclick="playPause()" id="play-pause"  class="img-fluid"/> -->
+                        <!-- </div>
+                        <div class="col-6 ">
+                            <span class="spanBack py-3" onclick="nextSong()"><i class="fas fa-step-forward"></i></span> -->
+                            <!-- <img src="./assets/icons/forward.png" onclick="nextSong()" id="next-song" class="img-fluid"/> -->
+                        <!-- </div>
+                    </div> -->
+        
+                
 
-            <audio src="music/music-t/youngohm_official_audio.mp3" id="song"></audio>
-            <!-- <div class="box"></div> -->
-        </div>
-    </div>
-    <!-- </div> -->
+                
+            
+        
+  
+    
     <script src="player.js"></script>
     <script>
-        let requestURL = 'music/music.json';
+        let requestURL = 'music/randommusic.json';
         let request = new XMLHttpRequest();
         let output = document.getElementById('lists');
         request.onreadystatechange = function () {
@@ -244,7 +284,7 @@
             for (let i=0; i<data.length; i++) {
 
                 let headText = document.createElement("div");
-                for (let j=0; j<data[i].Songs.length; j++) {
+                // for (let j=0; j<data[i].Songs.length; j++) {
                     // for (let k=0; k<data[i].Songs.length; k++) {
                         
                         let row = document.createElement("div");
@@ -266,7 +306,7 @@
                         
 
                         
-                        pic.src = data[i].Songs[j].Image;
+                        pic.src = data[i].Image;
 
                         let textbox = document.createElement("div");
                         textbox.setAttribute("class", "card-body");
@@ -276,17 +316,17 @@
                         let nameText = document.createElement('b'); 
                         
 
-                        nameText.innerHTML += data[i].Songs[j].Title + "<br>";
+                        nameText.innerHTML += data[i].Title + "<br>";
                         let nameText2 = document.createElement('p');
                         nameText2.style.whiteSpace = "nowrap";
-                        nameText2.innerHTML += data[i].Songs[j].Artist + "<br>";
+                        nameText2.innerHTML += data[i].Artist + "<br>";
 
                         let audioBox = document.createElement('audio');
                         audioBox.setAttribute("controls", "controls");
                         let audioOne = document.createElement('source');
                     
                         //audioOne.type = "music-t/mpeg";
-                        audioOne.setAttribute("src", data[i].Songs[j].Url);
+                        audioOne.setAttribute("src", data[i].Url);
                         audioBox.append(audioOne);
                         audioBox.style.width = "100%";
                         
@@ -317,7 +357,7 @@
                     output.appendChild(rowFirst);
                     output.appendChild(rowSec);
                 // }
-            }
+            // }
         }
     }
     </script>
