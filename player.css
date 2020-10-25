@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
 
-body {
+/* body {
     background: #000000;
 }
 
@@ -15,10 +15,10 @@ body {
     bottom: 0;
     filter: blur(10px);
     z-index: -1;
-}
+} */
 
 /* container for music player */
-.container {
+/* .container {
     position: absolute;
     height: 300pt;
     width: 250pt;
@@ -34,7 +34,7 @@ body {
     background: #000000;
     border-radius: 10px;
     box-shadow: 0 0 10px #000000;
-}
+} */
 
 /* container for play, pause, previous track, next track, and progress bar  */
 .box {
@@ -43,7 +43,7 @@ body {
     width: 103%;
     background: -webkit-linear-gradient(45deg, rgb(40, 40, 40), rgb(133, 133, 133));
     z-index: 4;
-    bottom: -17%;
+    /* bottom: -17%; */
 }
 
 /* album cover */
@@ -56,7 +56,7 @@ body {
 }
 
 /* track artist */
-.song-artist {
+/* .song-artist {
     position: absolute;
     z-index: 4;
     color: rgb(193, 255, 6);
@@ -65,10 +65,10 @@ body {
     font-size: 20px;
     bottom: 21%;
     left: 28%;
-}
+} */
 
 /* track title */
-.song-title {
+/* .song-title {
     position: absolute;
     z-index: 4;
     color: white;
@@ -76,7 +76,7 @@ body {
     font-size: 17px;
     bottom: 16%;
     left: 28%;
-}
+} */
 
 /* style for play and pause images */
 #play-pause {
@@ -85,10 +85,10 @@ body {
     width: 50px;
     filter: invert(1);
     cursor: pointer;
-    bottom: 15%;
+    /* bottom: 15%; */
     z-index: 4;
-    font-size: 53px;
-    left: 9%;
+    /* font-size: 53px; */
+    /* left: 9%; */
 }
 
 /* style for next and previous song images */
@@ -98,20 +98,20 @@ body {
     width: 30px;
     filter: invert(1);
     cursor: pointer;
-    bottom: 13.5%;
+    /* bottom: 13.5%; */
     font-size: 40px;
     z-index: 4;
 }
 
 /* unique style for next song image */
 #next-song {
-    right: 10%;
+    /* right: 10%; */
 }
 
 /* unique style for previous song image */
 #previous-song {
-    right: 10.3%;
-    bottom: 21.5%;
+    /* right: 10.3%; */
+    /* bottom: 21.5%; */
 }
 
 /* style for current time of the track */
@@ -120,8 +120,8 @@ body {
     height: 50px;
     width: 50px;
     cursor: pointer;
-    bottom: -7.5%;
-    left: 17%;
+    /* bottom: -7.5%; */
+    /* left: 17%; */
     z-index: 4;
     font-family: 'Montserrat', sans-serif;
     font-size: 13px;
@@ -135,8 +135,8 @@ body {
     height: 50px;
     width: 50px;
     cursor: pointer;
-    bottom: -1%;
-    right: 11%;
+    /* bottom: -1%; */
+    /* right: 11%; */
     z-index: 4;
     font-family: 'Montserrat', sans-serif;
     font-size: 13px;
@@ -152,10 +152,10 @@ body {
     z-index: 4;
     height: 5px;
     background: #000000;
-    width: 160pt;
-    bottom: 5%;
+    width: 350pt;
+    /* bottom: 5%; */
     border-radius: 30px;
-    left: 17%;
+    /* left: 17%; */
 }
 
 /* style for the progress bar's slider thumb */
