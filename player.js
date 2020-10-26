@@ -20,11 +20,11 @@ function playPause() {
         const song = document.querySelector('#song'),
             thumbnail = document.querySelector('#thumbnail');
 
-        pPause.src = "./assets/icons/pause.png"
+        pPause.src = "pause-circle-solid.png"
         song.play();
         playing = false;
     } else {
-        pPause.src = "./assets/icons/play.png"
+        pPause.src = "play-circle-solid.png"
         song.pause();
         playing = true;
     }
