@@ -289,3 +289,18 @@ input {
     color: white;
 
 }
+.modal-backdrop{
+    z-index: 0;
+}
+
+body {
+    /* display: flex; */
+    /* overscroll-behavior-x: none; */
+    overflow-x: hidden;
+    /* overflow-y: hidden; */
+
+
+    /* position: fixed; */
+}
+
+

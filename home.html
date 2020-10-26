@@ -81,50 +81,51 @@
                                     class="fas fa-plus-square"></i></span>
                         </span>
                         <span>
-                            <p class="d-inline float-left mt-2 mb-0" style="font-size: 13px;" >Creat Playlist</p>
+                            <p class="d-inline float-left mt-2 mb-0" style="font-size: 13px;" data-toggle="modal" data-target="#exampleModalLabel">Creat Playlist</p>
                         </span>
                     </button>
                 </div>
             </div>
 
-            <!-- Modal -->
-            <!-- <div class="modal " id="exampleModal" id="frame" role="dialog" aria-labelledby="exampleModalLabel"
-                aria-hidden="true" style="padding-top: 10%;">
-                <div class="text-center pt-5 pb-0">
-                    <button class="div4 e6ed3359ee250e2ecc13253d4db86076-scss text-center" type="button"
-                        data-dismiss="modal">
-                        <svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"> -->
-                            <!-- <title>Close</title> -->
-                            <!-- <path
-                                d="M31.098 29.794L16.955 15.65 31.097 1.51 29.683.093 15.54 14.237 1.4.094-.016 1.508 14.126 15.65-.016 29.795l1.414 1.414L15.54 17.065l14.144 14.143"
-                                fill="#fff" fill-rule="evenodd">
-                            </path>
-                        </svg>
-                    </button>
-                </div>
-                <h1 class="div1 div2 " dir="auto">Create new playlist</h1>
-                <div class="modal-body">
-                    <div class="bcb8c631188b0e9c7991ecd05f53a01e-scss">
-                        <div class="inputBox">
-                            <div class="contentSpacing">
-                                <h4 class="inputBox-label">Playlist Name</h4>
-                                <input type="text" class="inputBox-input" placeholder="New Playlist"
-                                    style="font-family: 'Ubuntu', sans-serif;">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="div3">
-                        <div class="div1">
-                            <button class="div4 div5 mr-2 btnCreat" type="button" data-dismiss="modal">CANCEL
-                            </button>
-                        </div>
-                        <div class="div1">
-                            <button class="div4 div6 btnCreat" type="button">CREATE
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div> -->
+
+             <!-- Modal -->
+             <div class="modal " id="exampleModal" id="frame" role="dialog" aria-labelledby="exampleModalLabel"
+             aria-hidden="true" style="padding-top: 10%;">
+             <div class="text-center pt-5 pb-0">
+                 <button class="div4 e6ed3359ee250e2ecc13253d4db86076-scss text-center" type="button"
+                     data-dismiss="modal">
+                     <svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                         <!-- <title>Close</title> -->
+                         <path
+                             d="M31.098 29.794L16.955 15.65 31.097 1.51 29.683.093 15.54 14.237 1.4.094-.016 1.508 14.126 15.65-.016 29.795l1.414 1.414L15.54 17.065l14.144 14.143"
+                             fill="#fff" fill-rule="evenodd">
+                         </path>
+                     </svg>
+                 </button>
+             </div>
+             <h1 class="div1 div2 " dir="auto">Create new playlist</h1>
+             <div class="modal-body">
+                 <div class="bcb8c631188b0e9c7991ecd05f53a01e-scss">
+                     <div class="inputBox">
+                         <div class="contentSpacing">
+                             <h4 class="inputBox-label">Playlist Name</h4>
+                             <input type="text" class="inputBox-input" placeholder="New Playlist"
+                                 style="font-family: 'Ubuntu', sans-serif;">
+                         </div>
+                     </div>
+                 </div>
+                 <div class="div3">
+                     <div class="div1">
+                         <button class="div4 div5 mr-2 btnCreat" type="button" data-dismiss="modal">CANCEL
+                         </button>
+                     </div>
+                     <div class="div1">
+                         <button class="div4 div6 btnCreat" type="button">CREATE
+                         </button>
+                     </div>
+                 </div>
+             </div>
+         </div>
 
             <div class="row">
                 <div class="col">
@@ -159,6 +160,7 @@
                     </div>
                 </div>
             </div>
+            
             <div id="lists">
             </div>
         </div>
@@ -334,7 +336,7 @@
                         div.append(nameText);
                         textbox.appendChild(div);
                         textbox.appendChild(nameText2);
-                        textbox.appendChild(audioBox);
+                        // textbox.appendChild(audioBox);
 
                         box.appendChild(pic);
                         box.appendChild(textbox);
