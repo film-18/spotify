@@ -304,3 +304,9 @@ body {
 }
 
 
+.wordnowrap {
+    white-space: nowrap;
+    width: 220px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

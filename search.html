@@ -243,7 +243,7 @@
                 box.setAttribute("class", "card");
                 box.style.backgroundColor = "#212121";
                 box.style.borderRadius = "7px";
-                box.style.height = "230px";
+                box.style.height = "240px";
                 box.style.width = "230px";
 
                 let pic = document.createElement('IMG');
@@ -252,8 +252,11 @@
                 pic.style.width = "100px";
 
 
-                let name = document.createElement('p');
+                let name = document.createElement('b');
                 name.innerHTML = data[i].Title;
+                name.setAttribute("class", "wordnowrap pt-3 pl-3");
+                name.style.fontSize = "20px";
+                name.style.whiteSpace = "nowrap";
 
                 box.append(name);
                 box.append(pic);
