@@ -201,23 +201,45 @@
 
             let rowgenre = document.createElement('div');
             rowgenre.setAttribute("class", "row mx-2 mt-3 pr-3 pl-3 pb-2");
+
             let genre1 = document.createElement("div");
-            genre1.setAttribute("class", "col ml-4 mr-4");
-            //genre1.style.width = "500px"; 
-            genre1.style.height = "225px";
-            //genre1.style.border = "1px solid blue"; 
-            genre1.style.backgroundColor = "green";
-            genre1.style.boxSizing = "border-box";
-            genre1.style.borderRadius = "7px";
+            genre1.setAttribute("class", "genre card col ml-4 mr-4");
+            genre1.style.background = "linear-gradient(0deg,transparent,rgba(0,0,0,.4))";
+            genre1.style.backgroundColor = "rgb(195, 240, 200)";
+            genre1.style.border = "0px";
+            let pic1 = document.createElement('IMG');
+            pic1.setAttribute("class", "pic_search");
+            pic1.src = "https://t.scdn.co/images/d355f48a90b64c25b6e004179a596e51.jpeg";
+            pic1.style.width = "128px";
+            pic1.style.height = "128px";
+            genre1.append(pic1);
+            
+
+            let pop = document.createElement('b');
+            pop.setAttribute("class", "wordnowrap pt-3 pl-1");
+            pop.innerHTML = "Pop";
+            pop.style.fontSize = "40px";
 
             let genre2 = document.createElement("div");
-            genre2.setAttribute("class", "col mr-4");
-            //genre2.style.width = "400px"; 
-            genre2.style.height = "225px";
-            genre2.style.boxSizing = "border-box";
-            genre2.style.borderRadius = "7px";
-            genre2.style.backgroundColor = "blue";
+            genre2.setAttribute("class", "genre card col mr-4");
+            genre2.style.background = "linear-gradient(0deg,transparent,rgba(0,0,0,.4))";
+            genre2.style.backgroundColor = "rgb(205, 245, 100)";
+            genre2.style.border = "0px";
+            let pic2 = document.createElement('IMG');
+            pic2.setAttribute("class", "pic_search");
+            pic2.src = "https://t.scdn.co/images/85ff3ff8f2c84706ab76f27fd0388c56.jpeg";
+            pic2.style.width = "128px";
+            pic2.style.height = "128px";
+            genre2.append(pic2);
 
+            let kpop = document.createElement('b');
+            kpop.setAttribute("class", "wordnowrap pt-3 pl-1");
+            kpop.innerHTML = "K-pop";
+            kpop.style.fontSize = "40px";
+
+
+            genre1.append(pop);
+            genre2.append(kpop);
             output.appendChild(genres);
             rowgenre.append(genre1);
             rowgenre.append(genre2);
@@ -247,9 +269,8 @@
                 box.style.width = "230px";
 
                 let pic = document.createElement('IMG');
+                pic.setAttribute("class", "pic_search");
                 pic.src = data[i].Image;
-                pic.style.height = "100px";
-                pic.style.width = "100px";
 
 
                 let name = document.createElement('b');

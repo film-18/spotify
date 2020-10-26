@@ -310,3 +310,17 @@ body {
     overflow: hidden;
     text-overflow: ellipsis;
 }
+.genre {
+    height: 225px;
+    box-sizing: border-box;
+    border-radius: 7px;
+
+}
+.pic_search {
+    width: 100px;
+    height: 100px;
+    transform: rotate(25deg) translate(18%,-2%);
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
