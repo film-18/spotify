@@ -207,13 +207,17 @@
             genre1.style.background = "linear-gradient(0deg,transparent,rgba(0,0,0,.4))";
             genre1.style.backgroundColor = "rgb(195, 240, 200)";
             genre1.style.border = "0px";
+            genre1.style.gridColumn = "span 2";
+            genre1.style.position = "relative";
+            genre1.style.overflow = "hidden";
             let pic1 = document.createElement('IMG');
             pic1.setAttribute("class", "pic_search");
             pic1.src = "https://t.scdn.co/images/d355f48a90b64c25b6e004179a596e51.jpeg";
             pic1.style.width = "128px";
             pic1.style.height = "128px";
+
             genre1.append(pic1);
-            
+
 
             let pop = document.createElement('b');
             pop.setAttribute("class", "wordnowrap pt-3 pl-1");
@@ -222,6 +226,9 @@
 
             let genre2 = document.createElement("div");
             genre2.setAttribute("class", "genre card col mr-4");
+            genre2.style.gridColumn = "span 2";
+            genre2.style.position = "relative";
+            genre2.style.overflow = "hidden";
             genre2.style.background = "linear-gradient(0deg,transparent,rgba(0,0,0,.4))";
             genre2.style.backgroundColor = "rgb(205, 245, 100)";
             genre2.style.border = "0px";
@@ -236,7 +243,6 @@
             kpop.setAttribute("class", "wordnowrap pt-3 pl-1");
             kpop.innerHTML = "K-pop";
             kpop.style.fontSize = "40px";
-
 
             genre1.append(pop);
             genre2.append(kpop);
@@ -267,10 +273,14 @@
                 box.style.borderRadius = "7px";
                 box.style.height = "240px";
                 box.style.width = "230px";
+                box.style.gridColumn = "span 2";
+                box.style.position = "relative";
+                box.style.overflow = "hidden";
 
                 let pic = document.createElement('IMG');
                 pic.setAttribute("class", "pic_search");
                 pic.src = data[i].Image;
+                pic.style.boxShadow = "0 2px 4px 0 rgba(0,0,0,.2)";
 
 
                 let name = document.createElement('b');
