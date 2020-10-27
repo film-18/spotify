@@ -86,8 +86,9 @@
                             </div>
                         </div>
                         <div class="col-xs-12 col-sm-6">
-                            <button class="btn btn-block btn-green ng-binding" id="login-button"
-                                ng-click="onLoginClick($event)">LOG IN</button>
+                            <a id="button_signup" class="btn btn-block ng-binding"
+                                href="profile.html">next
+                            </a>
                         </div>
                     </div>
                 </form>
@@ -145,16 +146,17 @@
         db.collection("users").get().then(function (querySnapshot) {
             querySnapshot.forEach(function (doc) {
                 // doc.data() is never undefined for query doc snapshots
-                var theCookies = doc.id;
+                // let theCookies = [];
+                // theCookies.push(doc.id);
                 // theCookies = document.cookie.split(';');
                 // var aString = '';
                 // for (var i = 1; i <= theCookies.length; i++) {
                 //     aString += i + ' ' + theCookies[i - 1] + "\n";
                 // }
-                if ()
-                console.log(theCookies);
+                // if ()
             });
         });
+        console.log(document.cookie.split(";")[2]);
 
     </script>
 </body>

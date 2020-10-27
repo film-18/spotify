@@ -157,12 +157,11 @@
             // });
 
 
-            var docRef = db.collection("users").doc("jjjj");
+            var docRef = db.collection("users").doc();
 
             docRef.get().then(function (doc) {
                 if (doc.exists) {
-                    getname.innerHTML =  doc.data().Name;
-                    console.log(doc.data().Name)
+                    // getname.innerHTML =  doc.data().Name;
                 } else {
                     // doc.data() will be undefined in this case
                     console.log("No such document!");
@@ -170,6 +169,8 @@
             }).catch(function (error) {
                 console.log("Error getting document:", error);
             });
+            getname.innerHTML = document.cookie.split(";")[2];
+            console.log(document.cookie.split(";")[2]);
         </script>
 </body>
 

@@ -61,12 +61,14 @@
             width: 100%;
 
         }
+
         a {
-            color: rgb(29, 185, 84); 
+            color: rgb(29, 185, 84);
             text-decoration: underline;
         }
+
         a:hover {
-            color :#31d858;
+            color: #31d858;
         }
     </style>
 </head>
@@ -95,14 +97,13 @@
                             <input ng-model="form.email" type="email"
                                 class="form-control input-with-feedback ng-pristine ng-valid-sp-disallow-chars ng-empty ng-invalid ng-invalid-required ng-touched"
                                 name="email" id="email" aria-describedby="emailHelp" placeholder="Enter your email."
-                                required="">
+                                required="" >
                             <label for="confirmemail" class="control-label ng-binding">
                                 Confirm your email
                             </label>
                             <input ng-model="form.Confirmemail" type="email"
                                 class="form-control input-with-feedback ng-pristine ng-valid-sp-disallow-chars ng-empty ng-invalid ng-invalid-required ng-touched"
-                                aria-describedby="emailHelp"
-                                placeholder="Enter your email again." required="">
+                                aria-describedby="emailHelp" placeholder="Enter your email again." required="">
                             <label for="password" class="control-label ng-binding">
                                 Create a password
                             </label>
@@ -175,7 +176,7 @@
                             </div>
                             <div class="form-check form-check-inline">
                                 <input class="form-check-input" type="radio" name="choose" value="non"
-                                    onclick="register(this.value)" >
+                                    onclick="register(this.value)">
                                 <label class="form-check-label" for="non">
                                     Non-binary
                                 </label>
@@ -188,6 +189,7 @@
                                         providers for marketing purposes.</span>
                                 </label>
                             </div>
+
                             <center>
                                 <div class="Group-sc-1lird8m-0 exjUsC pt-3">
                                     <div id="v2-container">
@@ -222,7 +224,8 @@
                     </div>
 
 
-
+                
+    
 
                 </form>
 
@@ -232,49 +235,53 @@
                             <signup class="ng-isolate-scope">
                                 <div ng-if="showSignup" class="ng-scope">
                                     <div ng-if="showButton" class="ng-scope">
-                                            <center>
+                                        <center>
                                             <div class="row">
                                                 <div class="col-xs-12">
                                                     <a id="button_signup" class="btn btn-block ng-binding"
                                                         onclick="register()" >SIGN UP
                                                     </a>
                                                     <a id="button_signup" class="btn btn-block ng-binding"
-                                                        href="login.html" >next
+                                                        href="login.html">next
                                                     </a>
-                                                </div></center>
-                                                <div class="col-xs-12">
-                                                    <div class="divider">
+                                                    <div id="show">
+
                                                     </div>
                                                 </div>
-                                            </div>
-                                                <div class="col-xs-12">
-                                                    <p class="text-center mt-2" style="position: static;">
-                                                        <span>
-                                                            Have an account?
-                                                            <a href="login.html">Log in</a>
-                                                        </span>
-                                                    </p>
-                                                </div>
+                                        </center>
+                                        <div class="col-xs-12">
+                                            <div class="divider">
                                             </div>
                                         </div>
                                     </div>
-
+                                    <div class="col-xs-12">
+                                        <p class="text-center mt-2" style="position: static;">
+                                            <span>
+                                                Have an account?
+                                                <a href="login.html">Log in</a>
+                                            </span>
+                                        </p>
+                                    </div>
                                 </div>
-                            </signup>
                         </div>
                     </div>
+
                 </div>
+                </signup>
             </div>
         </div>
     </div>
+    </div>
+    </div>
+    </div>
 
-<script>
+    <script>
         // Initialize Cloud Firestore through Firebase
         firebase.initializeApp({
             apiKey: 'AIzaSyAIlXUZEeQ9jwTaIGr5C9uEUQYOd8KEWpA',
             projectId: 'spotify-8da9e'
         });
-        
+
         var db = firebase.firestore();
         function register() {
 
@@ -301,6 +308,11 @@
                 Birthday: birth,
                 Gender: gender
             })
+
+            // var re = new RegExp(name + "=([^;]+)");
+            // var value = re.exec(document.cookie);
+            // return (value != null) ? unescape(value[1]) : null;
+            // document.write(getCookie(email));
             // .then(function (docRef) {
             //     console.log("Document written with ID: ", docRef.id);
             // })
@@ -308,13 +320,21 @@
             //     console.error("Error adding document: ", error);
             // });
 
-            var x = document.cookie;
-            x =  "email"+email;
-            x.split(";")[1];
-            console.log(x)
+            // return aString;)
 
             // location.href = "login.html";
-        }
+
+            if( document.account.email.value == "" ) {
+                alert("Enter some value!");
+                return;
+            }
+            cookievalue = escape(document.account.email.value) + ";";
+            document.cookie = cookievalue;
+
+
+            }
+
+            
 
 
     </script>
