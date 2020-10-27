@@ -267,7 +267,17 @@
 
 
     <script>
+<<<<<<< Updated upstream
        let requestURL = 'music/randommusic.json';
+=======
+        window.addEventListener('keydown', function (e) {
+            if (e.keyCode == 32 && e.target == document.body) {
+                e.preventDefault();
+            }
+        });
+        
+        let requestURL = 'music/randommusic.json';
+>>>>>>> Stashed changes
         let request = new XMLHttpRequest();
         let output = document.getElementById('lists');
         request.onreadystatechange = function () {
@@ -1397,7 +1407,7 @@
                 tored.style.color = "red";
                 heartcheck = 1;
             }
-            else if(heartcheck == 1) {
+            else if (heartcheck == 1) {
                 let tored = document.getElementsByTagName('i')[8];
                 tored.style.color = "white";
                 heartcheck = 0;
