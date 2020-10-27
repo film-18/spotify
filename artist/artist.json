@@ -2,7 +2,7 @@
     {
         "Artist": "First Anuwat",
         "Picture": "https://i.scdn.co/image/ab67616d00001e02c240b07e8b150e82e99c6ed6",
-        "picprofile": "https://i.scdn.co/image/6e5caed7a087dcc38945a2edaf7f3f5e5dcf7e95",
+        "Picprofile": "https://i.scdn.co/image/6e5caed7a087dcc38945a2edaf7f3f5e5dcf7e95",
         "Songs": [
             {
                 "Image": "https://i.scdn.co/image/ab67616d00001e02c240b07e8b150e82e99c6ed6",
@@ -16,6 +16,7 @@
     {
         "Artist": "YOUNGOHM",
         "Picture": "https://i.scdn.co/image/aaed722c1cde1c90bae56762dbd951b333e541c4",
+        "Picprofile": "https://i.scdn.co/image/ead75329e281ccf99c4096b7d12da928410bcb54",
         "Songs": [
             {
                 "Image": "https://i.scdn.co/image/ab67616d00001e02b4668d89ecb9c2f7e2e6189f",
@@ -50,6 +51,7 @@
     {
         "Artist": "Stamp",
         "Picture": "https://i.scdn.co/image/12ac9258ccb5f4985351bc05d9b9ff42f8daded1",
+        "Picprofile": "https://i.scdn.co/image/1026b5de585aec9fd7e002d029c93038d2d2c7a3",
         "Songs": [
             {
                 "Image": "https://i.scdn.co/image/ab67616d0000b27322b84d45ab6bf0f66417648a",
@@ -63,6 +65,7 @@
     {
         "Artist": "Mirrr",
         "Picture": "https://i.scdn.co/image/b9df8d7a83fbb08588926aeabb355027094510c0",
+        "Picprofile": "https://i.scdn.co/image/d3e2620fb242a68233ff45be8d2289e387b444f7",
         "Songs": [
             {
                 "Image": "https://i.scdn.co/image/ab67616d00001e0287cc1aef411c7e4a4e775a9e",
@@ -76,6 +79,7 @@
     {
         "Artist": "YENTED",
         "Picture": "https://i.scdn.co/image/6d3e36acf9d6052677de36ee718189d882ec87a6",
+        "Picprofile": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fmedium.com%2Fcrunchypicked%2Fyented-%25E0%25B8%25A7%25E0%25B8%2587%25E0%25B8%259B%25E0%25B9%2587%25E0%25B8%25AD%25E0%25B8%259B%25E0%25B8%2599%25E0%25B8%25B1%25E0%25B8%2581%25E0%25B8%259C%25E0%25B8%25AA%25E0%25B8%25A1%25E0%25B8%2588%25E0%25B8%25B2%25E0%25B8%2581%25E0%25B8%259E%25E0%25B8%25B0%25E0%25B9%2580%25E0%25B8%25A2%25E0%25B8%25B2-%25E0%25B8%2581%25E0%25B8%25B1%25E0%25B8%259A%25E0%25B9%2581%25E0%25B8%2599%25E0%25B8%25A7%25E0%25B8%2594%25E0%25B8%2599%25E0%25B8%2595%25E0%25B8%25A3%25E0%25B8%25B5%25E0%25B8%2597%25E0%25B8%25B5%25E0%25B9%2588%25E0%25B8%2584%25E0%25B8%25B8%25E0%25B8%2593%25E0%25B8%2584%25E0%25B8%25B2%25E0%25B8%2594%25E0%25B9%2580%25E0%25B8%2594%25E0%25B8%25B2%25E0%25B9%2584%25E0%25B8%25A1%25E0%25B9%2588%25E0%25B9%2584%25E0%25B8%2594%25E0%25B9%2589-316cee959ae3&psig=AOvVaw2VJ5z39_3W4zKu5O1qfcpz&ust=1603871531031000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCMD1iaCl1OwCFQAAAAAdAAAAABAD",
         "Songs": [
             {
                 "Image": "https://i.scdn.co/image/ab67616d00001e0261be5564019beb3c8cb53265",
@@ -89,6 +93,7 @@
     {
         "Artist": "Oat Pramote",
         "Picture": "https://i.scdn.co/image/07d6a0497fb80f8958f9519a191c0bdbff58ef59",
+        "Picprofile": "https://i.scdn.co/image/7bac42497ecdbb39a765f6f42f18a04071711c25",
         "Songs": [   
             {
                 "Image": "https://i.scdn.co/image/ab67616d0000b273e0303669408ee0eede16d3ba",
@@ -102,6 +107,7 @@
     {
         "Artist": "คิงส์ ชนาวิทย์",
         "Picture": "https://i.scdn.co/image/ab67616d00001e028650e03818907bda5559cd38",
+        "Picprofile": "",
         "Songs": [
             {
                 "Image": "https://i.scdn.co/image/ab67616d0000b273dbf9b440730cf935d4b722ad",
@@ -115,6 +121,7 @@
     {
         "Artist": "Three Man Down",
         "Picture": "https://i.scdn.co/image/22cf0074098688cf0aa9a89b46eda4148764fa3f",
+        "Picprofile": "",
         "Songs": [
             {
                 "Image": "https://i.scdn.co/image/ab67616d00001e027cdb9ebead2e749f5eee81ad",
@@ -128,6 +135,7 @@
     {
         "Artist": "BOWKYLION",
         "Picture": "https://i.scdn.co/image/42d296aafcca227caa00f97722406594e530a58d",
+        "Picprofile": "https://i.scdn.co/image/82e3645294934d14c5dd5df6483b1a65fddcddbe",
         "Songs": [
             {
                 "Image": "https://i.scdn.co/image/ab67616d0000b273684150f9c9327b1a7e8f77e2",
@@ -141,6 +149,7 @@
     {
         "Artist": "Tilly Birds",
         "Picture": "https://i.scdn.co/image/8f2d0ac714d522af28e5244a3a5282f910a94ce7",
+        "Picprofile": "https://i.scdn.co/image/e2e04ae2243bbf17edf88c34152cda4a1ffb41dc",
         "Songs": [
             {
                 "Image": "https://i.scdn.co/image/ab67616d0000b273e4c3cc9230e81286c06babe1",
@@ -154,6 +163,7 @@
     {
         "Artist": "MEAN",
         "Picture": "https://i.scdn.co/image/ea0f1d4dd9ecd9f920bc6ef3c52048fcc70eceb8",
+        "Picprofile": "https://i.scdn.co/image/02f998ca67ba8257d65ad99a3bcc068388b53659",
         "Songs": [
             {
                 "Image": "https://i.scdn.co/image/ab67616d00001e02a599659cf1d34f824dbc0bd6",
@@ -167,6 +177,7 @@
     {
         "Artist": "Polycat",
         "Picture": "https://i.scdn.co/image/22379b21f0c684cc4f66ce838951c90239791995",
+        "Picprofile": "https://i.scdn.co/image/0954fe85aec29ac201177077508b1e8775342d36",
         "Songs": [
             {
                 "Image": "https://i.scdn.co/image/ab67616d00001e02b258636465e467ac527c860e",
@@ -180,6 +191,7 @@
     {
         "Artist": "Season Five",
         "Picture": "https://i.scdn.co/image/ab67616d00001e02a98199d387411ee8ca015279",
+        "Picprofile": "https://i.scdn.co/image/1937e8427e518a7e4ce96795f380debb2166a612",
         "Songs": [
             {
                 "Image": "https://i.scdn.co/image/ab67616d00001e028cc2862d3b7cf67dbda4bacb",
@@ -193,6 +205,7 @@
     {
         "Artist": "Two Popetorn",
         "Picture": "https://i.scdn.co/image/315ff590a698141dfee61308e9aa1f3d744acf67",
+        "Picprofile": "https://i.scdn.co/image/9df2e1aa480246295455f6f07faed3c2a5da9bdb",
         "Songs": [
             {
                 "Image": "https://i.scdn.co/image/ab67616d00001e028cad6622b6d99951c286fdd4",
@@ -206,6 +219,7 @@
     {
         "Artist": "Blue Shade",
         "Picture": "https://i.scdn.co/image/ab67616d00001e025f74bfae788568249e4a3a19",
+        "Picprofile": "",
         "Songs": [
             {
                 "Image": "https://i.scdn.co/image/ab67616d00001e025f74bfae788568249e4a3a19",
@@ -219,6 +233,7 @@
     {
         "Artist": "Connie Talbol",
         "Picture": "https://i.scdn.co/image/4b72979ced80ed7bebae5b48600825b3d7eb7c87",
+        "Picprofile": "https://i.scdn.co/image/816b50d3985ece87b2653f9b88df940db16d9108",
         "Songs": [
             {
                 "Image": "https://i.scdn.co/image/ab67616d00001e025e5263527e1290d2a7632607",
@@ -232,6 +247,7 @@
     {
         "Artist": "Bruno Mars",
         "Picture": "https://i.scdn.co/image/aba91de7087e3b657cf11e98c45026ac6b7df544",
+        "Picprofile": "https://i.scdn.co/image/2bc9f0bd3553734d073171166ccaa0bab83147d6",
         "Songs": [
             {
                 "Image": "https://i.scdn.co/image/ab67616d0000b273232711f7d66a1e19e89e28c5",
@@ -245,6 +261,7 @@
     {
         "Artist": "Maroon 5",
         "Picture": "https://i.scdn.co/image/662ed6780975f9996b53ef141c50b2f3ac3b3177",
+        "Picprofile": "https://i.scdn.co/image/6a292aa6242f3cbe232042e9f0e90b318a82863",
         "Songs": [
             {
                 "Image": "https://i.scdn.co/image/ab67616d00001e0237677af5b4f23fe9dc8a3c04",
@@ -258,6 +275,7 @@
     {
         "Artist": "Imagine Dragon",
         "Picture": "https://i.scdn.co/image/ff8d83627cb2a80d4c1fa36fd80a193ca34b7a50",
+        "Picprofile": "https://i.scdn.co/image/b9f9de6a3e11d4f0c5720cdc6980cc31f3ea98d4",
         "Songs": [
             {
                 "Image": "https://i.scdn.co/image/ab67616d00001e02da6f73a25f4c79d0e6b4a8bd",
@@ -271,6 +289,7 @@
     {
         "Artist": "HONNE",
         "Picture": "https://i.scdn.co/image/1dcad851159ec455f6390879b437435934bcb557",
+        "Picprofile": "https://i.scdn.co/image/01944353f40c7901b2862bb8a1e943f57b7d95f5",
         "Songs": [
             {
                 "Image": "https://i.scdn.co/image/ab67616d00001e02210933bff4e6e68dc23472b0",
@@ -312,6 +331,7 @@
     {
         "Artist": "Redfoo",
         "Picture": "https://i.scdn.co/image/cfdc731bc4bdb3108075845aeab6fda36e724760",
+        "Picprofile": "",
         "Songs": [
             {
                 "Image": "https://i.scdn.co/image/ab67616d00001e02b4993adcf493566cfa67fac0",
@@ -325,6 +345,7 @@
     {
         "Artist": "Lauv",
         "Picture": "https://i.scdn.co/image/ec014c4084c838e1e9153f3388482be7f77476ee",
+        "Picprofile": "https://i.scdn.co/image/8fcd0d2e296310d0d9d6ccbfd56c00a2669f4611",
         "Songs": [
             {
                 "Image": "https://i.scdn.co/image/ab67616d00001e025355919e31efac9b14c45c49",
@@ -359,6 +380,7 @@
     {
         "Artist": "Charlie Puth",
         "Picture": "https://i.scdn.co/image/e52c021c37ac542c692bb79e918d38678a576ae8",
+        "Picprofile": "https://i.scdn.co/image/e239c18873a0d0ceb0f38e2270f357f9205ac01c",
         "Songs": [
             {
                 "Image": "https://i.scdn.co/image/ab67616d00001e02897f73256b9128a9d70eaf66",
@@ -372,6 +394,7 @@
     {
         "Artist": "Jeremy Zucker",
         "Picture": "https://i.scdn.co/image/eff9dc7b5ac2dd6b192a4caea8a863db455eafd2",
+        "Picprofile": "https://i.scdn.co/image/c90b7cc3b2ded62eb03238b56897ca3f9269fe97",
         "Songs": [
             {
                 "Image": "https://i.scdn.co/image/ab67616d00001e02cb16227d90152c2a5022bba1",
@@ -385,6 +408,7 @@
     {
         "Artist": "Lukas Graham",
         "Picture": "https://i.scdn.co/image/5f8952a4520bbef83bcf00664e5f2b3701ad280b",
+        "Picprofile": "https://i.scdn.co/image/c0edd9d11f53e865a40023c8ce1083a808efe74b",
         "Songs": [
             {
                 "Image": "https://i.scdn.co/image/ab67616d0000b2732d94d0f04e9a58d1654b760b",
@@ -398,6 +422,7 @@
     {
         "Artist": "Ed Sheeran",
         "Picture": "https://i.scdn.co/image/31e1cfee4ec3849bf3036a037cbbf57239f5c7a2",
+        "Picprofile": "https://i.scdn.co/image/8ba24732e3bd2350714a44e0726a1c3a66190552",
         "Songs": [
             {
                 "Image": "https://i.scdn.co/image/ab67616d00001e02ba5db46f4b838ef6027e6f96",
@@ -411,6 +436,7 @@
     {
         "Artist": "Post Malone",
         "Picture": "https://i.scdn.co/image/9040899d5660920fdf7efeb7aa2cc4e6d86f86f6",
+        "Picprofile": "https://i.scdn.co/image/84b59bafcd0858a4131f9b7595ca20dc888b8d19",
         "Songs": [
             {
                 "Image": "https://i.scdn.co/image/ab67616d0000b2739478c87599550dd73bfa7e02",
@@ -424,6 +450,7 @@
     {
         "Artist": "The Chainsmokers",
         "Picture": "https://i.scdn.co/image/9da714082fe9696529abadc8e4095451221b4483",
+        "Picprofile": "https://i.scdn.co/image/3a2c1be77c4bc7b915ae55b0dcb6edb3d488eebf",
         "Songs": [
             {
                 "Image": "https://i.scdn.co/image/ab67616d00001e02495ce6da9aeb159e94eaa453",
@@ -437,6 +464,7 @@
     {
         "Artist": "Travis Scott",
         "Picture": "https://i.scdn.co/image/5801b0d47fbf34b228a1f800bb36a58eced54796",
+        "Picprofile": "https://i.scdn.co/image/6c56a27f617c9f6b3ba2600126804666de199e94",
         "Songs": [
             {
                 "Image": "https://i.scdn.co/image/ab67616d00001e02f54b99bf27cda88f4a7403ce",
@@ -450,6 +478,7 @@
     {
         "Artist": "Shawn Mandes",
         "Picture": "https://i.scdn.co/image/8f7114cb0c7bc5e3f311bccf940bb48d8a6dcb37",
+        "Picprofile": "https://i.scdn.co/image/20fe6c85d14252268f221d385842b9eded986be9",
         "Songs": [
             {
                 "Image": "https://i.scdn.co/image/ab67616d00001e02c820f033bd82bef4355d1563",
@@ -463,6 +492,7 @@
     {
         "Artist": "LANY",
         "Picture": "https://i.scdn.co/image/a8183ce0bf3d488a69d9175dbeba4495454f364a",
+        "Picprofile": "https://i.scdn.co/image/acaa859901c5a96beb2feebf5a8297f0809d5659",
         "Songs": [
             {
                 "Image": "https://i.scdn.co/image/ab67616d00001e02be813e62b1e1f5b8ea3dcb27",
@@ -493,6 +523,7 @@
     {
         "Artist": "ITZY",
         "Picture": "https://i.scdn.co/image/53fa6cd918dd9ff751dd405b75d43378147cacf7",
+        "Picprofile": "https://i.scdn.co/image/d9ba0a3c6c18cb30e4c49107c907822c14deee18",
         "Songs": [
             {
                 "Image": "https://i.scdn.co/image/ab67616d00001e02fda74ae03a653f5d84010a79",
@@ -527,6 +558,7 @@
     {
         "Artist": "IU",
         "Picture": "https://i.scdn.co/image/7933ee4e5fab342227d2d8ba36f522537c7d73c2",
+        "Picprofile": "",
         "Songs": [
             {
                 "Image": "https://i.scdn.co/image/ab67616d00001e02ec2863b64149d3b1f1082006",
@@ -540,6 +572,7 @@
     {
         "Artist": "BLACKPINK",
         "Picture": "https://i.scdn.co/image/53f18c90a47468bb20eaabb57845551040e925c9",
+        "Picprofile": "https://i.scdn.co/image/01f706b23552443c9cc9196d7554b296431a684f",
         "Songs": [
             {
                 "Image": "https://i.scdn.co/image/ab67616d00001e0283e20fb049016e87123cb093",
@@ -553,6 +586,7 @@
     {
         "Artist": "KYUHYUN",
         "Picture": "https://i.scdn.co/image/9e44e33f5ff46028aff7b4cbfda43d7cb87a3ee7",
+        "Picprofile": "https://i.scdn.co/image/77a09e88d590c650c4eb07ff4231060e10aa50b7",
         "Songs": [
             {
                 "Image": "https://i.scdn.co/image/ab67616d00001e022640c144ab527d976623e319",
@@ -566,6 +600,7 @@
     {
         "Artist": "CLC",
         "Picture": "https://i.scdn.co/image/31babbfd74c6ffb8d0334b58419095fb982b3281",
+        "Picprofile": "https://i.scdn.co/image/42040e75b4e7a5af9e97a113908476709a780d38",
         "Songs": [
             {
                 "Image": "https://i.scdn.co/image/ab67616d00001e02c5011613476079ff2498bf4a",
@@ -579,6 +614,7 @@
     {
         "Artist": "SOMI",
         "Picture": "https://i.scdn.co/image/b5b6cc3a5dfc0a4d3046f006638ada170f7e1b08",
+        "Picprofile": "https://i.scdn.co/image/d960a6c81f6ccae71e495e95a9cbb214c4976773",
         "Songs": [
             {
                 "Image": "https://i.scdn.co/image/ab67616d00001e02637fd394e106b5af8b19f794",
@@ -592,6 +628,7 @@
     {
         "Artist": "EVERGLOW",
         "Picture": "https://i.scdn.co/image/85a83b1f112b4f7b37399ab4a4b3d63abcc95946",
+        "Picprofile": "https://i.scdn.co/image/38f52d97c7a3cc48e7d0c9a87bafbec7fd6b5960",
         "Songs": [
             {
                 "Image": "https://i.scdn.co/image/ab67616d00001e02359024c678a5803e0677e684",
@@ -605,6 +642,7 @@
     {
         "Artist": "Stray Kids",
         "Picture": "https://i.scdn.co/image/1a8e8a79e062ff418cafa3bcbbe0849fdc200108",
+        "Picprofile": "https://i.scdn.co/image/d40ad0eff0454b5415bb0511ffa8dea50dd1ad4a",
         "Songs": [
             {
                 "Image": "https://i.scdn.co/image/ab67616d00001e0221fa0c8c53c48dcf3c6c1874",
@@ -618,6 +656,7 @@
     {
         "Artist": "BTS",
         "Picture": "https://i.scdn.co/image/2a9c9fd842820420d25ebc251a46d14d6034e731",
+        "Picprofile": "https://i.scdn.co/image/c899b8d0af70bf4c54f1cccadcfe1dc7525bc5b3",
         "Songs": [
             {
                 
@@ -632,6 +671,7 @@
     {
         "Artist": "TREASURE",
         "Picture": "https://i.scdn.co/image/3f80ac3d88b32e52b4632a59b0cec562bcb074d6",
+        "Picprofile": "",
         "Songs": [
             {
                 "Image": "https://i.scdn.co/image/ab67616d00001e02e64e25e6327ccba025619750",
@@ -645,6 +685,7 @@
     {
         "Artist": "DAY6",
         "Picture": "https://i.scdn.co/image/f9fa7816ca83fc1826421d8d8a698f199052921d",
+        "Picprofile": "https://i.scdn.co/image/ca0aa6395cb057b6c850b5e940c65baff2ee1474",
         "Songs": [
             {
                 "Image": "https://i.scdn.co/image/ab67616d00001e020582daa99a6621b6ffd83525",
@@ -658,6 +699,7 @@
     {
         "Artist": "GOT7",
         "Picture": "https://i.scdn.co/image/aa6081aeb1a7fcf42fa458ee05d9712ae8f25e57",
+        "Picprofile": "https://i.scdn.co/image/baed0f4ecd148033156489903c3654cf6832b6be",
         "Songs": [
             {
                 "Image": "https://i.scdn.co/image/ab67616d00001e02e4d85babdbdecf2c21568ea0",
@@ -671,6 +713,7 @@
     {
         "Artist": "TOMORROW X TOGETHER",
         "Picture": "https://i.scdn.co/image/6daac2e39fa446621b814f37e1f0930e2561b604",
+        "Picprofile": "https://i.scdn.co/image/4670f5f11a425bb1b1330bc65cfd9adb19f69123",
         "Songs": [
             {
                 "Image": "https://i.scdn.co/image/ab67616d00001e02adcfd199652d2634cb361869",
@@ -684,6 +727,7 @@
     {
         "Artist": "TWICE",
         "Picture": "https://i.scdn.co/image/6a1742040b384dd65e65b1462e8a5da569f872d4",
+        "Picprofile": "https://i.scdn.co/image/611596b87028293cbd47291d77a58ba274b535a2",
         "Songs": [
             {
                 "Image": "https://i.scdn.co/image/ab67616d00001e0228e649c0e2d1a3a98ccf8ea3",
@@ -697,6 +741,7 @@
     {
         "Artist": "MAMAMOO",
         "Picture": "https://i.scdn.co/image/9b686b4bbdb420d9cac6c3f6f0002c89ad34f1c8",
+        "Picprofile": "",
         "Songs": [
             {
                 "Image": "https://i.scdn.co/image/ab67616d00001e028612b3a74fefaf72ddc92d08",
@@ -710,6 +755,7 @@
     {
         "Artist": "LiSA",
         "Picture": "https://i.scdn.co/image/6f8e69ee8956f2c2d3145a0b50a5965f0bb0c9ac",
+        "Picprofile": "https://i.scdn.co/image/66703fc7a8c181682c948f59e68d9c58a46e3bd0",
         "Songs": [
             {
                 "Image": "https://i.scdn.co/image/ab67616d00001e0229ef730f72f6dc0344b95a9c",
@@ -723,6 +769,7 @@
     {
         "Artist": "OxT",
         "Picture": "https://i.scdn.co/image/d7af77a0de4f7b808d822f0337912fa20090479d",
+        "Picprofile": "https://i.scdn.co/image/4b8c08b0b31193a1fb0ec1997ffcdc0134daa80d",
         "Songs": [
             {
                 "Image": "https://i.scdn.co/image/ab67616d00001e021b279d1c49fe9bbc1cfd4b2a",
@@ -736,6 +783,7 @@
     {
         "Artist": "ONE OK ROCK",
         "Picture": "https://i.scdn.co/image/0f9fca7e9d00ee9b64a324efa0d460575cb98b45",
+        "Picprofile": "https://i.scdn.co/image/36e7e8541b985f9a95f1916850573ab6848394cf",
         "Songs": [
             {
                 "Image": "https://i.scdn.co/image/ab67616d00001e02cff66b3375bbeb03c6c214a0",
@@ -749,6 +797,7 @@
     {
         "Artist": "BURNOUT SYNDROMES",
         "Picture": "https://i.scdn.co/image/79132dcc28e4c0b240a4e67a505a858e1ec4ff49",
+        "Picprofile": "https://i.scdn.co/image/a8ab93156a60e419f559d98b61862f646e53c5c1",
         "Songs": [
             {
                 "Image": "https://i.scdn.co/image/ab67616d00001e02195fab3e607eab1fc3b903d2",
@@ -762,6 +811,7 @@
     {
         "Artist": "SPYAIR",
         "Picture": "https://i.scdn.co/image/3de99983018cb8b762f67b35a2ec0e4b94aa24e5",
+        "Picprofile": "https://i.scdn.co/image/bc2bb21d8b3786b11300971a00e5742028500908",
         "Songs": [
             {
                 "Image": "https://i.scdn.co/image/ab67616d00001e02816e3631b46f6fcc3d8cdc8a",
@@ -775,6 +825,7 @@
     {
         "Artist": "KANA-BOON",
         "Picture": "https://i.scdn.co/image/1699873127c61f0160eed6c50008c80c07dd0cfb",
+        "Picprofile": "https://i.scdn.co/image/82fa1c04aeeda96b4054cb3547a1a237cbe3160d",
         "Songs": [
             {
                 "Image": "https://i.scdn.co/image/ab67616d00001e02aff92b4ab762a6439db4e922",
@@ -788,6 +839,7 @@
     {
         "Artist": "RADWIMS",
         "Picture": "https://i.scdn.co/image/bfc1a58ac0673ee8d9fb1aedc3656b9a599107ec",
+        "Picprofile": "https://i.scdn.co/image/fea908ad15ee102410f5895e50d1f0ed29e96cb0",
         "Songs": [
             {
                 "Image": "https://i.scdn.co/image/ab67616d00001e023e2780c2283bbcb8f5d740d0",
@@ -801,6 +853,7 @@
     {
         "Artist": "GRANRODEO",
         "Picture": "https://i.scdn.co/image/c424df610553f4e68f159868b8640680cdaa90af",
+        "Picprofile": "https://i.scdn.co/image/be054d76b5356673051b9aca5e285841a8f4014f",
         "Songs": [
             {
                 "Image": "https://i.scdn.co/image/ab67616d0000b2736e6423ccd612d395d8801b98",
@@ -814,6 +867,7 @@
     {
         "Artist": "MAN WITH A MISSION",
         "Picture": "https://i.scdn.co/image/0f1f4706877b5d8161c19f3009fad1a2c3b0d7a4",
+        "Picprofile": "https://i.scdn.co/image/5127ee537c14aa4b07888261d315cc5d6d312be5",
         "Songs": [
             {
                 "Image": "https://i.scdn.co/image/ab67616d00001e02a89d38c09bbf247de1b6e726",
@@ -827,6 +881,7 @@
     {
         "Artist": "MYTH & ROID",
         "Picture": "https://i.scdn.co/image/abb39d6e52aaf9c401371013ebb89e523f79466a",
+        "Picprofile": "https://i.scdn.co/image/a12387f0fdb2f96af89cc84a65dba11ab5bfbbc8",
         "Songs": [
             {
                 "Image": "https://i.scdn.co/image/ab67616d00001e02b6fd356bedebb4493fe5b84f",
