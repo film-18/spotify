@@ -86,6 +86,7 @@ button:active{
     text-align: center;
     padding: 0;
     border-radius: 50%;
+    
 }
 .spanSpotify {
     font-size: 4.5vh;
@@ -330,6 +331,7 @@ body {
     overflow : hidden;
     background : linear-gradient(0deg,transparent,rgba(0,0,0,.4));
 
+
 }
 .pic_search {
     width: 100px;
@@ -367,4 +369,38 @@ input {
     align-items: center;
     pointer-events: none;
     color: #000;
+}
+.boxartist{
+    
+    border : 0px;
+    position : relative;
+    overflow : hidden;
+    /* background : linear-gradient(180deg,transparent,rgba(0.2,0.4,0.6,0.8)); */
+}
+.buttonplayartist{
+    background-color: #1db954;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    padding: 0;
+    border-radius: 50%;
+    
+}
+.buttonfollow{
+    width: 90px;
+    height: 30px;
+    border-radius: 4px;
+    position: absolute;
+    top: 35px;
+    left: 130px;
+    color: white;
+    background-color: Transparent;
+    border: 1px solid rgb(241, 113, 113);
+}
+.buttonfollow:hover {
+    color: white;
+    background-color: Transparent;
+    border: 1px solid white;
+    
 }

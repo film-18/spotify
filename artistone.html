@@ -19,8 +19,41 @@
     <script src="https://kit.fontawesome.com/94195324d2.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="player.css">
-    <title>Home</title>
+    <title>Artist1</title>
 </head>
+<style>
+    .textBottom {
+        position: absolute;
+        top: 300px;
+        left: 20px;
+        color: white;
+    }
+    .positionarrowL{
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        color: white;
+    }
+    .positionarrowR{
+        position: absolute;
+        top: 20px;
+        left: 70px;
+        color: white;
+    }
+    .positionplay{
+        position: absolute;
+        top: 20px;
+        left: 30px;
+    }
+    .ibutton{
+        font-size: 25px;
+        color: white;
+        padding-top: 18px;
+    }
+
+
+
+</style>
 
 <body>  
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
@@ -145,8 +178,8 @@
 
         <!-- ฝั่งขวา -->
         <div class="col-md-3 col-sm-5 bgLeft px-0 py-2"></div>
-        <div class="col-md-9 bgRight-top pt-2 px-0 ">
-            <div class="row">
+        <div class="col-md-9 bgRight-top pt-0 px-0 ">
+            <!-- <div class="row">
                 <div class="col-2 py-2">
                     <div class="pl-3 pr-3 d-inline">
                         <button class="border-0 text-left buttonarrow">
@@ -157,10 +190,10 @@
                         <button class="border-0 text-left buttonarrow">
                             <span class="rightarrow ml-3"><i class="fas fa-angle-right"></i></span>
                         </button>
-                    </div>
+                    </div>s
                 </div>
-            </div>
-            Rule
+            </div> -->
+            
             <div id="lists">
             </div>
         </div>
@@ -284,6 +317,74 @@
 
             // let rowSec = document.createElement('div');
             // rowSec.setAttribute("class", "row mx-2 mt-5");
+            let div = document.createElement('div');
+            div.setAttribute("class", "container mx-0 px-0 my-0 py-0");
+            let imgprofile = document.createElement('IMG');
+            // imgprofile.setAttribute("class", "mt-0 ml-0");
+            imgprofile.style.width = "100%";
+            imgprofile.style.height = "100%";
+            imgprofile.src = data[0].picprofile;
+            let nameartist = document.createElement('H1');
+            nameartist.setAttribute("class", "textBottom font-weight-bold");
+            nameartist.innerHTML = data[0].Artist;
+            nameartist.style.fontSize = "100px";
+
+            let buttonleft = document.createElement('button');
+            buttonleft.setAttribute("class", "buttonarrow positionarrowL border-0");
+            let leftarrow = document.createElement('span');
+            leftarrow.setAttribute("class", "leftarrow");
+            let ileftarrow = document.createElement('i');
+            ileftarrow.setAttribute("class", "fas fa-angle-left");
+            leftarrow.append(ileftarrow);
+            buttonleft.append(leftarrow);
+
+            let buttonright = document.createElement('button');
+            buttonright.setAttribute("class", "buttonarrow positionarrowR border-0");
+            let rightarrow = document.createElement('span');
+            rightarrow.setAttribute("class", "rightarrow");
+            let irightarrow = document.createElement('i');
+            irightarrow.setAttribute("class", "fas fa-angle-right");
+            rightarrow.append(irightarrow);
+            buttonright.append(rightarrow);
+
+            div.append(buttonright);
+            div.append(buttonleft);
+            div.append(imgprofile);
+            div.append(nameartist);
+            output.append(div)
+            
+            let div2 = document.createElement('div');
+            div2.setAttribute("class", "w-100 boxartist");
+            div2.style.height = "200px";
+            
+            let div3 = document.createElement('div');
+            div3.setAttribute("class", "w-100");
+            div3.style.height = "100px";
+            div3.style.backgroundColor = "rgb(187, 154, 0)";
+            let buttonplay = document.createElement('button');
+            buttonplay.setAttribute("class", "buttonplayartist positionplay border-0");
+            let ibuttonplay = document.createElement('i');
+            ibuttonplay.setAttribute("class", "fas fa-play ibutton pl-1");
+            buttonplay.append(ibuttonplay);
+            let buttonfollow = document.createElement('button');
+            buttonfollow.setAttribute("class", "buttonfollow positionfollow");
+            buttonfollow.innerHTML = "FOLLOW";
+
+            let div4 = document.createElement('div');
+            div4.setAttribute("class", "w-100");
+            div4.style.height = "100px";
+            let popular = document.createElement('h2');
+            popular.setAttribute("class", "pl-5 pt-2 font-weight-bold");
+            popular.innerHTML = "Popular";
+            popular.style.fontSize = "23px"
+            div4.append(popular);
+
+            div3.append(buttonfollow);
+            div3.append(buttonplay);
+            div2.append(div3);
+            div2.append(div4);
+            output.appendChild(div2);
+
    
             let table = document.createElement('table');
                     table.setAttribute("class", "table table-borderless");
