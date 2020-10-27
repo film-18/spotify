@@ -167,7 +167,7 @@
         </div>
     </div>
 
-    <audio src="music/music-t/youngohm_official_audio.mp3" id="song"></audio>
+    <audio src="" id="song"></audio>
     <div class="box"></div>
     <div class="row">
         <div id="nav_play" class=" fixed-bottom w-100">
@@ -178,17 +178,17 @@
 
                     <div class="row py-2 px-2">
                         <div class="col-md-3 py-2 px-1">
-                            <img src="https://i.scdn.co/image/ab67616d00001e02b4668d89ecb9c2f7e2e6189f"
+                            <img src="play-circle-solid.png"
                                 class="img-fluid w-100 rounded" id="thumbnail" />
                         </div>
                         <div class="col-md-9 py-3">
                             <div class="row">
                                 <div class="col-md-6 pl-3 pr-0">
                                     <span>
-                                        <div class="song-title" style="font-size: 1.25vw;">ก่อนนอนคืนนี้</div>
+                                        <div class="song-title" style="font-size: 1.25vw;" id="songti">xxx</div>
                                     </span>
                                     <span>
-                                        <div class="song-artist" style="font-size: 1.1vw;color: gray;">YoungOhm</div>
+                                        <div class="song-artist" style="font-size: 1.1vw;color: gray;" id="songar">xxx</div>
                                     </span>
                                 </div>
                                 <div class="col-md-6 px-0 pt-2">
@@ -311,8 +311,7 @@
 
 
                 pic.src = data[i].Image;
-                pic.addEventListener("click", playPause);
-
+                pic.setAttribute("onclick", "go" + i + "()");
                 let textbox = document.createElement("div");
                 textbox.setAttribute("class", "card-body");
 
@@ -365,107 +364,611 @@
 
     </script>
     <script>
-            const thumbnail = document.querySelector('#thumbnail'); // album cover 
-            const song = document.querySelector('#song'); // audio object
+        const thumbnail = document.querySelector('#thumbnail'); // album cover 
+        const song = document.querySelector('#song'); // audio object
 
-            const songArtist = document.querySelector('.song-artist'); // element where track artist appears
-            const songTitle = document.querySelector('.song-title'); // element where track title appears
-            const progressBar = document.querySelector('#progress-bar'); // element where progress bar appears
-            let pPause = document.querySelector('#play-pause'); // element where play and pause image appears
+        const songArtist = document.querySelector('.song-artist'); // element where track artist appears
+        const songTitle = document.querySelector('.song-title'); // element where track title appears
+        const progressBar = document.querySelector('#progress-bar'); // element where progress bar appears
+        let pPause = document.querySelector('#play-pause'); // element where play and pause image appears
 
-            songIndex = 0;
-            let songs = []; // object storing paths for audio objects
-            //let thumbnails = []; // object storing paths for album covers and backgrounds
-            //let songArtists = []; // object storing track artists
-            //let songTitles = []; // object storing track titles
-        
-            // function where pp (play-pause) element changes based on playing boolean value - if play button clicked, change pp.src to pause button and call song.play() and vice versa.
-            let playing = true;
-            function playPause() {
-                for(let i=0;i<72;i++){
+        songIndex = 0;
+        let songs = []; // object storing paths for audio objects
+        let thumbnails = []; // object storing paths for album covers and backgrounds
+        let songArtists = []; // object storing track artists
+        let songTitles = []; // object storing track titles
+
+        // function where pp (play-pause) element changes based on playing boolean value - if play button clicked, change pp.src to pause button and call song.play() and vice versa.
+        let playing = true;
+        function go() {
+            for (let i = 0; i < 72; i++) {
                 songs.push(document.getElementsByTagName("source")[i].getAttribute("src"));
+                thumbnails.push(document.getElementsByTagName("img")[i].getAttribute("src"));
+                songArtists.push(document.getElementsByTagName('p')[i + 8].innerHTML);
+                songTitles.push(document.getElementsByTagName('b')[i].innerHTML);
             }
-                if (playing) {
-                    const song = document.querySelector('#song');
-                        //thumbnail = document.querySelector('#thumbnail');
+        }
+        function go0() {
+            go();
+            document.getElementById("song").setAttribute("src", songs[0]);
+            pPause.src = "./pause-circle-solid.png"
+            song.play();
+            playing = false;
+            let song_ti = document.getElementById("songti");
+            let song_ar = document.getElementById("songar");
+            let song_th = document.getElementById("thumbnail");
+            song_ti.innerText = songTitles[0];
+            song_ar.innerText = songArtists[0];
+            song_th.setAttribute("src", thumbnails[0]);
+            console.log(songs+"###"+thumbnails+"###"+songArtists+"###"+songTitles);
+        }
+        function go1() {
+            go();
+            document.getElementById("song").setAttribute("src", songs[1]);
+            pPause.src = "./pause-circle-solid.png"
+            song.play();
+            playing = false;
+        }
+        function go2() {
+            go();
+            document.getElementById("song").setAttribute("src", songs[2]);
+            pPause.src = "./pause-circle-solid.png"
+            song.play();
+            playing = false;
+        }
+        function go3() {
+            go();
+            document.getElementById("song").setAttribute("src", songs[3]);
+            pPause.src = "./pause-circle-solid.png"
+            song.play();
+            playing = false;
+        }
+        function go4() {
+            go();
+            document.getElementById("song").setAttribute("src", songs[4]);
+            pPause.src = "./pause-circle-solid.png"
+            song.play();
+            playing = false;
+        }
+        function go5() {
+            go();
+            document.getElementById("song").setAttribute("src", songs[5]);
+            pPause.src = "./pause-circle-solid.png"
+            song.play();
+            playing = false;
+        }
+        function go6() {
+            go();
+            document.getElementById("song").setAttribute("src", songs[6]);
+            pPause.src = "./pause-circle-solid.png"
+            song.play();
+            playing = false;
+        }
+        function go7() {
+            go();
+            document.getElementById("song").setAttribute("src", songs[7]);
+            pPause.src = "./pause-circle-solid.png"
+            song.play();
+            playing = false;
+        }
+        function go8() {
+            go();
+            document.getElementById("song").setAttribute("src", songs[8]);
+            pPause.src = "./pause-circle-solid.png"
+            song.play();
+            playing = false;
+        }
+        function go9() {
+            go();
+            document.getElementById("song").setAttribute("src", songs[9]);
+            pPause.src = "./pause-circle-solid.png"
+            song.play();
+            playing = false;
+        }
+        function go10() {
+            go();
+            document.getElementById("song").setAttribute("src", songs[10]);
+            pPause.src = "./pause-circle-solid.png"
+            song.play();
+            playing = false;
+        }
+        function go11() {
+            go();
+            document.getElementById("song").setAttribute("src", songs[11]);
+            pPause.src = "./pause-circle-solid.png"
+            song.play();
+            playing = false;
+        }
+        function go12() {
+            go();
+            document.getElementById("song").setAttribute("src", songs[12]);
+            pPause.src = "./pause-circle-solid.png"
+            song.play();
+            playing = false;
+        }
+        function go13() {
+            go();
+            document.getElementById("song").setAttribute("src", songs[13]);
+            pPause.src = "./pause-circle-solid.png"
+            song.play();
+            playing = false;
+        }
+        function go14() {
+            go();
+            document.getElementById("song").setAttribute("src", songs[14]);
+            pPause.src = "./pause-circle-solid.png"
+            song.play();
+            playing = false;
+        }
+        function go15() {
+            go();
+            document.getElementById("song").setAttribute("src", songs[15]);
+            pPause.src = "./pause-circle-solid.png"
+            song.play();
+            playing = false;
+        }
+        function go16() {
+            go();
+            document.getElementById("song").setAttribute("src", songs[16]);
+            pPause.src = "./pause-circle-solid.png"
+            song.play();
+            playing = false;
+        }
+        function go17() {
+            go();
+            document.getElementById("song").setAttribute("src", songs[17]);
+            pPause.src = "./pause-circle-solid.png"
+            song.play();
+            playing = false;
+        }
+        function go18() {
+            go();
+            document.getElementById("song").setAttribute("src", songs[18]);
+            pPause.src = "./pause-circle-solid.png"
+            song.play();
+            playing = false;
+        }
+        function go19() {
+            go();
+            document.getElementById("song").setAttribute("src", songs[19]);
+            pPause.src = "./pause-circle-solid.png"
+            song.play();
+            playing = false;
+        }
+        function go20() {
+            go();
+            document.getElementById("song").setAttribute("src", songs[20]);
+            pPause.src = "./pause-circle-solid.png"
+            song.play();
+            playing = false;
+        }
+        function go21() {
+            go();
+            document.getElementById("song").setAttribute("src", songs[21]);
+            pPause.src = "./pause-circle-solid.png"
+            song.play();
+            playing = false;
+        }
+        function go22() {
+            go();
+            document.getElementById("song").setAttribute("src", songs[22]);
+            pPause.src = "./pause-circle-solid.png"
+            song.play();
+            playing = false;
+        }
+        function go23() {
+            go();
+            document.getElementById("song").setAttribute("src", songs[23]);
+            pPause.src = "./pause-circle-solid.png"
+            song.play();
+            playing = false;
+        }
+        function go24() {
+            go();
+            document.getElementById("song").setAttribute("src", songs[24]);
+            pPause.src = "./pause-circle-solid.png"
+            song.play();
+            playing = false;
+        }
+        function go25() {
+            go();
+            document.getElementById("song").setAttribute("src", songs[25]);
+            pPause.src = "./pause-circle-solid.png"
+            song.play();
+            playing = false;
+        }
+        function go26() {
+            go();
+            document.getElementById("song").setAttribute("src", songs[26]);
+            pPause.src = "./pause-circle-solid.png"
+            song.play();
+            playing = false;
+        }
+        function go27() {
+            go();
+            document.getElementById("song").setAttribute("src", songs[27]);
+            pPause.src = "./pause-circle-solid.png"
+            song.play();
+            playing = false;
+        }
+        function go28() {
+            go();
+            document.getElementById("song").setAttribute("src", songs[28]);
+            pPause.src = "./pause-circle-solid.png"
+            song.play();
+            playing = false;
+        }
+        function go29() {
+            go();
+            document.getElementById("song").setAttribute("src", songs[29]);
+            pPause.src = "./pause-circle-solid.png"
+            song.play();
+            playing = false;
+        }
+        function go30() {
+            go();
+            document.getElementById("song").setAttribute("src", songs[30]);
+            pPause.src = "./pause-circle-solid.png"
+            song.play();
+            playing = false;
+        }
+        function go31() {
+            go();
+            document.getElementById("song").setAttribute("src", songs[31]);
+            pPause.src = "./pause-circle-solid.png"
+            song.play();
+            playing = false;
+        }
+        function go32() {
+            go();
+            document.getElementById("song").setAttribute("src", songs[32]);
+            pPause.src = "./pause-circle-solid.png"
+            song.play();
+            playing = false;
+        }
+        function go33() {
+            go();
+            document.getElementById("song").setAttribute("src", songs[33]);
+            pPause.src = "./pause-circle-solid.png"
+            song.play();
+            playing = false;
+        }
+        function go34() {
+            go();
+            document.getElementById("song").setAttribute("src", songs[34]);
+            pPause.src = "./pause-circle-solid.png"
+            song.play();
+            playing = false;
+        }
+        function go35() {
+            go();
+            document.getElementById("song").setAttribute("src", songs[35]);
+            pPause.src = "./pause-circle-solid.png"
+            song.play();
+            playing = false;
+        }
+        function go36() {
+            go();
+            document.getElementById("song").setAttribute("src", songs[36]);
+            pPause.src = "./pause-circle-solid.png"
+            song.play();
+            playing = false;
+        }
+        function go37() {
+            go();
+            document.getElementById("song").setAttribute("src", songs[37]);
+            pPause.src = "./pause-circle-solid.png"
+            song.play();
+            playing = false;
+        }
+        function go38() {
+            go();
+            document.getElementById("song").setAttribute("src", songs[38]);
+            pPause.src = "./pause-circle-solid.png"
+            song.play();
+            playing = false;
+        }
+        function go39() {
+            go();
+            document.getElementById("song").setAttribute("src", songs[39]);
+            pPause.src = "./pause-circle-solid.png"
+            song.play();
+            playing = false;
+        }
+        function go40() {
+            go();
+            document.getElementById("song").setAttribute("src", songs[40]);
+            pPause.src = "./pause-circle-solid.png"
+            song.play();
+            playing = false;
+        }
+        function go41() {
+            go();
+            document.getElementById("song").setAttribute("src", songs[41]);
+            pPause.src = "./pause-circle-solid.png"
+            song.play();
+            playing = false;
+        }
+        function go42() {
+            go();
+            document.getElementById("song").setAttribute("src", songs[42]);
+            pPause.src = "./pause-circle-solid.png"
+            song.play();
+            playing = false;
+        }
+        function go43() {
+            go();
+            document.getElementById("song").setAttribute("src", songs[43]);
+            pPause.src = "./pause-circle-solid.png"
+            song.play();
+            playing = false;
+        }
+        function go44() {
+            go();
+            document.getElementById("song").setAttribute("src", songs[44]);
+            pPause.src = "./pause-circle-solid.png"
+            song.play();
+            playing = false;
+        }
+        function go45() {
+            go();
+            document.getElementById("song").setAttribute("src", songs[45]);
+            pPause.src = "./pause-circle-solid.png"
+            song.play();
+            playing = false;
+        }
+        function go46() {
+            go();
+            document.getElementById("song").setAttribute("src", songs[46]);
+            pPause.src = "./pause-circle-solid.png"
+            song.play();
+            playing = false;
+        }
+        function go47() {
+            go();
+            document.getElementById("song").setAttribute("src", songs[47]);
+            pPause.src = "./pause-circle-solid.png"
+            song.play();
+            playing = false;
+        }
+        function go48() {
+            go();
+            document.getElementById("song").setAttribute("src", songs[48]);
+            pPause.src = "./pause-circle-solid.png"
+            song.play();
+            playing = false;
+        }
+        function go49() {
+            go();
+            document.getElementById("song").setAttribute("src", songs[49]);
+            pPause.src = "./pause-circle-solid.png"
+            song.play();
+            playing = false;
+        }
+        function go50() {
+            go();
+            document.getElementById("song").setAttribute("src", songs[50]);
+            pPause.src = "./pause-circle-solid.png"
+            song.play();
+            playing = false;
+        }
+        function go51() {
+            go();
+            document.getElementById("song").setAttribute("src", songs[51]);
+            pPause.src = "./pause-circle-solid.png"
+            song.play();
+            playing = false;
+        }
+        function go52() {
+            go();
+            document.getElementById("song").setAttribute("src", songs[52]);
+            pPause.src = "./pause-circle-solid.png"
+            song.play();
+            playing = false;
+        }
+        function go53() {
+            go();
+            document.getElementById("song").setAttribute("src", songs[53]);
+            pPause.src = "./pause-circle-solid.png"
+            song.play();
+            playing = false;
+        }
+        function go54() {
+            go();
+            document.getElementById("song").setAttribute("src", songs[54]);
+            pPause.src = "./pause-circle-solid.png"
+            song.play();
+            playing = false;
+        }
+        function go55() {
+            go();
+            document.getElementById("song").setAttribute("src", songs[55]);
+            pPause.src = "./pause-circle-solid.png"
+            song.play();
+            playing = false;
+        }
+        function go56() {
+            go();
+            document.getElementById("song").setAttribute("src", songs[56]);
+            pPause.src = "./pause-circle-solid.png"
+            song.play();
+            playing = false;
+        }
+        function go57() {
+            go();
+            document.getElementById("song").setAttribute("src", songs[57]);
+            pPause.src = "./pause-circle-solid.png"
+            song.play();
+            playing = false;
+        }
+        function go58() {
+            go();
+            document.getElementById("song").setAttribute("src", songs[58]);
+            pPause.src = "./pause-circle-solid.png"
+            song.play();
+            playing = false;
+        }
+        function go59() {
+            go();
+            document.getElementById("song").setAttribute("src", songs[59]);
+            pPause.src = "./pause-circle-solid.png"
+            song.play();
+            playing = false;
+        } function go60() {
+            go();
+            document.getElementById("song").setAttribute("src", songs[60]);
+            pPause.src = "./pause-circle-solid.png"
+            song.play();
+            playing = false;
+        }
+        function go61() {
+            go();
+            document.getElementById("song").setAttribute("src", songs[61]);
+            pPause.src = "./pause-circle-solid.png"
+            song.play();
+            playing = false;
+        } function go62() {
+            go();
+            document.getElementById("song").setAttribute("src", songs[62]);
+            pPause.src = "./pause-circle-solid.png"
+            song.play();
+            playing = false;
+        } function go63() {
+            go();
+            document.getElementById("song").setAttribute("src", songs[63]);
+            pPause.src = "./pause-circle-solid.png"
+            song.play();
+            playing = false;
+        } function go64() {
+            go();
+            document.getElementById("song").setAttribute("src", songs[64]);
+            pPause.src = "./pause-circle-solid.png"
+            song.play();
+            playing = false;
+        } function go65() {
+            go();
+            document.getElementById("song").setAttribute("src", songs[65]);
+            pPause.src = "./pause-circle-solid.png"
+            song.play();
+            playing = false;
+        } function go66() {
+            go();
+            document.getElementById("song").setAttribute("src", songs[66]);
+            pPause.src = "./pause-circle-solid.png"
+            song.play();
+            playing = false;
+        } function go67() {
+            go();
+            document.getElementById("song").setAttribute("src", songs[67]);
+            pPause.src = "./pause-circle-solid.png"
+            song.play();
+            playing = false;
+        } function go68() {
+            go();
+            document.getElementById("song").setAttribute("src", songs[68]);
+            pPause.src = "./pause-circle-solid.png"
+            song.play();
+            playing = false;
+        } function go69() {
+            go();
+            document.getElementById("song").setAttribute("src", songs[69]);
+            pPause.src = "./pause-circle-solid.png"
+            song.play();
+            playing = false;
+        } function go70() {
+            go();
+            document.getElementById("song").setAttribute("src", songs[70]);
+            pPause.src = "./pause-circle-solid.png"
+            song.play();
+            playing = false;
+        } function go71() {
+            go();
+            document.getElementById("song").setAttribute("src", songs[71]);
+            pPause.src = "./pause-circle-solid.png"
+            song.play();
+            playing = false;
+        }
+        function playPause() {
+            if (playing) {
+                const song = document.querySelector('#song'),
+                    thumbnail = document.querySelector('#thumbnail');
 
-                    pPause.src = "./pause-circle-solid.png"
-                    song.play();
-                    playing = false;
-                } else {
-                    pPause.src = "./play-circle-solid.png"
-                    song.pause();
-                    playing = true;
-                }
-            }
-
-            // automatically play the next song at the end of the audio object's duration
-            song.addEventListener('ended', function () {
-                nextSong();
-            });
-
-            // function where songIndex is incremented, song/thumbnail image/background image/song artist/song title changes to next index value, and playPause() runs to play next track 
-            function nextSong() {
-                songIndex++;
-                if (songIndex > 10) {
-                    songIndex = 0;
-                };
-                song.src = songs[songIndex];
-                //thumbnail.src = thumbnails[songIndex];
-
-                //songArtist.innerHTML = songArtists[songIndex];
-                //songTitle.innerHTML = songTitles[songIndex];
-
+                pPause.src = "./pause-circle-solid.png"
+                song.play();
+                playing = false;
+            } else {
+                pPause.src = "./play-circle-solid.png"
+                song.pause();
                 playing = true;
-                playPause();
             }
+        }
 
-            // function where songIndex is decremented, song/thumbnail image/background image/song artist/song title changes to previous index value, and playPause() runs to play previous track 
-            function previousSong() {
-                songIndex--;
-                if (songIndex < 0) {
-                    songIndex = 10;
-                };
-                song.src = songs[songIndex];
-                //thumbnail.src = thumbnails[songIndex];
+        // automatically play the next song at the end of the audio object's duration
+        song.addEventListener('ended', function () {
+            nextSong();
+        });
 
-                //songArtist.innerHTML = songArtists[songIndex];
-                //songTitle.innerHTML = songTitles[songIndex];
+        // function where songIndex is incremented, song/thumbnail image/background image/song artist/song title changes to next index value, and playPause() runs to play next track 
+        function nextSong() {
+            songIndex++;
+            if (songIndex > 10) {
+                songIndex = 0;
+            };
+            song.src = songs[songIndex];
+            thumbnail.src = thumbnails[songIndex];
 
-                playing = true;
-                playPause();
+            songArtist.innerHTML = songArtists[songIndex];
+            songTitle.innerHTML = songTitles[songIndex];
+
+            playing = true;
+            playPause();
+        }
+
+        // function where songIndex is decremented, song/thumbnail image/background image/song artist/song title changes to previous index value, and playPause() runs to play previous track 
+        function previousSong() {
+            songIndex--;
+            if (songIndex < 0) {
+                songIndex = 10;
+            };
+            song.src = songs[songIndex];
+            thumbnail.src = thumbnails[songIndex];
+
+            songArtist.innerHTML = songArtists[songIndex];
+            songTitle.innerHTML = songTitles[songIndex];
+
+            playing = true;
+            playPause();
+        }
+
+        // update progressBar.max to song object's duration, same for progressBar.value, update currentTime/duration DOM
+        function updateProgressValue() {
+            progressBar.max = song.duration;
+            progressBar.value = song.currentTime;
+            document.querySelector('.currentTime').innerHTML = (formatTime(Math.floor(song.currentTime)));
+            if (document.querySelector('.durationTime').innerHTML === "NaN:NaN") {
+                document.querySelector('.durationTime').innerHTML = "0:00";
+            } else {
+                document.querySelector('.durationTime').innerHTML = (formatTime(Math.floor(song.duration)));
             }
+        };
 
-            // update progressBar.max to song object's duration, same for progressBar.value, update currentTime/duration DOM
-            function updateProgressValue() {
-                progressBar.max = song.duration;
-                progressBar.value = song.currentTime;
-                document.querySelector('.currentTime').innerHTML = (formatTime(Math.floor(song.currentTime)));
-                if (document.querySelector('.durationTime').innerHTML === "NaN:NaN") {
-                    document.querySelector('.durationTime').innerHTML = "0:00";
-                } else {
-                    document.querySelector('.durationTime').innerHTML = (formatTime(Math.floor(song.duration)));
-                }
+        // convert song.currentTime and song.duration into MM:SS format
+        function formatTime(seconds) {
+            let min = Math.floor((seconds / 60));
+            let sec = Math.floor(seconds - (min * 60));
+            if (sec < 10) {
+                sec = `0${sec}`;
             };
+            return `${min}:${sec}`;
+        };
 
-            // convert song.currentTime and song.duration into MM:SS format
-            function formatTime(seconds) {
-                let min = Math.floor((seconds / 60));
-                let sec = Math.floor(seconds - (min * 60));
-                if (sec < 10) {
-                    sec = `0${sec}`;
-                };
-                return `${min}:${sec}`;
-            };
+        // run updateProgressValue function every 1/2 second to show change in progressBar and song.currentTime on the DOM
+        setInterval(updateProgressValue, 500);
 
-            // run updateProgressValue function every 1/2 second to show change in progressBar and song.currentTime on the DOM
-            setInterval(updateProgressValue, 500);
-
-            // function where progressBar.value is changed when slider thumb is dragged without auto-playing audio
-            function changeProgressBar() {
-                song.currentTime = progressBar.value;
-            };
-
+        // function where progressBar.value is changed when slider thumb is dragged without auto-playing audio
+        function changeProgressBar() {
+            song.currentTime = progressBar.value;
+        };
     </script>
 </body>
 
