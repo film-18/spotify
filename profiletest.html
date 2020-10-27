@@ -173,7 +173,7 @@
             let mail = ''
             let currentChar = ''
             let index = document.cookie.search("now=") +4;
-            while (currentChar !== ";") {
+            while (currentChar !== "-") {
                 currentChar = document.cookie[index];
                 mail += currentChar;
                 index += 1;
