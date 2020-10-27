@@ -53,7 +53,9 @@
     .plpopular{
         padding-left: 40px;
     }
-
+    .bg{
+        border: 1px solid rgb(250, 195, 156);
+    }
 
 </style>
 
@@ -370,7 +372,7 @@
             ibuttonplay.setAttribute("class", "fas fa-play ibutton pl-1");
             buttonplay.append(ibuttonplay);
             let buttonfollow = document.createElement('button');
-            buttonfollow.setAttribute("class", "buttonfollow positionfollow");
+            buttonfollow.setAttribute("class", "buttonfollow bg");
             buttonfollow.innerHTML = "FOLLOW";
 
             let div4 = document.createElement('div');
