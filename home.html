@@ -289,73 +289,76 @@
 
                 let headText = document.createElement("div");
                 // for (let j=0; j<data[i].Songs.length; j++) {
-                    // for (let k=0; k<data[i].Songs.length; k++) {
-                        
-                        // row.style.overflowX = "hidden";
-                        let col = document.createElement("col");
-                        col.setAttribute("class", "col-md-3 xol-sm-3 pb-3 pr-2");
-                        
-                        let box = document.createElement("div");
-                        box.setAttribute("class", "card");
-                        box.style.backgroundColor = "#181818";
-                        box.style.borderRadius = "5px";
-                        
-                        
-                        let pic = document.createElement('IMG');
-                        pic.setAttribute("class", "card-img-top pl-3 pr-3 pt-3");
-                        pic.style.textAlign = "center";
-                        pic.src = data[i].Image;
+                // for (let k=0; k<data[i].Songs.length; k++) {
 
-                        let textbox = document.createElement("div");
-                        textbox.setAttribute("class", "card-body");
+                let row = document.createElement("div");
+                row.setAttribute("class", "row");
+                // row.style.overflowX = "hidden";
+                let col = document.createElement("col");
+                col.setAttribute("class", "col-md-3 xol-sm-3 pb-4");
+                col.style.overflowX = "hidden";
 
-                        let div = document.createElement("div");
-                        div.setAttribute("class", "divStyle");
-                        let nameText = document.createElement('b'); 
-                        nameText.innerHTML += data[i].Title + "<br>";
-                        let nameText2 = document.createElement('p');
-                        nameText2.setAttribute("class", "divStyle pt-1");
-                        nameText2.style.fontSize = "13px";
-                        nameText2.style.color = "gray";
-                        nameText2.style.letterSpacing = "normal";
-                        nameText2.style.lineHeight = "16px";
-                        nameText2.innerHTML += data[i].Artist + "<br>";
+                let box = document.createElement("div");
+                box.setAttribute("class", "card");
+                box.style.backgroundColor = "#212121";
+                box.style.borderRadius = "5px";
 
-                        let audioBox = document.createElement('audio');
-                        audioBox.setAttribute("controls", "controls");
-                        let audioOne = document.createElement('source');
-                    
-                        //audioOne.type = "music-t/mpeg";
-                        audioOne.setAttribute("src", data[i].Url);
-                        audioBox.append(audioOne);
-                        audioBox.style.width = "100%";
-                        
-                        div.append(nameText);
-                        textbox.appendChild(div);
-                        textbox.appendChild(nameText2);
-                        // textbox.appendChild(audioBox);
 
-                        box.appendChild(pic);
-                        box.appendChild(textbox);
-                        
-                        col.append(box);
-                        //col.append(pic);
-                        //col.append(nameText);
-                        //col.append(nameText2);   
-                        //col.append(audioBox);
-                        output.appendChild(col);
-                        
-                        if (i < 4) {
-                            rowFirst.append(col);
-                        }
-                        else {
-                            rowSec.append(col);
-                        }
+                let pic = document.createElement('IMG');
+                pic.setAttribute("class", "card-img-top pl-3 pr-3 pt-3");
+                pic.style.textAlign = "center";
+                pic.style.cursor = "pointer";
 
-                
-                    output.appendChild(headText);
-                    output.appendChild(rowFirst);
-                    output.appendChild(rowSec);
+
+                pic.src = data[i].Image;
+                pic.addEventListener("click", playPause);
+
+                let textbox = document.createElement("div");
+                textbox.setAttribute("class", "card-body");
+
+                let div = document.createElement("div");
+                div.setAttribute("class", "divStyle");
+                let nameText = document.createElement('b');
+                nameText.innerHTML += data[i].Title + "<br>";
+                let nameText2 = document.createElement('p');
+                nameText2.style.whiteSpace = "nowrap";
+                nameText2.innerHTML += data[i].Artist + "<br>";
+
+                let audioOne = document.createElement('source');
+                let audioBox = document.createElement('audio');
+                // audioBox.setAttribute("controls", "controls");
+                // audioBox.setAttribute("id", i);
+                audioOne.setAttribute("src", data[i].Url);
+                audioBox.style.width = "100%";
+                audioBox.append(audioOne);
+                // btn.append(audioBox);
+                div.append(nameText);
+                textbox.appendChild(div);
+                textbox.appendChild(nameText2);
+                textbox.appendChild(audioBox);
+
+                box.appendChild(pic);
+                box.appendChild(textbox);
+
+                col.append(box);
+                //col.append(pic);
+                //col.append(nameText);
+                //col.append(nameText2);   
+                col.append(audioBox);
+                output.appendChild(col);
+
+                if (i < 4) {
+                    rowFirst.append(col);
+                }
+                else {
+                    rowSec.append(col);
+                }
+
+
+                output.appendChild(headText);
+                output.appendChild(rowFirst);
+                output.appendChild(rowSec);
+                // }
                 // }
             }
         }
