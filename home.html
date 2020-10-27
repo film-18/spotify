@@ -307,21 +307,21 @@
                 let pic = document.createElement('IMG');
                 pic.setAttribute("class", "card-img-top pl-3 pr-3 pt-3");
                 pic.style.textAlign = "center";
-                pic.style.cursor = "pointer";
+                box.style.cursor = "pointer";
 
 
                 pic.src = data[i].Image;
-                pic.setAttribute("onclick", "go" + i + "()");
+                box.setAttribute("onclick", "go" + i + "()");
                 let textbox = document.createElement("div");
                 textbox.setAttribute("class", "card-body");
 
                 let div = document.createElement("div");
                 div.setAttribute("class", "divStyle");
                 let nameText = document.createElement('b');
-                nameText.innerHTML += data[i].Title + "<br>";
+                nameText.innerHTML += data[i].Title ;
                 let nameText2 = document.createElement('p');
                 nameText2.style.whiteSpace = "nowrap";
-                nameText2.innerHTML += data[i].Artist + "<br>";
+                nameText2.innerHTML += data[i].Artist;
 
                 let audioOne = document.createElement('source');
                 let audioBox = document.createElement('audio');
@@ -400,7 +400,6 @@
             song_ti.innerText = songTitles[0];
             song_ar.innerText = songArtists[0];
             song_th.setAttribute("src", thumbnails[0]);
-            console.log(songs+"###"+thumbnails+"###"+songArtists+"###"+songTitles);
         }
         function go1() {
             go();
@@ -408,6 +407,12 @@
             pPause.src = "./pause-circle-solid.png"
             song.play();
             playing = false;
+            let song_ti = document.getElementById("songti");
+            let song_ar = document.getElementById("songar");
+            let song_th = document.getElementById("thumbnail");
+            song_ti.innerText = songTitles[1];
+            song_ar.innerText = songArtists[1];
+            song_th.setAttribute("src", thumbnails[1]);
         }
         function go2() {
             go();
@@ -415,6 +420,12 @@
             pPause.src = "./pause-circle-solid.png"
             song.play();
             playing = false;
+            let song_ti = document.getElementById("songti");
+            let song_ar = document.getElementById("songar");
+            let song_th = document.getElementById("thumbnail");
+            song_ti.innerText = songTitles[2];
+            song_ar.innerText = songArtists[2];
+            song_th.setAttribute("src", thumbnails[2]);
         }
         function go3() {
             go();
@@ -422,6 +433,12 @@
             pPause.src = "./pause-circle-solid.png"
             song.play();
             playing = false;
+            let song_ti = document.getElementById("songti");
+            let song_ar = document.getElementById("songar");
+            let song_th = document.getElementById("thumbnail");
+            song_ti.innerText = songTitles[3];
+            song_ar.innerText = songArtists[3];
+            song_th.setAttribute("src", thumbnails[3]);
         }
         function go4() {
             go();
@@ -429,6 +446,12 @@
             pPause.src = "./pause-circle-solid.png"
             song.play();
             playing = false;
+            let song_ti = document.getElementById("songti");
+            let song_ar = document.getElementById("songar");
+            let song_th = document.getElementById("thumbnail");
+            song_ti.innerText = songTitles[4];
+            song_ar.innerText = songArtists[4];
+            song_th.setAttribute("src", thumbnails[4]);
         }
         function go5() {
             go();
@@ -436,6 +459,12 @@
             pPause.src = "./pause-circle-solid.png"
             song.play();
             playing = false;
+            let song_ti = document.getElementById("songti");
+            let song_ar = document.getElementById("songar");
+            let song_th = document.getElementById("thumbnail");
+            song_ti.innerText = songTitles[5];
+            song_ar.innerText = songArtists[5];
+            song_th.setAttribute("src", thumbnails[5]);
         }
         function go6() {
             go();
@@ -443,6 +472,12 @@
             pPause.src = "./pause-circle-solid.png"
             song.play();
             playing = false;
+            let song_ti = document.getElementById("songti");
+            let song_ar = document.getElementById("songar");
+            let song_th = document.getElementById("thumbnail");
+            song_ti.innerText = songTitles[6];
+            song_ar.innerText = songArtists[6];
+            song_th.setAttribute("src", thumbnails[6]);
         }
         function go7() {
             go();
@@ -450,6 +485,12 @@
             pPause.src = "./pause-circle-solid.png"
             song.play();
             playing = false;
+            let song_ti = document.getElementById("songti");
+            let song_ar = document.getElementById("songar");
+            let song_th = document.getElementById("thumbnail");
+            song_ti.innerText = songTitles[7];
+            song_ar.innerText = songArtists[7];
+            song_th.setAttribute("src", thumbnails[7]);
         }
         function go8() {
             go();
@@ -457,6 +498,12 @@
             pPause.src = "./pause-circle-solid.png"
             song.play();
             playing = false;
+            let song_ti = document.getElementById("songti");
+            let song_ar = document.getElementById("songar");
+            let song_th = document.getElementById("thumbnail");
+            song_ti.innerText = songTitles[8];
+            song_ar.innerText = songArtists[8];
+            song_th.setAttribute("src", thumbnails[8]);
         }
         function go9() {
             go();
@@ -464,6 +511,12 @@
             pPause.src = "./pause-circle-solid.png"
             song.play();
             playing = false;
+            let song_ti = document.getElementById("songti");
+            let song_ar = document.getElementById("songar");
+            let song_th = document.getElementById("thumbnail");
+            song_ti.innerText = songTitles[9];
+            song_ar.innerText = songArtists[9];
+            song_th.setAttribute("src", thumbnails[9]);
         }
         function go10() {
             go();
@@ -471,6 +524,12 @@
             pPause.src = "./pause-circle-solid.png"
             song.play();
             playing = false;
+            let song_ti = document.getElementById("songti");
+            let song_ar = document.getElementById("songar");
+            let song_th = document.getElementById("thumbnail");
+            song_ti.innerText = songTitles[10];
+            song_ar.innerText = songArtists[10];
+            song_th.setAttribute("src", thumbnails[10]);
         }
         function go11() {
             go();
@@ -478,6 +537,12 @@
             pPause.src = "./pause-circle-solid.png"
             song.play();
             playing = false;
+            let song_ti = document.getElementById("songti");
+            let song_ar = document.getElementById("songar");
+            let song_th = document.getElementById("thumbnail");
+            song_ti.innerText = songTitles[11];
+            song_ar.innerText = songArtists[11];
+            song_th.setAttribute("src", thumbnails[11]);
         }
         function go12() {
             go();
@@ -485,6 +550,12 @@
             pPause.src = "./pause-circle-solid.png"
             song.play();
             playing = false;
+            let song_ti = document.getElementById("songti");
+            let song_ar = document.getElementById("songar");
+            let song_th = document.getElementById("thumbnail");
+            song_ti.innerText = songTitles[12];
+            song_ar.innerText = songArtists[12];
+            song_th.setAttribute("src", thumbnails[12]);
         }
         function go13() {
             go();
@@ -492,6 +563,12 @@
             pPause.src = "./pause-circle-solid.png"
             song.play();
             playing = false;
+            let song_ti = document.getElementById("songti");
+            let song_ar = document.getElementById("songar");
+            let song_th = document.getElementById("thumbnail");
+            song_ti.innerText = songTitles[13];
+            song_ar.innerText = songArtists[13];
+            song_th.setAttribute("src", thumbnails[13]);
         }
         function go14() {
             go();
@@ -499,6 +576,12 @@
             pPause.src = "./pause-circle-solid.png"
             song.play();
             playing = false;
+            let song_ti = document.getElementById("songti");
+            let song_ar = document.getElementById("songar");
+            let song_th = document.getElementById("thumbnail");
+            song_ti.innerText = songTitles[14];
+            song_ar.innerText = songArtists[14];
+            song_th.setAttribute("src", thumbnails[14]);
         }
         function go15() {
             go();
@@ -506,6 +589,12 @@
             pPause.src = "./pause-circle-solid.png"
             song.play();
             playing = false;
+            let song_ti = document.getElementById("songti");
+            let song_ar = document.getElementById("songar");
+            let song_th = document.getElementById("thumbnail");
+            song_ti.innerText = songTitles[15];
+            song_ar.innerText = songArtists[15];
+            song_th.setAttribute("src", thumbnails[15]);
         }
         function go16() {
             go();
@@ -513,6 +602,12 @@
             pPause.src = "./pause-circle-solid.png"
             song.play();
             playing = false;
+            let song_ti = document.getElementById("songti");
+            let song_ar = document.getElementById("songar");
+            let song_th = document.getElementById("thumbnail");
+            song_ti.innerText = songTitles[16];
+            song_ar.innerText = songArtists[16];
+            song_th.setAttribute("src", thumbnails[16]);
         }
         function go17() {
             go();
@@ -520,6 +615,12 @@
             pPause.src = "./pause-circle-solid.png"
             song.play();
             playing = false;
+            let song_ti = document.getElementById("songti");
+            let song_ar = document.getElementById("songar");
+            let song_th = document.getElementById("thumbnail");
+            song_ti.innerText = songTitles[17];
+            song_ar.innerText = songArtists[17];
+            song_th.setAttribute("src", thumbnails[17]);
         }
         function go18() {
             go();
@@ -527,6 +628,12 @@
             pPause.src = "./pause-circle-solid.png"
             song.play();
             playing = false;
+            let song_ti = document.getElementById("songti");
+            let song_ar = document.getElementById("songar");
+            let song_th = document.getElementById("thumbnail");
+            song_ti.innerText = songTitles[18];
+            song_ar.innerText = songArtists[18];
+            song_th.setAttribute("src", thumbnails[18]);
         }
         function go19() {
             go();
@@ -534,6 +641,12 @@
             pPause.src = "./pause-circle-solid.png"
             song.play();
             playing = false;
+            let song_ti = document.getElementById("songti");
+            let song_ar = document.getElementById("songar");
+            let song_th = document.getElementById("thumbnail");
+            song_ti.innerText = songTitles[19];
+            song_ar.innerText = songArtists[19];
+            song_th.setAttribute("src", thumbnails[19]);
         }
         function go20() {
             go();
@@ -541,6 +654,12 @@
             pPause.src = "./pause-circle-solid.png"
             song.play();
             playing = false;
+            let song_ti = document.getElementById("songti");
+            let song_ar = document.getElementById("songar");
+            let song_th = document.getElementById("thumbnail");
+            song_ti.innerText = songTitles[20];
+            song_ar.innerText = songArtists[20];
+            song_th.setAttribute("src", thumbnails[20]);
         }
         function go21() {
             go();
@@ -548,6 +667,12 @@
             pPause.src = "./pause-circle-solid.png"
             song.play();
             playing = false;
+            let song_ti = document.getElementById("songti");
+            let song_ar = document.getElementById("songar");
+            let song_th = document.getElementById("thumbnail");
+            song_ti.innerText = songTitles[21];
+            song_ar.innerText = songArtists[21];
+            song_th.setAttribute("src", thumbnails[21]);
         }
         function go22() {
             go();
@@ -555,6 +680,12 @@
             pPause.src = "./pause-circle-solid.png"
             song.play();
             playing = false;
+            let song_ti = document.getElementById("songti");
+            let song_ar = document.getElementById("songar");
+            let song_th = document.getElementById("thumbnail");
+            song_ti.innerText = songTitles[22];
+            song_ar.innerText = songArtists[22];
+            song_th.setAttribute("src", thumbnails[22]);
         }
         function go23() {
             go();
@@ -562,6 +693,12 @@
             pPause.src = "./pause-circle-solid.png"
             song.play();
             playing = false;
+            let song_ti = document.getElementById("songti");
+            let song_ar = document.getElementById("songar");
+            let song_th = document.getElementById("thumbnail");
+            song_ti.innerText = songTitles[23];
+            song_ar.innerText = songArtists[23];
+            song_th.setAttribute("src", thumbnails[23]);
         }
         function go24() {
             go();
@@ -569,6 +706,12 @@
             pPause.src = "./pause-circle-solid.png"
             song.play();
             playing = false;
+            let song_ti = document.getElementById("songti");
+            let song_ar = document.getElementById("songar");
+            let song_th = document.getElementById("thumbnail");
+            song_ti.innerText = songTitles[24];
+            song_ar.innerText = songArtists[24];
+            song_th.setAttribute("src", thumbnails[24]);
         }
         function go25() {
             go();
@@ -576,6 +719,12 @@
             pPause.src = "./pause-circle-solid.png"
             song.play();
             playing = false;
+            let song_ti = document.getElementById("songti");
+            let song_ar = document.getElementById("songar");
+            let song_th = document.getElementById("thumbnail");
+            song_ti.innerText = songTitles[25];
+            song_ar.innerText = songArtists[25];
+            song_th.setAttribute("src", thumbnails[25]);
         }
         function go26() {
             go();
@@ -583,6 +732,12 @@
             pPause.src = "./pause-circle-solid.png"
             song.play();
             playing = false;
+            let song_ti = document.getElementById("songti");
+            let song_ar = document.getElementById("songar");
+            let song_th = document.getElementById("thumbnail");
+            song_ti.innerText = songTitles[26];
+            song_ar.innerText = songArtists[26];
+            song_th.setAttribute("src", thumbnails[26]);
         }
         function go27() {
             go();
@@ -590,6 +745,12 @@
             pPause.src = "./pause-circle-solid.png"
             song.play();
             playing = false;
+            let song_ti = document.getElementById("songti");
+            let song_ar = document.getElementById("songar");
+            let song_th = document.getElementById("thumbnail");
+            song_ti.innerText = songTitles[27];
+            song_ar.innerText = songArtists[27];
+            song_th.setAttribute("src", thumbnails[27]);
         }
         function go28() {
             go();
@@ -597,6 +758,12 @@
             pPause.src = "./pause-circle-solid.png"
             song.play();
             playing = false;
+            let song_ti = document.getElementById("songti");
+            let song_ar = document.getElementById("songar");
+            let song_th = document.getElementById("thumbnail");
+            song_ti.innerText = songTitles[28];
+            song_ar.innerText = songArtists[28];
+            song_th.setAttribute("src", thumbnails[28]);
         }
         function go29() {
             go();
@@ -604,6 +771,12 @@
             pPause.src = "./pause-circle-solid.png"
             song.play();
             playing = false;
+            let song_ti = document.getElementById("songti");
+            let song_ar = document.getElementById("songar");
+            let song_th = document.getElementById("thumbnail");
+            song_ti.innerText = songTitles[29];
+            song_ar.innerText = songArtists[29];
+            song_th.setAttribute("src", thumbnails[29]);
         }
         function go30() {
             go();
@@ -611,6 +784,12 @@
             pPause.src = "./pause-circle-solid.png"
             song.play();
             playing = false;
+            let song_ti = document.getElementById("songti");
+            let song_ar = document.getElementById("songar");
+            let song_th = document.getElementById("thumbnail");
+            song_ti.innerText = songTitles[30];
+            song_ar.innerText = songArtists[30];
+            song_th.setAttribute("src", thumbnails[30]);
         }
         function go31() {
             go();
@@ -618,6 +797,12 @@
             pPause.src = "./pause-circle-solid.png"
             song.play();
             playing = false;
+            let song_ti = document.getElementById("songti");
+            let song_ar = document.getElementById("songar");
+            let song_th = document.getElementById("thumbnail");
+            song_ti.innerText = songTitles[31];
+            song_ar.innerText = songArtists[31];
+            song_th.setAttribute("src", thumbnails[31]);
         }
         function go32() {
             go();
@@ -625,6 +810,12 @@
             pPause.src = "./pause-circle-solid.png"
             song.play();
             playing = false;
+            let song_ti = document.getElementById("songti");
+            let song_ar = document.getElementById("songar");
+            let song_th = document.getElementById("thumbnail");
+            song_ti.innerText = songTitles[32];
+            song_ar.innerText = songArtists[32];
+            song_th.setAttribute("src", thumbnails[32]);
         }
         function go33() {
             go();
@@ -632,6 +823,12 @@
             pPause.src = "./pause-circle-solid.png"
             song.play();
             playing = false;
+            let song_ti = document.getElementById("songti");
+            let song_ar = document.getElementById("songar");
+            let song_th = document.getElementById("thumbnail");
+            song_ti.innerText = songTitles[33];
+            song_ar.innerText = songArtists[33];
+            song_th.setAttribute("src", thumbnails[33]);
         }
         function go34() {
             go();
@@ -639,6 +836,12 @@
             pPause.src = "./pause-circle-solid.png"
             song.play();
             playing = false;
+            let song_ti = document.getElementById("songti");
+            let song_ar = document.getElementById("songar");
+            let song_th = document.getElementById("thumbnail");
+            song_ti.innerText = songTitles[34];
+            song_ar.innerText = songArtists[34];
+            song_th.setAttribute("src", thumbnails[34]);
         }
         function go35() {
             go();
@@ -646,6 +849,12 @@
             pPause.src = "./pause-circle-solid.png"
             song.play();
             playing = false;
+            let song_ti = document.getElementById("songti");
+            let song_ar = document.getElementById("songar");
+            let song_th = document.getElementById("thumbnail");
+            song_ti.innerText = songTitles[35];
+            song_ar.innerText = songArtists[35];
+            song_th.setAttribute("src", thumbnails[35]);
         }
         function go36() {
             go();
@@ -653,6 +862,12 @@
             pPause.src = "./pause-circle-solid.png"
             song.play();
             playing = false;
+            let song_ti = document.getElementById("songti");
+            let song_ar = document.getElementById("songar");
+            let song_th = document.getElementById("thumbnail");
+            song_ti.innerText = songTitles[36];
+            song_ar.innerText = songArtists[36];
+            song_th.setAttribute("src", thumbnails[36]);
         }
         function go37() {
             go();
@@ -660,6 +875,12 @@
             pPause.src = "./pause-circle-solid.png"
             song.play();
             playing = false;
+            let song_ti = document.getElementById("songti");
+            let song_ar = document.getElementById("songar");
+            let song_th = document.getElementById("thumbnail");
+            song_ti.innerText = songTitles[37];
+            song_ar.innerText = songArtists[37];
+            song_th.setAttribute("src", thumbnails[37]);
         }
         function go38() {
             go();
@@ -667,6 +888,12 @@
             pPause.src = "./pause-circle-solid.png"
             song.play();
             playing = false;
+            let song_ti = document.getElementById("songti");
+            let song_ar = document.getElementById("songar");
+            let song_th = document.getElementById("thumbnail");
+            song_ti.innerText = songTitles[38];
+            song_ar.innerText = songArtists[38];
+            song_th.setAttribute("src", thumbnails[38]);
         }
         function go39() {
             go();
@@ -674,6 +901,12 @@
             pPause.src = "./pause-circle-solid.png"
             song.play();
             playing = false;
+            let song_ti = document.getElementById("songti");
+            let song_ar = document.getElementById("songar");
+            let song_th = document.getElementById("thumbnail");
+            song_ti.innerText = songTitles[39];
+            song_ar.innerText = songArtists[39];
+            song_th.setAttribute("src", thumbnails[39]);
         }
         function go40() {
             go();
@@ -681,6 +914,12 @@
             pPause.src = "./pause-circle-solid.png"
             song.play();
             playing = false;
+            let song_ti = document.getElementById("songti");
+            let song_ar = document.getElementById("songar");
+            let song_th = document.getElementById("thumbnail");
+            song_ti.innerText = songTitles[40];
+            song_ar.innerText = songArtists[40];
+            song_th.setAttribute("src", thumbnails[40]);
         }
         function go41() {
             go();
@@ -688,6 +927,12 @@
             pPause.src = "./pause-circle-solid.png"
             song.play();
             playing = false;
+            let song_ti = document.getElementById("songti");
+            let song_ar = document.getElementById("songar");
+            let song_th = document.getElementById("thumbnail");
+            song_ti.innerText = songTitles[41];
+            song_ar.innerText = songArtists[41];
+            song_th.setAttribute("src", thumbnails[41]);
         }
         function go42() {
             go();
@@ -695,6 +940,12 @@
             pPause.src = "./pause-circle-solid.png"
             song.play();
             playing = false;
+            let song_ti = document.getElementById("songti");
+            let song_ar = document.getElementById("songar");
+            let song_th = document.getElementById("thumbnail");
+            song_ti.innerText = songTitles[42];
+            song_ar.innerText = songArtists[42];
+            song_th.setAttribute("src", thumbnails[42]);
         }
         function go43() {
             go();
@@ -702,6 +953,12 @@
             pPause.src = "./pause-circle-solid.png"
             song.play();
             playing = false;
+            let song_ti = document.getElementById("songti");
+            let song_ar = document.getElementById("songar");
+            let song_th = document.getElementById("thumbnail");
+            song_ti.innerText = songTitles[43];
+            song_ar.innerText = songArtists[43];
+            song_th.setAttribute("src", thumbnails[43]);
         }
         function go44() {
             go();
@@ -709,6 +966,12 @@
             pPause.src = "./pause-circle-solid.png"
             song.play();
             playing = false;
+            let song_ti = document.getElementById("songti");
+            let song_ar = document.getElementById("songar");
+            let song_th = document.getElementById("thumbnail");
+            song_ti.innerText = songTitles[44];
+            song_ar.innerText = songArtists[44];
+            song_th.setAttribute("src", thumbnails[44]);
         }
         function go45() {
             go();
@@ -716,6 +979,12 @@
             pPause.src = "./pause-circle-solid.png"
             song.play();
             playing = false;
+            let song_ti = document.getElementById("songti");
+            let song_ar = document.getElementById("songar");
+            let song_th = document.getElementById("thumbnail");
+            song_ti.innerText = songTitles[45];
+            song_ar.innerText = songArtists[45];
+            song_th.setAttribute("src", thumbnails[45]);
         }
         function go46() {
             go();
@@ -723,6 +992,12 @@
             pPause.src = "./pause-circle-solid.png"
             song.play();
             playing = false;
+            let song_ti = document.getElementById("songti");
+            let song_ar = document.getElementById("songar");
+            let song_th = document.getElementById("thumbnail");
+            song_ti.innerText = songTitles[46];
+            song_ar.innerText = songArtists[46];
+            song_th.setAttribute("src", thumbnails[46]);
         }
         function go47() {
             go();
@@ -730,6 +1005,12 @@
             pPause.src = "./pause-circle-solid.png"
             song.play();
             playing = false;
+            let song_ti = document.getElementById("songti");
+            let song_ar = document.getElementById("songar");
+            let song_th = document.getElementById("thumbnail");
+            song_ti.innerText = songTitles[47];
+            song_ar.innerText = songArtists[47];
+            song_th.setAttribute("src", thumbnails[47]);
         }
         function go48() {
             go();
@@ -737,6 +1018,12 @@
             pPause.src = "./pause-circle-solid.png"
             song.play();
             playing = false;
+            let song_ti = document.getElementById("songti");
+            let song_ar = document.getElementById("songar");
+            let song_th = document.getElementById("thumbnail");
+            song_ti.innerText = songTitles[48];
+            song_ar.innerText = songArtists[48];
+            song_th.setAttribute("src", thumbnails[48]);
         }
         function go49() {
             go();
@@ -744,6 +1031,12 @@
             pPause.src = "./pause-circle-solid.png"
             song.play();
             playing = false;
+            let song_ti = document.getElementById("songti");
+            let song_ar = document.getElementById("songar");
+            let song_th = document.getElementById("thumbnail");
+            song_ti.innerText = songTitles[49];
+            song_ar.innerText = songArtists[49];
+            song_th.setAttribute("src", thumbnails[49]);
         }
         function go50() {
             go();
@@ -751,6 +1044,12 @@
             pPause.src = "./pause-circle-solid.png"
             song.play();
             playing = false;
+            let song_ti = document.getElementById("songti");
+            let song_ar = document.getElementById("songar");
+            let song_th = document.getElementById("thumbnail");
+            song_ti.innerText = songTitles[50];
+            song_ar.innerText = songArtists[50];
+            song_th.setAttribute("src", thumbnails[50]);
         }
         function go51() {
             go();
@@ -758,6 +1057,12 @@
             pPause.src = "./pause-circle-solid.png"
             song.play();
             playing = false;
+            let song_ti = document.getElementById("songti");
+            let song_ar = document.getElementById("songar");
+            let song_th = document.getElementById("thumbnail");
+            song_ti.innerText = songTitles[51];
+            song_ar.innerText = songArtists[51];
+            song_th.setAttribute("src", thumbnails[51]);
         }
         function go52() {
             go();
@@ -765,6 +1070,12 @@
             pPause.src = "./pause-circle-solid.png"
             song.play();
             playing = false;
+            let song_ti = document.getElementById("songti");
+            let song_ar = document.getElementById("songar");
+            let song_th = document.getElementById("thumbnail");
+            song_ti.innerText = songTitles[52];
+            song_ar.innerText = songArtists[52];
+            song_th.setAttribute("src", thumbnails[52]);
         }
         function go53() {
             go();
@@ -772,6 +1083,12 @@
             pPause.src = "./pause-circle-solid.png"
             song.play();
             playing = false;
+            let song_ti = document.getElementById("songti");
+            let song_ar = document.getElementById("songar");
+            let song_th = document.getElementById("thumbnail");
+            song_ti.innerText = songTitles[53];
+            song_ar.innerText = songArtists[53];
+            song_th.setAttribute("src", thumbnails[53]);
         }
         function go54() {
             go();
@@ -779,6 +1096,12 @@
             pPause.src = "./pause-circle-solid.png"
             song.play();
             playing = false;
+            let song_ti = document.getElementById("songti");
+            let song_ar = document.getElementById("songar");
+            let song_th = document.getElementById("thumbnail");
+            song_ti.innerText = songTitles[54];
+            song_ar.innerText = songArtists[54];
+            song_th.setAttribute("src", thumbnails[54]);
         }
         function go55() {
             go();
@@ -786,6 +1109,12 @@
             pPause.src = "./pause-circle-solid.png"
             song.play();
             playing = false;
+            let song_ti = document.getElementById("songti");
+            let song_ar = document.getElementById("songar");
+            let song_th = document.getElementById("thumbnail");
+            song_ti.innerText = songTitles[55];
+            song_ar.innerText = songArtists[55];
+            song_th.setAttribute("src", thumbnails[55]);
         }
         function go56() {
             go();
@@ -793,6 +1122,12 @@
             pPause.src = "./pause-circle-solid.png"
             song.play();
             playing = false;
+            let song_ti = document.getElementById("songti");
+            let song_ar = document.getElementById("songar");
+            let song_th = document.getElementById("thumbnail");
+            song_ti.innerText = songTitles[56];
+            song_ar.innerText = songArtists[56];
+            song_th.setAttribute("src", thumbnails[56]);
         }
         function go57() {
             go();
@@ -800,6 +1135,12 @@
             pPause.src = "./pause-circle-solid.png"
             song.play();
             playing = false;
+            let song_ti = document.getElementById("songti");
+            let song_ar = document.getElementById("songar");
+            let song_th = document.getElementById("thumbnail");
+            song_ti.innerText = songTitles[57];
+            song_ar.innerText = songArtists[57];
+            song_th.setAttribute("src", thumbnails[57]);
         }
         function go58() {
             go();
@@ -807,6 +1148,12 @@
             pPause.src = "./pause-circle-solid.png"
             song.play();
             playing = false;
+            let song_ti = document.getElementById("songti");
+            let song_ar = document.getElementById("songar");
+            let song_th = document.getElementById("thumbnail");
+            song_ti.innerText = songTitles[58];
+            song_ar.innerText = songArtists[58];
+            song_th.setAttribute("src", thumbnails[58]);
         }
         function go59() {
             go();
@@ -814,12 +1161,24 @@
             pPause.src = "./pause-circle-solid.png"
             song.play();
             playing = false;
+            let song_ti = document.getElementById("songti");
+            let song_ar = document.getElementById("songar");
+            let song_th = document.getElementById("thumbnail");
+            song_ti.innerText = songTitles[59];
+            song_ar.innerText = songArtists[59];
+            song_th.setAttribute("src", thumbnails[59]);
         } function go60() {
             go();
             document.getElementById("song").setAttribute("src", songs[60]);
             pPause.src = "./pause-circle-solid.png"
             song.play();
             playing = false;
+            let song_ti = document.getElementById("songti");
+            let song_ar = document.getElementById("songar");
+            let song_th = document.getElementById("thumbnail");
+            song_ti.innerText = songTitles[60];
+            song_ar.innerText = songArtists[60];
+            song_th.setAttribute("src", thumbnails[60]);
         }
         function go61() {
             go();
@@ -827,66 +1186,132 @@
             pPause.src = "./pause-circle-solid.png"
             song.play();
             playing = false;
+            let song_ti = document.getElementById("songti");
+            let song_ar = document.getElementById("songar");
+            let song_th = document.getElementById("thumbnail");
+            song_ti.innerText = songTitles[61];
+            song_ar.innerText = songArtists[61];
+            song_th.setAttribute("src", thumbnails[61]);
         } function go62() {
             go();
             document.getElementById("song").setAttribute("src", songs[62]);
             pPause.src = "./pause-circle-solid.png"
             song.play();
             playing = false;
+            let song_ti = document.getElementById("songti");
+            let song_ar = document.getElementById("songar");
+            let song_th = document.getElementById("thumbnail");
+            song_ti.innerText = songTitles[62];
+            song_ar.innerText = songArtists[62];
+            song_th.setAttribute("src", thumbnails[62]);
         } function go63() {
             go();
             document.getElementById("song").setAttribute("src", songs[63]);
             pPause.src = "./pause-circle-solid.png"
             song.play();
             playing = false;
+            let song_ti = document.getElementById("songti");
+            let song_ar = document.getElementById("songar");
+            let song_th = document.getElementById("thumbnail");
+            song_ti.innerText = songTitles[63];
+            song_ar.innerText = songArtists[63];
+            song_th.setAttribute("src", thumbnails[63]);
         } function go64() {
             go();
             document.getElementById("song").setAttribute("src", songs[64]);
             pPause.src = "./pause-circle-solid.png"
             song.play();
             playing = false;
+            let song_ti = document.getElementById("songti");
+            let song_ar = document.getElementById("songar");
+            let song_th = document.getElementById("thumbnail");
+            song_ti.innerText = songTitles[64];
+            song_ar.innerText = songArtists[64];
+            song_th.setAttribute("src", thumbnails[64]);
         } function go65() {
             go();
             document.getElementById("song").setAttribute("src", songs[65]);
             pPause.src = "./pause-circle-solid.png"
             song.play();
             playing = false;
+            let song_ti = document.getElementById("songti");
+            let song_ar = document.getElementById("songar");
+            let song_th = document.getElementById("thumbnail");
+            song_ti.innerText = songTitles[65];
+            song_ar.innerText = songArtists[65];
+            song_th.setAttribute("src", thumbnails[65]);
         } function go66() {
             go();
             document.getElementById("song").setAttribute("src", songs[66]);
             pPause.src = "./pause-circle-solid.png"
             song.play();
             playing = false;
+            let song_ti = document.getElementById("songti");
+            let song_ar = document.getElementById("songar");
+            let song_th = document.getElementById("thumbnail");
+            song_ti.innerText = songTitles[66];
+            song_ar.innerText = songArtists[66];
+            song_th.setAttribute("src", thumbnails[66]);
         } function go67() {
             go();
             document.getElementById("song").setAttribute("src", songs[67]);
             pPause.src = "./pause-circle-solid.png"
             song.play();
             playing = false;
+            let song_ti = document.getElementById("songti");
+            let song_ar = document.getElementById("songar");
+            let song_th = document.getElementById("thumbnail");
+            song_ti.innerText = songTitles[67];
+            song_ar.innerText = songArtists[67];
+            song_th.setAttribute("src", thumbnails[67]);
         } function go68() {
             go();
             document.getElementById("song").setAttribute("src", songs[68]);
             pPause.src = "./pause-circle-solid.png"
             song.play();
             playing = false;
+            let song_ti = document.getElementById("songti");
+            let song_ar = document.getElementById("songar");
+            let song_th = document.getElementById("thumbnail");
+            song_ti.innerText = songTitles[68];
+            song_ar.innerText = songArtists[68];
+            song_th.setAttribute("src", thumbnails[68]);
         } function go69() {
             go();
             document.getElementById("song").setAttribute("src", songs[69]);
             pPause.src = "./pause-circle-solid.png"
             song.play();
             playing = false;
+            let song_ti = document.getElementById("songti");
+            let song_ar = document.getElementById("songar");
+            let song_th = document.getElementById("thumbnail");
+            song_ti.innerText = songTitles[69];
+            song_ar.innerText = songArtists[69];
+            song_th.setAttribute("src", thumbnails[69]);
         } function go70() {
             go();
             document.getElementById("song").setAttribute("src", songs[70]);
             pPause.src = "./pause-circle-solid.png"
             song.play();
             playing = false;
+            let song_ti = document.getElementById("songti");
+            let song_ar = document.getElementById("songar");
+            let song_th = document.getElementById("thumbnail");
+            song_ti.innerText = songTitles[70];
+            song_ar.innerText = songArtists[70];
+            song_th.setAttribute("src", thumbnails[70]);
         } function go71() {
             go();
             document.getElementById("song").setAttribute("src", songs[71]);
             pPause.src = "./pause-circle-solid.png"
             song.play();
             playing = false;
+            let song_ti = document.getElementById("songti");
+            let song_ar = document.getElementById("songar");
+            let song_th = document.getElementById("thumbnail");
+            song_ti.innerText = songTitles[71];
+            song_ar.innerText = songArtists[71];
+            song_th.setAttribute("src", thumbnails[71]);
         }
         function playPause() {
             if (playing) {
