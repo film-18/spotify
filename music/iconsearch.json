@@ -1,12 +1,16 @@
 [
     {
-        "Title": "Your daily Mix1",
+        "Title": "Made For You",
         "Image": "https://t.scdn.co/images/68433b0ee5b5465b8e926c42b84cbcdb.jpeg",
-        "Color": ""
+        "Color": [160, 195, 210],
+        "Color2": "(160, 195, 210)"
+        
     },
     {
-        "Title": "Tops 50 : Global",
-        "Image": "https://t.scdn.co/images/4b7472015a274eadbc00119f5141e548.jpeg"
+        "Title": "Charts",
+        "Image": "https://t.scdn.co/images/4b7472015a274eadbc00119f5141e548.jpeg",
+        "Color": [160, 195, 210],
+        "Color2": "(160, 195, 210)"
     },
     {
         "Title": "New Releases",
