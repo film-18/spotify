@@ -311,9 +311,13 @@ body {
     text-overflow: ellipsis;
 }
 .genre {
-    height: 225px;
+    
     box-sizing: border-box;
     border-radius: 7px;
+    border : 0px;
+    position : relative;
+    overflow : hidden;
+    background : linear-gradient(0deg,transparent,rgba(0,0,0,.4));
 
 }
 .pic_search {
