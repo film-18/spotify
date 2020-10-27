@@ -1,6 +1,14 @@
+*:focus {
+    outline: none;
+}
 * {
     font-family: 'Ubuntu', sans-serif;
+    
 }
+button:focus {
+    outline: none;
+    box-shadow: none;
+  }
 .divStyle {
     /* font-family: 'Ubuntu', sans-serif; */
     white-space: nowrap;
