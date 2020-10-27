@@ -129,14 +129,19 @@
             </div>
 
             <div class="row">
-                <div class="col">
-                    <button class="rounded border-0 button w-100 text-left">
+                <div class="col dropdown">
+                    <button class="rounded border-0 button w-100 text-left dropbtn">
                         <span class="float-left">
                             <span class="spanlink_song d-inline float-left mr-2"><i class="fab fa-gratipay"></i></span>
                         </span>
                         <span>
                             <p class="d-inline float-left mt-2 mb-0" style="font-size: 13px;">Liked Songs</p>
                         </span>
+                        <div class="dropdown-content" id="dropdownCon">
+                            <a href="#">Link 1</a>
+                            <a href="#">Link 2</a>
+                            <a href="#">Link 3</a>
+                          </div>
                     </button>
                 </div>
             </div>
@@ -1396,12 +1401,17 @@
             song.currentTime = progressBar.value;
         };
         let heartcheck = 0;
-
         function like() {
             if (heartcheck == 0) {
                 let tored = document.getElementsByTagName('i')[8];
                 tored.style.color = "red";
                 heartcheck = 1;
+                let addmusic = document.createElement('a');
+                let likebox = document.getElementById("dropdownCon");
+                addmusic.setAttribute("onclick", "go12()");
+                addmusic.style.color = "black";
+                addmusic.innerHTML = songTitles[12]+"";
+                likebox.append(addmusic);
             }
             else if (heartcheck == 1) {
                 let tored = document.getElementsByTagName('i')[8];
