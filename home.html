@@ -193,10 +193,10 @@
                                 </div>
                                 <div class="col-md-6 px-0 pt-2">
                                     <span class="spanLike">
-                                        <i class="fas fa-heart"></i>
+                                        <i class="fas fa-heart" onclick="like()" style="cursor: pointer;"></i>
                                     </span>
                                     <span class="spanLike px-2">
-                                        <i class="fas fa-globe-asia"></i>
+                                        <i class="fas fa-globe-asia" onclick="" style="cursor: pointer;"></i>
                                     </span>
                                 </div>
                             </div>
@@ -1336,7 +1336,7 @@
         // function where songIndex is incremented, song/thumbnail image/background image/song artist/song title changes to next index value, and playPause() runs to play next track 
         function nextSong() {
             songIndex++;
-            if (songIndex > 10) {
+            if (songIndex > 71) {
                 songIndex = 0;
             };
             song.src = songs[songIndex];
@@ -1353,7 +1353,7 @@
         function previousSong() {
             songIndex--;
             if (songIndex < 0) {
-                songIndex = 10;
+                songIndex = 71;
             };
             song.src = songs[songIndex];
             thumbnail.src = thumbnails[songIndex];
@@ -1394,6 +1394,9 @@
         function changeProgressBar() {
             song.currentTime = progressBar.value;
         };
+        function like(){
+            alert("ยังไม่ทำ อิอิ");
+        }
     </script>
 </body>
 
