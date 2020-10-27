@@ -169,8 +169,19 @@
             }).catch(function (error) {
                 console.log("Error getting document:", error);
             });
-            getname.innerHTML = document.cookie.split(";")[2];
-            console.log(document.cookie.split(";")[2]);
+
+            let mail = ''
+            let currentChar = ''
+            let index = document.cookie.search("now=") +4;
+            while (currentChar !== ";") {
+                currentChar = document.cookie[index];
+                mail += currentChar;
+                index += 1;
+            }
+
+            getname.innerHTML = mail.slice(0, -1);
+            // console.log(mail);
+
         </script>
 </body>
 

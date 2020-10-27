@@ -97,7 +97,7 @@
                             <input ng-model="form.email" type="email"
                                 class="form-control input-with-feedback ng-pristine ng-valid-sp-disallow-chars ng-empty ng-invalid ng-invalid-required ng-touched"
                                 name="email" id="email" aria-describedby="emailHelp" placeholder="Enter your email."
-                                required="" >
+                                required="">
                             <label for="confirmemail" class="control-label ng-binding">
                                 Confirm your email
                             </label>
@@ -224,8 +224,8 @@
                     </div>
 
 
-                
-    
+
+
 
                 </form>
 
@@ -239,7 +239,7 @@
                                             <div class="row">
                                                 <div class="col-xs-12">
                                                     <a id="button_signup" class="btn btn-block ng-binding"
-                                                        onclick="register()" >SIGN UP
+                                                        onclick="register()">SIGN UP
                                                     </a>
                                                     <a id="button_signup" class="btn btn-block ng-binding"
                                                         href="login.html">next
@@ -324,17 +324,21 @@
 
             // location.href = "login.html";
 
-            if( document.account.email.value == "" ) {
+            if (document.account.email.value == "") {
                 alert("Enter some value!");
                 return;
             }
-            cookievalue = escape(document.account.email.value) + ";";
+            cookievalue = "now=" + escape(document.account.email.value) + ";";
             document.cookie = cookievalue;
 
+        
 
-            }
 
             
+            
+        }
+
+
 
 
     </script>
