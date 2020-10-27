@@ -5,6 +5,7 @@
     font-family: 'Ubuntu', sans-serif;
     
 }
+
 button:focus {
     outline: none;
     box-shadow: none;
@@ -12,10 +13,9 @@ button:focus {
 .divStyle {
     /* font-family: 'Ubuntu', sans-serif; */
     white-space: nowrap;
-    width: 190px;
+    max-width: 190px;
     overflow: hidden;
     text-overflow: ellipsis;
-    font-size: 1.10vw;
 }
 
 .bgLeft {
@@ -24,7 +24,7 @@ button:focus {
 }
 
 .bgRight-top {
-    background-color: #1a1a1a;
+    background-color: #131313;
     color: white;
 }
 
@@ -368,4 +368,3 @@ input {
     pointer-events: none;
     color: #000;
 }
-
