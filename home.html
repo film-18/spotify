@@ -38,7 +38,7 @@
     <!-- <div class="container"> -->
     <!-- ฝั่งซ้าย -->
     <div class="row" style="overflow-x: hidden;">
-        <div class="col-md-2 col-sm-5 bgLeft px-4 py-2 fixed-top">
+        <div class="bgLeft p-3 fixed-top" style="width: 230px;">
             <div class="d-inline">
                 <div class="row">
                     <div class="col">
@@ -144,8 +144,8 @@
 
 
         <!-- ฝั่งขวา -->
-        <div class="col-md-3 col-sm-5 bgLeft px-0 py-2"></div>
-        <div class="col-md-9 bgRight-top pt-2 px-0 ">
+        <div class="bgLeft px-0 py-2" style="width: 250px;"></div>
+        <div class="col bgRight-top pt-2 px-0 ">
             <div class="row">
                 <div class="col-2 py-2">
                     <div class="pl-3 pr-3 d-inline">
@@ -278,10 +278,10 @@
         request.send();
         function dataReportStatus(data) {
             let rowFirst = document.createElement('div');
-            rowFirst.setAttribute("class", "row mx-2 mt-5");
+            rowFirst.setAttribute("class", "row mx-2 mr-4 ml-2 mt-3");
 
             let rowSec = document.createElement('div');
-            rowSec.setAttribute("class", "row mx-2 mt-5");
+            rowSec.setAttribute("class", "row mx-2 mr-4 ml-2");
 
 
             for (let i=0; i<data.length; i++) {
@@ -290,25 +290,19 @@
                 // for (let j=0; j<data[i].Songs.length; j++) {
                     // for (let k=0; k<data[i].Songs.length; k++) {
                         
-                        let row = document.createElement("div");
-                        row.setAttribute("class", "row");
                         // row.style.overflowX = "hidden";
                         let col = document.createElement("col");
-                        col.setAttribute("class", "col-md-3 xol-sm-3 pb-4");
-                        col.style.overflowX = "hidden";
+                        col.setAttribute("class", "col-md-3 xol-sm-3 pb-3 pr-2");
                         
                         let box = document.createElement("div");
                         box.setAttribute("class", "card");
-                        box.style.backgroundColor = "#212121";
+                        box.style.backgroundColor = "#181818";
                         box.style.borderRadius = "5px";
                         
                         
                         let pic = document.createElement('IMG');
                         pic.setAttribute("class", "card-img-top pl-3 pr-3 pt-3");
                         pic.style.textAlign = "center";
-                        
-
-                        
                         pic.src = data[i].Image;
 
                         let textbox = document.createElement("div");
@@ -319,7 +313,11 @@
                         let nameText = document.createElement('b'); 
                         nameText.innerHTML += data[i].Title + "<br>";
                         let nameText2 = document.createElement('p');
-                        nameText2.style.whiteSpace = "nowrap";
+                        nameText2.setAttribute("class", "divStyle pt-1");
+                        nameText2.style.fontSize = "13px";
+                        nameText2.style.color = "gray";
+                        nameText2.style.letterSpacing = "normal";
+                        nameText2.style.lineHeight = "16px";
                         nameText2.innerHTML += data[i].Artist + "<br>";
 
                         let audioBox = document.createElement('audio');
