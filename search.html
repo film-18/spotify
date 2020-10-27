@@ -63,7 +63,7 @@
             </button>
             <button class="rounded border-0 button w-100 text-left py-2">
                 <span class="spanlibrary d-inline mr-3"><i class="fas fa-book-open"></i></span>
-                <p class="d-inline" style="font-size: 13px;">Your library</p>
+                <p class="d-inline" style="font-size: 13px;">Your Library</p>
             </button>
 
 
@@ -204,12 +204,9 @@
 
             let genre1 = document.createElement("div");
             genre1.setAttribute("class", "genre card col ml-4 mr-4");
-            genre1.style.background = "linear-gradient(0deg,transparent,rgba(0,0,0,.4))";
             genre1.style.backgroundColor = "rgb(195, 240, 200)";
-            genre1.style.border = "0px";
-            genre1.style.gridColumn = "span 2";
-            genre1.style.position = "relative";
-            genre1.style.overflow = "hidden";
+            genre1.style.height = "225px";
+            
             let pic1 = document.createElement('IMG');
             pic1.setAttribute("class", "pic_search");
             pic1.src = "https://t.scdn.co/images/d355f48a90b64c25b6e004179a596e51.jpeg";
@@ -226,12 +223,8 @@
 
             let genre2 = document.createElement("div");
             genre2.setAttribute("class", "genre card col mr-4");
-            genre2.style.gridColumn = "span 2";
-            genre2.style.position = "relative";
-            genre2.style.overflow = "hidden";
-            genre2.style.background = "linear-gradient(0deg,transparent,rgba(0,0,0,.4))";
+            genre2.style.height = "225px";
             genre2.style.backgroundColor = "rgb(205, 245, 100)";
-            genre2.style.border = "0px";
             let pic2 = document.createElement('IMG');
             pic2.setAttribute("class", "pic_search");
             pic2.src = "https://t.scdn.co/images/85ff3ff8f2c84706ab76f27fd0388c56.jpeg";
@@ -268,19 +261,14 @@
                 col.setAttribute("class", "pb-4 pl-4 pr-0");
 
                 let box = document.createElement("div");
-                box.setAttribute("class", "card");
-                box.style.backgroundColor = "#212121";
-                box.style.borderRadius = "7px";
+                box.setAttribute("class", "genre card");
                 box.style.height = "240px";
                 box.style.width = "230px";
-                box.style.gridColumn = "span 2";
-                box.style.position = "relative";
-                box.style.overflow = "hidden";
+                box.style.backgroundColor = data[i].Color;
 
                 let pic = document.createElement('IMG');
                 pic.setAttribute("class", "pic_search");
                 pic.src = data[i].Image;
-                pic.style.boxShadow = "0 2px 4px 0 rgba(0,0,0,.2)";
 
 
                 let name = document.createElement('b');
