@@ -177,7 +177,7 @@
 
                     <div class="row py-2 px-2">
                         <div class="col-md-3 py-2 px-1">
-                            <img src="https://i.scdn.co/image/ab67616d00001e02b4668d89ecb9c2f7e2e6189f" class="img-fluid w-100 rounded"/>
+                            <img src="https://i.scdn.co/image/ab67616d00001e02b4668d89ecb9c2f7e2e6189f" class="img-fluid w-100 rounded" id="thumbnail"/>
                         </div>
                         <div class="col-md-9 py-3">
                             <div class="row">
@@ -209,17 +209,17 @@
 
                         <div class="container">
                             <div class="player text-center">
-                                <button  class="btn spanBack mt-1" onclick="nextSong()">
+                                <button  class="btn spanBack mt-1" onclick="previousSong()">
                                     <img src="step-backward-solid.png" id="previous-song" class="img-fluid">
                                 </button>
                                 <!-- <img  src="step-backward-solid.png" onclick="previousSong()" width="30px" height="30px" id="previous-song"/> -->
                                     <!-- <img src="./assets/icons/backward.png" onclick="previousSong()" id="previous-song"  class="img-fluid w-25" /> -->
-                                    <button  class="btn spanBack ml-2" >
-                                        <img src="play-circle-solid.png" id="play-pause" onclick="playPause()">
+                                    <button  class="btn spanBack ml-2" onclick="playPause()">
+                                        <img src="play-circle-solid.png" id="play-pause">
                                     </button>
                                     <!-- <img src="play-circle-solid.png" onclick="playPause()" width="50px" height="50px" id="play-pause"/> -->
                                   <button  class="btn spanBack ml-3 mt-1" onclick="nextSong()">
-                                    <img src="step-forward-solid.png" id="previous-song">
+                                    <img src="step-forward-solid.png" id="next-song">
                                 </button>
                             </div>
                         </div>
