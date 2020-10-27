@@ -53,7 +53,9 @@
     .plpopular{
         padding-left: 40px;
     }
-
+    .bg{
+        border: 1px solid rgb(172, 161, 111);
+    }
 
 </style>
 
@@ -73,7 +75,7 @@
     <!-- <div class="container"> -->
     <!-- ฝั่งซ้าย -->
     <div class="row" style="overflow-x: hidden;">
-        <div class="bgLeft p-3 fixed-top" style="width: 230px; height: 100%;">
+        <div class="col-md-2 col-sm-5 bgLeft px-4 py-2 fixed-top">
             <div class="d-inline">
                 <div class="row">
                     <div class="col">
@@ -179,8 +181,8 @@
 
 
         <!-- ฝั่งขวา -->
-        <div class="bgLeft px-0 py-2" style="width: 250px;"></div>
-        <div class="col bgRight-top pt-2 px-0 ">
+        <div class="col-md-3 col-sm-5 bgLeft px-0 py-2"></div>
+        <div class="col-md-9 bgRight-top pt-0 px-0 ">
             <!-- <div class="row">
                 <div class="col-2 py-2">
                     <div class="pl-3 pr-3 d-inline">
@@ -358,18 +360,19 @@
             let div2 = document.createElement('div');
             div2.setAttribute("class", "w-100 boxartist");
             div2.style.height = "200px";
+            div2.style.backgroundColor = "rgb(187, 154, 0)";
             
             let div3 = document.createElement('div');
             div3.setAttribute("class", "w-100");
             div3.style.height = "100px";
-            div3.style.backgroundColor = "rgb(187, 154, 0)";
+            // div3.style.backgroundColor = "rgb(252, 108, 4)";
             let buttonplay = document.createElement('button');
             buttonplay.setAttribute("class", "buttonplayartist positionplay border-0");
             let ibuttonplay = document.createElement('i');
             ibuttonplay.setAttribute("class", "fas fa-play ibutton pl-1");
             buttonplay.append(ibuttonplay);
             let buttonfollow = document.createElement('button');
-            buttonfollow.setAttribute("class", "buttonfollow positionfollow");
+            buttonfollow.setAttribute("class", "buttonfollow bg");
             buttonfollow.innerHTML = "FOLLOW";
 
             let div4 = document.createElement('div');
