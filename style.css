@@ -329,4 +329,32 @@ body {
     bottom: 0;
     box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
 }
+.topbar-search-input {
+    color: #000;
+    padding: 6px 48px;
+    height: 40px;
+    width: 85%;
+    border: 0;
+    border-radius: 500px;
+    text-overflow: ellipsis;
+}
+input {
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: .015em;
+    font-weight: var(--glue-font-weight-normal);
+    text-transform: none;
+}
+.icon-search {
+    position: absolute;
+    top: 15px;
+    bottom: 0;
+    left: 28px;
+    right: 25px;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    pointer-events: none;
+    color: #000;
+}
 

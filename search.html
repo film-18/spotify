@@ -63,7 +63,7 @@
             </button>
             <button class="rounded border-0 button w-100 text-left py-2">
                 <span class="spanlibrary d-inline mr-3"><i class="fas fa-book-open"></i></span>
-                <p class="d-inline" style="font-size: 13px;">Your Library</p>
+                <p class="d-inline" style="font-size: 13px;">Your library</p>
             </button>
 
 
@@ -156,13 +156,28 @@
                             <span class="rightarrow ml-3"><i class="fas fa-angle-right"></i></span>
                         </button>
                     </div>
+
+                </div>
+                <div class="col-5 py-2">
+                    <div class="topbar-search d-inline pt-3">
+                        <input class="topbar-search-input" maxlength="80" autocorrect="off" autocapitalize="off"
+                            spellcheck="false" placeholder="ค้นหาศิลปิน เพลง หรือพอดแคสต์" data-testid="search-input"
+                            value="">
+                        <div class="icon-search d-inline">
+                            <span class="d-inline">
+                                <svg height="24" role="img" width="24" viewBox="0 0 512 512" aria-hidden="true">
+                                    <path
+                                        d="M349.714 347.937l93.714 109.969-16.254 13.969-93.969-109.969q-48.508 36.825-109.207 36.825-36.826 0-70.476-14.349t-57.905-38.603-38.603-57.905-14.349-70.476 14.349-70.476 38.603-57.905 57.905-38.603 70.476-14.349 70.476 14.349 57.905 38.603 38.603 57.905 14.349 70.476q0 37.841-14.73 71.619t-40.889 58.921zM224 377.397q43.428 0 80.254-21.461t58.286-58.286 21.461-80.254-21.461-80.254-58.286-58.285-80.254-21.46-80.254 21.46-58.285 58.285-21.46 80.254 21.46 80.254 58.285 58.286 80.254 21.461z"
+                                        fill="currentColor"></path>
+                                </svg></span></div>
+                    </div>
                 </div>
             </div>
             <div id="lists">
             </div>
         </div>
     </div>
-
+    </div>
 
     <!-- <div class="row"> 
                         <div class="col-4"> 
@@ -206,7 +221,7 @@
             genre1.setAttribute("class", "genre card col ml-4 mr-4");
             genre1.style.backgroundColor = "rgb(195, 240, 200)";
             genre1.style.height = "225px";
-            
+
             let pic1 = document.createElement('IMG');
             pic1.setAttribute("class", "pic_search");
             pic1.src = "https://t.scdn.co/images/d355f48a90b64c25b6e004179a596e51.jpeg";
@@ -262,7 +277,7 @@
 
                 let box = document.createElement("div");
                 box.setAttribute("class", "genre card");
-                box.style.height = "240px";
+                box.style.height = "230px";
                 box.style.width = "230px";
                 box.style.backgroundColor = data[i].Color;
 

@@ -2,14 +2,12 @@
     {
         "Title": "Made For You",
         "Image": "https://t.scdn.co/images/68433b0ee5b5465b8e926c42b84cbcdb.jpeg",
-        "Color": "rgb(160, 195, 210)"
-        
-
+        "Color": "rgb(155, 240, 225)"
     },
     {
         "Title": "Charts",
         "Image": "https://t.scdn.co/images/4b7472015a274eadbc00119f5141e548.jpeg",
-        "Color": "rgb(75, 145, 125)"
+        "Color": "rgb(245, 115, 160)"
     },
     {
         "Title": "New Releases",
