@@ -236,7 +236,10 @@
                                             <div class="row">
                                                 <div class="col-xs-12">
                                                     <a id="button_signup" class="btn btn-block ng-binding"
-                                                        onclick="register()">SIGN UP
+                                                        onclick="register()" >SIGN UP
+                                                    </a>
+                                                    <a id="button_signup" class="btn btn-block ng-binding"
+                                                        href="login.html" >next
                                                     </a>
                                                 </div></center>
                                                 <div class="col-xs-12">
@@ -275,6 +278,8 @@
         var db = firebase.firestore();
         function register() {
 
+
+
             let email = document.getElementById('email').value;
             // let confirmEmail = document.getElementById('confirmemail').value;
             let password = document.getElementById('password').value;
@@ -303,6 +308,12 @@
             //     console.error("Error adding document: ", error);
             // });
 
+            var x = document.cookie;
+            x =  "email"+email;
+            x.split(";")[1];
+            console.log(x)
+
+            // location.href = "login.html";
         }
 
 

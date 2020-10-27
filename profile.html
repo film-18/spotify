@@ -157,11 +157,12 @@
             // });
 
 
-            var docRef = db.collection("users").doc("film_kanlaya@hotmail.com");
+            var docRef = db.collection("users").doc("jjjj");
 
             docRef.get().then(function (doc) {
                 if (doc.exists) {
-                    console.log("Document data:", doc.data().Name);
+                    getname.innerHTML =  doc.data().Name;
+                    console.log(doc.data().Name)
                 } else {
                     // doc.data() will be undefined in this case
                     console.log("No such document!");

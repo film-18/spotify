@@ -37,7 +37,7 @@
                     <div class="row">
                         <div class="col-xs-12">
                             <label for="login-username" class="control-label ng-binding">
-                               Email address or username
+                                Email address or username
                             </label>
                             <input ng-model="form.username" type="text"
                                 class="form-control input-with-feedback ng-pristine ng-valid-sp-disallow-chars ng-empty ng-invalid ng-invalid-required ng-touched"
@@ -110,10 +110,9 @@
                                         <div>
                                             <div class="row">
                                                 <div class="col-xs-12">
-                                                    <a id="sign-up-link"
-                                                        class="btn btn-block btn-default ng-binding" role="button"
-                                                        href="register.html">SIGN UP FOR SPOTIFY
-                                                        </a>
+                                                    <a id="sign-up-link" class="btn btn-block btn-default ng-binding"
+                                                        role="button" href="register.html">SIGN UP FOR SPOTIFY
+                                                    </a>
                                                 </div>
                                             </div>
                                         </div>
@@ -127,6 +126,37 @@
             </div>
         </div>
     </div>
+
+    <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-firestore.js"></script>
+
+    <script>
+        let getname = document.getElementById('profileName');
+
+        // Initialize Cloud Firestore through Firebase
+        firebase.initializeApp({
+            apiKey: 'AIzaSyAIlXUZEeQ9jwTaIGr5C9uEUQYOd8KEWpA',
+            projectId: 'spotify-8da9e'
+        });
+
+        var db = firebase.firestore();
+        var docRef = db.collection("users").doc();
+
+        db.collection("users").get().then(function (querySnapshot) {
+            querySnapshot.forEach(function (doc) {
+                // doc.data() is never undefined for query doc snapshots
+                var theCookies = doc.id;
+                // theCookies = document.cookie.split(';');
+                // var aString = '';
+                // for (var i = 1; i <= theCookies.length; i++) {
+                //     aString += i + ' ' + theCookies[i - 1] + "\n";
+                // }
+                if ()
+                console.log(theCookies);
+            });
+        });
+
+    </script>
 </body>
 
 </html>
