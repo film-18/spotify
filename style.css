@@ -375,7 +375,7 @@ input {
     border : 0px;
     position : relative;
     overflow : hidden;
-    /* background : linear-gradient(180deg,transparent,rgba(0.2,0.4,0.6,0.8)); */
+    background : linear-gradient(180deg,transparent,rgba(0.7,0.8,0.9,1));
 }
 .buttonplayartist{
     background-color: #1db954;
