@@ -37,7 +37,7 @@
     <!-- <div class="container"> -->
     <!-- ฝั่งซ้าย -->
     <div class="row" style="overflow-x: hidden;">
-        <div class="col-md-2 col-sm-5 bgLeft px-4 py-2 fixed-top">
+        <div class="bgLeft p-3 fixed-top" style="width: 230px; height: 100%;">
             <div class="d-inline">
                 <div class="row">
                     <div class="col">
@@ -142,11 +142,11 @@
 
 
         <!-- ฝั่งขวา -->
-        <div class="col-md-2 col-sm-5 bgLeft px-0 py-2"></div>
-        <div class="col-md-10 bgRight-top pt-2 px-0 ">
+        <div class="bgLeft px-0 py-2" style="width: 250px;"></div>
+        <div class="col bgRight-top pt-2 px-0 ">
             <div class="row">
                 <div class="col-2 py-2">
-                    <div class="pl-4 ml-4 pr-3 d-inline">
+                    <div class="pl-3 pr-3 d-inline">
                         <button class="border-0 text-left buttonarrow">
                             <span class="leftarrow ml-2"><i class="fas fa-angle-left"></i></span>
                         </button>
@@ -211,14 +211,14 @@
 
         function dataReportStatus(data) {
             let genres = document.createElement('h3');
-            genres.setAttribute("class", "pl-4 ml-4 pr-3 pt-3 pb-0 mb-0");
+            genres.setAttribute("class", "pl-2 ml-4 pr-3 pt-3 pb-0 mb-0");
             genres.innerHTML = "Your top genres";
 
             let rowgenre = document.createElement('div');
             rowgenre.setAttribute("class", "row mx-2 mt-3 pr-3 pl-3 pb-2");
 
             let genre1 = document.createElement("div");
-            genre1.setAttribute("class", "genre card col ml-4 mr-4");
+            genre1.setAttribute("class", "genre card col ml-2 mr-4");
             genre1.style.backgroundColor = "rgb(195, 240, 200)";
             genre1.style.height = "225px";
 
@@ -260,20 +260,26 @@
             output.appendChild(rowgenre);
 
             let all = document.createElement('h3');
-            all.setAttribute("class", "pl-4 ml-4 pr-3 pt-3 pb-0 mb-0");
+            all.setAttribute("class", "pl-2 ml-4 pr-3 pt-3 pb-0 mb-0");
             all.innerHTML = "Browse all";
             output.appendChild(all);
 
             let rowFirst = document.createElement('div');
-            rowFirst.setAttribute("class", "row mx-2 mt-3 pr-3 pl-3 pb-2");
+            rowFirst.setAttribute("class", "row mx-3 mr-4 ml-2 mt-3");
 
             let rowSec = document.createElement('div');
-            rowSec.setAttribute("class", "row mx-2 mt-3 pr-3 pl-3 pb-2");
+            rowSec.setAttribute("class", "row mx-3  mr-4 ml-2");
 
             for (let i = 0; i < data.length; i++) {
 
                 let col = document.createElement("div");
-                col.setAttribute("class", "pb-4 pl-4 pr-0");
+                col.setAttribute("class", "pb-4 pl-3");
+                col.style.display = "grid";
+                col.style.gridGap = "24px";
+                col.style.gridTemplateColumns = "repeat(auto-fill,minmax(180px,1fr))";
+                col.style.overflowY = "hidden";
+                col.style.gridAutoRows = "0px";
+                col.style.gridTemplateRows = "1fr";
 
                 let box = document.createElement("div");
                 box.setAttribute("class", "genre card");
