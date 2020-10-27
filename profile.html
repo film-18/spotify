@@ -33,7 +33,10 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <style>
-
+#showimg {
+    transition: height 1s;
+    transition-timing-function: linear;
+}
 
 
 
@@ -117,16 +120,55 @@
             <div>
                 <center>
                     <div class="mx-auto pt-5" style="width: 150px;">
-                        <img class="rounded-circle"><i class="fas fa-plus-circle plus"></i>
+                        <img class="rounded-circle img-fluid" id="imgprofile" src="./icon proflie/plus-circle-solid.png">
                     </div>
 
                     <div class="pt-4 pb-3">
                         <h6 id="profileName">Name</h6>
                     </div>
                     <div>
-                        <button class="btn btn-md" id="button1">Edit Profile
+                        <button class="btn btn-md" id="button1" onclick="change()">Edit Profile
                             <a href="#"></a>
                         </button>
+                        <div id="showimg" style="display: none;">
+                            <p>PIC YOUR Profile eieieiei</p>
+                            <div class="container" >
+                                <div class="row">
+                                  <div class="col">
+                                      <img src="./icon proflie/icon profile.jpg"  class="img-fluid"   onclick="getvalue(this.src)">
+                                  </div>
+                                  <div class="col">
+                                      <img src="./icon proflie/icon proflie1.png" class="img-fluid"   onclick="getvalue(this.src)">
+                                      
+                                  </div>
+                                  <div class="col">
+                                      <img src="./icon proflie/icon proflie2.png" class="img-fluid"  onclick="getvalue(this.src)">
+                                      
+                                  </div>
+                                  <div class="col">
+                                      <img src="./icon proflie/icon proflie3.png" class="img-fluid"  onclick="getvalue(this.src)">
+                                      
+                                  </div>
+                                  <div class="col">
+                                      <img src="./icon proflie/icon proflie4.png" class="img-fluid"  onclick="getvalue(this.src)">
+                                     
+                                  </div>
+                                  <div class="col">
+                                      <img src="./icon proflie/icon proflie5.png" class="img-fluid"  onclick="getvalue(this.src)">
+                                     
+                                  </div>
+                                  <div class="col">
+                                      <img src="./icon proflie/icon proflie6.jpg" class="img-fluid"  onclick="getvalue(this.src)">
+                                    
+                                  </div>
+                                  <div class="col">
+                                      <img src="./icon proflie/icon proflie7.jpg" class="img-fluid"  onclick="getvalue(this.src)">
+                                      
+                                  </div>
+                                </div>
+                              </div>
+                         
+                        </div>
                     </div>
                     <br>
             </div>
@@ -173,7 +215,7 @@
             let mail = ''
             let currentChar = ''
             let index = document.cookie.search("now=") +4;
-            while (currentChar !== ";") {
+            while (currentChar !== "-") {
                 currentChar = document.cookie[index];
                 mail += currentChar;
                 index += 1;
@@ -181,6 +223,26 @@
 
             getname.innerHTML = mail.slice(0, -1);
             // console.log(mail);
+
+
+            function change() {
+                let x = document.getElementById("showimg");
+                if (x.style.display === "block") {
+                    x.style.display = 'none';
+                    document.getElementById('button1').innerHTML = "EDIT PROFILE";
+                }
+                else {
+                    x.style.display = 'block';
+                    document.getElementById('button1').innerHTML = "OK";
+                    // x.style.height = "300px";
+                    x.style.transition = "300px";
+                    x.style.transitionTimingFunction = "linear";
+                }
+            }
+
+            function getvalue(_src) {
+                document.getElementById('imgprofile').src = _src;
+            }
 
         </script>
 </body>
