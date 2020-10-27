@@ -267,7 +267,7 @@
 
 
     <script>
-        let requestURL = 'music/randommusic.json';
+       let requestURL = 'music/randommusic.json';
         let request = new XMLHttpRequest();
         let output = document.getElementById('lists');
         request.onreadystatechange = function () {
@@ -275,22 +275,17 @@
                 dataReportStatus(JSON.parse(request.responseText));
             }
         };
-
         request.open("GET", requestURL, true);
         request.send();
         function dataReportStatus(data) {
             let rowFirst = document.createElement('div');
             rowFirst.setAttribute("class", "row mx-2 mr-4 ml-2 mt-3");
-
             let rowSec = document.createElement('div');
             rowSec.setAttribute("class", "row mx-2 mr-4 ml-2");
-
             for (let i = 0; i < data.length; i++) {
 
                 let headText = document.createElement("div");
-                // for (let j=0; j<data[i].Songs.length; j++) {
-                // for (let k=0; k<data[i].Songs.length; k++) {
-
+                
                 let row = document.createElement("div");
                 row.setAttribute("class", "row");
                 // row.style.overflowX = "hidden";

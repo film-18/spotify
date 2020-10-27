@@ -196,8 +196,12 @@
                         </button>
                     </div>s
                 </div>
+<<<<<<< Updated upstream
             </div> -->
             
+=======
+            </div>
+>>>>>>> Stashed changes
             <div id="lists">
             </div>
         </div>
@@ -322,6 +326,7 @@
             // let rowSec = document.createElement('div');
             // rowSec.setAttribute("class", "row mx-2 mt-5");
             let div = document.createElement('div');
+<<<<<<< Updated upstream
             div.setAttribute("class", "container mx-0 px-0 my-0 py-0");
             let imgprofile = document.createElement('IMG');
             // imgprofile.setAttribute("class", "mt-0 ml-0");
@@ -390,6 +395,15 @@
             div2.append(div4);
             output.appendChild(div2);
 
+=======
+            let imgprofile = document.createElement('IMG');
+            imgprofile.src = data[0].Picture;
+            let p = document.createElement('p');
+            p.innerHTML = data[0].Artist;
+            div.append(imgprofile);
+            div.append(p);
+            output.append(div);
+>>>>>>> Stashed changes
    
             let table = document.createElement('table');
                     table.setAttribute("class", "table table-borderless");
