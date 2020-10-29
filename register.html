@@ -36,6 +36,7 @@
 
     <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-firestore.js"></script>
+    <script src="script.js"></script>
     <base href="register.html">
     <style>
         .Input-sc-1698ofb-0 {
@@ -191,7 +192,7 @@
                             </div>
 
                             <center>
-                                <div class="Group-sc-1lird8m-0 exjUsC pt-3">
+                                <!-- <div class="Group-sc-1lird8m-0 exjUsC pt-3">
                                     <div id="v2-container">
                                         <div style="width: 304px; height: 78px;">
                                             <div><iframe
@@ -205,7 +206,7 @@
                                         </div><iframe style="display: none;"></iframe>
                                     </div><input hidden="" name="recaptchaV2" required="" type="text"
                                         data-testid="recaptcha-input-test" value="">
-                                </div>
+                                </div> -->
 
                                 <p class="text-center mt-4">
                                     <span style="font-size: 13px;">
@@ -239,11 +240,9 @@
                                             <div class="row">
                                                 <div class="col-xs-12">
                                                     <a id="button_signup" class="btn btn-block ng-binding"
-                                                        onclick="register()">SIGN UP
+                                                        onclick="register()" href="login.html">SIGN UP
                                                     </a>
-                                                    <a id="button_signup" class="btn btn-block ng-binding"
-                                                        href="login.html">next
-                                                    </a>
+                                                   
                                                     <div id="show">
 
                                                     </div>
@@ -276,57 +275,7 @@
     </div>
 
     <script>
-        // Initialize Cloud Firestore through Firebase
-        firebase.initializeApp({
-            apiKey: 'AIzaSyAIlXUZEeQ9jwTaIGr5C9uEUQYOd8KEWpA',
-            projectId: 'spotify-8da9e'
-        });
-
-        var db = firebase.firestore();
-        function register() {
-
-
-
-            let email = document.getElementById('email').value;
-            // let confirmEmail = document.getElementById('confirmemail').value;
-            let password = document.getElementById('password').value;
-            let namehelp = document.getElementById('name').value;
-            let day = document.getElementById('date').value;
-            let month = document.getElementById('month').value;
-            let year = document.getElementById('numyear').value;
-            let birth = day + "/" + month + "/" + year;
-            let gender = document.getElementById('choose');
-
-            console.log(email);
-            console.log(gender);
-
-            db.collection("users").doc(email).set({
-                Email: email,
-                // ConfirmEmail: confirmEmail
-                Password: password,
-                Name: namehelp,
-                Birthday: birth,
-                Gender: gender
-            })
-
-        
-            // return aString;)
-
-            // location.href = "login.html";
-
-            if (document.account.email.value == "") {
-                alert("Enter some value!");
-                return;
-            }
-            cookievalue = "now=" + escape(document.account.email.value) + "-";
-            document.cookie = cookievalue;
-
-        
-
-
-            
-            
-        }
+     
 
 
 
