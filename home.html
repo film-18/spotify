@@ -19,10 +19,12 @@
     <script src="https://kit.fontawesome.com/94195324d2.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="player.css">
+    
     <title>Home</title>
 </head>
 
 <body>
+
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>
@@ -60,8 +62,8 @@
                     <p class="d-inline" style="font-size: 13px;">Home</p>
                 </button>
             </a>
-            <a href="search.html">
-                <button class=" rounded border-0 button w-100 text-left py-2" >
+            <a onclick="loadContent()">
+                <button class=" rounded border-0 button w-100 text-left py-2">
                     <span class="spansearch d-inline mr-3"><i class="fas fa-search"></i></span>
                     <p class="d-inline" style="font-size: 13px;">Search</p>
                 </button>
@@ -147,7 +149,7 @@
                             <a href="#">Link 1</a>
                             <a href="#">Link 2</a>
                             <a href="#">Link 3</a>
-                          </div>
+                        </div>
                     </button>
                 </div>
             </div>
@@ -172,7 +174,9 @@
                     </div>
                 </div>
             </div>
-
+            <div id="loadOnClick">
+                
+            </div>
             <div id="lists">
             </div>
         </div>
@@ -283,7 +287,7 @@
                 e.preventDefault();
             }
         });
-        
+
         let requestURL = 'music/randommusic.json';
         let request = new XMLHttpRequest();
         let output = document.getElementById('lists');
@@ -302,7 +306,7 @@
             for (let i = 0; i < data.length; i++) {
 
                 let headText = document.createElement("div");
-                
+
                 let row = document.createElement("div");
                 row.setAttribute("class", "row");
                 // row.style.overflowX = "hidden";
@@ -1417,7 +1421,7 @@
                 let likebox = document.getElementById("dropdownCon");
                 addmusic.setAttribute("onclick", "go12()");
                 addmusic.style.color = "black";
-                addmusic.innerHTML = songTitles[12]+"";
+                addmusic.innerHTML = songTitles[12] + "";
                 likebox.append(addmusic);
             }
             else if (heartcheck == 1) {
