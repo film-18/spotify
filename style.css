@@ -68,15 +68,18 @@ button:active{
     background-color: #0d0d0d;
     color:gray;
     transition-duration: 0.4s;
-    cursor: pointer"
+    cursor: pointer;
 }
 .rightarrow{
-    font-size: 30px;
+    font-size: 20px;
     color: white; 
+    text-align: center;
+
 }
 .leftarrow{
-    font-size: 30px;
+    font-size: 20px;
     color: white; 
+    text-align: center;
 }
 .buttonarrow{
     background-color: #0d0d0d;
