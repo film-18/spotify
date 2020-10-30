@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="lists"></div>
+    <script>
+      let requestURL = 'artist/artist.json';
+        let request = new XMLHttpRequest();
+        let output = document.getElementById('lists');
+        request.onreadystatechange = function () {
+            if (request.readyState == 4 && request.status == 200) {
+                dataReportStatus(JSON.parse(request.responseText));
+            }
+        };
+
+        request.open("GET", requestURL, true);
+        request.send();
+
+
+            function dataReportStatus(data) {
+                for (let i=0; i < 10; i++) {
+                    output.append(data[i].Artist);
+                }
+        }
+    </script>
+    
+</body>
+</html>
