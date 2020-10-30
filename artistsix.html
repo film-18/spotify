@@ -60,17 +60,6 @@
 </style>
 
 <body>  
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
-        integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
-        crossorigin="anonymous"></script>
-
-
 
     <!-- <div class="container"> -->
     <!-- ฝั่งซ้าย -->
@@ -198,70 +187,12 @@
                 </div>
             </div> -->
             
-            <div class="bgLeft px-0 py-2" style="min-width: 250px;"></div>
-        <div class="col bgRight-top px-0" style="position:relative;">
-            <!-- <div class="row">
-                <div class="col-2 py-2">
-                    <div class="pl-3 pr-3 d-inline">
-                        <button class="border-0 text-left buttonarrow">
-                            <span class="leftarrow ml-2"><i class="fas fa-angle-left"></i></span>
-                        </button>
-                    </div>
-                    <div class="d-inline">
-                        <button class="border-0 text-left buttonarrow">
-                            <span class="rightarrow ml-3"><i class="fas fa-angle-right"></i></span>
-                        </button>
-                    </div>s
-                </div>
-            </div> -->
-            
-            <!-- <div id="lists">
-            </div> -->
-
-            <!-- ฝั่งขวา -->
-        <div class="row mx-2 mt-0">
-            <div class="row mx-2 mt-0">
-                <div class="container mx-0 px-0 my-0 py-0">
-                    <div class="row" style="display: block; height: 350px;">
-                        <img src="https://i.scdn.co/image/7bac42497ecdbb39a765f6f42f18a04071711c25" alt="aetist6" class="mt-0 ml-0 w-100" style="height: 400px;">
-                        <h1 class="col-12 textBottom font-weight-bold" style="font-size: 96px;">Oat Pramote</h1>
-                    </div>
-                    <button class="buttonarrow positionarrowL border-0">
-                        <span class="leftarrow"><i class="fas fa-angle-left"></i></span>
-                    </button>
-                    <button class="buttonarrow positionarrowR border-0">
-                        <span class="rightarrow"><i class="fas fa-angle-right"></i></span>
-                    </button>
-                    
-                </div>                
+            <div id="lists">
             </div>
         </div>
-        <div class="w-100 boxartist" style="height: 300px; background-color: rgb(77, 71, 60);">
-            <div class="w-100" style="height: 100px;">
-                <button class="buttonplayartist positionplay border-0"><i class="fas fa-play ibutton pl-1"></i></button>
-                <button class="buttonfollow bg">FOLLOW</button>
-            </div>
-            <div class="w-100" style="height: 500px;">
-                <h2 class="pt-2 font-weight-bold plpopular" style="font-size: 23px;">Popular</h2>
-                <table style="width:100%; height: 100px;" class="text-center">
-                    <tr style="width: 100%;">
-                      <td style="padding-right: 10px; padding-left:20px; width: 10%">1</td> 
-                      <td style="padding-right: 0px; padding-left:0px;"><img src="https://i.scdn.co/image/07d6a0497fb80f8958f9519a191c0bdbff58ef59"  style="height: 50px; width:50px;"></td>
-                      <td class="wordnowrap" style="width: 30%;">เท่าที่ทำได้ feat. LAZYLOXY</td> 
-                      <td class="wordnowrap" style="width: 30%;">เท่าที่ทำได้ feat. LAZYLOXY</td> 
-                      <td style="width: 30%;">3:37</td> 
-                    </tr>
-                    
-                  </table>
-            </div>
-        </div>
-        
-          
-        </div>
-        
     </div>
 
-    <audio src="music/music-t/youngohm_official_audio.mp3" id="song"></audio>
+    <audio src="" id="song"></audio>
     <div class="box"></div>
     <div class="row">
         <div id="nav_play" class=" fixed-bottom w-100">
@@ -272,24 +203,22 @@
 
                     <div class="row py-2 px-2">
                         <div class="col-md-3 py-2 px-1">
-                            <img src="https://i.scdn.co/image/ab67616d00001e02b4668d89ecb9c2f7e2e6189f" class="img-fluid w-100 rounded"/>
+                            <img src="" class="img-fluid w-100 rounded" id="thumbnail"/>
                         </div>
                         <div class="col-md-9 py-3">
                             <div class="row">
                                 <div class="col-md-6 pl-3 pr-0">
                                     <span>
-                                        <div class="song-title" style="font-size: 1.25vw;">ก่อนนอนคืนนี้</div>
+                                        <div class="song-title" style="font-size: 1.25vw;" id="songti"></div>
                                     </span>
                                     <span>
-                                        <div class="song-artist" style="font-size: 1.1vw;color: gray;">YoungOhm</div>
+                                        <div class="song-artist" style="font-size: 1.1vw;color: gray;" id="songar"></div>
                                     </span>
                                 </div>
                                 <div class="col-md-6 px-0 pt-2">
                                     <span class="spanLike">
-                                        <i class="fas fa-heart"></i>
                                     </span>
                                     <span class="spanLike px-2">
-                                        <i class="fas fa-globe-asia"></i>
                                     </span>
                                 </div>
                             </div>
@@ -304,18 +233,18 @@
 
                         <div class="container">
                             <div class="player text-center">
-                                <button  class="btn spanBack mt-1" onclick="nextSong()">
+                                <!-- <button  class="btn spanBack mt-1" onclick="nextSong()">
                                     <img src="step-backward-solid.png" id="previous-song" class="img-fluid">
-                                </button>
+                                </button> -->
                                 <!-- <img  src="step-backward-solid.png" onclick="previousSong()" width="30px" height="30px" id="previous-song"/> -->
                                     <!-- <img src="./assets/icons/backward.png" onclick="previousSong()" id="previous-song"  class="img-fluid w-25" /> -->
                                     <button  class="btn spanBack ml-2" >
                                         <img src="play-circle-solid.png" id="play-pause" onclick="playPause()">
                                     </button>
                                     <!-- <img src="play-circle-solid.png" onclick="playPause()" width="50px" height="50px" id="play-pause"/> -->
-                                  <button  class="btn spanBack ml-3 mt-1" onclick="nextSong()">
+                                  <!-- <button  class="btn spanBack ml-3 mt-1" onclick="nextSong()">
                                     <img src="step-forward-solid.png" id="previous-song">
-                                </button>
+                                </button> -->
                             </div>
                         </div>
                     </div>
@@ -358,7 +287,337 @@
         
   
     
-    
+    <script>
+        let requestURL = 'artist/artist.json';
+        let request = new XMLHttpRequest();
+        let output = document.getElementById('lists');
+        request.onreadystatechange = function () {
+            if (request.readyState == 4 && request.status == 200) {
+                dataReportStatus(JSON.parse(request.responseText));
+            }
+        };
+
+        request.open("GET", requestURL, true);
+        request.send();
+
+
+            function dataReportStatus(data) {
+            // let rowFirst = document.createElement('div');
+            // rowFirst.setAttribute("class", "row mx-2 mt-5");
+
+            // let rowSec = document.createElement('div');
+            // rowSec.setAttribute("class", "row mx-2 mt-5");
+            let div = document.createElement('div');
+            div.setAttribute("class", "container mx-0 px-0 my-0 py-0");
+            let imgprofile = document.createElement('IMG');
+            // imgprofile.setAttribute("class", "mt-0 ml-0");
+            imgprofile.style.width = "100%";
+            imgprofile.style.height = "350px";
+            imgprofile.src = data[5].Picprofile;
+            let nameartist = document.createElement('H1');
+            nameartist.setAttribute("class", "textBottom font-weight-bold");
+            nameartist.innerHTML = data[5].Artist;
+            nameartist.style.fontSize = "100px";
+
+            let buttonleft = document.createElement('button');
+            buttonleft.setAttribute("class", "buttonarrow positionarrowL border-0");
+            let leftarrow = document.createElement('span');
+            leftarrow.setAttribute("class", "leftarrow");
+            let ileftarrow = document.createElement('i');
+            ileftarrow.setAttribute("class", "fas fa-angle-left");
+            leftarrow.append(ileftarrow);
+            buttonleft.append(leftarrow);
+
+            let buttonright = document.createElement('button');
+            buttonright.setAttribute("class", "buttonarrow positionarrowR border-0");
+            let rightarrow = document.createElement('span');
+            rightarrow.setAttribute("class", "rightarrow");
+            let irightarrow = document.createElement('i');
+            irightarrow.setAttribute("class", "fas fa-angle-right");
+            rightarrow.append(irightarrow);
+            buttonright.append(rightarrow);
+
+            div.append(buttonright);
+            div.append(buttonleft);
+            div.append(imgprofile);
+            div.append(nameartist);
+            output.append(div)
+            
+            let div2 = document.createElement('div');
+            div2.setAttribute("class", "w-100 boxartist");
+            div2.style.height = "200px";
+            div2.style.backgroundColor = "rgb(77, 71, 60)";
+            
+            let div3 = document.createElement('div');
+            div3.setAttribute("class", "w-100");
+            div3.style.height = "100px";
+            // div3.style.backgroundColor = "rgb(252, 108, 4)";
+            let buttonplay = document.createElement('button');
+            buttonplay.setAttribute("class", "buttonplayartist positionplay border-0");
+            buttonplay.setAttribute("onclick", "go0()");
+            let ibuttonplay = document.createElement('i');
+            ibuttonplay.setAttribute("class", "fas fa-play ibutton pl-1");
+            buttonplay.append(ibuttonplay);
+            let buttonfollow = document.createElement('button');
+            buttonfollow.setAttribute("class", "buttonfollow positionfollow bg");
+            buttonfollow.innerHTML = "FOLLOW";
+
+            let div4 = document.createElement('div');
+            div4.setAttribute("class", "w-100");
+            div4.style.height = "100px";
+            let popular = document.createElement('h2');
+            popular.setAttribute("class", "pt-2 font-weight-bold plpopular");
+            popular.innerHTML = "Popular";
+            popular.style.fontSize = "23px"
+            div4.append(popular);
+
+            div3.append(buttonfollow);
+            div3.append(buttonplay);
+            div2.append(div3);
+            div2.append(div4);
+            output.appendChild(div2);
+
+   
+            let table = document.createElement('table');
+                    table.setAttribute("class", "table table-borderless");
+                    table.setAttribute("onclick", "go0()");
+                    table.style.cursor = "pointer";
+                    // table.createTHead();
+                    let count = 1;
+                    let thead = document.createElement('thead');
+                    let tbody = document.createElement('tbody');
+                    let tr = document.createElement('tr');
+                    let no = document.createElement("th");
+                    let title = document.createElement("th");
+                    let album = document.createElement("th");
+                    let time = document.createElement("th");
+
+                    // tr.appendChild(no);
+                    // tr.appendChild(title);
+                    // tr.appendChild(album);
+                    // tr.appendChild(time);
+                    thead.appendChild(tr);
+                    no.style.textAlign = "center";
+
+                    title.style.width = "30%";
+                    album.style.width = "20%";
+                    time.style.width = "20%";
+                    
+
+            // for (let i=0; i<data.length; i++) {
+                
+                // let headText = document.createElement("div");
+                // headText.innerHTML = data[i].Artist;
+                // let pic = document.createElement('IMG');
+                // pic.src = data[i].Picture;
+  
+                for (let j=0; j<data[5].Songs.length; j++) {
+
+                    let tr = document.createElement('tr');
+
+                    let thno = document.createElement('td');
+                    thno.style.color = "white";
+                    // thThree.innerHTML = "time";
+                    // let boxno = document.createElement('div');
+                    let textno = document.createElement('p');
+                    textno.style.color = "white";
+                    textno = count;
+                    // boxno.append(textno);
+                    // boxno.style.textAlign = "center";
+                    thno.append(textno);
+                    thno.style.textAlign = "center";
+                    thno.style.paddingBottom = "0px";
+                    // thno.style.verticalAlign = "middle";
+                
+                    let thOne = document.createElement('td');
+                    
+                    // thOne.innerHTML = "title";
+
+                    let div = document.createElement('div');
+                    div.setAttribute("class", "row");
+                    let colImg = document.createElement('div');
+                    colImg.setAttribute("class", "col-2");
+
+                    let imgAblum = document.createElement('IMG');
+                    imgAblum.setAttribute("class", "img_song");
+                    imgAblum.style.width = "45px";
+                    imgAblum.src = data[5].Picture;
+                    colImg.append(imgAblum);
+                    
+
+                    let colRight = document.createElement("div");
+                    colRight.setAttribute("class", "col-10");
+                    let textSong = document.createElement('p');
+                    textSong.style.color = "white";
+                    textSong.innerHTML += data[5].Songs[j].Title;
+                    textSong.style.marginBottom = "0px"; 
+                    textSong.style.fontSize = "16px";
+                    textSong.style.paddingTop = "11px";
+                    let artist_name = document.createElement('p');
+                    // artist_name.innerHTML += data[0].Artist;
+                    artist_name.style.marginBottom = "0px";
+                    textSong.style.whiteSpace = "nowrap";
+
+                    colRight.append(textSong);
+                    colRight.append(artist_name);
+                    div.append(colImg);
+                    div.append(colRight);
+                    thOne.append(div);
+                    thOne.style.verticalAlign = "middle";
+                    thOne.style.paddingBottom = "2px";
+                
+
+                    let thTwo = document.createElement('td');
+                    thTwo.style.color ="white";
+                    // thTwo.innerHTML = "Album";
+                    let boxText = document.createElement('div');
+                    let textAlbum = document.createElement('p');
+                    textAlbum = data[5].Songs[j].Single;
+                    boxText.style.whiteSpace = "nowrap";
+
+                    
+                    boxText.append(textAlbum);
+                    thTwo.append(boxText);
+                    thTwo.style.verticalAlign = "middle";
+
+                    let thThree = document.createElement('td');
+                    thThree.style.color ="white";
+                    // thThree.innerHTML = "time";
+                    let boxTime = document.createElement('div');
+                    let textTime = document.createElement('p');
+                    textTime = data[5].Songs[j].Time;
+                    boxTime.append(textTime);
+                    thThree.append(boxTime);
+                    thThree.style.verticalAlign = "middle";
+
+                    tr.append(thno);
+                    tr.append(thOne);
+                    tr.append(thTwo);
+                    tr.append(thThree);
+                    thead.appendChild(tr);
+                    table.append(thead);
+
+                    // output.appendChild(headText);
+                    // output.appendChild(pic);
+                    output.appendChild(table);
+                    count++;
+
+                    }
+ 
+                
+            // }
+        }
+    </script>
+    <script>
+        const thumbnail = document.querySelector('#thumbnail'); // album cover 
+        const song = document.querySelector('#song'); // audio object
+
+        const songArtist = document.querySelector('.song-artist'); // element where track artist appears
+        const songTitle = document.querySelector('.song-title'); // element where track title appears
+        const progressBar = document.querySelector('#progress-bar'); // element where progress bar appears
+        let pPause = document.querySelector('#play-pause'); // element where play and pause image appears
+
+        songIndex = 0;
+        let songs = []; // object storing paths for audio objects
+        let thumbnails = []; // object storing paths for album covers and backgrounds
+        let songArtists = []; // object storing track artists
+        let songTitles = []; // object storing track titles
+        // function where pp (play-pause) element changes based on playing boolean value - if play button clicked, change pp.src to pause button and call song.play() and vice versa.
+        let playing = true;
+        function go0() {
+            document.getElementById("song").setAttribute("src", "music/music-t/love_friend_feat_lazyloxy_lyrics_audio_-1340686079537069354.mp3");
+            pPause.src = "./pause-circle-solid.png"
+            song.play();
+            playing = false;
+            let song_ti = document.getElementById("songti");
+            let song_ar = document.getElementById("songar");
+            let song_th = document.getElementById("thumbnail");
+            song_ti.innerText = "เท่าที่ทำได้";
+            song_ar.innerText = "Oat";
+            song_th.setAttribute("src", "https://i.scdn.co/image/ab67616d0000b273e0303669408ee0eede16d3ba");
+        }
+        function playPause() {
+            if (playing) {
+                const song = document.querySelector('#song'),
+                    thumbnail = document.querySelector('#thumbnail');
+
+                pPause.src = "./pause-circle-solid.png"
+                song.play();
+                playing = false;
+            } else {
+                pPause.src = "./play-circle-solid.png"
+                song.pause();
+                playing = true;
+            }
+        }
+
+        // automatically play the next song at the end of the audio object's duration
+        song.addEventListener('ended', function () {
+            nextSong();
+        });
+
+        // function where songIndex is incremented, song/thumbnail image/background image/song artist/song title changes to next index value, and playPause() runs to play next track 
+        function nextSong() {
+            songIndex++;
+            if (songIndex > 71) {
+                songIndex = 0;
+            };
+            song.src = songs[songIndex];
+            thumbnail.src = thumbnails[songIndex];
+
+            songArtist.innerHTML = songArtists[songIndex];
+            songTitle.innerHTML = songTitles[songIndex];
+
+            playing = true;
+            playPause();
+        }
+
+        // function where songIndex is decremented, song/thumbnail image/background image/song artist/song title changes to previous index value, and playPause() runs to play previous track 
+        function previousSong() {
+            songIndex--;
+            if (songIndex < 0) {
+                songIndex = 71;
+            };
+            song.src = songs[songIndex];
+            thumbnail.src = thumbnails[songIndex];
+
+            songArtist.innerHTML = songArtists[songIndex];
+            songTitle.innerHTML = songTitles[songIndex];
+
+            playing = true;
+            playPause();
+        }
+
+        // update progressBar.max to song object's duration, same for progressBar.value, update currentTime/duration DOM
+        function updateProgressValue() {
+            progressBar.max = song.duration;
+            progressBar.value = song.currentTime;
+            document.querySelector('.currentTime').innerHTML = (formatTime(Math.floor(song.currentTime)));
+            if (document.querySelector('.durationTime').innerHTML === "NaN:NaN") {
+                document.querySelector('.durationTime').innerHTML = "0:00";
+            } else {
+                document.querySelector('.durationTime').innerHTML = (formatTime(Math.floor(song.duration)));
+            }
+        };
+
+        // convert song.currentTime and song.duration into MM:SS format
+        function formatTime(seconds) {
+            let min = Math.floor((seconds / 60));
+            let sec = Math.floor(seconds - (min * 60));
+            if (sec < 10) {
+                sec = `0${sec}`;
+            };
+            return `${min}:${sec}`;
+        };
+
+        // run updateProgressValue function every 1/2 second to show change in progressBar and song.currentTime on the DOM
+        setInterval(updateProgressValue, 500);
+
+        // function where progressBar.value is changed when slider thumb is dragged without auto-playing audio
+        function changeProgressBar() {
+            song.currentTime = progressBar.value;
+        };
+    </script>
 </body>
 
 
