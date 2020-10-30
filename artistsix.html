@@ -111,7 +111,7 @@
                                         <div class="song-title" style="font-size: 1.25vw;" id="songti"></div>
                                     </span>
                                     <span>
-                                        <div class="song-artist" style="font-size: 1.1vw;color: gray;" id="songart"></div>
+                                        <div class="song-artist" style="font-size: 1.1vw;color: gray;" id="songar"></div>
                                     </span>
                                 </div>
                                 <div class="col-md-6 px-0 pt-2">
@@ -132,18 +132,18 @@
 
                         <div class="container">
                             <div class="player text-center">
-                                <!-- <button  class="btn spanBack mt-1" onclick="nextSong()">
+                                <button class="btn spanBack mt-1" onclick="nextSong()">
                                     <img src="step-backward-solid.png" id="previous-song" class="img-fluid">
-                                </button> -->
+                                </button>
                                 <!-- <img  src="step-backward-solid.png" onclick="previousSong()" width="30px" height="30px" id="previous-song"/> -->
-                                    <!-- <img src="./assets/icons/backward.png" onclick="previousSong()" id="previous-song"  class="img-fluid w-25" /> -->
-                                    <button  class="btn spanBack ml-2" >
-                                        <img src="play-circle-solid.png" id="play-pause" onclick="playPause()">
-                                    </button>
-                                    <!-- <img src="play-circle-solid.png" onclick="playPause()" width="50px" height="50px" id="play-pause"/> -->
-                                  <!-- <button  class="btn spanBack ml-3 mt-1" onclick="nextSong()">
+                                <!-- <img src="./assets/icons/backward.png" onclick="previousSong()" id="previous-song"  class="img-fluid w-25" /> -->
+                                <button class="btn spanBack ml-2">
+                                    <img src="play-circle-solid.png" id="play-pause" onclick="playPause()">
+                                </button>
+                                <!-- <img src="play-circle-solid.png" onclick="playPause()" width="50px" height="50px" id="play-pause"/> -->
+                                <button class="btn spanBack ml-3 mt-1" onclick="nextSong()">
                                     <img src="step-forward-solid.png" id="previous-song">
-                                </button> -->
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -176,23 +176,23 @@
         let pPause = document.querySelector('#play-pause'); // element where play and pause image appears
 
         songIndex = 0;
-        let songs = []; // object storing paths for audio objects
-        let thumbnails = []; // object storing paths for album covers and backgrounds
-        let songArtists = []; // object storing track artists
-        let songTitles = []; // object storing track titles
+        let songs = ["music/music-t/love_friend_feat_lazyloxy_lyrics_audio_-1340686079537069354.mp3"]; // object storing paths for audio objects
+        let thumbnails = ["https://i.scdn.co/image/ab67616d0000b273e0303669408ee0eede16d3ba"]; // object storing paths for album covers and backgrounds
+        let songArtists = ["Oat"]; // object storing track artists
+        let songTitles = ["เท่าที่ทำได้"]; // object storing track titles
         // function where pp (play-pause) element changes based on playing boolean value - if play button clicked, change pp.src to pause button and call song.play() and vice versa.
         let playing = true;
         function go0() {
-            document.getElementById("song").setAttribute("src", "music/music-t/love_friend_feat_lazyloxy_lyrics_audio_-1340686079537069354.mp3");
+            document.getElementById("song").setAttribute("src", songs[0]);
             pPause.src = "./pause-circle-solid.png"
             song.play();
             playing = false;
             let song_ti = document.getElementById("songti");
             let song_ar = document.getElementById("songar");
             let song_th = document.getElementById("thumbnail");
-            song_ti.innerText = "เท่าที่ทำได้";
-            song_ar.innerText = "Oat";
-            song_th.setAttribute("src", "https://i.scdn.co/image/ab67616d0000b273e0303669408ee0eede16d3ba");
+            song_ti.innerText = songTitles[0];
+            song_ar.innerText = songArtists[0];
+            song_th.setAttribute("src", thumbnails[0]);
         }
         function playPause() {
             if (playing) {
@@ -217,7 +217,7 @@
         // function where songIndex is incremented, song/thumbnail image/background image/song artist/song title changes to next index value, and playPause() runs to play next track 
         function nextSong() {
             songIndex++;
-            if (songIndex > 71) {
+            if (songIndex > 0) {
                 songIndex = 0;
             };
             song.src = songs[songIndex];
@@ -234,7 +234,7 @@
         function previousSong() {
             songIndex--;
             if (songIndex < 0) {
-                songIndex = 71;
+                songIndex = 0;
             };
             song.src = songs[songIndex];
             thumbnail.src = thumbnails[songIndex];

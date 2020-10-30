@@ -223,7 +223,7 @@
         // function where songIndex is incremented, song/thumbnail image/background image/song artist/song title changes to next index value, and playPause() runs to play next track 
         function nextSong() {
             songIndex++;
-            if (songIndex > 3) {
+            if (songIndex > 0) {
                 songIndex = 0;
             };
             song.src = songs[songIndex];
@@ -240,7 +240,7 @@
         function previousSong() {
             songIndex--;
             if (songIndex < 0) {
-                songIndex = 3;
+                songIndex = 0;
             };
             song.src = songs[songIndex];
             thumbnail.src = thumbnails[songIndex];
