@@ -403,10 +403,10 @@
                     let album = document.createElement("th");
                     let time = document.createElement("th");
 
-                    tr.appendChild(no);
-                    tr.appendChild(title);
-                    tr.appendChild(album);
-                    tr.appendChild(time);
+                    // tr.appendChild(no);
+                    // tr.appendChild(title);
+                    // tr.appendChild(album);
+                    // tr.appendChild(time);
                     thead.appendChild(tr);
                     no.style.textAlign = "center";
 
@@ -426,16 +426,19 @@
                     let tr = document.createElement('tr');
 
                     let thno = document.createElement('td');
+                    thno.style.color = "white";
                     // thThree.innerHTML = "time";
-                    let boxno = document.createElement('div');
+                    // let boxno = document.createElement('div');
                     let textno = document.createElement('p');
+                    textno.style.color = "white";
                     textno = count;
-                    boxno.append(textno);
-                    boxno.style.textAlign = "center";
-                    thno.append(boxno);
-                    thno.style.verticalAlign = "middle";
+                    // boxno.append(textno);
+                    // boxno.style.textAlign = "center";
+                    thno.append(textno);
+                    // thno.style.verticalAlign = "middle";
                 
                     let thOne = document.createElement('td');
+                    
                     // thOne.innerHTML = "title";
 
                     let div = document.createElement('div');
@@ -453,10 +456,11 @@
                     let colRight = document.createElement("div");
                     colRight.setAttribute("class", "col-10");
                     let textSong = document.createElement('p');
+                    textSong.style.color = "white";
                     textSong.innerHTML += data[0].Songs[0].Title;
                     textSong.style.marginBottom = "0px"; 
                     let artist_name = document.createElement('p');
-                    artist_name.innerHTML += data[0].Artist;
+                    // artist_name.innerHTML += data[0].Artist;
                     artist_name.style.marginBottom = "0px";
                     textSong.style.whiteSpace = "nowrap";
 
@@ -470,17 +474,20 @@
                 
 
                     let thTwo = document.createElement('td');
+                    thTwo.style.color ="white";
                     // thTwo.innerHTML = "Album";
                     let boxText = document.createElement('div');
                     let textAlbum = document.createElement('p');
-                    textAlbum = data[0].Songs[0].Album;
+                    textAlbum = data[0].Songs[0].Single;
                     boxText.style.whiteSpace = "nowrap";
+
                     
                     boxText.append(textAlbum);
                     thTwo.append(boxText);
                     thTwo.style.verticalAlign = "middle";
 
                     let thThree = document.createElement('td');
+                    thThree.style.color ="white";
                     // thThree.innerHTML = "time";
                     let boxTime = document.createElement('div');
                     let textTime = document.createElement('p');
