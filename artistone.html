@@ -20,6 +20,11 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="player.css">
     <title>Artist1</title>
+    <style>
+        .bg{
+            border: 1px solid rgb(175, 161, 100);
+        }
+    </style>
 </head>
 
 
@@ -37,112 +42,7 @@
 
 
     <!-- <div class="container"> -->
-    <!-- ฝั่งซ้าย -->
-    <div class="row" style="overflow-x: hidden;">
-        <div class="bgLeft p-3 fixed-top" style="width: 230px; height: 100%;">
-            <div class="d-inline">
-                <div class="row">
-                    <div class="col">
-                        <span class="float-left px-2 py-2">
-                            <span class="spanSpotify d-inline"><i class="fab fa-spotify"></i></span>
-                        </span>
-                        <span>
-                            <div class="py-2 px-2">
-                                <p class="h4 d-inline">Spotify</p>
-                                <p style="font-size: 10px;" class="m-0">By Among Us Gangters</p>
-                            </div>
-                        </span>
-                    </div>
-                </div>
-            </div>
-            <button class="rounded border-0 button w-100 text-left py-2">
-                <span class="spanhome d-inline mr-3"><i class="fas fa-home"></i></span>
-                <p class="d-inline" style="font-size: 13px;">Home</p>
-            </button>
-            <button class=" rounded border-0 button w-100 text-left py-2">
-                <span class="spansearch d-inline mr-3"><i class="fas fa-search"></i></span>
-                <p class="d-inline" style="font-size: 13px;">Search</p>
-            </button>
-            <button class="rounded border-0 button w-100 text-left py-2">
-                <span class="spanlibrary d-inline mr-3"><i class="fas fa-book-open"></i></span>
-                <p class="d-inline" style="font-size: 13px;">Your Library</p>
-            </button>
-
-
-
-            <p class="mt-4 mb-3">PLAYLISTS</p>
-
-
-            <div class="row">
-                <div class="col">
-                    <button class="rounded border-0 button w-100 text-left" data-toggle="modal"
-                    data-target="#exampleModal">
-                        <span class="float-left">
-                            <span class="spancreat_playlist d-inline float-left mr-2"><i
-                                    class="fas fa-plus-square"></i></span>
-                        </span>
-                        <span>
-                            <p class="d-inline float-left mt-2 mb-0" style="font-size: 13px;" data-toggle="modal" data-target="#exampleModalLabel">Creat Playlist</p>
-                        </span>
-                    </button>
-                </div>
-            </div>
-
-
-             <!-- Modal -->
-             <div class="modal " id="exampleModal" id="frame" role="dialog" aria-labelledby="exampleModalLabel"
-             aria-hidden="true" style="padding-top: 10%;">
-             <div class="text-center pt-5 pb-0">
-                 <button class="div4 e6ed3359ee250e2ecc13253d4db86076-scss text-center" type="button"
-                     data-dismiss="modal">
-                     <svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
-                         <!-- <title>Close</title> -->
-                         <path
-                             d="M31.098 29.794L16.955 15.65 31.097 1.51 29.683.093 15.54 14.237 1.4.094-.016 1.508 14.126 15.65-.016 29.795l1.414 1.414L15.54 17.065l14.144 14.143"
-                             fill="#fff" fill-rule="evenodd">
-                         </path>
-                     </svg>
-                 </button>
-             </div>
-             <h1 class="div1 div2 " dir="auto">Create new playlist</h1>
-             <div class="modal-body">
-                 <div class="bcb8c631188b0e9c7991ecd05f53a01e-scss">
-                     <div class="inputBox">
-                         <div class="contentSpacing">
-                             <h4 class="inputBox-label">Playlist Name</h4>
-                             <input type="text" class="inputBox-input" placeholder="New Playlist"
-                                 style="font-family: 'Ubuntu', sans-serif;">
-                         </div>
-                     </div>
-                 </div>
-                 <div class="div3">
-                     <div class="div1">
-                         <button class="div4 div5 mr-2 btnCreat" type="button" data-dismiss="modal">CANCEL
-                         </button>
-                     </div>
-                     <div class="div1">
-                         <button class="div4 div6 btnCreat" type="button">CREATE
-                         </button>
-                     </div>
-                 </div>
-             </div>
-         </div>
-
-            <div class="row">
-                <div class="col">
-                    <button class="rounded border-0 button w-100 text-left">
-                        <span class="float-left">
-                            <span class="spanlink_song d-inline float-left mr-2"><i class="fab fa-gratipay"></i></span>
-                        </span>
-                        <span>
-                            <p class="d-inline float-left mt-2 mb-0" style="font-size: 13px;">Liked Songs</p>
-                        </span>
-                    </button>
-                </div>
-            </div>
-            <hr class="bg-secondary mt-0">
-        </div>
-
+    
 
         
         <div class="bgLeft px-0 py-2" style="min-width: 250px;"></div>
@@ -173,12 +73,7 @@
                         <img src="https://i.scdn.co/image/6e5caed7a087dcc38945a2edaf7f3f5e5dcf7e95" alt="aetist1" class="mt-0 ml-0 w-100" style="height: 400px;">
                         <h1 class="col-12 textBottom font-weight-bold" style="font-size: 96px;">First Anuwat</h1>
                     </div>
-                    <button class="buttonarrow positionarrowL border-0">
-                        <span class="leftarrow"><i class="fas fa-angle-left"></i></span>
-                    </button>
-                    <button class="buttonarrow positionarrowR border-0">
-                        <span class="rightarrow"><i class="fas fa-angle-right"></i></span>
-                    </button>
+                    
                     
                 </div>                
             </div>
@@ -208,7 +103,7 @@
         </div>
         
     </div>
-    <div class="box"></div>
+    <!-- <div class="box"></div> -->
 
     <audio src="music/music-t/youngohm_official_audio.mp3" id="song"></audio>
     <!-- <div class="box"></div> -->
