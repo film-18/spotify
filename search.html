@@ -60,7 +60,7 @@
                 </button>
             </a>
             <a href="search.html">
-                <button class=" rounded border-0 button w-100 text-left py-2" >
+                <button class=" rounded border-0 button w-100 text-left py-2">
                     <span class="spansearch d-inline mr-3"><i class="fas fa-search"></i></span>
                     <p class="d-inline" style="font-size: 13px;">Search</p>
                 </button>
@@ -70,11 +70,7 @@
                     <span class="spanlibrary d-inline mr-3"><i class="fas fa-book-open"></i></span>
                     <p class="d-inline" style="font-size: 13px;">Your Library</p>
                 </button>
-            </a
-
-
-
-            <p class="mt-4 mb-3">PLAYLISTS</p>
+            </a <p class="mt-4 mb-3">PLAYLISTS</p>
 
 
             <div class="row">
@@ -86,8 +82,8 @@
                                     class="fas fa-plus-square"></i></span>
                         </span>
                         <span>
-                            <p class="d-inline float-left mt-2 mb-0" style="font-size: 13px;"  data-toggle="modal"
-                            data-target="#exampleModalLabel">Creat Playlist</p>
+                            <p class="d-inline float-left mt-2 mb-0" style="font-size: 13px;" data-toggle="modal"
+                                data-target="#exampleModalLabel">Creat Playlist</p>
                         </span>
                     </button>
                 </div>
@@ -95,42 +91,42 @@
 
             <!-- Modal -->
             <div class="modal " id="exampleModal" id="frame" role="dialog" aria-labelledby="exampleModalLabel"
-            aria-hidden="true" style="padding-top: 10%;">
-            <div class="text-center pt-5 pb-0">
-                <button class="div4 e6ed3359ee250e2ecc13253d4db86076-scss text-center" type="button"
-                    data-dismiss="modal">
-                    <svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
-                        <!-- <title>Close</title> -->
-                        <path
-                            d="M31.098 29.794L16.955 15.65 31.097 1.51 29.683.093 15.54 14.237 1.4.094-.016 1.508 14.126 15.65-.016 29.795l1.414 1.414L15.54 17.065l14.144 14.143"
-                            fill="#fff" fill-rule="evenodd">
-                        </path>
-                    </svg>
-                </button>
-            </div>
-            <h1 class="div1 div2 " dir="auto">Create new playlist</h1>
-            <div class="modal-body">
-                <div class="bcb8c631188b0e9c7991ecd05f53a01e-scss">
-                    <div class="inputBox">
-                        <div class="contentSpacing">
-                            <h4 class="inputBox-label">Playlist Name</h4>
-                            <input type="text" class="inputBox-input" placeholder="New Playlist"
-                                style="font-family: 'Ubuntu', sans-serif;">
+                aria-hidden="true" style="padding-top: 10%;">
+                <div class="text-center pt-5 pb-0">
+                    <button class="div4 e6ed3359ee250e2ecc13253d4db86076-scss text-center" type="button"
+                        data-dismiss="modal">
+                        <svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                            <!-- <title>Close</title> -->
+                            <path
+                                d="M31.098 29.794L16.955 15.65 31.097 1.51 29.683.093 15.54 14.237 1.4.094-.016 1.508 14.126 15.65-.016 29.795l1.414 1.414L15.54 17.065l14.144 14.143"
+                                fill="#fff" fill-rule="evenodd">
+                            </path>
+                        </svg>
+                    </button>
+                </div>
+                <h1 class="div1 div2 " dir="auto">Create new playlist</h1>
+                <div class="modal-body">
+                    <div class="bcb8c631188b0e9c7991ecd05f53a01e-scss">
+                        <div class="inputBox">
+                            <div class="contentSpacing">
+                                <h4 class="inputBox-label">Playlist Name</h4>
+                                <input type="text" class="inputBox-input" placeholder="New Playlist"
+                                    style="font-family: 'Ubuntu', sans-serif;">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="div3">
+                        <div class="div1">
+                            <button class="div4 div5 mr-2 btnCreat" type="button" data-dismiss="modal">CANCEL
+                            </button>
+                        </div>
+                        <div class="div1">
+                            <button class="div4 div6 btnCreat" type="button">CREATE
+                            </button>
                         </div>
                     </div>
                 </div>
-                <div class="div3">
-                    <div class="div1">
-                        <button class="div4 div5 mr-2 btnCreat" type="button" data-dismiss="modal">CANCEL
-                        </button>
-                    </div>
-                    <div class="div1">
-                        <button class="div4 div6 btnCreat" type="button">CREATE
-                        </button>
-                    </div>
-                </div>
             </div>
-        </div>
 
             <div class="row">
                 <div class="col">
@@ -247,7 +243,7 @@
             artist.setAttribute("class", "wordnowrap pt-3 pl-1");
             artist.innerHTML = "Artists";
             artist.style.fontSize = "40px";
-            
+
             alink.append(pic1);
             alink.append(artist);
             genre1.append(alink);
@@ -267,8 +263,11 @@
             kpop.setAttribute("class", "wordnowrap pt-3 pl-1");
             kpop.innerHTML = "K-pop";
             kpop.style.fontSize = "40px";
+            let alink3 = document.createElement('a');
+            alink3.setAttribute("href", "SubSearch/K-Pop.html");
+            alink3.append(kpop);
 
-            genre2.append(kpop);
+            genre2.append(alink3);
             output.appendChild(genres);
             rowgenre.append(genre1);
             rowgenre.append(genre2);
@@ -305,16 +304,19 @@
                 let pic = document.createElement('IMG');
                 pic.setAttribute("class", "pic_search");
                 pic.src = data[i].Image;
-                
+
 
 
                 let name = document.createElement('b');
-                name.innerHTML = data[i].Title;
+                name.innerHTML = data[i].Title ;
                 name.setAttribute("class", "wordnowrap pt-3 pl-3");
                 name.style.fontSize = "20px";
                 name.style.whiteSpace = "nowrap";
+                let alink2 = document.createElement('a');
+                alink2.setAttribute("href", "artists.html");
+                alink2.append(name);
 
-                box.append(name);
+                box.append(alink2);
                 box.append(pic);
                 col.append(box);
                 output.appendChild(col);
