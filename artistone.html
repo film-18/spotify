@@ -335,13 +335,9 @@
             imgprofile.src = data[0].Picprofile;
             imgprofile.style.width = "100%";
             imgprofile.style.minHeight = "400px";
-            imgprofile.style.backgroundSize = "cover";
-            imgprofile.style.position = "50% 15%";
-            imgprofile.style.backgroundAttachment = "scroll";
-            imgprofile.style.zIndex = "0";
-            imgprofile.style.backgroundRepeat = "no-repeat";
-            imgprofile.style.background = "-webkit-gradient(linear,left top,left bottom,from(transparent),to(rgba(0,0,0,.5)))"
-            imgprofile.style.background = "linear-gradient(transparent,rgba(0,0,0,.5))";
+            
+            // imgprofile.style.background = "-webkit-gradient(linear,left top,left bottom,from(transparent),to(rgba(0,0,0,.5)))"
+            // imgprofile.style.background = "linear-gradient(transparent,rgba(0,0,0,.5))";
 
             let nameartist = document.createElement('H1');
             nameartist.setAttribute("class", "col-12 textBottom font-weight-bold");
@@ -451,6 +447,7 @@
                     // boxno.append(textno);
                     // boxno.style.textAlign = "center";
                     thno.append(textno);
+                    thno.style.textAlign = "center";
                     // thno.style.verticalAlign = "middle";
                 
                     let thOne = document.createElement('td');
@@ -474,11 +471,11 @@
                     let textSong = document.createElement('p');
                     textSong.style.color = "white";
                     textSong.innerHTML += data[0].Songs[0].Title;
-                    textSong.style.marginBottom = "0px"; 
+                    textSong.style.fontSize = "16px";
+                    textSong.style.paddingTop = "11px";
                     let artist_name = document.createElement('p');
                     // artist_name.innerHTML += data[0].Artist;
                     artist_name.style.marginBottom = "0px";
-                    textSong.style.whiteSpace = "nowrap";
 
                     colRight.append(textSong);
                     colRight.append(artist_name);

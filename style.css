@@ -404,6 +404,17 @@ input {
     border: 1px solid white;
     
 }
+<<<<<<< HEAD
+.table td, .table th {
+    vertical-align: middle;
+
+}
+.table {
+    width: 100%;
+    border-radius: 4px;
+}
+
+=======
 /* width */
 ::-webkit-scrollbar {
     width: 0px;
@@ -452,3 +463,7 @@ input {
   .dropdown:hover .dropdown-content {display: block;}
 
   
+<<<<<<< Updated upstream
+=======
+>>>>>>> main
+>>>>>>> Stashed changes

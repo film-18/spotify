@@ -75,7 +75,7 @@
     <!-- <div class="container"> -->
     <!-- ฝั่งซ้าย -->
     <div class="row" style="overflow-x: hidden;">
-        <div class="col-md-2 col-sm-5 bgLeft px-4 py-2 fixed-top">
+        <div class="bgLeft p-3 fixed-top" style="width: 230px; height: 100%;">
             <div class="d-inline">
                 <div class="row">
                     <div class="col">
@@ -181,8 +181,8 @@
 
 
         <!-- ฝั่งขวา -->
-        <div class="col-md-3 col-sm-5 bgLeft px-0 py-2"></div>
-        <div class="col-md-9 bgRight-top pt-0 px-0 ">
+        <div class="bgLeft px-0 py-2" style="min-width: 250px;"></div>
+        <div class="col bgRight-top px-0" style="position:relative;">
             <!-- <div class="row">
                 <div class="col-2 py-2">
                     <div class="pl-3 pr-3 d-inline">
@@ -398,6 +398,7 @@
                     let thead = document.createElement('thead');
                     let tbody = document.createElement('tbody');
                     let tr = document.createElement('tr');
+                    thead.setAttribute("class", "thead");
                     let no = document.createElement("th");
                     let title = document.createElement("th");
                     let album = document.createElement("th");
@@ -409,7 +410,6 @@
                     // tr.appendChild(time);
                     thead.appendChild(tr);
                     no.style.textAlign = "center";
-
                     title.style.width = "30%";
                     album.style.width = "20%";
                     time.style.width = "20%";
@@ -427,6 +427,7 @@
 
                     let thno = document.createElement('td');
                     thno.style.color = "white";
+                    thno.style.textAlign = "center";
                     // thThree.innerHTML = "time";
                     // let boxno = document.createElement('div');
                     let textno = document.createElement('p');
@@ -458,7 +459,8 @@
                     let textSong = document.createElement('p');
                     textSong.style.color = "white";
                     textSong.innerHTML += data[1].Songs[j].Title;
-                    textSong.style.marginBottom = "0px"; 
+                    textSong.style.fontSize = "16px";
+                    textSong.style.paddingTop = "11px";
                     let artist_name = document.createElement('p');
                     // artist_name.innerHTML += data[0].Artist;
                     artist_name.style.marginBottom = "0px";
@@ -503,6 +505,7 @@
                     tr.append(thTwo);
                     tr.append(thThree);
                     thead.appendChild(tr);
+
                     table.append(thead);
 
                     // output.appendChild(headText);
