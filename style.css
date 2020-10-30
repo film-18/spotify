@@ -68,15 +68,18 @@ button:active{
     background-color: #0d0d0d;
     color:gray;
     transition-duration: 0.4s;
-    cursor: pointer"
+    cursor: pointer;
 }
 .rightarrow{
-    font-size: 30px;
+    font-size: 20px;
     color: white; 
+    text-align: center;
+
 }
 .leftarrow{
-    font-size: 30px;
+    font-size: 20px;
     color: white; 
+    text-align: center;
 }
 .buttonarrow{
     background-color: #0d0d0d;
@@ -487,10 +490,7 @@ a:link{
 a:link{
     text-decoration: none;
 }
-.table_artist:hover {
-    background-color: rgb(54, 54, 54);
-    cursor: pointer;
-}
+
 
 .textBottom {
     position: absolute;
@@ -521,6 +521,10 @@ a:link{
 .plpopular{
     padding-left: 40px;
 }
-.bg{
-    border: 1px solid rgb(175, 161, 100);
+tr {
+    padding-bottom: 10px;;
+}
+tr:hover {
+    background-color: rgb(54, 54, 54);
+    cursor: pointer;
 }

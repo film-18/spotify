@@ -22,37 +22,6 @@
     <title>Artist6</title>
 </head>
 <style>
-    .textBottom {
-        position: absolute;
-        top: 200px;
-        left: 20px;
-        color: white;
-    }
-    .positionarrowL{
-        position: absolute;
-        top: 20px;
-        left: 20px;
-        color: white;
-    }
-    .positionarrowR{
-        position: absolute;
-        top: 20px;
-        left: 70px;
-        color: white;
-    }
-    .positionplay{
-        position: absolute;
-        top: 20px;
-        left: 30px;
-    }
-    .ibutton{
-        font-size: 25px;
-        color: white;
-        padding-top: 18px;
-    }
-    .plpopular{
-        padding-left: 40px;
-    }
     .bg{
         border: 1px solid rgb(83, 78, 72);
     }
@@ -167,8 +136,6 @@
             </div>
             <hr class="bg-success mt-0">
         </div>
-
-
         <!-- ฝั่งขวา -->
         <div class="bgLeft px-0 py-2" style="min-width: 250px;"></div>
         <div class="col bgRight-top px-0" style="position:relative;">
@@ -187,10 +154,54 @@
                 </div>
             </div> -->
             
-            <div id="lists">
+            <!-- <div id="lists">
+            </div> -->
+
+           <!-- ฝั่งขวา -->
+        <div class="row mx-2 mt-0">
+            <div class="row mx-2 mt-0">
+                <div class="container mx-0 px-0 my-0 py-0">
+                    <div class="row" style="display: block; height: 350px;">
+                        <img src="https://i.scdn.co/image/7bac42497ecdbb39a765f6f42f18a04071711c25" alt="aetist6" class="mt-0 ml-0 w-100" style="height: 400px;">
+                        <h1 class="col-12 textBottom font-weight-bold" style="font-size: 96px;">Oat Pramote</h1>
+                    </div>
+                    <button class="buttonarrow positionarrowL border-0">
+                        <span class="leftarrow"><i class="fas fa-angle-left"></i></span>
+                    </button>
+                    <button class="buttonarrow positionarrowR border-0">
+                        <span class="rightarrow"><i class="fas fa-angle-right"></i></span>
+                    </button>
+                    
+                </div>                
             </div>
         </div>
+        <div class="w-100 boxartist" style="height: 300px; background-color: rgb(77, 71, 60);">
+            <div class="w-100" style="height: 100px;">
+                <button class="buttonplayartist positionplay border-0" onclick="go0()"><i class="fas fa-play ibutton pl-1"></i></button>
+                <button class="buttonfollow bg">FOLLOW</button>
+            </div>
+
+            <h2 class="pt-2 font-weight-bold plpopular" style="font-size: 23px;">Popular</h2>
+            <div class="pl-4 pr-5 p-2" style="height: 200px; width: 100%; ">
+                <table style="width:100%; height: 60px; border-radius: 4px;" class=" table_artist text-center" onclick="go0()">
+                    <tr style="width: 100%;">
+                      <td style="padding-right: 10px; padding-left:20px; width: 10%">1</td> 
+                      <td style="padding-right: 0px; padding-left:0px;"><img src="https://i.scdn.co/image/ab67616d0000b273e0303669408ee0eede16d3ba"  style="height: 50px; width:50px;"></td>
+                      <td class="wordnowrap" style="width: 30%;">เท่าที่ทำได้ feat. LAZYLOXY</td> 
+                      <td class="wordnowrap" style="width: 30%;">เท่าที่ทำได้ feat. LAZYLOXY</td> 
+                      <td style="width: 30%;">3:37</td> 
+                    </tr>
+                    
+                  </table>
+            </div>
+        </div>
+        
+          
+        </div>
+        
     </div>
+
+        
 
     <audio src="" id="song"></audio>
     <div class="box"></div>
@@ -279,7 +290,15 @@
                             <!-- <img src="./assets/icons/forward.png" onclick="nextSong()" id="next-song" class="img-fluid"/> -->
                         <!-- </div>
                     </div> -->
-    <script>
+        
+                
+
+                
+            
+        
+  
+    
+    <!-- <script>
         let requestURL = 'artist/artist.json';
         let request = new XMLHttpRequest();
         let output = document.getElementById('lists');
@@ -499,7 +518,7 @@
                 
             // }
         }
-    </script>
+    </script> -->
     <script>
         const thumbnail = document.querySelector('#thumbnail'); // album cover 
         const song = document.querySelector('#song'); // audio object
