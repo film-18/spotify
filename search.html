@@ -18,7 +18,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/94195324d2.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
-    <title>Spotify - Search</title>
+    <title>Spotify - Search</title  >
+
 </head>
 
 <body>
@@ -240,9 +241,10 @@
 
 
             let artist = document.createElement('b');
-            artist.setAttribute("class", "wordnowrap pt-3 pl-1");
+            artist.setAttribute("class", "wordnowrap pt-3 pl-1 color");
             artist.innerHTML = "Artists";
             artist.style.fontSize = "40px";
+            
 
             alink.append(pic1);
             alink.append(artist);
@@ -260,7 +262,7 @@
             genre2.append(pic2);
 
             let kpop = document.createElement('b');
-            kpop.setAttribute("class", "wordnowrap pt-3 pl-1");
+            kpop.setAttribute("class", "wordnowrap pt-3 pl-1 color");
             kpop.innerHTML = "K-pop";
             kpop.style.fontSize = "40px";
             let alink3 = document.createElement('a');
@@ -309,7 +311,7 @@
 
                 let name = document.createElement('b');
                 name.innerHTML = data[i].Title ;
-                name.setAttribute("class", "wordnowrap pt-3 pl-3");
+                name.setAttribute("class", "wordnowrap pt-3 pl-3 color");
                 name.style.fontSize = "20px";
                 name.style.whiteSpace = "nowrap";
                 let alink2 = document.createElement('a');

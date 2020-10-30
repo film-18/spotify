@@ -462,8 +462,9 @@ input {
   
   .dropdown:hover .dropdown-content {display: block;}
 
-  
-<<<<<<< Updated upstream
-=======
->>>>>>> main
->>>>>>> Stashed changes
+a:link{
+    text-decoration: none;
+}
+.color{
+    color: white;
+}
