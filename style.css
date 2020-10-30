@@ -404,7 +404,6 @@ input {
     border: 1px solid white;
     
 }
-<<<<<<< HEAD
 .table td, .table th {
     vertical-align: middle;
 
@@ -414,7 +413,6 @@ input {
     border-radius: 4px;
 }
 
-=======
 /* width */
 ::-webkit-scrollbar {
     width: 0px;
@@ -463,13 +461,13 @@ input {
   
   .dropdown:hover .dropdown-content {display: block;}
 
-<<<<<<< Updated upstream
+
 a:link{
     text-decoration: none;
 }
 .color{
     color: white;
-=======
+}
   .card{
     background-color: #212121;
 }
@@ -479,5 +477,4 @@ a:link{
 }
 a:link{
     text-decoration: none;
->>>>>>> Stashed changes
 }
