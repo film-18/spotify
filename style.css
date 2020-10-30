@@ -463,9 +463,21 @@ input {
   
   .dropdown:hover .dropdown-content {display: block;}
 
+<<<<<<< Updated upstream
 a:link{
     text-decoration: none;
 }
 .color{
     color: white;
+=======
+  .card{
+    background-color: #212121;
+}
+.card:hover {
+    background-color: #2e2e2e;
+    transition: .10s ease;
+}
+a:link{
+    text-decoration: none;
+>>>>>>> Stashed changes
 }

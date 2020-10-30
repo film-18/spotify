@@ -19,17 +19,7 @@
     <script src="https://kit.fontawesome.com/94195324d2.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
     <title>Spotify - Search</title>
-    <style>
-        .card{
-            background-color: #212121;
-        }
-        .card:hover {
-            background-color: #2e2e2e;
-        }
-        a:link{
-            text-decoration: none;
-        }
-    </style>
+    
 </head>
 
 <body>
@@ -238,9 +228,13 @@
                 
                 let row = document.createElement("div");
                 row.setAttribute("class", "row");
+                row.style.height = "100%";
+                row.style.overflowY = "hidden";
+                row.style.gridAutoRows = "0";
+                row.style.gridTemplateColumns = "repeat(auto-fill,minmax(180px,1fr))";
                 // row.style.overflowX = "hidden";
                 let col = document.createElement("col");
-                col.setAttribute("class", "col-md-3 xol-sm-3 pb-4");
+                col.setAttribute("class", "col-md-3 xol-sm-3 pb-4 pr-2");
                 col.style.overflowX = "hidden";
 
                 let box = document.createElement("div");
@@ -251,15 +245,20 @@
                 alink.setAttribute("href", data[i].link);
                 
 
-
                 let pic = document.createElement('IMG');
-                pic.setAttribute("class", "card-img-top pl-3 pr-3 pt-3");
+                 pic.style.width = "100%";
+                 pic.style.height = "20%";
+                 pic.style.position = "relative";
+                 pic.style.top = "0";
+                 pic.style.left = "0";
+                 pic.style.display = "block";
+                // pic.style.minwidth = "200px";
+                pic.setAttribute("class", "pl-3 pr-3 pt-3");
                 // pic.style.height = "200px";
                 pic.style.borderRadius = "50%";
                 pic.style.textAlign = "center";
-                box.style.cursor = "pointer";
-
-
+                // col.style.height = "50%";
+                // box.style.cursor = "pointer";
                 pic.src = data[i].Picture;
                 // box.setAttribute("onclick", "go" + i + "()");
                 let textbox = document.createElement("div");
