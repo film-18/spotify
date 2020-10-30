@@ -17,8 +17,8 @@
         crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/94195324d2.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="player.css">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../player.css">
     <title>Kpop</title>
 </head>
 
@@ -189,7 +189,7 @@
 
                     <div class="row py-2 px-2">
                         <div class="col-md-3 py-2 px-1">
-                            <img src="play-circle-solid.png" class="img-fluid w-100 rounded" id="thumbnail" />
+                            <img src="../play-circle-solid.png" class="img-fluid w-100 rounded" id="thumbnail" />
                         </div>
                         <div class="col-md-9 py-3">
                             <div class="row">
@@ -223,16 +223,16 @@
                         <div class="container">
                             <div class="player text-center">
                                 <a class="btn spanBack mt-1" onclick="previousSong()">
-                                    <img src="step-backward-solid.png" id="previous-song" class="img-fluid">
+                                    <img src="../step-backward-solid.png" id="previous-song" class="img-fluid">
                                 </a>
                                 <!-- <img  src="step-backward-solid.png" onclick="previousSong()" width="30px" height="30px" id="previous-song"/> -->
                                 <!-- <img src="./assets/icons/backward.png" onclick="previousSong()" id="previous-song"  class="img-fluid w-25" /> -->
                                 <a class="btn spanBack ml-2" onclick="playPause()">
-                                    <img src="play-circle-solid.png" id="play-pause">
+                                    <img src="../play-circle-solid.png" id="play-pause">
                                 </a>
                                 <!-- <img src="play-circle-solid.png" onclick="playPause()" width="50px" height="50px" id="play-pause"/> -->
                                 <a class="btn spanBack ml-3 mt-1" onclick="nextSong()">
-                                    <img src="step-forward-solid.png" id="next-song">
+                                    <img src="../step-forward-solid.png" id="next-song">
                                 </a>
                             </div>
                         </div>
@@ -284,7 +284,7 @@
             }
         });
         
-        let requestURL = 'box/NewRelease.json';
+        let requestURL = '/box/NewRelease.json';
         let request = new XMLHttpRequest();
         let output = document.getElementById('lists');
         request.onreadystatechange = function () {
