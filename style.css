@@ -377,15 +377,24 @@ input {
     overflow : hidden;
     background-image : linear-gradient(rgba(0,0,0,.6),#121212);
 }
+.fas {
+    padding: 0px;
+    margin: 0px;
+    vertical-align: middle;
+}
 .buttonplayartist{
     background-color: #1db954;
     width: 60px;
     height: 60px;
     line-height: 60px;
     text-align: center;
-    padding: 0;
     border-radius: 50%;
     
+}
+.buttonplayartist:hover{
+    width: 65px;
+    height: 65px;
+    text-align: center;
 }
 .buttonfollow{
     width: 90px;
@@ -477,4 +486,41 @@ a:link{
 }
 a:link{
     text-decoration: none;
+}
+.table_artist:hover {
+    background-color: rgb(54, 54, 54);
+    cursor: pointer;
+}
+
+.textBottom {
+    position: absolute;
+    top: 200px;
+    left: 20px;
+    color: white;
+}
+.positionarrowL{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: white;
+}
+.positionarrowR{
+    position: absolute;
+    top: 20px;
+    left: 70px;
+    color: white;
+}
+.positionplay{
+    position: absolute;
+    top: 20px;
+    left: 30px;
+}
+.ibutton{
+    color: white;
+}
+.plpopular{
+    padding-left: 40px;
+}
+.bg{
+    border: 1px solid rgb(175, 161, 100);
 }
