@@ -1,22 +1,22 @@
 [
     {
-        "Box": "Made For You",
-        "Inbox": [
-            {
-                "Title": "Time Capsule",
-                "Picture": "https://daily-mix.scdn.co/covers/time-capsule/time-capsule-blue_DEFAULT-en.jpg",
-                "Note": "We made you a playlist with songs to take you back in time."
-            },
-            {
-                "Title": "On Repert",
-                "Picture": "https://daily-mix.scdn.co/covers/on_repeat/PZN_On_Repeat_DEFAULT-en.jpg",
-                "Note": "The songs you can’t get enough of right now."
-            },
-            {
-                "Title": "Your Top Songs 2019",
-                "Picture": "https://lineup-images.scdn.co/your-top-songs-2019_DEFAULT-en.jpg",
-                "Note": "The songs you loved most this year, all wrapped up."
-            }
-        ]
+        "Title": "Time Capsule",
+        "Picture": "https://daily-mix.scdn.co/covers/time-capsule/time-capsule-blue_DEFAULT-en.jpg",
+        "Note": "We made you a playlist with songs to take you back in time."
+    },
+    {
+        "Title": "On Repert",
+        "Picture": "https://daily-mix.scdn.co/covers/on_repeat/PZN_On_Repeat_DEFAULT-en.jpg",
+        "Note": "The songs you can’t get enough of right now."
+    },
+    {
+        "Title": "Your Top Songs 2019",
+        "Picture": "https://lineup-images.scdn.co/your-top-songs-2019_DEFAULT-en.jpg",
+        "Note": "The songs you loved most this year, all wrapped up."
+    },
+    {
+        "Title": "This Is SCRUBB",
+        "Picture": "https://i.scdn.co/image/ab67706f0000000276cd4568bd5607b64b039e3d",
+        "Note": "ครบรอบ 20 ปี SCRUBB กับเพลย์ลิสต์เวอร์ชั่นพิเศษ เมื่อยและบอลเลือก 20 เพลงในเส้นทางดนตรี รวมถึงเพลงฮิตของพวกเขา และเพลงใหม่ล่าสุดมาให้ฟังกัน.  SCRUBB 20th Anniversary special edition playlist. Muey and Ball have selected 20 tracks from their journey, including all the hits and the latest releases here."
     }
 ]

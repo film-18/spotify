@@ -1,17 +1,22 @@
 [
     {
-        "Title": "Time Capsule",
-        "Picture": "https://daily-mix.scdn.co/covers/time-capsule/time-capsule-blue_DEFAULT-en.jpg",
-        "Note": "We made you a playlist with songs to take you back in time."
+        "Title": "Thailand Top 50",
+        "Picture": "https://charts-images.scdn.co/assets/locale_en/regional/daily/region_th_default.jpg",
+        "Note": "Your daily update of the most played tracks in Thailand right now."
     },
     {
-        "Title": "On Repert",
-        "Picture": "https://daily-mix.scdn.co/covers/on_repeat/PZN_On_Repeat_DEFAULT-en.jpg",
-        "Note": "The songs you can’t get enough of right now."
+        "Title": "Global Top 50",
+        "Picture": "https://charts-images.scdn.co/assets/locale_en/regional/daily/region_global_default.jpg",
+        "Note": "Your daily update of the most played tracks right now."
     },
     {
-        "Title": "Your Top Songs 2019",
-        "Picture": "https://lineup-images.scdn.co/your-top-songs-2019_DEFAULT-en.jpg",
-        "Note": "The songs you loved most this year, all wrapped up."
+        "Title": "Global Viral 50",
+        "Picture": "https://charts-images.scdn.co/assets/locale_en/viral/daily/region_global_default.jpg",
+        "Note": "Your daily update of the most viral tracks in the world."
+    },
+    {
+        "Title": "Thailand Viral 50",
+        "Picture": "https://charts-images.scdn.co/assets/locale_en/viral/daily/region_th_default.jpg",
+        "Note": "Your daily update of the most viral tracks in Thailand."
     }
 ]
