@@ -105,7 +105,7 @@
   </div>
 
 
-    <audio src="music/music-t/youngohm_official_audio.mp3" id="song"></audio>
+    <audio src="" id="song"></audio>
     <div class="row">
         <div id="nav_play" class=" fixed-bottom w-100">
             <!-- <span class="navbar-brand mb-0">Navbar</span> -->
@@ -115,24 +115,22 @@
 
                     <div class="row py-2 px-2">
                         <div class="col-md-3 py-2 px-1">
-                            <img src="https://i.scdn.co/image/ab67616d00001e02b4668d89ecb9c2f7e2e6189f" class="img-fluid w-100 rounded"/>
+                            <img src="" class="img-fluid w-100 rounded" id="thumbnail"/>
                         </div>
                         <div class="col-md-9 py-3">
                             <div class="row">
                                 <div class="col-md-6 pl-3 pr-0">
                                     <span>
-                                        <div class="song-title" style="font-size: 1.25vw;">ก่อนนอนคืนนี้</div>
+                                        <div class="song-title" style="font-size: 1.25vw;" id="songti"></div>
                                     </span>
                                     <span>
-                                        <div class="song-artist" style="font-size: 1.1vw;color: gray;">YoungOhm</div>
+                                        <div class="song-artist" style="font-size: 1.1vw;color: gray;" id="songart"></div>
                                     </span>
                                 </div>
                                 <div class="col-md-6 px-0 pt-2">
                                     <span class="spanLike">
-                                        <i class="fas fa-heart"></i>
                                     </span>
                                     <span class="spanLike px-2">
-                                        <i class="fas fa-globe-asia"></i>
                                     </span>
                                 </div>
                             </div>
@@ -180,247 +178,7 @@
                     </div>
                 </div>
             </div>
-                    <!-- <div class="row">
-                        <div class="col-4">
-                            <span class="spanBack py-3 float-right" onclick="previousSong()"><i class="fas fa-step-backward"></i></span> -->
-                        <!-- </div>
-                        <div class="col-2 text-center">
-                            <span class="spanPlay py-3" onclick="playPause()"><i class="far fa-play-circle"></i></span> -->
-                            <!-- <img src="./assets/icons/play.png" onclick="playPause()" id="play-pause"  class="img-fluid"/> -->
-                        <!-- </div>
-                        <div class="col-6 ">
-                            <span class="spanBack py-3" onclick="nextSong()"><i class="fas fa-step-forward"></i></span> -->
-                            <!-- <img src="./assets/icons/forward.png" onclick="nextSong()" id="next-song" class="img-fluid"/> -->
-                        <!-- </div>
-                    </div> -->
-        
-                
-
-                
-            
-        
-  
-    
-    <!-- <script src="player.js"></script>
-    <script>
-        let requestURL = 'artist/artist.json';
-        let request = new XMLHttpRequest();
-        let output = document.getElementById('lists');
-        request.onreadystatechange = function () {
-            if (request.readyState == 4 && request.status == 200) {
-                dataReportStatus(JSON.parse(request.responseText));
-            }
-        };
-
-        request.open("GET", requestURL, true);
-        request.send();
-
-
-            function dataReportStatus(data) {
-            // let rowFirst = document.createElement('div');
-            // rowFirst.setAttribute("class", "row mx-2 mt-5");
-
-            // let rowSec = document.createElement('div');
-            // rowSec.setAttribute("class", "row mx-2 mt-5");
-            let div = document.createElement('div');
-            div.setAttribute("class", "container mx-0 px-0 my-0 py-0");
-            let imgprofile = document.createElement('IMG');
-            // imgprofile.setAttribute("class", "mt-0 ml-0");
-            imgprofile.style.width = "100%";
-            imgprofile.style.height = "350px";
-            imgprofile.src = data[7].Picprofile;
-            let nameartist = document.createElement('H1');
-            nameartist.setAttribute("class", "textBottom font-weight-bold");
-            nameartist.innerHTML = data[7].Artist;
-            nameartist.style.fontSize = "100px";
-
-            let buttonleft = document.createElement('button');
-            buttonleft.setAttribute("class", "buttonarrow positionarrowL border-0");
-            let leftarrow = document.createElement('span');
-            leftarrow.setAttribute("class", "leftarrow");
-            let ileftarrow = document.createElement('i');
-            ileftarrow.setAttribute("class", "fas fa-angle-left");
-            leftarrow.append(ileftarrow);
-            buttonleft.append(leftarrow);
-
-            let buttonright = document.createElement('button');
-            buttonright.setAttribute("class", "buttonarrow positionarrowR border-0");
-            let rightarrow = document.createElement('span');
-            rightarrow.setAttribute("class", "rightarrow");
-            let irightarrow = document.createElement('i');
-            irightarrow.setAttribute("class", "fas fa-angle-right");
-            rightarrow.append(irightarrow);
-            buttonright.append(rightarrow);
-
-            div.append(buttonright);
-            div.append(buttonleft);
-            div.append(imgprofile);
-            div.append(nameartist);
-            output.append(div)
-            
-            let div2 = document.createElement('div');
-            div2.setAttribute("class", "w-100 boxartist");
-            div2.style.height = "200px";
-            div2.style.backgroundColor = "rgb(83, 83, 83)";
-            
-            let div3 = document.createElement('div');
-            div3.setAttribute("class", "w-100");
-            div3.style.height = "100px";
-            // div3.style.backgroundColor = "rgb(252, 108, 4)";
-            let buttonplay = document.createElement('button');
-            buttonplay.setAttribute("class", "buttonplayartist positionplay border-0");
-            let ibuttonplay = document.createElement('i');
-            ibuttonplay.setAttribute("class", "fas fa-play ibutton pl-1");
-            buttonplay.append(ibuttonplay);
-            let buttonfollow = document.createElement('button');
-            buttonfollow.setAttribute("class", "buttonfollow positionfollow bg");
-            buttonfollow.innerHTML = "FOLLOW";
-
-            let div4 = document.createElement('div');
-            div4.setAttribute("class", "w-100");
-            div4.style.height = "100px";
-            let popular = document.createElement('h2');
-            popular.setAttribute("class", "pt-2 font-weight-bold plpopular");
-            popular.innerHTML = "Popular";
-            popular.style.fontSize = "23px"
-            div4.append(popular);
-
-            div3.append(buttonfollow);
-            div3.append(buttonplay);
-            div2.append(div3);
-            div2.append(div4);
-            output.appendChild(div2);
-
-   
-            let table = document.createElement('table');
-                    table.setAttribute("class", "table table-borderless");
-                    // table.createTHead();
-                    let count = 1;
-                    let thead = document.createElement('thead');
-                    let tbody = document.createElement('tbody');
-                    let tr = document.createElement('tr');
-                    let no = document.createElement("th");
-                    let title = document.createElement("th");
-                    let album = document.createElement("th");
-                    let time = document.createElement("th");
-
-                    // tr.appendChild(no);
-                    // tr.appendChild(title);
-                    // tr.appendChild(album);
-                    // tr.appendChild(time);
-                    thead.appendChild(tr);
-                    no.style.textAlign = "center";
-
-                    title.style.width = "30%";
-                    album.style.width = "20%";
-                    time.style.width = "20%";
-                    
-
-            // for (let i=0; i<data.length; i++) {
-                
-                // let headText = document.createElement("div");
-                // headText.innerHTML = data[i].Artist;
-                // let pic = document.createElement('IMG');
-                // pic.src = data[i].Picture;
-  
-                for (let j=0; j<data[7].Songs.length; j++) {
-
-                    let tr = document.createElement('tr');
-
-                    let thno = document.createElement('td');
-                    thno.style.color = "white";
-                    // thThree.innerHTML = "time";
-                    // let boxno = document.createElement('div');
-                    let textno = document.createElement('p');
-                    textno.style.color = "white";
-                    textno = count;
-                    // boxno.append(textno);
-                    // boxno.style.textAlign = "center";
-                    thno.append(textno);
-                    thno.style.textAlign = "center";
-                    thno.style.paddingBottom = "0px";
-                    thno.style.paddingRight = "0px";
-                    // thno.style.verticalAlign = "middle";
-                
-                    let thOne = document.createElement('td');
-                    
-                    // thOne.innerHTML = "title";
-
-                    let div = document.createElement('div');
-                    div.setAttribute("class", "row");
-                    let colImg = document.createElement('div');
-                    colImg.setAttribute("class", "col-2");
-
-                    let imgAblum = document.createElement('IMG');
-                    imgAblum.setAttribute("class", "img_song");
-                    imgAblum.style.width = "45px";
-                    imgAblum.src = data[7].Picture;
-                    colImg.append(imgAblum);
-                    
-
-                    let colRight = document.createElement("div");
-                    colRight.setAttribute("class", "col-10");
-                    let textSong = document.createElement('p');
-                    textSong.style.color = "white";
-                    textSong.innerHTML += data[7].Songs[j].Title;
-                    textSong.style.marginBottom = "0px"; 
-                    textSong.style.fontSize = "16px";
-                    textSong.style.paddingTop = "11px";
-                    let artist_name = document.createElement('p');
-                    // artist_name.innerHTML += data[0].Artist;
-                    artist_name.style.marginBottom = "0px";
-                    textSong.style.whiteSpace = "nowrap";
-
-                    colRight.append(textSong);
-                    colRight.append(artist_name);
-                    div.append(colImg);
-                    div.append(colRight);
-                    thOne.append(div);
-                    thOne.style.verticalAlign = "middle";
-                    thOne.style.paddingBottom = "2px";
-                
-
-                    let thTwo = document.createElement('td');
-                    thTwo.style.color ="white";
-                    // thTwo.innerHTML = "Album";
-                    let boxText = document.createElement('div');
-                    let textAlbum = document.createElement('p');
-                    textAlbum = data[7].Songs[j].Single;
-                    boxText.style.whiteSpace = "nowrap";
-
-                    
-                    boxText.append(textAlbum);
-                    thTwo.append(boxText);
-                    thTwo.style.verticalAlign = "middle";
-
-                    let thThree = document.createElement('td');
-                    thThree.style.color ="white";
-                    // thThree.innerHTML = "time";
-                    let boxTime = document.createElement('div');
-                    let textTime = document.createElement('p');
-                    textTime = data[7].Songs[j].Time;
-                    boxTime.append(textTime);
-                    thThree.append(boxTime);
-                    thThree.style.verticalAlign = "middle";
-
-                    tr.append(thno);
-                    tr.append(thOne);
-                    tr.append(thTwo);
-                    tr.append(thThree);
-                    thead.appendChild(tr);
-                    table.append(thead);
-
-                    // output.appendChild(headText);
-                    // output.appendChild(pic);
-                    output.appendChild(table);
-                    count++;
-
-                    }
- 
-                
-            // }
-        }
-    </script> -->
+                   
 </body>
 
 
