@@ -487,10 +487,7 @@ a:link{
 a:link{
     text-decoration: none;
 }
-.table_artist:hover {
-    background-color: rgb(54, 54, 54);
-    cursor: pointer;
-}
+
 
 .textBottom {
     position: absolute;
@@ -521,6 +518,10 @@ a:link{
 .plpopular{
     padding-left: 40px;
 }
-.bg{
-    border: 1px solid rgb(175, 161, 100);
+tr {
+    padding-bottom: 10px;;
+}
+tr:hover {
+    background-color: rgb(54, 54, 54);
+    cursor: pointer;
 }
