@@ -54,7 +54,7 @@
                     </div>
                 </div>
             </div>
-            <a href="home.html">
+            <a href="../home.html">
                 <button class="rounded border-0 button w-100 text-left py-2">
                     <span class="spanhome d-inline mr-3"><i class="fas fa-home"></i></span>
                     <p class="d-inline" style="font-size: 13px;">Home</p>
@@ -161,12 +161,12 @@
             <div class="row" style="width: 100%;">
                 <div class="pl-3 py-2" style="width: 200px">
                     <div class="pl-3 pr-3 d-inline">
-                        <button class="border-0 text-left buttonarrow">
+                        <button class="border-0 text-left buttonarrow" onclick="goback()">
                             <span class="leftarrow ml-2"><i class="fas fa-angle-left"></i></span>
                         </button>
                     </div>
                     <div class="d-inline">
-                        <button class="border-0 text-left buttonarrow">
+                        <button class="border-0 text-left buttonarrow" onclick="goforward()">
                             <span class="rightarrow ml-3"><i class="fas fa-angle-right"></i></span>
                         </button>
                     </div>
@@ -278,6 +278,12 @@
 
 
     <script>
+        function goback(){
+            window.history.back();
+        };
+        function goforward(){
+            window.history.forward();
+        }
         window.addEventListener('keydown', function (e) {
             if (e.keyCode == 32 && e.target == document.body) {
                 e.preventDefault();
