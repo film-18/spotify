@@ -3,6 +3,7 @@
         "Artist": "First Anuwat",
         "Picture": "https://i.scdn.co/image/ab67616d00001e02c240b07e8b150e82e99c6ed6",
         "Picprofile": "https://i.scdn.co/image/6e5caed7a087dcc38945a2edaf7f3f5e5dcf7e95",
+        "link": "artistone.html",
         "Songs": [
             {
                 "Image": "https://i.scdn.co/image/ab67616d00001e02c240b07e8b150e82e99c6ed6",
@@ -17,6 +18,7 @@
         "Artist": "YOUNGOHM",
         "Picture": "https://i.scdn.co/image/aaed722c1cde1c90bae56762dbd951b333e541c4",
         "Picprofile": "https://i.scdn.co/image/ead75329e281ccf99c4096b7d12da928410bcb54",
+        "link": "artisttwo.html",
         "Songs": [
             {
                 "Image": "https://i.scdn.co/image/ab67616d00001e02b4668d89ecb9c2f7e2e6189f",
@@ -47,11 +49,15 @@
                 "Url": "music/music-t/youngohm_อัศวินรัตติกาล.mp3"
             }
         ]
+        
+
+        
     },
     {
         "Artist": "Stamp",
         "Picture": "https://i.scdn.co/image/12ac9258ccb5f4985351bc05d9b9ff42f8daded1",
         "Picprofile": "https://i.scdn.co/image/1026b5de585aec9fd7e002d029c93038d2d2c7a3",
+        "link": "artistthree.html",
         "Songs": [
             {
                 "Image": "https://i.scdn.co/image/ab67616d0000b27322b84d45ab6bf0f66417648a",
@@ -66,6 +72,7 @@
         "Artist": "Mirrr",
         "Picture": "https://i.scdn.co/image/b9df8d7a83fbb08588926aeabb355027094510c0",
         "Picprofile": "https://i.scdn.co/image/d3e2620fb242a68233ff45be8d2289e387b444f7",
+        "link": "artistfour.html",
         "Songs": [
             {
                 "Image": "https://i.scdn.co/image/ab67616d00001e0287cc1aef411c7e4a4e775a9e",
@@ -80,6 +87,7 @@
         "Artist": "YENTED",
         "Picture": "https://i.scdn.co/image/6d3e36acf9d6052677de36ee718189d882ec87a6",
         "Picprofile": "https://miro.medium.com/max/7122/1*tf_1kz_9Q9vPWLEOKU7HGw.jpeg",
+        "link": "artistfive.html",
         "Songs": [
             {
                 "Image": "https://i.scdn.co/image/ab67616d00001e0261be5564019beb3c8cb53265",
@@ -94,6 +102,7 @@
         "Artist": "Oat Pramote",
         "Picture": "https://i.scdn.co/image/07d6a0497fb80f8958f9519a191c0bdbff58ef59",
         "Picprofile": "https://i.scdn.co/image/7bac42497ecdbb39a765f6f42f18a04071711c25",
+        "link": "artistsix.html",
         "Songs": [   
             {
                 "Image": "https://i.scdn.co/image/ab67616d0000b273e0303669408ee0eede16d3ba",
@@ -108,6 +117,7 @@
         "Artist": "คิงส์ ชนาวิทย์",
         "Picture": "https://i.scdn.co/image/ab67616d00001e028650e03818907bda5559cd38",
         "Picprofile": "https://ak.picdn.net/shutterstock/videos/5543216/thumb/1.jpg",
+        "link": "artistseven.html",
         "Songs": [
             {
                 "Image": "https://i.scdn.co/image/ab67616d0000b273dbf9b440730cf935d4b722ad",
@@ -122,6 +132,7 @@
         "Artist": "Three Man Down",
         "Picture": "https://i.scdn.co/image/22cf0074098688cf0aa9a89b46eda4148764fa3f",
         "Picprofile": "https://s.isanook.com/jo/0/ud/482/2414509/tmd_rain-tn.jpg",
+        "link": "artisteight.html",
         "Songs": [
             {
                 "Image": "https://i.scdn.co/image/ab67616d00001e027cdb9ebead2e749f5eee81ad",
@@ -136,6 +147,7 @@
         "Artist": "BOWKYLION",
         "Picture": "https://i.scdn.co/image/42d296aafcca227caa00f97722406594e530a58d",
         "Picprofile": "https://i.scdn.co/image/82e3645294934d14c5dd5df6483b1a65fddcddbe",
+        "link": "artistnine.html",
         "Songs": [
             {
                 "Image": "https://i.scdn.co/image/ab67616d0000b273684150f9c9327b1a7e8f77e2",
@@ -150,6 +162,7 @@
         "Artist": "Tilly Birds",
         "Picture": "https://i.scdn.co/image/8f2d0ac714d522af28e5244a3a5282f910a94ce7",
         "Picprofile": "https://i.scdn.co/image/e2e04ae2243bbf17edf88c34152cda4a1ffb41dc",
+        "link": "artistten.html",
         "Songs": [
             {
                 "Image": "https://i.scdn.co/image/ab67616d0000b273e4c3cc9230e81286c06babe1",

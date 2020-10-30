@@ -26,6 +26,9 @@
         .card:hover {
             background-color: #2e2e2e;
         }
+        a:link{
+            text-decoration: none;
+        }
     </style>
 </head>
 
@@ -82,7 +85,7 @@
 
 
 
-            <p> class="mt-4 mb-3">PLAYLISTS</p>
+            <p class="mt-4 mb-3">PLAYLISTS</p>
 
 
             <div class="row">
@@ -245,12 +248,13 @@
                 // box.style.backgroundColor = "#212121";
                 box.style.borderRadius = "5px";
                 let alink = document.createElement('a');
-                alink.setAttribute("href", "artists.html");
+                alink.setAttribute("href", data[i].link);
+                
 
 
                 let pic = document.createElement('IMG');
                 pic.setAttribute("class", "card-img-top pl-3 pr-3 pt-3");
-                pic.style.height = "200px";
+                // pic.style.height = "200px";
                 pic.style.borderRadius = "50%";
                 pic.style.textAlign = "center";
                 box.style.cursor = "pointer";
@@ -265,6 +269,7 @@
                 div.setAttribute("class", "divStyle");
                 let nameText = document.createElement('b');
                 nameText.innerHTML += data[i].Artist;
+                nameText.style.color = "white";
                 let career = document.createElement('p');
                 career.innerHTML = "Artist";
                 career.setAttribute("class", "text-muted");
@@ -284,15 +289,15 @@
                 // audioBox.style.width = "100%";
                 // audioBox.append(audioOne);
                 // btn.append(audioBox);
-                
                 div.append(nameText);
                 div.append(career);
                 textbox.appendChild(div);
                 // textbox.appendChild(nameText2);
                 // textbox.appendChild(audioBox);
-
-                box.appendChild(pic);
-                box.appendChild(textbox);
+                alink.append(pic);
+                alink.append(textbox);
+                box.appendChild(alink);
+                // box.appendChild(textbox);
 
                 col.append(box);
                 //col.append(pic);
