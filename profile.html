@@ -6,9 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
         integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
         integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
         crossorigin="anonymous"></script>
@@ -33,10 +31,6 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <style>
-
-
-
-
 
     </style>
 </head>
@@ -63,19 +57,25 @@
                     </div>
                 </div>
             </div>
+            <a href="home.html">
+                <button class="rounded border-0 button w-100 text-left py-2">
+                    <span class="spanhome d-inline mr-3"><i class="fas fa-home"></i></span>
+                    <p class="d-inline" style="font-size: 13px;">Home</p>
+                </button>
+            </a>
+            <a href="search.html">
+                <button class=" rounded border-0 button w-100 text-left py-2">
+                    <span class="spansearch d-inline mr-3"><i class="fas fa-search"></i></span>
+                    <p class="d-inline" style="font-size: 13px;">Search</p>
+                </button>
+            </a>
+            <a>
+                <button class="rounded border-0 button w-100 text-left py-2">
+                    <span class="spanlibrary d-inline mr-3"><i class="fas fa-book-open"></i></span>
+                    <p class="d-inline" style="font-size: 13px;">Your Library</p>
+                </button>
+            </a>
 
-            <button class="rounded border-0 button w-100 text-left py-2">
-                <span class="spanhome d-inline mr-3"><i class="fas fa-home"></i></span>
-                <p class="d-inline" style="font-size: 13px;">Home</p>
-            </button>
-            <button class=" rounded border-0 button w-100 text-left py-2">
-                <span class="spansearch d-inline mr-3"><i class="fas fa-search"></i></span>
-                <p class="d-inline" style="font-size: 13px;">Search</p>
-            </button>
-            <button class="rounded border-0 button w-100 text-left py-2">
-                <span class="spanlibrary d-inline mr-3"><i class="fas fa-book-open"></i></span>
-                <p class="d-inline" style="font-size: 13px;">Your Library</p>
-            </button>
 
 
 
@@ -84,15 +84,57 @@
 
             <div class="row">
                 <div class="col">
-                    <button class="rounded border-0 button w-100 text-left">
+                    <button class="rounded border-0 button w-100 text-left" data-toggle="modal"
+                        data-target="#exampleModal">
                         <span class="float-left">
                             <span class="spancreat_playlist d-inline float-left mr-2"><i
                                     class="fas fa-plus-square"></i></span>
                         </span>
                         <span>
-                            <p class="d-inline float-left mt-2 mb-0" style="font-size: 13px;">Creat Playlist</p>
+                            <p class="d-inline float-left mt-2 mb-0" style="font-size: 13px;" data-toggle="modal"
+                                data-target="#exampleModalLabel">Creat Playlist</p>
                         </span>
                     </button>
+                </div>
+            </div>
+
+
+            <!-- Modal -->
+            <div class="modal " id="exampleModal" id="frame" role="dialog" aria-labelledby="exampleModalLabel"
+                aria-hidden="true" style="padding-top: 10%;">
+                <div class="text-center pt-5 pb-0">
+                    <button class="div4 e6ed3359ee250e2ecc13253d4db86076-scss text-center" type="button"
+                        data-dismiss="modal">
+                        <svg width="32" height="32" viewBox="0 0 32 32">
+                            <!-- <title>Close</title> -->
+                            <path
+                                d="M31.098 29.794L16.955 15.65 31.097 1.51 29.683.093 15.54 14.237 1.4.094-.016 1.508 14.126 15.65-.016 29.795l1.414 1.414L15.54 17.065l14.144 14.143"
+                                fill="#fff" fill-rule="evenodd">
+                            </path>
+                        </svg>
+                    </button>
+                </div>
+                <h1 class="div1 div2 " dir="auto">Create new playlist</h1>
+                <div class="modal-body">
+                    <div class="bcb8c631188b0e9c7991ecd05f53a01e-scss">
+                        <div class="inputBox">
+                            <div class="contentSpacing">
+                                <h4 class="inputBox-label">Playlist Name</h4>
+                                <input type="text" class="inputBox-input" placeholder="New Playlist" id="playlistNew"
+                                    style="font-family: 'Ubuntu', sans-serif;">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="div3">
+                        <div class="div1">
+                            <button class="div4 div5 mr-2 btnCreat" type="button" data-dismiss="modal">CANCEL
+                            </button>
+                        </div>
+                        <div class="div1">
+                            <button class="div4 div6 btnCreat" type="button" onclick="creatplaylist()">CREATE
+                            </button>
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -109,6 +151,8 @@
                 </div>
             </div>
             <hr class="bg-success mt-0">
+            <table id="table0" class="table">
+            </table>
         </div>
 
 
@@ -185,39 +229,14 @@
                     <a href="#contact">FOLLOWING (num)</a>
                     <a href="#about">FOLLOWER (num)</a>
                 </div>
+            
             </div>
             </center>
         </div>
+        <!-- <script src="profile.js"></script> -->
         <script>
             document.getElementById('imgprofile').src = localStorage.getItem("pic");
-            let getname = document.getElementById('profileName');
 
-            // Initialize Cloud Firestore through Firebase
-            firebase.initializeApp({
-                apiKey: 'AIzaSyAIlXUZEeQ9jwTaIGr5C9uEUQYOd8KEWpA',
-                projectId: 'spotify-8da9e'
-            });
-
-            var db = firebase.firestore();
-            // db.collection("users").get().then(function (querySnapshot) {
-            //     querySnapshot.forEach(function (doc) {
-            //         console.log(doc.id, " => ", doc.data());
-            //     });
-            // });
-
-
-            var docRef = db.collection("users").doc();
-
-            docRef.get().then(function (doc) {
-                if (doc.exists) {
-                    // getname.innerHTML =  doc.data().Name;
-                } else {
-                    // doc.data() will be undefined in this case
-                    console.log("No such document!");
-                }
-            }).catch(function (error) {
-                console.log("Error getting document:", error);
-            });
 
             function change() {
                 let x = document.getElementById("showimg");
@@ -229,16 +248,13 @@
                     x.style.display = 'block';
                     document.getElementById('button1').innerHTML = "OK";
                 }
-                if (button = "ok") {
-
-                }
             }
 
             function getvalue(_src) {
-                var pic = "./icon proflie/icon "+_src.id
+                var pic = "./icon proflie/icon " + _src.id
 
                 console.log(pic)
-               
+
                 if (typeof (Storage) !== "undefined") {
                     // Store
                     localStorage.setItem("pic", pic);
@@ -247,10 +263,11 @@
                 } else {
                     document.getElementById('imgprofile').src = "Sorry, your browser does not support Web Storage...";
                 }
-                console.log(document.getElementById('imgprofile') );
-
+                console.log(document.getElementById('imgprofile'));
 
             }
+
+            let getname = document.getElementById('profileName');
 
             let mail = ''
             let currentChar = ''
@@ -264,7 +281,39 @@
             let name = mail.slice(0, -1);
 
             getname.innerHTML = name;
-            // console.log(mail);
+
+            firebase.initializeApp({
+                apiKey: 'AIzaSyAIlXUZEeQ9jwTaIGr5C9uEUQYOd8KEWpA',
+                projectId: 'spotify-8da9e'
+            });
+
+
+            function creatplaylist() {
+
+                let namePlaylist = document.getElementById("playlistNew").value;
+                console.log(namePlaylist);
+
+                var db = firebase.firestore();
+                db.collection("playlist").doc(namePlaylist).set({
+                    Name: name,
+                    Song: [1, 2]
+
+                })
+            }
+            var db = firebase.firestore();
+            db.collection("playlist").get().then(function (querySnapshot) {
+                querySnapshot.forEach(function (doc) {
+                    // doc.data() is never undefined for query doc snapshots
+                    let table = document.getElementById("table0"); //id @table
+                    let row = table.insertRow(-1);
+                    let newrow = row.insertCell(0);
+                    let playlist = doc.id
+                    newrow.innerHTML = playlist;
+                    newrow.style.color = "white";
+                    console.log(playlist);
+                });
+            });
+
 
 
         </script>

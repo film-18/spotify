@@ -52,7 +52,7 @@
                     <p class="d-inline" style="font-size: 13px;">Search</p>
                 </button>
             </a>
-            <a>
+            <a href="library.html">
                 <button class="rounded border-0 button w-100 text-left py-2">
                     <span class="spanlibrary d-inline mr-3"><i class="fas fa-book-open"></i></span>
                     <p class="d-inline" style="font-size: 13px;">Your Library</p>
@@ -126,15 +126,18 @@
                         <span class="float-left">
                             <span class="spanlink_song d-inline float-left mr-2"><i class="fab fa-gratipay"></i></span>
                         </span>
-                        <span>
-                            <p class="d-inline float-left mt-2 mb-0" style="font-size: 13px;">Liked Songs</p>
-                        </span>
+                        <a href="likeSong.html">
+                            <span>
+                                <p class="d-inline float-left mt-2 mb-0" style="font-size: 13px;">Liked Songs</p>
+                            </span>
+                        </a>
                         <div class="dropdown-content" id="dropdownCon">
                         </div>
                     </button>
                 </div>
             </div>
             <hr class="bg-success mt-0">
+            <table id="table0" class="table"></table>
         </div>
 
 
@@ -185,7 +188,7 @@
                                     </span>
                                 </div>
                                 <div class="col-md-6 px-0 pt-2">
-                                    <span class="spanLike">
+                                    <span class="spanLike" onclick="likeSong()">
                                         <i class="fas fa-heart" style="cursor: pointer;"></i>
                                     </span>
                                     <span class="spanLike px-2">
@@ -255,11 +258,14 @@
 
 
 
-
+    <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-firestore.js"></script>
+    <script src="profile.js"></script>
 
 
 
     <script>
+
         function goback() {
             window.history.back();
         };
@@ -394,7 +400,7 @@
         });
         function go0() {
             document.getElementById("song").setAttribute("src", songs[0]);
-            document.getElementsByTagName("i")[8].setAttribute("onclick", "like0()");
+            // document.getElementsByTagName("i")[8].setAttribute("onclick", "like0()");
             pPause.src = "./pause-circle-solid.png"
             song.play();
             playing = false;
@@ -408,7 +414,7 @@
         function go1() {
 
             document.getElementById("song").setAttribute("src", songs[1]);
-            document.getElementsByTagName("i")[8].setAttribute("onclick", "like1()");
+            // document.getElementsByTagName("i")[8].setAttribute("onclick", "likeSong())");
             pPause.src = "./pause-circle-solid.png"
             song.play();
             playing = false;
@@ -422,7 +428,7 @@
         function go2() {
 
             document.getElementById("song").setAttribute("src", songs[2]);
-            document.getElementsByTagName("i")[8].setAttribute("onclick", "like2()");
+            // document.getElementsByTagName("i")[8].setAttribute("onclick", "like2()");
 
             pPause.src = "./pause-circle-solid.png"
             song.play();
@@ -542,7 +548,7 @@
         function go10() {
 
             document.getElementById("song").setAttribute("src", songs[10]);
-            document.getElementsByTagName("i")[8].setAttribute("onclick", "like10");
+            document.getElementsByTagName("i")[8].setAttribute("onclick", "likeSong()");
             ;
             pPause.src = "./pause-circle-solid.png"
             song.play();
@@ -557,7 +563,7 @@
         function go11() {
 
             document.getElementById("song").setAttribute("src", songs[11]);
-            document.getElementsByTagName("i")[8].setAttribute("onclick", "like11");
+            document.getElementsByTagName("i")[8].setAttribute("onclick", "likeSong()");
             ;
             pPause.src = "./pause-circle-solid.png"
             song.play();
@@ -572,7 +578,7 @@
         function go12() {
 
             document.getElementById("song").setAttribute("src", songs[12]);
-            document.getElementsByTagName("i")[8].setAttribute("onclick", "like12");
+            document.getElementsByTagName("i")[8].setAttribute("onclick", "likeSong()");
             ;
             pPause.src = "./pause-circle-solid.png"
             song.play();
@@ -587,7 +593,7 @@
         function go13() {
 
             document.getElementById("song").setAttribute("src", songs[13]);
-            document.getElementsByTagName("i")[8].setAttribute("onclick", "like13");
+            document.getElementsByTagName("i")[8].setAttribute("onclick", "likeSong()");
             ;
             pPause.src = "./pause-circle-solid.png"
             song.play();
@@ -602,7 +608,7 @@
         function go14() {
 
             document.getElementById("song").setAttribute("src", songs[14]);
-            document.getElementsByTagName("i")[8].setAttribute("onclick", "like14");
+            document.getElementsByTagName("i")[8].setAttribute("onclick", "likeSong()");
             ;
             pPause.src = "./pause-circle-solid.png"
             song.play();
@@ -617,7 +623,7 @@
         function go15() {
 
             document.getElementById("song").setAttribute("src", songs[15]);
-            document.getElementsByTagName("i")[8].setAttribute("onclick", "like15");
+            document.getElementsByTagName("i")[8].setAttribute("onclick", "likeSong()");
             ;
             pPause.src = "./pause-circle-solid.png"
             song.play();
@@ -632,7 +638,7 @@
         function go16() {
 
             document.getElementById("song").setAttribute("src", songs[16]);
-            document.getElementsByTagName("i")[8].setAttribute("onclick", "like16");
+            document.getElementsByTagName("i")[8].setAttribute("onclick", "likeSong()");
             ;
             pPause.src = "./pause-circle-solid.png"
             song.play();
@@ -647,7 +653,7 @@
         function go17() {
 
             document.getElementById("song").setAttribute("src", songs[17]);
-            document.getElementsByTagName("i")[8].setAttribute("onclick", "like17");
+            document.getElementsByTagName("i")[8].setAttribute("onclick", "likeSong()");
             ;
             pPause.src = "./pause-circle-solid.png"
             song.play();
@@ -662,7 +668,7 @@
         function go18() {
 
             document.getElementById("song").setAttribute("src", songs[18]);
-            document.getElementsByTagName("i")[8].setAttribute("onclick", "like18");
+            document.getElementsByTagName("i")[8].setAttribute("onclick", "likeSong()");
             ;
             pPause.src = "./pause-circle-solid.png"
             song.play();
@@ -677,7 +683,7 @@
         function go19() {
 
             document.getElementById("song").setAttribute("src", songs[19]);
-            document.getElementsByTagName("i")[8].setAttribute("onclick", "like19");
+            document.getElementsByTagName("i")[8].setAttribute("onclick", "likeSong()");
             ;
             pPause.src = "./pause-circle-solid.png"
             song.play();
