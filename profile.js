@@ -35,7 +35,7 @@ function likeSong() {
             Img: addimg
         }
 
-       
+
     })
 
     console.log(nameSong);
@@ -44,18 +44,17 @@ function likeSong() {
 }
 
 var db = firebase.firestore();
-db.collection("playlist").get().then(function (querySnapshot) {
-    querySnapshot.forEach(function (doc) {
-        // doc.data() is never undefined for query doc snapshots
+db.collection("playlist").doc(name).get().then(data => {
+
+    for (let i = 0; i < data.data().Playlist.play.length; i++) {
         let table = document.getElementById("table0");
+        table.setAttribute("class", "border-top-0 pb-3"); //id @table
         let row = table.insertRow(-1);
         let newrow = row.insertCell(0);
-        let playlist = doc.id;
-        newrow.innerHTML = playlist;
-        newrow.style.color = "white";
-        console.log(playlist);
+        let playlist1 = data.data().Playlist.play[i];
+        newrow.innerHTML = playlist1;
 
-  
-        
-    });
+        newrow.style.color = "white";
+    }
+    console.log(data.data().Playlist);
 });

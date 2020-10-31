@@ -31,6 +31,22 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <style>
+        img {
+            border-radius: 500px;
+            padding: 20px;
+            width: 50%;
+        }
+
+        td {
+            text-align: center;
+        }
+
+        #tableArtist {
+            background-color: #212121;
+        }
+        #table1 {
+            background-color: #212121;
+        }
 
     </style>
 </head>
@@ -144,9 +160,11 @@
                         <span class="float-left">
                             <span class="spanlink_song d-inline float-left mr-2"><i class="fab fa-gratipay"></i></span>
                         </span>
-                        <span>
-                            <p class="d-inline float-left mt-2 mb-0" style="font-size: 13px;">Liked Songs</p>
-                        </span>
+                        <a href="likeSong.html">
+                            <span>
+                                <p class="d-inline float-left mt-2 mb-0" style="font-size: 13px;">Liked Songs</p>
+                            </span>
+                        </a>
                     </button>
                 </div>
             </div>
@@ -174,24 +192,19 @@
                         </button>
                     </div>
                 </div>
-                <div class="col-4 py-0 px-0">
-                    <nav class="navbar navbar-expand-lg navbar-dark rounded">
-                        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                            <div class="navbar-nav">
-                                <a class="nav-item nav-link active rounded" href="">Playlists<span
-                                        class="sr-only">(current)</span></a>
-                                <a class="nav-item nav-link active rounded" href="#">Artists<span
-                                        class="sr-only">(current)</span></a>
-                                <a class="nav-item nav-link active rounded" href="#">Albums<span
-                                        class="sr-only">(current)</span></a>
-                            </div>
+                <div class="col-md-4 py-0 px-0">
+                        <div class="topnav text-center">
+                            <a class="active px-4" href="#feed"  style="font-size: 1em;" onclick="showPlaylist()">Playlists</a>
+                            <a class="active px-4" href="#news"  style="font-size: 1em;" onclick="showArtist()">Song</a>
                         </div>
-                    </nav>
                 </div>
-                
-                
+
+
             </div>
-            <table id="table1" class="table"></table>
+            <table id="table1" class="table" style="display: none;">
+              <img src="./compact-disc-solid.png"  style="display: none;" id="musicpic">
+            </table>
+            <table id="tableArtist" class="table" style="display: none;"></table>
 
 
         </div>
@@ -199,34 +212,98 @@
 
     </center>
     </div>
-    <!-- <script src="profile.js"></script> -->
     <script>
 
         firebase.initializeApp({
             apiKey: 'AIzaSyAIlXUZEeQ9jwTaIGr5C9uEUQYOd8KEWpA',
             projectId: 'spotify-8da9e'
         });
+        let mail = ''
+        let currentChar = ''
+        let index = document.cookie.search("now=") + 4;
+        while (currentChar !== "-") {
+            currentChar = document.cookie[index];
+            mail += currentChar;
+            index += 1;
+        }
+
+        let name = mail.slice(0, -1);
 
         var db = firebase.firestore();
-        db.collection("playlist").get().then(function (querySnapshot) {
-            querySnapshot.forEach(function (doc) {
-                // doc.data() is never undefined for query doc snapshots
-                let table = document.getElementById("table0");
+        db.collection("playlist").doc(name).get().then(data => {
+
+            for (let i = 0; i < data.data().Playlist.play.length; i++) {
+                let table = document.getElementById("table0"); //id @table
+                table.setAttribute("class", "border-top-0 pb-3");
                 let row = table.insertRow(-1);
                 let newrow = row.insertCell(0);
-                let playlist = doc.id;
-                newrow.innerHTML = playlist;
+                let playlist1 = data.data().Playlist.play[i];
+                newrow.innerHTML =  playlist1;
                 newrow.style.color = "white";
 
                 let table1 = document.getElementById("table1"); //id @table
+                table1.setAttribute("class", "border-top-0");
+                let pic = document.getElementById("musicpic").src;
                 let row1 = table1.insertRow(-1);
                 let newrow1 = row1.insertCell(0);
-           
-                newrow1.innerHTML = playlist;
+                newrow1.innerHTML = "<img src=" + pic + ">" + "<br>" + playlist1 + "<br>" + "By " + name;
                 newrow1.style.color = "white";
-                console.log(playlist);
-            });
+
+            }
+            console.log(data.data().Playlist);
         });
+
+        db.collection("likeSong").doc(name).get().then(data => {
+            // doc.data() is never undefined for query doc snapshots
+
+            for (let i = 0; i < data.data().Song.Artist.length; i++) {
+                let table = document.getElementById("tableArtist"); //id @table
+                table.setAttribute("class", "border-top-0 mb-5");
+                let row = table.insertRow(-1);
+                let newrow = row.insertCell(0);
+                let playlist = data.data().Song.Artist[i];
+                let playlist3 = data.data().Song.Img[i];
+                newrow.innerHTML += "<img src=" + playlist3 + ">" + "<br>" + playlist;
+                newrow.style.color = "white";
+            }
+
+            console.log(data.data().Song);
+
+
+        });
+
+        function showPlaylist() {
+            let x = document.getElementById("table1");
+            let y = document.getElementById("tableArtist");
+            let text = document.getElementById("headText");
+
+            if (x.style.display === "block") {
+                x.style.display = 'none';
+                text.style.display = 'none';
+            }
+            else {
+                x.style.display = 'block';
+                y.style.display = 'none';
+
+            }
+        }
+        function showArtist() {
+            let x = document.getElementById("tableArtist");
+            let y = document.getElementById("table1");
+            if (x.style.display === "block") {
+                x.style.display = 'none';
+                
+            }
+            else {
+                x.style.display = 'block';
+                y.style.display = 'none';
+
+            }
+        }
+
+
+
+
     </script>
 </body>
 

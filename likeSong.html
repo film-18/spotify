@@ -19,11 +19,21 @@
     <script src="https://kit.fontawesome.com/94195324d2.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="player.css">
-    <title>Like</title>
+    <title>Likesong</title>
 </head>
 <style>
     img {
-        width: 30%;
+        border-radius: 500px;
+        padding: 20px;
+        width: 50%;
+    }
+
+    td {
+        text-align: center;
+    }
+
+    #table1 {
+        background-color: #212121;
     }
 </style>
 
@@ -60,7 +70,7 @@
                     <p class="d-inline" style="font-size: 13px;">Search</p>
                 </button>
             </a>
-            <a>
+            <a href="library.html">
                 <button class="rounded border-0 button w-100 text-left py-2">
                     <span class="spanlibrary d-inline mr-3"><i class="fas fa-book-open"></i></span>
                     <p class="d-inline" style="font-size: 13px;">Your Library</p>
@@ -95,7 +105,7 @@
                 <div class="text-center pt-5 pb-0">
                     <button class="div4 e6ed3359ee250e2ecc13253d4db86076-scss text-center" type="button"
                         data-dismiss="modal">
-                        <svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                        <svg width="32" height="32" viewBox="0 0 32 32">
                             <!-- <title>Close</title> -->
                             <path
                                 d="M31.098 29.794L16.955 15.65 31.097 1.51 29.683.093 15.54 14.237 1.4.094-.016 1.508 14.126 15.65-.016 29.795l1.414 1.414L15.54 17.065l14.144 14.143"
@@ -110,7 +120,7 @@
                         <div class="inputBox">
                             <div class="contentSpacing">
                                 <h4 class="inputBox-label">Playlist Name</h4>
-                                <input type="text" class="inputBox-input" placeholder="New Playlist"
+                                <input type="text" class="inputBox-input" placeholder="New Playlist" id="playlistNew"
                                     style="font-family: 'Ubuntu', sans-serif;">
                             </div>
                         </div>
@@ -121,7 +131,7 @@
                             </button>
                         </div>
                         <div class="div1">
-                            <button class="div4 div6 btnCreat" type="button">CREATE
+                            <button class="div4 div6 btnCreat" type="button" onclick="creatplaylist()">CREATE
                             </button>
                         </div>
                     </div>
@@ -134,9 +144,11 @@
                         <span class="float-left">
                             <span class="spanlink_song d-inline float-left mr-2"><i class="fab fa-gratipay"></i></span>
                         </span>
-                        <span>
-                            <p class="d-inline float-left mt-2 mb-0" style="font-size: 13px;">Liked Songs</p>
-                        </span>
+                        <a href="likeSong.html">
+                            <span>
+                                <p class="d-inline float-left mt-2 mb-0" style="font-size: 13px;">Liked Songs</p>
+                            </span>
+                        </a>
                         <div class="dropdown-content" id="dropdownCon">
                         </div>
                     </button>
@@ -295,39 +307,35 @@
 
             for (let i = 0; i < data.data().Song.Artist.length; i++) {
                 let table = document.getElementById("table1"); //id @table
+                table.setAttribute("class", "border-top-0 mb-5");
                 let row = table.insertRow(-1);
                 let newrow = row.insertCell(0);
-                // let pic = document.createElement("img");
                 let playlist = data.data().Song.Artist[i];
                 let playlist2 = data.data().Song.NameSong[i];
                 let playlist3 = data.data().Song.Img[i];
-                newrow.innerHTML += "<img src="+playlist3+">" + "<br>" + playlist2 + "<br>" + playlist;
+                newrow.innerHTML += "<img src=" + playlist3 + ">" + "<br>" + playlist2 + "<br>" + playlist;
+                newrow.style.color = "white";
+            }
+            console.log(data.data().Song);
+
+
+        });
+
+        var db = firebase.firestore();
+        db.collection("playlist").doc(name).get().then(data => {
+
+            for (let i = 0; i < data.data().Playlist.play.length; i++) {
+                let table = document.getElementById("table0");
+                table.setAttribute("class", "border-top-0 pb-3"); //id @table
+                let row = table.insertRow(-1);
+                let newrow = row.insertCell(0);
+                let playlist1 = data.data().Playlist.play[i];
+                newrow.innerHTML = playlist1;
 
                 newrow.style.color = "white";
             }
-
-            console.log(data.data().Song);
-          
-
+            console.log(data.data().Playlist);
         });
-
-        db.collection("playlist").get().then(function (querySnapshot) {
-            querySnapshot.forEach(function (doc) {
-                // doc.data() is never undefined for query doc snapshots
-                let table = document.getElementById("table0");
-                let row = table.insertRow(-1);
-                let newrow = row.insertCell(0);
-                let playlist = doc.id;
-                newrow.innerHTML = playlist;
-                newrow.style.color = "white";
-                console.log(playlist);
-
-
-
-            });
-        });
-
-
 
 
 

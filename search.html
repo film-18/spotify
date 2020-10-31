@@ -18,14 +18,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/94195324d2.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
-    <title>Spotify - Search</title  >
+    <title>Spotify - Search</title>
 
 </head>
 
 <body>
-
-
-
+    <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-firestore.js"></script>
 
     <!-- <div class="container"> -->
     <!-- ฝั่งซ้าย -->
@@ -58,7 +57,7 @@
                     <p class="d-inline" style="font-size: 13px;">Search</p>
                 </button>
             </a>
-            <a>
+            <a href="library.html">
                 <button class="rounded border-0 button w-100 text-left py-2">
                     <span class="spanlibrary d-inline mr-3"><i class="fas fa-book-open"></i></span>
                     <p class="d-inline" style="font-size: 13px;">Your Library</p>
@@ -127,13 +126,16 @@
                         <span class="float-left">
                             <span class="spanlink_song d-inline float-left mr-2"><i class="fab fa-gratipay"></i></span>
                         </span>
-                        <span>
-                            <p class="d-inline float-left mt-2 mb-0" style="font-size: 13px;">Liked Songs</p>
-                        </span>
+                        <a href="likeSong.html">
+                            <span>
+                                <p class="d-inline float-left mt-2 mb-0" style="font-size: 13px;">Liked Songs</p>
+                            </span>
+                        </a>
                     </button>
                 </div>
             </div>
             <hr class="bg-secondary mt-0">
+            <table id="table0" class="table"></table>
         </div>
 
 
@@ -193,10 +195,10 @@
 
     <script src="#"></script>
     <script>
-        function goback(){
+        function goback() {
             window.history.back();
         };
-        function goforward(){
+        function goforward() {
             window.history.forward();
         }
         let requestURL = 'music/iconsearch.json';
@@ -242,7 +244,7 @@
             artist.setAttribute("class", "wordnowrap pt-3 pl-1 color");
             artist.innerHTML = "Artists";
             artist.style.fontSize = "40px";
-            
+
 
             alink.append(pic1);
             alink.append(artist);
@@ -308,7 +310,7 @@
 
 
                 let name = document.createElement('b');
-                name.innerHTML = data[i].Title ;
+                name.innerHTML = data[i].Title;
                 name.setAttribute("class", "wordnowrap pt-3 pl-3 color");
                 name.style.fontSize = "20px";
                 name.style.whiteSpace = "nowrap";
@@ -336,6 +338,40 @@
 
 
         } 
+    </script>
+    <script>
+    
+        firebase.initializeApp({
+            apiKey: 'AIzaSyAIlXUZEeQ9jwTaIGr5C9uEUQYOd8KEWpA',
+            projectId: 'spotify-8da9e'
+        });
+        let mail = ''
+        let currentChar = ''
+        let index = document.cookie.search("now=") + 4;
+        while (currentChar !== "-") {
+            currentChar = document.cookie[index];
+            mail += currentChar;
+            index += 1;
+        }
+
+        let name = mail.slice(0, -1);
+
+        var db = firebase.firestore();
+        db.collection("playlist").doc(name).get().then(data => {
+
+            for (let i = 0; i < data.data().Playlist.play.length; i++) {
+                let table = document.getElementById("table0");
+                table.setAttribute("class", "border-top-0 pb-3"); //id @table
+                let row = table.insertRow(-1);
+                let newrow = row.insertCell(0);
+                let playlist1 = data.data().Playlist.play[i];
+                newrow.innerHTML = playlist1;
+
+                newrow.style.color = "white";
+            }
+            console.log(data.data().Playlist);
+        });
+
     </script>
 </body>
 
