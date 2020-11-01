@@ -41,7 +41,7 @@
     <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-firestore.js"></script>
     <!-- ฝั่งซ้าย -->
     <div class="row">
-        <div class="col-md-2 col-sm-5 bgLeft px-4 py-2">
+        <div class="bgLeft p-3 fixed-top" style="width: 230px; height: 100%;">
             <div class="d-inline">
                 <div class="row">
                     <div class="col">
@@ -146,7 +146,8 @@
                         </span>
                         <a href="likeSong.html">
                             <span>
-                                <p class="d-inline float-left mt-2 mb-0" style="font-size: 13px;">Liked Songs</p>
+                                <p class="d-inline float-left mt-2 mb-0"
+                                    style="font-size: 13px; color:rgb(129, 129, 129)">Liked Songs</p>
                             </span>
                         </a>
                     </button>
@@ -160,7 +161,41 @@
 
 
         <!-- ฝั่งขวา -->
-        <div class="col-md-10 col-sm-7 bgRight-top pt-2">
+        <div class="bgLeft px-0 py-2" style="min-width: 250px; "></div>
+        <div class="col bgRight-top pt-2 px-0" style="position:relative;">
+            <div class="row" style="width: 100%;">
+                <div class="col-9 pl-3 py-2" style="width: 200px">
+                    <div class="pl-3 pr-3 d-inline">
+                        <button class="border-0 text-left buttonarrow" onclick="goback()">
+                            <span class="leftarrow ml-2"><i class="fas fa-angle-left"></i></span>
+                        </button>
+                    </div>
+                    <div class="d-inline">
+                        <button class="border-0 text-left buttonarrow" onclick="goforward()">
+                            <span class="rightarrow ml-3"><i class="fas fa-angle-right"></i></span>
+                        </button>
+                    </div>
+                </div>
+
+                <!--Profile Button  -->
+                <div class="box-proflie btn-group pt-3" style="width: 20%; text-align: right;">
+                    <button type="button" class="button-profile dropdown-toggle" data-toggle="dropdown"
+                        style="border: none; outline: none; ">
+                        <figure class="boxpic-profile"  data-testid="user-widget-avatar"
+                            style="width: 28px; height: 28px;">
+                            <img id="imgprofile2"
+                            src="./icon proflie/plus-circle-solid.png"
+                                class="pic-profile">
+                        </figure>
+                        <span style="width: 20%;" >Name</span>
+                    </button>
+
+                    <ul class="dropdown-menu" role="menu" style="background-color: rgb(39, 39, 39);">
+                        <li class="box-li"><a href="profile.html" class="dropdown-profile">Profile</a></li>
+
+                    </ul>
+                </div>
+            </div>
             <div>
                 <center>
                     <div class="mx-auto pt-5" style="width: 150px;">
@@ -226,17 +261,17 @@
             </div>
             <div class="col bgRight-back">
                 <div class="topnav">
-                    <a class="active" href="#feed">FEEDS</a>
-                    <a href="#news">PUBLIC PLAYLISTS</a>
-                    <a href="#contact">FOLLOWING (num)</a>
-                    <a href="#about">FOLLOWER (num)</a>
+                    <a class="active" style="font-size: 10px;" href="#feed">FEEDS</a>
+                    <a href="#news" style="font-size: 10px;">PUBLIC PLAYLISTS</a>
+                    <a href="#contact" style="font-size: 10px;">FOLLOWING (num)</a>
+                    <a href="#about" style="font-size: 10px;">FOLLOWER (num)</a>
                 </div>
-        
+
             </div>
             </center>
         </div>
 
-    
+
         <script>
             document.getElementById('imgprofile').src = localStorage.getItem("pic");
 
@@ -263,8 +298,10 @@
                     localStorage.setItem("pic", pic);
                     // Retrieve
                     document.getElementById('imgprofile').src = localStorage.getItem("pic");
+
                 } else {
                     document.getElementById('imgprofile').src = "Sorry, your browser does not support Web Storage...";
+                    
                 }
                 console.log(document.getElementById('imgprofile'));
 
@@ -317,7 +354,7 @@
                     let row = table.insertRow(-1);
                     let newrow = row.insertCell(0);
                     let playlist1 = data.data().Playlist.play[i];
-                    newrow.innerHTML =  playlist1 ;
+                    newrow.innerHTML = playlist1;
 
                     newrow.style.color = "white";
                 }
