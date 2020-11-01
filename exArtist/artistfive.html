@@ -32,7 +32,9 @@
         height: 400px;
         
     }
-    
+    body{
+        background-color: black;
+    }
 </style>
 
 <body>
@@ -144,16 +146,16 @@
                         <div class="container">
                             <div class="player text-center">
                                 <button class="btn spanBack mt-1" onclick="nextSong()">
-                                    <img src="step-backward-solid.png" id="previous-song" class="img-fluid">
+                                    <img src="../step-backward-solid.png" id="previous-song" class="img-fluid">
                                 </button>
                                 <!-- <img  src="step-backward-solid.png" onclick="previousSong()" width="30px" height="30px" id="previous-song"/> -->
                                 <!-- <img src="./assets/icons/backward.png" onclick="previousSong()" id="previous-song"  class="img-fluid w-25" /> -->
                                 <button class="btn spanBack ml-2">
-                                    <img src="play-circle-solid.png" id="play-pause" onclick="playPause()">
+                                    <img src="../play-circle-solid.png" id="play-pause" onclick="playPause()">
                                 </button>
                                 <!-- <img src="play-circle-solid.png" onclick="playPause()" width="50px" height="50px" id="play-pause"/> -->
                                 <button class="btn spanBack ml-3 mt-1" onclick="nextSong()">
-                                    <img src="step-forward-solid.png" id="previous-song">
+                                    <img src="../step-forward-solid.png" id="previous-song">
                                 </button>
                             </div>
                         </div>
@@ -187,7 +189,7 @@
         let pPause = document.querySelector('#play-pause'); // element where play and pause image appears
 
         songIndex = 0;
-        let songs = ["music/music-t/her_yented_ 1.mp3"]; // object storing paths for audio objects
+        let songs = ["../music/music-t/her_yented_ 1.mp3"]; // object storing paths for audio objects
         let thumbnails = ["https://i.scdn.co/image/ab67616d00001e0261be5564019beb3c8cb53265"]; // object storing paths for album covers and backgrounds
         let songArtists = ["Yedted"]; // object storing track artists
         let songTitles = ["Her"]; // object storing track titles
@@ -195,7 +197,7 @@
         let playing = true;
         function go0() {
             document.getElementById("song").setAttribute("src", songs[0]);
-            pPause.src = "./pause-circle-solid.png"
+            pPause.src = "../pause-circle-solid.png"
             song.play();
             playing = false;
             let song_ti = document.getElementById("songti");
@@ -210,11 +212,11 @@
                 const song = document.querySelector('#song'),
                     thumbnail = document.querySelector('#thumbnail');
 
-                pPause.src = "./pause-circle-solid.png"
+                pPause.src = "../pause-circle-solid.png"
                 song.play();
                 playing = false;
             } else {
-                pPause.src = "./play-circle-solid.png"
+                pPause.src = "../play-circle-solid.png"
                 song.pause();
                 playing = true;
             }
