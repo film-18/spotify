@@ -18,35 +18,35 @@
     <link rel="stylesheet" href="style.css">
     <title>Spotify - Search</title>
     <script>
-        function loadContent0(){
-            $("#lists").load("artistone.html");
+        function loadContent0() {
+            $("#lists").load("/exArtist/artistone.html");
         };
-        function loadContent1(){
-            $("#lists").load("artisttwo.html");
+        function loadContent1() {
+            $("#lists").load("/exArtist/artisttwo.html");
         };
-        function loadContent2(){
-            $("#lists").load("artistthree.html");
+        function loadContent2() {
+            $("#lists").load("/exArtist/artistthree.html");
         };
-        function loadContent3(){
-            $("#lists").load("artistfour.html");
+        function loadContent3() {
+            $("#lists").load("/exArtist/artistfour.html");
         };
-        function loadContent4(){
-            $("#lists").load("artistfive.html");
+        function loadContent4() {
+            $("#lists").load("/exArtist/artistfive.html");
         };
-        function loadContent5(){
-            $("#lists").load("artistsix.html");
+        function loadContent5() {
+            $("#lists").load("/exArtist/artistsix.html");
         };
-        function loadContent6(){
-            $("#lists").load("artistseven.html");
+        function loadContent6() {
+            $("#lists").load("/exArtist/artistseven.html");
         };
-        function loadContent7(){
-            $("#lists").load("artisteight.html");
+        function loadContent7() {
+            $("#lists").load("/exArtist/artisteight.html");
         };
-        function loadContent8(){
-            $("#lists").load("artistnine.html");
+        function loadContent8() {
+            $("#lists").load("/exArtist/artistnine.html");
         };
-        function loadContent9(){
-            $("#lists").load("artistten.html");
+        function loadContent9() {
+            $("#lists").load("/exArtist/artistten.html");
         };
     </script>
 </head>
@@ -78,12 +78,12 @@
                 </button>
             </a>
             <a href="search.html">
-                <button class=" rounded border-0 button w-100 text-left py-2" >
+                <button class=" rounded border-0 button w-100 text-left py-2">
                     <span class="spansearch d-inline mr-3"><i class="fas fa-search"></i></span>
                     <p class="d-inline" style="font-size: 13px;">Search</p>
                 </button>
             </a>
-            <a>
+            <a href="library.html">
                 <button class="rounded border-0 button w-100 text-left py-2">
                     <span class="spanlibrary d-inline mr-3"><i class="fas fa-book-open"></i></span>
                     <p class="d-inline" style="font-size: 13px;">Your Library</p>
@@ -104,8 +104,8 @@
                                     class="fas fa-plus-square"></i></span>
                         </span>
                         <span>
-                            <p class="d-inline float-left mt-2 mb-0" style="font-size: 13px;"  data-toggle="modal"
-                            data-target="#exampleModalLabel">Creat Playlist</p>
+                            <p class="d-inline float-left mt-2 mb-0" style="font-size: 13px;" data-toggle="modal"
+                                data-target="#exampleModalLabel">Creat Playlist</p>
                         </span>
                     </button>
                 </div>
@@ -113,42 +113,42 @@
 
             <!-- Modal -->
             <div class="modal " id="exampleModal" id="frame" role="dialog" aria-labelledby="exampleModalLabel"
-            aria-hidden="true" style="padding-top: 10%;">
-            <div class="text-center pt-5 pb-0">
-                <button class="div4 e6ed3359ee250e2ecc13253d4db86076-scss text-center" type="button"
-                    data-dismiss="modal">
-                    <svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
-                        <!-- <title>Close</title> -->
-                        <path
-                            d="M31.098 29.794L16.955 15.65 31.097 1.51 29.683.093 15.54 14.237 1.4.094-.016 1.508 14.126 15.65-.016 29.795l1.414 1.414L15.54 17.065l14.144 14.143"
-                            fill="#fff" fill-rule="evenodd">
-                        </path>
-                    </svg>
-                </button>
-            </div>
-            <h1 class="div1 div2 " dir="auto">Create new playlist</h1>
-            <div class="modal-body">
-                <div class="bcb8c631188b0e9c7991ecd05f53a01e-scss">
-                    <div class="inputBox">
-                        <div class="contentSpacing">
-                            <h4 class="inputBox-label">Playlist Name</h4>
-                            <input type="text" class="inputBox-input" placeholder="New Playlist"
-                                style="font-family: 'Ubuntu', sans-serif;">
+                aria-hidden="true" style="padding-top: 10%;">
+                <div class="text-center pt-5 pb-0">
+                    <button class="div4 e6ed3359ee250e2ecc13253d4db86076-scss text-center" type="button"
+                        data-dismiss="modal">
+                        <svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                            <!-- <title>Close</title> -->
+                            <path
+                                d="M31.098 29.794L16.955 15.65 31.097 1.51 29.683.093 15.54 14.237 1.4.094-.016 1.508 14.126 15.65-.016 29.795l1.414 1.414L15.54 17.065l14.144 14.143"
+                                fill="#fff" fill-rule="evenodd">
+                            </path>
+                        </svg>
+                    </button>
+                </div>
+                <h1 class="div1 div2 " dir="auto">Create new playlist</h1>
+                <div class="modal-body">
+                    <div class="bcb8c631188b0e9c7991ecd05f53a01e-scss">
+                        <div class="inputBox">
+                            <div class="contentSpacing">
+                                <h4 class="inputBox-label">Playlist Name</h4>
+                                <input type="text" class="inputBox-input" placeholder="New Playlist"
+                                    style="font-family: 'Ubuntu', sans-serif;">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="div3">
+                        <div class="div1">
+                            <button class="div4 div5 mr-2 btnCreat" type="button" data-dismiss="modal">CANCEL
+                            </button>
+                        </div>
+                        <div class="div1">
+                            <button class="div4 div6 btnCreat" type="button">CREATE
+                            </button>
                         </div>
                     </div>
                 </div>
-                <div class="div3">
-                    <div class="div1">
-                        <button class="div4 div5 mr-2 btnCreat" type="button" data-dismiss="modal">CANCEL
-                        </button>
-                    </div>
-                    <div class="div1">
-                        <button class="div4 div6 btnCreat" type="button">CREATE
-                        </button>
-                    </div>
-                </div>
             </div>
-        </div>
 
             <div class="row">
                 <div class="col">
@@ -156,13 +156,16 @@
                         <span class="float-left">
                             <span class="spanlink_song d-inline float-left mr-2"><i class="fab fa-gratipay"></i></span>
                         </span>
-                        <span>
-                            <p class="d-inline float-left mt-2 mb-0" style="font-size: 13px;">Liked Songs</p>
-                        </span>
+                        <a href="likeSong.html">
+                            <span>
+                                <p class="d-inline float-left mt-2 mb-0" style="font-size: 13px;">Liked Songs</p>
+                            </span>
+                        </a>
                     </button>
                 </div>
             </div>
             <hr class="bg-secondary mt-0">
+            <table id="table0" class="table"></table>
         </div>
 
 
@@ -219,13 +222,13 @@
     <!-- </div> 
                     </div> -->
 
-<!-- 
+    <!-- 
     <script src="#"></script> -->
     <script>
-        function goback(){
+        function goback() {
             window.history.back();
         };
-        function goforward(){
+        function goforward() {
             window.history.forward();
         }
         let requestURL = 'artist/artist.json';
@@ -248,7 +251,7 @@
             for (let i = 0; i < 10; i++) {
 
                 let headText = document.createElement("div");
-                
+
                 let row = document.createElement("div");
                 row.setAttribute("class", "row");
                 row.style.height = "100%";
@@ -265,16 +268,16 @@
                 // box.style.backgroundColor = "#212121";
                 box.style.borderRadius = "5px";
                 let alink = document.createElement('a');
-                alink.setAttribute("onclick", "loadContent"+i+"()");
-                
+                alink.setAttribute("onclick", "loadContent" + i + "()");
+
 
                 let pic = document.createElement('IMG');
-                 pic.style.width = "100%";
-                 pic.style.height = "20%";
-                 pic.style.position = "relative";
-                 pic.style.top = "0";
-                 pic.style.left = "0";
-                 pic.style.display = "block";
+                pic.style.width = "100%";
+                pic.style.height = "20%";
+                pic.style.position = "relative";
+                pic.style.top = "0";
+                pic.style.left = "0";
+                pic.style.display = "block";
                 // pic.style.minwidth = "200px";
                 pic.setAttribute("class", "pl-3 pr-3 pt-3");
                 // pic.style.height = "200px";
@@ -343,6 +346,41 @@
                 // }
             }
         }
+    </script>
+    <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-firestore.js"></script>
+    <script>
+        firebase.initializeApp({
+            apiKey: 'AIzaSyAIlXUZEeQ9jwTaIGr5C9uEUQYOd8KEWpA',
+            projectId: 'spotify-8da9e'
+        });
+
+        let mail = ''
+        let currentChar = ''
+        let index = document.cookie.search("now=") + 4;
+        while (currentChar !== "-") {
+            currentChar = document.cookie[index];
+            mail += currentChar;
+            index += 1;
+        }
+
+        let name = mail.slice(0, -1);
+
+        var db = firebase.firestore();
+        db.collection("playlist").doc(name).get().then(data => {
+
+            for (let i = 0; i < data.data().Playlist.play.length; i++) {
+                let table = document.getElementById("table0");
+                table.setAttribute("class", "border-top-0 pb-3"); //id @table
+                let row = table.insertRow(-1);
+                let newrow = row.insertCell(0);
+                let playlist1 = data.data().Playlist.play[i];
+                newrow.innerHTML = playlist1;
+
+                newrow.style.color = "white";
+            }
+            console.log(data.data().Playlist);
+        });
     </script>
 </body>
 
