@@ -535,3 +535,66 @@ tr:hover {
     width: 100%;
     height: 400px;
     }
+.button-profile {
+    background-color: rgba(0,0,0,.7);
+    border-radius: 23px;
+    height: 32px;
+    min-width: 50px;
+    border: 0;
+    cursor: pointer;
+    color: #fff;
+    padding: 2px;
+    right: 0;
+}
+.boxpic-profile {
+    overflow: hidden;
+    position: relative;
+    display: -webkit-inline-box;
+}
+.pic-profile {
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/* .name-profile{
+    margin-left: 8px;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16px;
+    letter-spacing: normal;
+    text-transform: none;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    max-width: 110px;
+    pointer-events: none;
+} */
+.dropdown-profile {
+    color: rgb(199, 199, 199);
+}
+.dropdown-profile:hover {
+    color: white;
+}
+.box-li {
+
+    padding: 7px;
+    /* padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px; */
+}
+.box-li:hover {
+    padding: 7px;
+    /* padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px; */
+    background-color: #535353;
+    color: white;
+    border-radius: 5px;
+}
+.name-profile {
+    white-space: nowrap;
+    width: 5px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
