@@ -340,11 +340,12 @@
         } 
     </script>
     <script>
-    
+
         firebase.initializeApp({
             apiKey: 'AIzaSyAIlXUZEeQ9jwTaIGr5C9uEUQYOd8KEWpA',
             projectId: 'spotify-8da9e'
         });
+
         let mail = ''
         let currentChar = ''
         let index = document.cookie.search("now=") + 4;
@@ -356,15 +357,17 @@
 
         let name = mail.slice(0, -1);
 
+        console.log(name);
+        //show playlist
         var db = firebase.firestore();
         db.collection("playlist").doc(name).get().then(data => {
 
-            for (let i = 0; i < data.data().Playlist.play.length; i++) {
-                let table = document.getElementById("table0");
-                table.setAttribute("class", "border-top-0 pb-3"); //id @table
+            for (let i = 0; i < data.data().Playlist.length; i++) {
+                let table = document.getElementById("table0"); //id @table
+                table.setAttribute("class", "border-top-0 pb-3");
                 let row = table.insertRow(-1);
                 let newrow = row.insertCell(0);
-                let playlist1 = data.data().Playlist.play[i];
+                let playlist1 = data.data().Playlist[i];
                 newrow.innerHTML = playlist1;
 
                 newrow.style.color = "white";

@@ -103,7 +103,7 @@
                             <div class="contentSpacing">
                                 <h4 class="inputBox-label">Playlist Name</h4>
                                 <input type="text" class="inputBox-input" placeholder="New Playlist"
-                                    style="font-family: 'Ubuntu', sans-serif;">
+                                    style="font-family: 'Ubuntu', sans-serif;"  id="playlistNew">
                             </div>
                         </div>
                     </div>
@@ -113,7 +113,7 @@
                             </button>
                         </div>
                         <div class="div1">
-                            <button class="div4 div6 btnCreat" type="button">CREATE
+                            <button class="div4 div6 btnCreat" type="button" onclick="creatplaylist()">CREATE
                             </button>
                         </div>
                     </div>
@@ -257,9 +257,16 @@
 
 
 
-
     <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-firestore.js"></script>
+    <script>
+        firebase.initializeApp({
+            apiKey: 'AIzaSyAIlXUZEeQ9jwTaIGr5C9uEUQYOd8KEWpA',
+            projectId: 'spotify-8da9e'
+        });
+        
+    </script>
+
     <script src="profile.js"></script>
 
 
@@ -443,7 +450,7 @@
         function go3() {
 
             document.getElementById("song").setAttribute("src", songs[3]);
-            document.getElementsByTagName("i")[8].setAttribute("onclick", "like3()");
+            // document.getElementsByTagName("i")[8].setAttribute("onclick", "like3()");
 
             pPause.src = "./pause-circle-solid.png"
             song.play();
@@ -458,7 +465,7 @@
         function go4() {
 
             document.getElementById("song").setAttribute("src", songs[4]);
-            document.getElementsByTagName("i")[8].setAttribute("onclick", "like4()");
+            // document.getElementsByTagName("i")[8].setAttribute("onclick", "like4()");
 
             pPause.src = "./pause-circle-solid.png"
             song.play();
@@ -473,7 +480,7 @@
         function go5() {
 
             document.getElementById("song").setAttribute("src", songs[5]);
-            document.getElementsByTagName("i")[8].setAttribute("onclick", "like5");
+            // document.getElementsByTagName("i")[8].setAttribute("onclick", "like5");
 
             pPause.src = "./pause-circle-solid.png"
             song.play();
@@ -488,7 +495,7 @@
         function go6() {
 
             document.getElementById("song").setAttribute("src", songs[6]);
-            document.getElementsByTagName("i")[8].setAttribute("onclick", "like6");
+            // document.getElementsByTagName("i")[8].setAttribute("onclick", "like6");
 
             pPause.src = "./pause-circle-solid.png"
             song.play();
@@ -503,7 +510,7 @@
         function go7() {
 
             document.getElementById("song").setAttribute("src", songs[7]);
-            document.getElementsByTagName("i")[8].setAttribute("onclick", "like7");
+            // document.getElementsByTagName("i")[8].setAttribute("onclick", "like7");
 
             pPause.src = "./pause-circle-solid.png"
             song.play();
@@ -518,7 +525,7 @@
         function go8() {
 
             document.getElementById("song").setAttribute("src", songs[8]);
-            document.getElementsByTagName("i")[8].setAttribute("onclick", "like8");
+            //document.getElementsByTagName("i")[8].setAttribute("onclick", "like8");
 
             pPause.src = "./pause-circle-solid.png"
             song.play();
@@ -533,7 +540,7 @@
         function go9() {
 
             document.getElementById("song").setAttribute("src", songs[9]);
-            document.getElementsByTagName("i")[8].setAttribute("onclick", "like9");
+            //document.getElementsByTagName("i")[8].setAttribute("onclick", "like9");
 
             pPause.src = "./pause-circle-solid.png"
             song.play();
@@ -548,8 +555,8 @@
         function go10() {
 
             document.getElementById("song").setAttribute("src", songs[10]);
-            document.getElementsByTagName("i")[8].setAttribute("onclick", "likeSong()");
-            ;
+            //document.getElementsByTagName("i")[8].setAttribute("onclick", "likeSong()");
+
             pPause.src = "./pause-circle-solid.png"
             song.play();
             playing = false;
@@ -563,8 +570,8 @@
         function go11() {
 
             document.getElementById("song").setAttribute("src", songs[11]);
-            document.getElementsByTagName("i")[8].setAttribute("onclick", "likeSong()");
-            ;
+            //document.getElementsByTagName("i")[8].setAttribute("onclick", "likeSong()");
+
             pPause.src = "./pause-circle-solid.png"
             song.play();
             playing = false;
@@ -578,8 +585,8 @@
         function go12() {
 
             document.getElementById("song").setAttribute("src", songs[12]);
-            document.getElementsByTagName("i")[8].setAttribute("onclick", "likeSong()");
-            ;
+            //document.getElementsByTagName("i")[8].setAttribute("onclick", "likeSong()");
+
             pPause.src = "./pause-circle-solid.png"
             song.play();
             playing = false;
@@ -593,8 +600,8 @@
         function go13() {
 
             document.getElementById("song").setAttribute("src", songs[13]);
-            document.getElementsByTagName("i")[8].setAttribute("onclick", "likeSong()");
-            ;
+            //document.getElementsByTagName("i")[8].setAttribute("onclick", "likeSong()");
+
             pPause.src = "./pause-circle-solid.png"
             song.play();
             playing = false;
@@ -608,8 +615,8 @@
         function go14() {
 
             document.getElementById("song").setAttribute("src", songs[14]);
-            document.getElementsByTagName("i")[8].setAttribute("onclick", "likeSong()");
-            ;
+            //document.getElementsByTagName("i")[8].setAttribute("onclick", "likeSong()");
+
             pPause.src = "./pause-circle-solid.png"
             song.play();
             playing = false;
@@ -623,8 +630,8 @@
         function go15() {
 
             document.getElementById("song").setAttribute("src", songs[15]);
-            document.getElementsByTagName("i")[8].setAttribute("onclick", "likeSong()");
-            ;
+            //document.getElementsByTagName("i")[8].setAttribute("onclick", "likeSong()");
+
             pPause.src = "./pause-circle-solid.png"
             song.play();
             playing = false;
@@ -638,8 +645,8 @@
         function go16() {
 
             document.getElementById("song").setAttribute("src", songs[16]);
-            document.getElementsByTagName("i")[8].setAttribute("onclick", "likeSong()");
-            ;
+            //document.getElementsByTagName("i")[8].setAttribute("onclick", "likeSong()");
+
             pPause.src = "./pause-circle-solid.png"
             song.play();
             playing = false;
@@ -653,7 +660,7 @@
         function go17() {
 
             document.getElementById("song").setAttribute("src", songs[17]);
-            document.getElementsByTagName("i")[8].setAttribute("onclick", "likeSong()");
+            //document.getElementsByTagName("i")[8].setAttribute("onclick", "likeSong()");
             ;
             pPause.src = "./pause-circle-solid.png"
             song.play();
@@ -668,7 +675,7 @@
         function go18() {
 
             document.getElementById("song").setAttribute("src", songs[18]);
-            document.getElementsByTagName("i")[8].setAttribute("onclick", "likeSong()");
+            //document.getElementsByTagName("i")[8].setAttribute("onclick", "likeSong()");
             ;
             pPause.src = "./pause-circle-solid.png"
             song.play();
@@ -683,7 +690,7 @@
         function go19() {
 
             document.getElementById("song").setAttribute("src", songs[19]);
-            document.getElementsByTagName("i")[8].setAttribute("onclick", "likeSong()");
+            //document.getElementsByTagName("i")[8].setAttribute("onclick", "likeSong()");
             ;
             pPause.src = "./pause-circle-solid.png"
             song.play();
@@ -698,7 +705,7 @@
         function go20() {
 
             document.getElementById("song").setAttribute("src", songs[20]);
-            document.getElementsByTagName("i")[8].setAttribute("onclick", "like20");
+            //document.getElementsByTagName("i")[8].setAttribute("onclick", "like20");
             ;
             pPause.src = "./pause-circle-solid.png"
             song.play();

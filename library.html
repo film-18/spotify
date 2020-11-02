@@ -195,7 +195,7 @@
                 <div class="col-md-4 py-0 px-0">
                         <div class="topnav text-center">
                             <a class="active px-4" href="#feed"  style="font-size: 1em;" onclick="showPlaylist()">Playlists</a>
-                            <a class="active px-4" href="#news"  style="font-size: 1em;" onclick="showArtist()">Song</a>
+                            <a class="active px-4" href="#news"  style="font-size: 1em;" onclick="showArtist()">Artist</a>
                         </div>
                 </div>
 
@@ -232,17 +232,17 @@
         var db = firebase.firestore();
         db.collection("playlist").doc(name).get().then(data => {
 
-            for (let i = 0; i < data.data().Playlist.play.length; i++) {
+            for (let i = 0; i < data.data().Playlist.length; i++) {
                 let table = document.getElementById("table0"); //id @table
                 table.setAttribute("class", "border-top-0 pb-3");
                 let row = table.insertRow(-1);
                 let newrow = row.insertCell(0);
-                let playlist1 = data.data().Playlist.play[i];
-                newrow.innerHTML =  playlist1;
-                newrow.style.color = "white";
+                let playlist1 = data.data().Playlist[i];
+                newrow.innerHTML = playlist1;
+
 
                 let table1 = document.getElementById("table1"); //id @table
-                table1.setAttribute("class", "border-top-0");
+                table1.setAttribute("class", "border-top-0 my-5");
                 let pic = document.getElementById("musicpic").src;
                 let row1 = table1.insertRow(-1);
                 let newrow1 = row1.insertCell(0);
@@ -258,7 +258,7 @@
 
             for (let i = 0; i < data.data().Song.Artist.length; i++) {
                 let table = document.getElementById("tableArtist"); //id @table
-                table.setAttribute("class", "border-top-0 mb-5");
+                table.setAttribute("class", "border-top-0 my-5");
                 let row = table.insertRow(-1);
                 let newrow = row.insertCell(0);
                 let playlist = data.data().Song.Artist[i];
