@@ -14,6 +14,7 @@
         crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/94195324d2.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="player.css">
     <title>Home</title>
@@ -103,7 +104,7 @@
                             <div class="contentSpacing">
                                 <h4 class="inputBox-label">Playlist Name</h4>
                                 <input type="text" class="inputBox-input" placeholder="New Playlist"
-                                    style="font-family: 'Ubuntu', sans-serif;"  id="playlistNew">
+                                    style="font-family: 'Ubuntu', sans-serif;" id="playlistNew">
                             </div>
                         </div>
                     </div>
@@ -126,13 +127,15 @@
                         <span class="float-left">
                             <span class="spanlink_song d-inline float-left mr-2"><i class="fab fa-gratipay"></i></span>
                         </span>
-                        <a href="likeSong.html">
-                            <span>
-                                <p class="d-inline float-left mt-2 mb-0" style="font-size: 13px;">Liked Songs</p>
-                            </span>
-                        </a>
-                        <div class="dropdown-content" id="dropdownCon">
-                        </div>
+
+                        <span class="w3-dropdown-hover">
+                            <p class="d-inline float-left mt-2 mb-0" style="font-size: 13px;">Liked
+                                Songs</p>
+                            <div class="w3-dropdown-content w3-bar-block w3-border">
+                                <table class="table border-bottom" id="dropdownLike"></table>
+                            </div>
+                        </span>
+
                     </button>
                 </div>
             </div>
@@ -158,6 +161,22 @@
                     </div>
                 </div>
             </div>
+            <!--Profile Button  -->
+                <div class="box-proflie btn-group pt-3" style="width: 20%; text-align: right;">
+                    <button type="button" class="button-profile dropdown-toggle" data-toggle="dropdown"
+                        style="border: none; outline: none; ">
+                        <figure class="boxpic-profile" data-testid="user-widget-avatar"
+                            style="width: 28px; height: 28px;">
+                            <img id="imgprofile2" src="./icon proflie/plus-circle-solid.png" class="pic-profile">
+                        </figure>
+                        <!-- <span style="width: 20%;" id="name2">Name</span> -->
+                    </button>
+
+                    <ul class="dropdown-menu" role="menu" style="background-color: rgb(39, 39, 39);">
+                        <li class="box-li"><a href="profile.html" class="dropdown-profile">Profile</a></li>
+                    </ul>
+                </div>
+
             <div id="lists">
             </div>
         </div>
@@ -264,15 +283,31 @@
             apiKey: 'AIzaSyAIlXUZEeQ9jwTaIGr5C9uEUQYOd8KEWpA',
             projectId: 'spotify-8da9e'
         });
-        
+
     </script>
 
     <script src="profile.js"></script>
+    <script>
+        document.getElementById("imgprofile2").src = localStorage.getItem("pic");
+        firebase.initializeApp({
+            apiKey: 'AIzaSyAIlXUZEeQ9jwTaIGr5C9uEUQYOd8KEWpA',
+            projectId: 'spotify-8da9e'
+        });
+        db.collection("likeSong").doc(name).set({
+            name: name,
+            Song: {
+                Artist: [],
+                NameSong: [],
+                Img: []
+            }
+        })
+
+
+    </script>
 
 
 
     <script>
-
         function goback() {
             window.history.back();
         };

@@ -144,7 +144,7 @@
                         <span class="float-left">
                             <span class="spanlink_song d-inline float-left mr-2"><i class="fab fa-gratipay"></i></span>
                         </span>
-                        <a href="likeSong.html">
+                        <a href="#">
                             <span>
                                 <p class="d-inline float-left mt-2 mb-0"
                                     style="font-size: 13px; color:rgb(129, 129, 129)">Liked Songs</p>
@@ -181,13 +181,11 @@
                 <div class="box-proflie btn-group pt-3" style="width: 20%; text-align: right;">
                     <button type="button" class="button-profile dropdown-toggle" data-toggle="dropdown"
                         style="border: none; outline: none; ">
-                        <figure class="boxpic-profile"  data-testid="user-widget-avatar"
+                        <figure class="boxpic-profile" data-testid="user-widget-avatar"
                             style="width: 28px; height: 28px;">
-                            <img id="imgprofile2"
-                            src="./icon proflie/plus-circle-solid.png"
-                                class="pic-profile">
+                            <img id="imgprofile2" src="./icon proflie/plus-circle-solid.png" class="pic-profile">
                         </figure>
-                        <span style="width: 20%;" >Name</span>
+                        <span style="width: 20%;" id="name2">Name</span>
                     </button>
 
                     <ul class="dropdown-menu" role="menu" style="background-color: rgb(39, 39, 39);">
@@ -205,6 +203,13 @@
 
                     <div class="pt-4 pb-3">
                         <h6 id="profileName">Name</h6>
+                        <div id="numberOfplaylist" class="d-inline"> 0</div>
+                        <div style="font-size: 10px;" class="d-inline pr-3">PUBLIC PLAYLISTS
+                        </div>
+                        <!-- <div style="font-size: 5px;color: white;" class="d-inline pr-3 text-center"><i class="fas fa-circle"></i></div> -->
+                        <div id="numberOfArtist" class="d-inline"> 0</div>
+                        <div style="font-size: 10px;" class="d-inline">LIKE ARTISTS
+                        </div>
                     </div>
                     <div>
                         <button class="btn btn-md" id="button1" onclick="change()">Edit Profile
@@ -259,21 +264,23 @@
                     </div>
                     <br>
             </div>
-            <div class="col bgRight-back">
+            <!-- <div class="col bgRight-back text-center pb-5">
                 <div class="topnav">
-                    <a class="active" style="font-size: 10px;" href="#feed">FEEDS</a>
-                    <a href="#news" style="font-size: 10px;">PUBLIC PLAYLISTS</a>
-                    <a href="#contact" style="font-size: 10px;">FOLLOWING (num)</a>
-                    <a href="#about" style="font-size: 10px;">FOLLOWER (num)</a>
-                </div>
+                    <div id="numberOfplaylist" class="d-inline"> numberPlay</div>
+                    <div style="font-size: 10px;" class="d-inline pr-3">PUBLIC PLAYLISTS
+                    </div>
+                    <div id="numberOfArtist" class="d-inline"> numberPlay</div>
+                    <div style="font-size: 10px;" class="d-inline">LIKE ARTISTS
+                    </div>
 
-            </div>
+
+                </div>
+            </div> -->
             </center>
         </div>
-
-
         <script>
             document.getElementById('imgprofile').src = localStorage.getItem("pic");
+            document.getElementById("imgprofile2").src = localStorage.getItem("pic");
 
             firebase.initializeApp({
                 apiKey: 'AIzaSyAIlXUZEeQ9jwTaIGr5C9uEUQYOd8KEWpA',
@@ -302,16 +309,19 @@
                     localStorage.setItem("pic", pic);
                     // Retrieve
                     document.getElementById('imgprofile').src = localStorage.getItem("pic");
+                    document.getElementById("imgprofile2").src = localStorage.getItem("pic");
+
 
                 } else {
                     document.getElementById('imgprofile').src = "Sorry, your browser does not support Web Storage...";
-                    
+
                 }
                 console.log(document.getElementById('imgprofile'));
 
             }
 
             let getname = document.getElementById('profileName');
+            let getname2 = document.getElementById('name2');
             let mail = ''
             let currentChar = ''
             let index = document.cookie.search("now=") + 4;
@@ -324,6 +334,7 @@
             let name = mail.slice(0, -1);
 
             getname.innerHTML = name;
+            getname2.innerHTML = name;
             console.log(name);
 
             // var db = firebase.firestore();
@@ -341,8 +352,8 @@
                     Playlist: firebase.firestore.FieldValue.arrayUnion(namePlaylist)
                 })
 
-                
-                
+
+
             }
 
             //show playlist
@@ -350,17 +361,26 @@
             db.collection("playlist").doc(name).get().then(data => {
 
                 for (let i = 0; i < data.data().Playlist.length; i++) {
-                let table = document.getElementById("table0"); //id @table
-                table.setAttribute("class", "border-top-0 pb-3");
-                let row = table.insertRow(-1);
-                let newrow = row.insertCell(0);
-                let playlist1 = data.data().Playlist[i];
-                newrow.innerHTML = playlist1;
+                    let table = document.getElementById("table0"); //id @table
+                    table.setAttribute("class", "border-top-0 pb-3");
+                    let row = table.insertRow(-1);
+                    let newrow = row.insertCell(0);
+                    let playlist1 = data.data().Playlist[i];
+                    newrow.innerHTML = playlist1;
 
-                newrow.style.color = "white";
+                    newrow.style.color = "white";
                 }
                 console.log(data.data().Playlist);
+                document.getElementById('numberOfplaylist').innerHTML = data.data().Playlist.length;
             });
+
+            db.collection("likeSong").doc(name).get().then(data => {
+
+                // console.log( data.data().Song.Artist.length);
+                document.getElementById('numberOfArtist').innerHTML = data.data().Song.Artist.length;
+            });
+
+
         </script>
 
 

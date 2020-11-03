@@ -17,6 +17,9 @@ while (currentChar !== "-") {
 }
 
 let name = mail.slice(0, -1);
+let getname2 = document.getElementById('name2');
+getname2.innerHTML = name;
+
 
 
 async function likeSong() {
@@ -54,11 +57,6 @@ async function likeSong() {
     //     };
     // })
     // console.log(info)
-
-    // let data = doc.data();
-    // info.Artist.push(nameArtist)
-    // info.NameSong.push(nameSong)
-    // info.Img.push(img)
     let doc = await db.collection('likeSong').doc(name).get();
     let data = doc.data();
 
@@ -76,31 +74,27 @@ async function likeSong() {
             NameSong: data.Song.NameSong,
             Img: data.Song.Img
         }
-    }, {merge: true})
+    }, { merge: true })
 
     console.log(nameSong);
     console.log(nameArtist);
     console.log(img);
+
+    db.collection("likeSong").doc(name).get().then(data => {
+        // doc.data() is never undefined for query doc snapshots
+
+        for (let i = 0; i < data.data().Song.Artist.length; i++) {
+            let droptable = document.getElementById("dropdownLike"); //id @droptable
+            droptable.setAttribute("class", "border-top-0 bg-dark text-white border-0");
+            let droprow = droptable.insertRow(-1);
+            let info = droprow.insertCell(0);
+            let likesS = data.data().Song.NameSong[i];
+            info.innerHTML = likesS + "<br>";
+
+        }
+
+        console.log(data.data().Song);
+
+
+    });
 }
-
-//show playlist 
-var db = firebase.firestore();
-db.collection("playlist").doc(name).get().then(data => {
-
-    for (let i = 0; i < data.data().Playlist.length; i++) {
-        let table = document.getElementById("table0"); //id @table
-        table.setAttribute("class", "border-top-0 pb-3");
-        let row = table.insertRow(-1);
-        let newrow = row.insertCell(0);
-        let playlist1 = data.data().Playlist[i];
-        newrow.innerHTML = playlist1;
-
-        newrow.style.color = "white";
-    }
-    console.log(data.data().Playlist);
-});
-
-
-
-
-

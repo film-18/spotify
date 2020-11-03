@@ -44,10 +44,10 @@
         #tableArtist {
             background-color: #212121;
         }
+
         #table1 {
             background-color: #212121;
         }
-
     </style>
 </head>
 
@@ -160,11 +160,10 @@
                         <span class="float-left">
                             <span class="spanlink_song d-inline float-left mr-2"><i class="fab fa-gratipay"></i></span>
                         </span>
-                        <a href="likeSong.html">
-                            <span>
-                                <p class="d-inline float-left mt-2 mb-0" style="font-size: 13px;">Liked Songs</p>
-                            </span>
-                        </a>
+                        <span>
+                            <p class="d-inline float-left mt-2 mb-0" style="font-size: 13px;">Liked Songs</p>
+                        </span>
+
                     </button>
                 </div>
             </div>
@@ -193,16 +192,33 @@
                     </div>
                 </div>
                 <div class="col-md-4 py-0 px-0">
-                        <div class="topnav text-center">
-                            <a class="active px-4" href="#feed"  style="font-size: 1em;" onclick="showPlaylist()">Playlists</a>
-                            <a class="active px-4" href="#news"  style="font-size: 1em;" onclick="showArtist()">Artist</a>
-                        </div>
+                    <div class="topnav text-center">
+                        <a class="active px-4" href="#feed" style="font-size: 1em;"
+                            onclick="showPlaylist()">Playlists</a>
+                        <a class="active px-4" href="#news" style="font-size: 1em;" onclick="showArtist()">Artist</a>
+                    </div>
+                </div>
+
+                <!--Profile Button  -->
+                <div class="box-proflie btn-group pt-2" style="width: 20%; text-align: right;">
+                    <button type="button" class="button-profile dropdown-toggle" data-toggle="dropdown"
+                        style="border: none; outline: none; ">
+                        <figure class="boxpic-profile" data-testid="user-widget-avatar"
+                            style="width: 28px; height: 28px;">
+                            <img id="imgprofile2" src="./icon proflie/plus-circle-solid.png" class="pic-profile">
+                        </figure>
+                        <span style="width: 20%;" id="name2">Name</span>
+                    </button>
+
+                    <ul class="dropdown-menu" role="menu" style="background-color: rgb(39, 39, 39);">
+                        <li class="box-li"><a href="profile.html" class="dropdown-profile">Profile</a></li>
+                    </ul>
                 </div>
 
 
             </div>
             <table id="table1" class="table" style="display: none;">
-              <img src="./compact-disc-solid.png"  style="display: none;" id="musicpic">
+                <img src="./compact-disc-solid.png" style="display: none;" id="musicpic">
             </table>
             <table id="tableArtist" class="table" style="display: none;"></table>
 
@@ -213,6 +229,7 @@
     </center>
     </div>
     <script>
+    document.getElementById("imgprofile2").src = localStorage.getItem("pic");
 
         firebase.initializeApp({
             apiKey: 'AIzaSyAIlXUZEeQ9jwTaIGr5C9uEUQYOd8KEWpA',
@@ -228,6 +245,9 @@
         }
 
         let name = mail.slice(0, -1);
+        let getname2 = document.getElementById('name2');
+        getname2.innerHTML = name;
+
 
         var db = firebase.firestore();
         db.collection("playlist").doc(name).get().then(data => {
@@ -243,10 +263,10 @@
 
                 let table1 = document.getElementById("table1"); //id @table
                 table1.setAttribute("class", "border-top-0 my-5");
-                let pic = document.getElementById("musicpic").src;
+                let pic1 = document.getElementById("musicpic").src;
                 let row1 = table1.insertRow(-1);
                 let newrow1 = row1.insertCell(0);
-                newrow1.innerHTML = "<img src=" + pic + ">" + "<br>" + playlist1 + "<br>" + "By " + name;
+                newrow1.innerHTML = "<img src=" + pic1 + ">" + "<br>" + playlist1 + "<br>" + "By " + name;
                 newrow1.style.color = "white";
 
             }
@@ -292,7 +312,7 @@
             let y = document.getElementById("table1");
             if (x.style.display === "block") {
                 x.style.display = 'none';
-                
+
             }
             else {
                 x.style.display = 'block';
