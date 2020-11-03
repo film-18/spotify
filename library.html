@@ -200,20 +200,20 @@
                 </div>
 
                 <!--Profile Button  -->
-                <div class="box-proflie btn-group pt-2" style="width: 20%; text-align: right;">
-                    <button type="button" class="button-profile dropdown-toggle" data-toggle="dropdown"
-                        style="border: none; outline: none; ">
-                        <figure class="boxpic-profile" data-testid="user-widget-avatar"
-                            style="width: 28px; height: 28px;">
-                            <img id="imgprofile2" src="./icon proflie/plus-circle-solid.png" class="pic-profile">
-                        </figure>
-                        <span style="width: 20%;" id="name2">Name</span>
-                    </button>
-
-                    <ul class="dropdown-menu" role="menu" style="background-color: rgb(39, 39, 39);">
-                        <li class="box-li"><a href="profile.html" class="dropdown-profile">Profile</a></li>
-                    </ul>
-                </div>
+                <!-- <a href="profile.html"> -->
+                    <div class="box-proflie btn-group pt-2" style="width: 20%; text-align: right;">
+                        <button type="button" class="button-profile dropdown-toggle" data-toggle="dropdown"
+                            style="border: none; outline: none; ">
+                            <figure class="boxpic-profile w-25">
+                                <img id="imgprofile2" src="./icon proflie/plus-circle-solid.png" class="pic-profile">
+                            </figure>
+                            <span style="width: 20%;" id="name2">Name</span>
+                        </button>
+                        <ul class="dropdown-menu" role="menu" style="background-color: rgb(39, 39, 39);">
+                            <li class="box-li"><a href="profile.html" class="dropdown-profile">Profile</a></li>
+                        </ul>
+                    </div>
+                <!-- </a> -->
 
 
             </div>
@@ -229,8 +229,10 @@
     </center>
     </div>
     <script>
-    document.getElementById("imgprofile2").src = localStorage.getItem("pic");
+         document.getElementById("imgprofile2").src = localStorage.getItem("pic");
+    </script>
 
+    <script>
         firebase.initializeApp({
             apiKey: 'AIzaSyAIlXUZEeQ9jwTaIGr5C9uEUQYOd8KEWpA',
             projectId: 'spotify-8da9e'
@@ -263,10 +265,10 @@
 
                 let table1 = document.getElementById("table1"); //id @table
                 table1.setAttribute("class", "border-top-0 my-5");
-                let pic1 = document.getElementById("musicpic").src;
+                let imgmusic = document.getElementById("musicpic").src;
                 let row1 = table1.insertRow(-1);
                 let newrow1 = row1.insertCell(0);
-                newrow1.innerHTML = "<img src=" + pic1 + ">" + "<br>" + playlist1 + "<br>" + "By " + name;
+                newrow1.innerHTML = "<img src=" + imgmusic + ">" + "<br>" + playlist1 + "<br>" + "By " + name;
                 newrow1.style.color = "white";
 
             }

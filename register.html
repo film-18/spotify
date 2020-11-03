@@ -243,11 +243,11 @@
                                                     <a id="button_signup" class="btn btn-block ng-binding"
                                                         onclick="register()" href="#">SIGN UP
                                                     </a>
-                                                        <a id="button_signup2" class="btn btn-block ng-binding loginshow"
-                                                         href="login.html">
-                                                        </a>
-                                                   
-               
+                                                    <a id="button_signup2" class="btn btn-block ng-binding loginshow"
+                                                        href="login.html">
+                                                    </a>
+
+
                                         </center>
                                         <div class="col-xs-12">
                                             <div class="divider">
@@ -277,6 +277,7 @@
 
     <script>
         async function register() {
+            
             let button = document.getElementById('button_signup2');
             button.innerHTML = "NEXT";
             // button.style.backgroundColor = "#282828";
@@ -290,26 +291,29 @@
                 projectId: 'spotify-8da9e'
             });
 
-
+            // ---------- Write User Data ----------
             let email = document.getElementById('email').value;
-            // let confirmEmail = document.getElementById('confirmemail').value;
-            // let password = document.getElementById('password').value;
-            // let namehelp = document.getElementById('name').value;
-            // let day = document.getElementById('date').value;
-            // let month = document.getElementById('month').value;
-            // let year = document.getElementById('numyear').value;
-            // let birth = day + "/" + month + "/" + year;
-            // let gender = document.getElementById('choose');
-
             console.log(email);
 
             var db = firebase.firestore();
-            await db.collection("playlist").doc(email).set({
-                Email: email
-                // ConfirmEmail: confirmEmail
+            var batch = db.batch();
+
+            let userRef = db.collection("playlist").doc(email);
+            let likeRef = db.collection('likeSong').doc(email);
+            batch.set(userRef, { Email: email })
+            batch.set(likeRef, {
+                Name: email,
+                Song: {
+                    Artist: [],
+                    Img: [],
+                    NameSong: []
+                }
             })
 
+            await batch.commit();
 
+            // ♥ Shiba Narak Mak Mak ♥ //
+            // ----------------------------------------
 
             if (document.account.email.value == "") {
                 alert("Enter some value!");
@@ -320,9 +324,7 @@
 
         }
 
-        // function goLogin() {
-        //     window.location = "login.html";
-        // }
+
     </script>
 </body>
 
