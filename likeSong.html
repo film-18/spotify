@@ -277,8 +277,8 @@
 
 
 
-                    
-                    
+
+
     <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-firestore.js"></script>
     <!-- <script src="profile.js"></script> -->
@@ -301,15 +301,21 @@
         let name = mail.slice(0, -1);
         console.log(name);
 
-        
+
 
         var db = firebase.firestore();
         db.collection("likeSong").doc(name).set({
             name: name,
-            // ConfirmEmail: confirmEmail
+            Song: {
+                Artist: [],
+                NameSong: [],
+                Img: []
+            }
         })
 
         
+
+
         // });
 
 

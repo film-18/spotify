@@ -244,7 +244,7 @@
                                                         onclick="register()" href="#">SIGN UP
                                                     </a>
                                                     <a id="button_signup" class="btn btn-block ng-binding"
-                                                         href="login.html">Next
+                                                        href="login.html">Next
                                                     </a>
                                         </center>
                                         <div class="col-xs-12">
@@ -301,13 +301,23 @@
                 // ConfirmEmail: confirmEmail
             })
 
+            // var db = firebase.firestore();
+            // db.collection("likeSong").doc(name).set({
+            //     name: name,
+            //     Song: {
+            //         Artist: [],
+            //         NameSong: [],
+            //         Img: []
+            //     }
+            // })
+
 
             if (document.account.email.value == "") {
                 alert("Enter some value!");
                 return;
             }
             document.cookie = "now=" + escape(document.account.email.value) + "-";
-            
+
 
         }
     </script>
