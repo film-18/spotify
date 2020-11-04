@@ -208,7 +208,11 @@
                         </div>
                         <!-- <div style="font-size: 5px;color: white;" class="d-inline pr-3 text-center"><i class="fas fa-circle"></i></div> -->
                         <div id="numberOfArtist" class="d-inline"> 0</div>
-                        <div style="font-size: 10px;" class="d-inline">LIKE ARTISTS
+                        <div style="font-size: 10px;" class="d-inline pr-3">LIKE ARTISTS
+                        </div>
+
+                        <div id="numberOfFollow" class="d-inline"> 0</div>
+                        <div style="font-size: 10px;" class="d-inline"> FOLLOWING
                         </div>
                     </div>
                     <div>
@@ -352,8 +356,6 @@
                     Playlist: firebase.firestore.FieldValue.arrayUnion(namePlaylist)
                 })
 
-
-
             }
 
             //show playlist
@@ -375,9 +377,11 @@
             });
 
             db.collection("likeSong").doc(name).get().then(data => {
-
-                // console.log( data.data().Song.Artist.length);
                 document.getElementById('numberOfArtist').innerHTML = data.data().Song.Artist.length;
+            });
+
+            db.collection("follow").doc(name).get().then(data => {
+                document.getElementById('numberOfFollow').innerHTML = data.data().following.length;
             });
 
 

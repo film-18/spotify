@@ -72,19 +72,19 @@ async function likeSong() {
 
     });
 
-     //show playlist
-     db.collection("playlist").doc(name).get().then(data => {
+    //  //show playlist
+    //  db.collection("playlist").doc(name).get().then(data => {
 
-         for (let i = 0; i < data.data().Playlist.length; i++) {
-             let table = document.getElementById("table0"); //id @table
-             table.setAttribute("class", "border-top-0 pb-3");
-             let row = table.insertRow(-1);
-             let newrow = row.insertCell(0);
-             let playlist1 = data.data().Playlist[i];
-             newrow.innerHTML = playlist1;
+    //      for (let i = 0; i < data.data().Playlist.length; i++) {
+    //          let table = document.getElementById("table0"); //id @table
+    //          table.setAttribute("class", "border-top-0 pb-3");
+    //          let row = table.insertRow(-1);
+    //          let newrow = row.insertCell(0);
+    //          let playlist1 = data.data().Playlist[i];
+    //          newrow.innerHTML = playlist1;
 
-             newrow.style.color = "white";
-         }
-         console.log(data.data().Playlist);
-     });
+    //          newrow.style.color = "white";
+    //      }
+    //      console.log(data.data().Playlist);
+    //  });
 }

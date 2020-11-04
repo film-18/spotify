@@ -103,7 +103,7 @@
                             <div class="contentSpacing">
                                 <h4 class="inputBox-label">Playlist Name</h4>
                                 <input type="text" class="inputBox-input" placeholder="New Playlist"
-                                    style="font-family: 'Ubuntu', sans-serif;">
+                                    style="font-family: 'Ubuntu', sans-serif;" id="playlistNew">
                             </div>
                         </div>
                     </div>
@@ -113,7 +113,7 @@
                             </button>
                         </div>
                         <div class="div1">
-                            <button class="div4 div6 btnCreat" type="button">CREATE
+                            <button class="div4 div6 btnCreat" type="button" onclick="creatplaylist()">CREATE
                             </button>
                         </div>
                     </div>
@@ -156,40 +156,40 @@
 
                 </div>
 
-                    <div class="col-5 py-2">
-                        <div class="topbar-search d-inline pt-3">
-                            <input class="topbar-search-input" maxlength="80" autocorrect="off" autocapitalize="off"
-                                spellcheck="false" placeholder="ค้นหาศิลปิน เพลง หรือพอดแคสต์" data-testid="search-input"
-                                value="">
-                            <div class="icon-search d-inline">
-                                <span class="d-inline">
-                                    <svg height="24" role="img" width="24" viewBox="0 0 512 512" aria-hidden="true">
-                                        <path
-                                            d="M349.714 347.937l93.714 109.969-16.254 13.969-93.969-109.969q-48.508 36.825-109.207 36.825-36.826 0-70.476-14.349t-57.905-38.603-38.603-57.905-14.349-70.476 14.349-70.476 38.603-57.905 57.905-38.603 70.476-14.349 70.476 14.349 57.905 38.603 38.603 57.905 14.349 70.476q0 37.841-14.73 71.619t-40.889 58.921zM224 377.397q43.428 0 80.254-21.461t58.286-58.286 21.461-80.254-21.461-80.254-58.286-58.285-80.254-21.46-80.254 21.46-58.285 58.285-21.46 80.254 21.46 80.254 58.285 58.286 80.254 21.461z"
-                                            fill="currentColor"></path>
-                                    </svg>
-                                </span>
-                            </div>
+                <div class="col-5 py-2">
+                    <div class="topbar-search d-inline pt-3">
+                        <input class="topbar-search-input" maxlength="80" autocorrect="off" autocapitalize="off"
+                            spellcheck="false" placeholder="ค้นหาศิลปิน เพลง หรือพอดแคสต์" data-testid="search-input"
+                            value="">
+                        <div class="icon-search d-inline">
+                            <span class="d-inline">
+                                <svg height="24" role="img" width="24" viewBox="0 0 512 512" aria-hidden="true">
+                                    <path
+                                        d="M349.714 347.937l93.714 109.969-16.254 13.969-93.969-109.969q-48.508 36.825-109.207 36.825-36.826 0-70.476-14.349t-57.905-38.603-38.603-57.905-14.349-70.476 14.349-70.476 38.603-57.905 57.905-38.603 70.476-14.349 70.476 14.349 57.905 38.603 38.603 57.905 14.349 70.476q0 37.841-14.73 71.619t-40.889 58.921zM224 377.397q43.428 0 80.254-21.461t58.286-58.286 21.461-80.254-21.461-80.254-58.286-58.285-80.254-21.46-80.254 21.46-58.285 58.285-21.46 80.254 21.46 80.254 58.285 58.286 80.254 21.461z"
+                                        fill="currentColor"></path>
+                                </svg>
+                            </span>
                         </div>
                     </div>
-                        <!--Profile Button  -->
-                        <div class="col-5 pl-0 ml-0">
-                            <div class="box-proflie btn-group pt-3" style="width: 20%; text-align: right;">
-                                <button type="button" class="button-profile dropdown-toggle" data-toggle="dropdown"
-                                    style="border: none; outline: none; ">
-                                    <figure class="boxpic-profile" data-testid="user-widget-avatar"
-                                        style="width: 28px; height: 28px;">
-                                        <img id="imgprofile2" src="./icon proflie/plus-circle-solid.png" class="pic-profile">
-                                    </figure>
-                                    <span style="width: 20%;" id="name2">Name</span>
-                                </button>
-        
-                                <ul class="dropdown-menu" role="menu" style="background-color: rgb(39, 39, 39);">
-                                    <li class="box-li"><a href="profile.html" class="dropdown-profile">Profile</a></li>
-        
-                                </ul>
-                            </div>
-                        </div>
+                </div>
+                <!--Profile Button  -->
+                <div class="col-5 pl-0 ml-0">
+                    <div class="box-proflie btn-group pt-3" style="width: 20%; text-align: right;">
+                        <button type="button" class="button-profile dropdown-toggle" data-toggle="dropdown"
+                            style="border: none; outline: none; ">
+                            <figure class="boxpic-profile" data-testid="user-widget-avatar"
+                                style="width: 28px; height: 28px;">
+                                <img id="imgprofile2" src="./icon proflie/plus-circle-solid.png" class="pic-profile">
+                            </figure>
+                            <span style="width: 20%;" id="name2">Name</span>
+                        </button>
+
+                        <ul class="dropdown-menu" role="menu" style="background-color: rgb(39, 39, 39);">
+                            <li class="box-li"><a href="profile.html" class="dropdown-profile">Profile</a></li>
+
+                        </ul>
+                    </div>
+                </div>
 
 
             </div>
@@ -400,6 +400,19 @@
             }
             console.log(data.data().Playlist);
         });
+
+
+        function creatplaylist() {
+            let namePlaylist = document.getElementById("playlistNew").value;
+            console.log(namePlaylist);
+            // addplaylist.push(namePlaylist);
+
+            var db = firebase.firestore();
+            db.collection("playlist").doc(name).update({
+                Playlist: firebase.firestore.FieldValue.arrayUnion(namePlaylist)
+            })
+        }
+
 
     </script>
 </body>

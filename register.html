@@ -300,7 +300,11 @@
 
             let userRef = db.collection("playlist").doc(email);
             let likeRef = db.collection('likeSong').doc(email);
-            batch.set(userRef, { Email: email })
+            let followRef = db.collection('follow').doc(email);
+            batch.set(userRef, {
+                Email: email,
+                Playlist: []
+            })
             batch.set(likeRef, {
                 Name: email,
                 Song: {
@@ -309,6 +313,8 @@
                     NameSong: []
                 }
             })
+            batch.set(followRef, {following: []})
+            
 
             await batch.commit();
 
