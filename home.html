@@ -389,7 +389,7 @@
 
 
                 pic.src = data[i].Image;
-                audioone = data[0].Url;
+                audioone = data[i].Url;
                 titless = data[i].Title;
                 artiss = data[i].Artist;
                 box.setAttribute("onclick", "playsong('"+pic.src+"', '"+audioone+"', '"+artiss+"', '"+titless+"')");
@@ -406,7 +406,7 @@
 
                 let audioOne = document.createElement('source');
                 let audioBox = document.createElement('audio');
-                audioBox.setAttribute("controls", "controls");
+                //audioBox.setAttribute("controls", "controls");
                 // audioBox.setAttribute("id", i);
                 audioOne.setAttribute("src", data[i].Url);
                 audioBox.style.width = "100%";
