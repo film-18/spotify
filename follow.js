@@ -5,7 +5,7 @@
 
 // const db = firebase.firestore();
 
-function follow() {
+async function follow() {
     let personFollow = document.getElementById("personFollow").innerHTML;
 
     let mail2 = ''
@@ -18,7 +18,7 @@ function follow() {
     }
 
     let name2 = mail2.slice(0, -1);
-    db.collection("follow").doc(name2).set({
+    await db.collection("follow").doc(name2).set({
         following: [personFollow]
     }, {merge: true})
     console.log(1)

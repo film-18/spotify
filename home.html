@@ -305,19 +305,6 @@
 
         let name1 = mail1.slice(0, -1);
         document.getElementById('name2').innerHTML = name1;
-
-        function creatplaylist(email) {
-            let namePlaylist = document.getElementById("playlistNew").value;
-            console.log(namePlaylist);
-            // addplaylist.push(namePlaylist);
-
-            var db = firebase.firestore();
-            db.collection("playlist").doc(name1).update({
-                Playlist: firebase.firestore.FieldValue.arrayUnion(namePlaylist)
-            })
-
-        }
-
         //show playlist
         var db = firebase.firestore();
         db.collection("playlist").doc(name1).get().then(data => {
@@ -334,6 +321,19 @@
             }
             console.log(data.data().Playlist);
         });
+
+        function creatplaylist(email) {
+            let namePlaylist = document.getElementById("playlistNew").value;
+            console.log(namePlaylist);
+            // addplaylist.push(namePlaylist);
+
+            var db = firebase.firestore();
+            db.collection("playlist").doc(name1).update({
+                Playlist: firebase.firestore.FieldValue.arrayUnion(namePlaylist)
+            })
+
+        }
+
     </script>
 
 

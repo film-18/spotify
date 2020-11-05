@@ -17,6 +17,9 @@
         crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/94195324d2.js" crossorigin="anonymous"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-firestore.js"></script>
+    <script src="../follow.js"></script>
     <link rel="stylesheet" href="../style.css">
     <link rel="stylesheet" href="../player.css">
     <title>Artist2</title>
@@ -25,7 +28,8 @@
     .bg {
         border: 1px solid rgb(250, 195, 156);
     }
-    body{
+
+    body {
         background-color: #131313;
     }
 </style>
@@ -74,7 +78,8 @@
                     <div class="row" style="display: block; height: 350px;">
                         <img src="https://i.scdn.co/image/ead75329e281ccf99c4096b7d12da928410bcb54" alt="aetist2"
                             class="mt-0 ml-0 sizeArtist" style="height: 400px;">
-                        <h1 class="col-12 textBottom font-weight-bold" style="font-size: 96px;">YOUNGOHM</h1>
+                        <h1 class="col-12 textBottom font-weight-bold" style="font-size: 96px;" id="personFollow">
+                            YOUNGOHM</h1>
                     </div>
 
                 </div>
@@ -84,7 +89,7 @@
             <div class="w-100" style="height: 100px;">
                 <button class="buttonplayartist positionplay border-0" onclick="go()"><i
                         class="fas fa-play ibutton pl-1"></i></button>
-                <button class="buttonfollow bg">FOLLOW</button>
+                <button class="buttonfollow bg" onclick="follow()">FOLLOW</button>
             </div>
 
 
@@ -214,6 +219,15 @@
         </div>
     </div>
     <script>
+        firebase.initializeApp({
+            apiKey: 'AIzaSyAIlXUZEeQ9jwTaIGr5C9uEUQYOd8KEWpA',
+            projectId: 'spotify-8da9e'
+        });
+
+        var db = firebase.firestore();
+    </script>
+
+    <script>
         const thumbnail = document.querySelector('#thumbnail'); // album cover 
         const song = document.querySelector('#song'); // audio object
 
@@ -233,7 +247,7 @@
             document.getElementById("song").setAttribute("src", songs[0]);
             let song_ti = document.getElementById("songti");
             let song_ar = document.getElementById("songar");
-            let song_th = document.getElementById("thumbnail");
+            let song_th = document.getElementById("thumbnail"); 
             song_ti.innerText = songTitles[0];
             song_ar.innerText = songArtists[0];
             song_th.setAttribute("src", thumbnails[0]);
