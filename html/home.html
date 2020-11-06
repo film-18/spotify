@@ -33,10 +33,12 @@
                             <span class="spanSpotify d-inline"><i class="fab fa-spotify"></i></span>
                         </span>
                         <span>
-                            <div class="py-2 px-2">
-                                <p class="h4 d-inline">Spotify</p>
-                                <p style="font-size: 10px;" class="m-0">By Among Us Gangters</p>
-                            </div>
+                            <a href="./profile.html" style="color: white;">
+                                <div class="py-2 px-2">
+                                    <p class="h4 d-inline">Spotify</p>
+                                    <p style="font-size: 10px;" class="m-0">By Among Us Gangters</p>
+                                </div>
+                            </a>
                         </span>
                     </div>
                 </div>
@@ -162,21 +164,22 @@
                 </div>
 
                 <!--Profile Button  -->
-                
+
                 <div class="box-proflie btn-group pt-3" style="position:absolute;right: 55px;">
-                    <button type="button" class="button-profile" data-toggle="dropdown" style="border: none; outline: none; width:150px">
+                    <button type="button" class="button-profile" data-toggle="dropdown"
+                        style="border: none; outline: none; width:150px">
                         <img id="imgprofile2" src="./icon proflie/plus-circle-solid.png" class="pic-profile"
                             style="width: 28px; height: 28px;left:0; position:absolute;">
                         <p class="nameuser" id="name2">Name</p>
                     </button>
 
-                        <ul class="dropdown-menu" role="menu" style="background-color: rgb(39, 39, 39);">
-                            <li class="box-li"><a href="profile.html" class="dropdown-profile">Profile</a></li>
+                    <ul class="dropdown-menu" role="menu" style="background-color: rgb(39, 39, 39);">
+                        <li class="box-li"><a href="profile.html" class="dropdown-profile">Profile</a></li>
 
-                        </ul>
-                    </div>
+                    </ul>
                 </div>
-            
+            </div>
+
 
 
             <div id="lists">
@@ -229,7 +232,8 @@
                         <div class="container">
                             <div class="player text-center">
                                 <a class="btn spanBack mt-1" onclick="previousSong()">
-                                    <img src="../assets/icons/step-backward-solid.png" id="previous-song" class="img-fluid">
+                                    <img src="../assets/icons/step-backward-solid.png" id="previous-song"
+                                        class="img-fluid">
                                 </a>
                                 <!-- <img  src="step-backward-solid.png" onclick="previousSong()" width="30px" height="30px" id="previous-song"/> -->
                                 <!-- <img src="./assets/icons/backward.png" onclick="previousSong()" id="previous-song"  class="img-fluid w-25" /> -->
@@ -389,7 +393,7 @@
                 audioone = data[i].Url;
                 titless = data[i].Title;
                 artiss = data[i].Artist;
-                box.setAttribute("onclick", "playsong('"+pic.src+"', '"+audioone+"', '"+artiss+"', '"+titless+"'); go();");
+                box.setAttribute("onclick", "playsong('" + pic.src + "', '" + audioone + "', '" + artiss + "', '" + titless + "'); go();");
                 let textbox = document.createElement("div");
                 textbox.setAttribute("class", "card-body");
 
@@ -471,7 +475,7 @@
         //     console.log(thumbnails);
         // });
         // 
-        function playsong(img, url, artist, title){
+        function playsong(img, url, artist, title) {
             console.log(img);
             console.log(url);
             console.log(artist);
