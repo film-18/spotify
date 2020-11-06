@@ -196,23 +196,6 @@
     </div>
     </div>
 
-    <!-- <div class="row"> 
-                        <div class="col-4"> 
-                            <span class="spanBack py-3 float-right" onclick="previousSong()"><i class="fas fa-step-backward"></i></span> -->
-    <!-- <img src="./assets/icons/backward.png" onclick="previousSong()" id="previous-song"  class="img-fluid w-25" /> -->
-    <!-- </div> 
-                        <div class="col-2 text-center"> 
-                            <span class="spanPlay py-3" onclick="playPause()"><i class="far fa-play-circle"></i></span> -->
-    <!-- <img src="./assets/icons/play.png" onclick="playPause()" id="play-pause"  class="img-fluid"/> -->
-    <!-- </div> 
-                        <div class="col-6 "> 
-                            <span class="spanBack py-3" onclick="nextSong()"><i class="fas fa-step-forward"></i></span> -->
-    <!-- <img src="./assets/icons/forward.png" onclick="nextSong()" id="next-song" class="img-fluid"/> -->
-    <!-- </div> 
-                    </div> -->
-
-
-
     <script>
         function goback() {
             window.history.back();
@@ -220,7 +203,7 @@
         function goforward() {
             window.history.forward();
         }
-        let requestURL = '/music/iconsearch.json';
+        let requestURL = 'http://10.0.15.12/projects/pg01tep/json/iconsearch.json';
         let request = new XMLHttpRequest();
         let output = document.getElementById("lists");
         request.onreadystatechange = function () {
