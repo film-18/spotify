@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html id="app" lang="th-TH" dir="ltr" ng-csp="" ng-strict-di="" class="js-focus-visible ng-scope"
+    data-js-focus-visible="">
+
+<head>
+    <meta charset="utf-8">
+    <title class="ng-binding">เข้าสู่ระบบ - Spotify</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="icon" href="https://accounts.scdn.co/images/favicon.ace4d8543bbb017893402a1e9d1ac1fa.ico">
+    <link href="https://accounts.scdn.co/css/index.9011b6057408b00b1f13.css" media="screen" rel="stylesheet">
+    <script type="text/javascript" async=""
+        src="https://www.gstatic.com/recaptcha/releases/T9w1ROdplctW2nVKvNJYXH8o/recaptcha__th.js"
+        crossorigin="anonymous"
+        integrity="sha384-ZYUsHAUBjzDOXvOOTLGyILGMChRVRVrew4Z87WcC+j4CSBck0g1V7cZ9N7l3jwD/"></script>
+    <script async="" src="https://www.google-analytics.com/analytics.js"></script>
+    <script defer="" src="https://accounts.scdn.co/js/index.9011b6057408b00b1f13.js" sp-bootstrap=""></script>
+    <meta ng-non-bindable=""
+        sp-bootstrap-data="{&quot;phoneFeatureEnabled&quot;:true,&quot;previewEnabled&quot;:false,&quot;user&quot;:false,&quot;tpaState&quot;:&quot;AQBjKuhvYYKiWca5M0PlVjlrq3j1MAqVH7ROJ7Ch9K91Si/ng7lXMN+r5Y6T6OOzjBszwfZogdWKbSgkgvyNbC7tj53UXOcnKO4jhQRrj24BczzBBoTPG6cThx3Msce5bvbuoJPNcuqGx0MLVtxRgJvLKKKZcUDknwCBY3PXHw79HndlPQwtXJZlTtpd4WpeO0tsci2fG6P7&quot;,&quot;BON&quot;:[&quot;0&quot;,&quot;0&quot;,-664417941]}">
+</head>
+<style>
+    .Input-sc-1698ofb-0 {
+        border-radius: 6px;
+        border-color: white;
+        border-style: groove;
+        width: 90%;
+    }
+
+    #button_signup {
+        background-color: #1DB954;
+        color: white;
+        letter-spacing: 1.2px;
+        height: 48px;
+        width: 95%;
+    }
+
+    #button_signup:hover {
+        background-color: #31d858;
+        color: white;
+        font-size: 17px;
+        height: 50px;
+        width: 100%;
+
+    }
+
+    a {
+        color: rgb(29, 185, 84);
+        text-decoration: underline;
+    }
+
+    a:hover {
+        color: #31d858;
+    }
+</style>
+
+<body ng-controller="LoginController" class="ng-scope">
+    <div ng-include="template" class="ng-scope">
+        <div sp-header="" class="ng-scope">
+            <div class="head ">
+                <a class="spotify-logo" tabindex="-1" title="Spotify" href=""></a>
+            </div>
+        </div>
+
+        <div class="container-fluid login ng-scope">
+            <div class="content">
+                <div class="row ng-scope" ng-if="showContinueLabel">
+                    <div class="col-xs-12 text-center">
+                        <h1 id="login-to-continue" class="h5 ng-binding">To continue, log in to Spotify.</h1>
+                    </div>
+                </div>
+                <form name="account" method="post" novalidate="">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <label for="login-username" class="control-label ng-binding">
+                                Email address or username
+                            </label>
+                            <input ng-model="form.username" type="text"
+                                class="form-control input-with-feedback ng-pristine ng-valid-sp-disallow-chars ng-empty ng-invalid ng-invalid-required ng-touched"
+                                name="username" id="login-username" placeholder="Email address or username" required=""
+                                sp-disallow-chars=":%&amp;'`´&quot;" sp-disallow-chars-model="usernameDisallowedChars"
+                                autocapitalize="off" autocomplete="off" autocorrect="off" autofocus="autofocus"
+                                ng-trim="false" ng-change="onInputChange()">
+                        </div>
+                    </div>
+
+                    <div class="row"
+                        ng-class="{'has-error': (accounts.password.$dirty &amp;&amp; accounts.password.$invalid) || invalidCredentials}">
+                        <div class="col-xs-12">
+                            <label for="login-password" class="control-label ng-binding">
+                                Password
+                            </label>
+                            <input ng-model="form.password" type="password"
+                                class="form-control input-with-feedback ng-pristine ng-empty ng-invalid ng-invalid-required ng-touched"
+                                name="password" id="login-password" placeholder="Password" required=""
+                                autocomplete="off" ng-trim="false" ng-change="onInputChange()">
+
+                        </div>
+                    </div>
+
+                    <div class="row password-reset">
+                        <div class="col-xs-12">
+                            <p>
+                                <a id="reset-password-link" ng-href="https://www.spotify.com/password-reset/"
+                                    analytics-on="click" analytics-category="Login View" analytics-event="Forgot Button"
+                                    analytics-label="" class="ng-binding"
+                                    href="https://www.spotify.com/password-reset/">Forgot your password?</a>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="row row-submit">
+                        <div class="col-xs-12 col-sm-6">
+                            <div class="checkbox">
+                                <label class="ng-binding">
+                                    <input ng-model="form.remember" type="checkbox" name="remember"
+                                        analytics-on="checked" analytics-category="Login View" id="login-remember"
+                                        class="ng-valid ng-empty ng-dirty ng-valid-parse ng-touched">
+                                    Remember me
+                                    <span class="control-indicator"></span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6">
+                            <a id="button_signup" class="btn btn-block ng-binding"
+                                href="./profile.html">login
+                            </a>
+                        </div>
+                    </div>
+                </form>
+
+                <div id="sign-up-section">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <signup class="ng-isolate-scope">
+                                <div ng-if="showSignup" class="ng-scope">
+                                    <div ng-if="showButton" class="ng-scope">
+                                        <div class="row">
+                                            <div class="col-xs-12">
+                                                <div class="divider">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row text-center mt-0">
+                                            <h2 class="h4 ng-binding">Don't have an account?</h2>
+                                        </div>
+                                        <div>
+                                            <div class="row">
+                                                <div class="col-xs-12">
+                                                    <a id="sign-up-link" class="btn btn-block btn-default ng-binding"
+                                                        role="button" href="../index.html">SIGN UP FOR SPOTIFY
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </signup>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-firestore.js"></script>
+
+    <script>
+    
+
+    </script>
+</body>
+
+</html>
