@@ -194,8 +194,7 @@
             <div>
                 <center>
                     <div class="mx-auto pt-5" style="width: 150px;">
-                        <img class="rounded-circle img-fluid" id="imgprofile"
-                            src="../icon proflie/plus-circle-solid.png">
+                        <img class="rounded-circle img-fluid" id="imgprofile">
                     </div>
 
                     <div class="pt-4 pb-3">
@@ -302,6 +301,8 @@
 
             function getvalue(_src) {
                 var pic = "../icon proflie/icon " + _src.id
+                document.getElementById('imgprofile').src = "/icon proflie/plus-circle-solid.png";
+                document.getElementById("imgprofile2").src = "/icon proflie/plus-circle-solid.png";
 
                 console.log(pic)
 
