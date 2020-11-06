@@ -60,7 +60,8 @@ async function likeSong() {
 
         for (let i = 0; i < data.data().Song.Artist.length; i++) {
             let droptable = document.getElementById("dropdownLike"); //id @droptable
-            droptable.setAttribute("class", "border-top-0 bg-dark text-white border-0");
+            droptable.setAttribute("class", "");
+            droptable.style.backgroundColor = "#282828";
             let droprow = droptable.insertRow(-1);
             let info = droprow.insertCell(0);
             let likesS = data.data().Song.NameSong[i];
