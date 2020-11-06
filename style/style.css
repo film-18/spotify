@@ -603,4 +603,14 @@ tr:hover {
     padding-left: 25px;
     font-size: 16px;
 }
-
+.card {
+    background-color :#1a1a1a;
+}
+.card:hover{
+    background-color: #292929;
+    transition: .5s;
+}
+.col-md-3:hover{
+    transform: scale(1.08); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+    transition: .2s;
+}
