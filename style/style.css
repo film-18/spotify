@@ -1,5 +1,8 @@
 *:focus {
     outline: none;
+    box-shadow: none;
+    border: none;
+
 }
 * {
     font-family: 'Ubuntu', sans-serif;
@@ -9,6 +12,7 @@
 button:focus {
     outline: none;
     box-shadow: none;
+    border: none;
   }
 .divStyle {
     /* font-family: 'Ubuntu', sans-serif; */
@@ -592,9 +596,13 @@ tr:hover {
     color: white;
     border-radius: 5px;
 }
-.name-profile {
+.nameuser {
     white-space: nowrap;
-    width: 5px;
+    width: 130px;
     overflow: hidden;
     text-overflow: ellipsis;
+    margin: 4px;
+    padding-left: 25px;
+    font-size: 16px;
 }
+
