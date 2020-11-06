@@ -61,7 +61,7 @@
                 </button>
             </a>
             <a href="../html/search.html">
-                <button class=" rounded border-0 button w-100 text-left py-2" >
+                <button class=" rounded border-0 button w-100 text-left py-2">
                     <span class="spansearch d-inline mr-3"><i class="fas fa-search"></i></span>
                     <p class="d-inline" style="font-size: 13px;">Search</p>
                 </button>
@@ -140,14 +140,15 @@
                         <span class="float-left">
                             <span class="spanlink_song d-inline float-left mr-2"><i class="fab fa-gratipay"></i></span>
                         </span>
-                        <span>
-                            <p class="d-inline float-left mt-2 mb-0" style="font-size: 13px;">Liked Songs</p>
+
+                        <span class="dropdown-hover">
+                            <p class="d-inline float-left mt-2 mb-0" style="font-size: 13px;">Liked
+                                Songs</p>
+                            <div class="dropdown-content">
+                                <table class="table border-bottom" id="dropdownLike"></table>
+                            </div>
                         </span>
-                        <div class="dropdown-content" id="dropdownCon">
-                            <a href="#">Link 1</a>
-                            <a href="#">Link 2</a>
-                            <a href="#">Link 3</a>
-                          </div>
+
                     </button>
                 </div>
             </div>
@@ -206,7 +207,7 @@
                 e.preventDefault();
             }
         });
-        
+
         let requestURL = '/box/madeforyou.json';
         let request = new XMLHttpRequest();
         let output = document.getElementById('lists');
@@ -225,7 +226,7 @@
             for (let i = 0; i < data.length; i++) {
 
                 let headText = document.createElement("div");
-                
+
                 let row = document.createElement("div");
                 row.setAttribute("class", "row");
                 // row.style.overflowX = "hidden";

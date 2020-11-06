@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="../style/style.css">
     <link rel="stylesheet" href="../style/player.css">
     <title>Home</title>
+    
 </head>
 
 <body>
@@ -86,7 +87,7 @@
 
             <!-- Modal -->
             <div class="modal " id="exampleModal" id="frame" role="dialog" aria-labelledby="exampleModalLabel"
-                aria-hidden="true" style="padding-top: 10%;">
+                aria-hidden="true" style="padding-top: 5%;">
                 <div class="text-center pt-5 pb-0">
                     <button class="div4 e6ed3359ee250e2ecc13253d4db86076-scss text-center" type="button"
                         data-dismiss="modal">
@@ -333,6 +334,9 @@
             db.collection("playlist").doc(name1).update({
                 Playlist: firebase.firestore.FieldValue.arrayUnion(namePlaylist)
             })
+            
+            namePlaylist.innerHTML = "";
+
 
         }
 

@@ -14,13 +14,10 @@
         integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
         crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap" rel="stylesheet">
-
     <script src="https://kit.fontawesome.com/94195324d2.js" crossorigin="anonymous"></script>
-
     <title>Profile</title>
     <!-- Font -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
-
     <!-- Bootstrap core CSS -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
     <!-- Material Design Bootstrap -->
@@ -356,6 +353,8 @@
                 db.collection("playlist").doc(name).update({
                     Playlist: firebase.firestore.FieldValue.arrayUnion(namePlaylist)
                 })
+
+                namePlaylist.innerHTML = "";
 
             }
 

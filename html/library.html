@@ -20,7 +20,6 @@
     <title>Library</title>
     <!-- Font -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
-
     <!-- Bootstrap core CSS -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
     <!-- Material Design Bootstrap -->
@@ -197,7 +196,7 @@
                     <div class="topnav text-center">
                         <a class="active px-4" href="#feed" style="font-size: 1em;"
                             onclick="showPlaylist()">Playlists</a>
-                        <a class="active px-4" href="#news" style="font-size: 1em;" onclick="showArtist()">Artist</a>
+                        <a class="active px-4" href="#news" style="font-size: 1em;" onclick="showArtist()">Like Songs</a>
                     </div>
                 </div>
 
@@ -287,8 +286,9 @@
                 let row = table.insertRow(-1);
                 let newrow = row.insertCell(0);
                 let playlist = data.data().Song.Artist[i];
+                let playlist2 = data.data().Song.NameSong[i];
                 let playlist3 = data.data().Song.Img[i];
-                newrow.innerHTML += "<img src=" + playlist3 + ">" + "<br>" + playlist;
+                newrow.innerHTML += "<img src=" + playlist3 + ">" +  "<br>" + playlist2 + "<br>" + playlist;
                 newrow.style.color = "white";
             }
 
