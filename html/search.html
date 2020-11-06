@@ -248,6 +248,8 @@
 
             let alink = document.createElement('a');
             alink.setAttribute("href", "artists.html");
+            alink.style.width = "480px";
+            alink.style.paddingLeft = "0px";
 
             // alink.append(pic1);
 
@@ -265,9 +267,9 @@
             artist.style.fontSize = "40px";
 
 
-            alink.append(pic1);
-            alink.append(artist);
-            genre1.append(alink);
+            genre1.append(pic1);
+            genre1.append(artist);
+            alink.append(genre1);
 
             let genre2 = document.createElement("div");
             genre2.setAttribute("class", "genre card col mr-4");
@@ -287,13 +289,15 @@
             kpop.style.fontSize = "40px";
             let alink3 = document.createElement('a');
             alink3.setAttribute("href", "/SubSearch/K-Pop.html");
-            alink3.append(kpop);
 
-            genre2.append(alink3);
-            output.appendChild(genres);
-            rowgenre.append(genre1);
-            rowgenre.append(genre2);
-            output.appendChild(rowgenre);
+            genre2.append(kpop);
+            alink3.append(genre2);
+            alink3.style.width = "480px";
+            alink3.style.marginLeft = "30px";
+            output.append(genres);
+            rowgenre.append(alink);
+            rowgenre.append(alink3);
+            output.append(rowgenre);
 
             let all = document.createElement('h3');
             all.setAttribute("class", "pl-2 ml-4 pr-3 pt-3 pb-0 mb-0");

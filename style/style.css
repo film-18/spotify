@@ -1,12 +1,11 @@
+* {
+    font-family: 'Ubuntu', sans-serif;
+    
+}
 *:focus {
     outline: none;
     box-shadow: none;
     border: none;
-
-}
-* {
-    font-family: 'Ubuntu', sans-serif;
-    
 }
 
 button:focus {
