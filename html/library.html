@@ -70,7 +70,7 @@
                                     <p class="h4 d-inline">Spotify</p>
                                     <p style="font-size: 10px;" class="m-0">By Among Us Gangters</p>
                                 </div>
-                                </a>
+                            </a>
                         </span>
                     </div>
                 </div>
@@ -203,16 +203,19 @@
 
                 <!--Profile Button  -->
                 <!-- <a href="profile.html"> -->
-                    <div class="box-proflie btn-group pt-3" style="position:absolute;right: 55px;">
-                        <button type="button" class="button-profile" data-toggle="dropdown" style="border: none; outline: none; width:150px">
-                            <img id="imgprofile2" src="./icon proflie/plus-circle-solid.png" class="pic-profile"
-                                style="width: 28px; height: 28px;left:0; position:absolute;">
-                            <p class="nameuser" id="name2">Name</p>
-                        </button>
+                <div class="box-proflie btn-group pt-3" style="position:absolute;right: 55px;">
+                    <button type="button" class="button-profile" data-toggle="dropdown"
+                        style="border: none; outline: none; width:150px">
+                        <img id="imgprofile2" src="./icon proflie/plus-circle-solid.png" class="pic-profile"
+                            style="width: 28px; height: 28px;left:0; position:absolute;">
+                        <p class="nameuser" id="name2">Name</p>
+                    </button>
+                    <a href="../html/profile.html">
                         <ul class="dropdown-menu" role="menu" style="background-color: rgb(39, 39, 39);">
-                            <li class="box-li"><a href="../html/profile.html" class="dropdown-profile">Profile</a></li>
+                            <li class="box-li">Profile</li>
                         </ul>
-                    </div>
+                    </a>
+                </div>
                 <!-- </a> -->
 
 
@@ -229,7 +232,7 @@
     </center>
     </div>
     <script>
-         document.getElementById("imgprofile2").src = localStorage.getItem("pic");
+        document.getElementById("imgprofile2").src = localStorage.getItem("pic");
     </script>
 
     <script>
