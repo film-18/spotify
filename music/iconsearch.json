@@ -3,97 +3,97 @@
         "Title": "Made For You",
         "Image": "https://t.scdn.co/images/68433b0ee5b5465b8e926c42b84cbcdb.jpeg",
         "Color": "rgb(155, 240, 225)",
-        "Url": "http://10.0.15.12/projects/pg01tep/json/box/madeforyou.json"
+        "Url": "http://10.0.15.12/projects/pg01tep/spotify/SubSearch/madeforyou.html"
     },
     {
         "Title": "Charts",
         "Image": "https://t.scdn.co/images/4b7472015a274eadbc00119f5141e548.jpeg",
         "Color": "rgb(245, 115, 160)",
-        "Url": "http://10.0.15.12/projects/pg01tep/json/box/Chart.json"
+        "Url": "http://10.0.15.12/projects/pg01tep/spotify/SubSearch/Chart.html"
     },
     {
         "Title": "New Releases",
         "Image": "https://t.scdn.co/images/acc7b5d7b1264d0593ec05c020d0a689.jpeg",
         "Color": "rgb(160, 195, 210)",
-        "Url": "http://10.0.15.12/projects/pg01tep/json/box/NewRelease.json"
+        "Url": "http://10.0.15.12/projects/pg01tep/spotify/SubSearch/NewRelease.html"
     },
     {
         "Title": "Discover",
         "Image": "https://t.scdn.co/images/d0fb2ab104dc4846bdc56d72b0b0d785.jpeg",
         "Color": "rgb(180, 155, 200)",
-        "Url": "http://10.0.15.12/projects/pg01tep/json/box/Discover.json"
+        "Url": "http://10.0.15.12/projects/pg01tep/spotify/SubSearch/Discover.html"
         
     },
     {
         "Title": "Thai Music",
         "Image": "https://i.scdn.co/image/ab67706f00000002129a02479587f70e18441652",
         "Color": "rgb(255, 70, 50)",
-        "Url": "http://10.0.15.12/projects/pg01tep/json/box/ThaiMusic.json"
+        "Url": "http://10.0.15.12/projects/pg01tep/spotify/SubSearch/ThaiMusic.html"
     },
     {
         "Title": "Today's Top Hits",
         "Image": "https://t.scdn.co/images/d355f48a90b64c25b6e004179a596e51.jpeg",
         "Color": "rgb(195, 240, 200)",
-        "Url": "http://10.0.15.12/projects/pg01tep/json/box/madeforyou.json"
+        "Url": "http://10.0.15.12/projects/pg01tep/spotify/SubSearch/madeforyou.html"
     },
     {
         "Title": "Tops 50 : Thailand",
         "Image": "https://charts-images.scdn.co/assets/locale_en/regional/daily/region_th_default.jpg",
         "Color": "rgb(235, 30, 50)",
-        "Url": "http://10.0.15.12/projects/pg01tep/json/box/madeforyou.json"
+        "Url": "http://10.0.15.12/projects/pg01tep/spotify/SubSearch/madeforyou.html"
     },
     {
         "Title": "เพลงฮิตประเทศไทย",
         "Image": "https://i.scdn.co/image/ab67706f00000002954c5e3bf4af2256644872ab",
         "Color": "rgb(195, 240, 200)",
-        "Url": "http://10.0.15.12/projects/pg01tep/json/box/madeforyou.json"
+        "Url": "http://10.0.15.12/projects/pg01tep/spotify/SubSearch/ThaiMusic.html"
     },
     {
         "Title": "Romance",
         "Image": "https://t.scdn.co/images/f926c0d460ae4f1abd83ffc3c1affdf0.jpeg",
         "Color": "rgb(245, 115, 160)",
-        "Url": "http://10.0.15.12/projects/pg01tep/json/box/Romance.json"
+        "Url": "http://10.0.15.12/projects/pg01tep/spotify/SubSearch/Romance.html"
     },
     {
         "Title": "Sleep",
         "Image": "https://t.scdn.co/images/6c53e335de834419a521e776668cca75.jpeg",
         "Color": "rgb(160, 195, 210)",
-        "Url": "http://10.0.15.12/projects/pg01tep/json/box/Sleep.json"
+        "Url": "http://10.0.15.12/projects/pg01tep/spotify/SubSearch/Sleep.html"
     },
     {
         "Title": "K-Pop",
         "Image": "https://t.scdn.co/images/85ff3ff8f2c84706ab76f27fd0388c56.jpeg",
         "Color": "rgb(205, 245, 100)",
-        "Url": "http://10.0.15.12/projects/pg01tep/json/box/K-Pop.json  "
+        "Url": "http://10.0.15.12/projects/pg01tep/spotify/SubSearch/K-Pop.html"
     },
     {
         "Title": "At Home",
         "Image": "https://t.scdn.co/images/194b9d722de34cefb3b716c653b4526b.png",
         "Color": "rgb(245, 155, 35)",
-        "Url": "http://10.0.15.12/projects/pg01tep/json/box/AtHome.json"
+        "Url": "http://10.0.15.12/projects/pg01tep/spotify/SubSearch/AtHome.html"
     },
     {
         "Title": "Workout",
         "Image": "https://t.scdn.co/images/0093f59664854b619e34a51d39d35a2f.jpeg",
         "Color": "rgb(255, 250, 100)",
-        "Url": "http://10.0.15.12/projects/pg01tep/json/box/Workout.json"
+        "Url": "http://10.0.15.12/projects/pg01tep/spotify/SubSearch/Workout.html"
     },
     {
         "Title": "Cooking & Dining",
         "Image": "https://t.scdn.co/images/63215314950a4872986eeaff17ef8059.jpeg",
         "Color": "rgb(255, 100, 100)",
-        "Url": "http://10.0.15.12/projects/pg01tep/json/box/Cooking.json"
+        "Url": "http://10.0.15.12/projects/pg01tep/spotify/SubSearch/Cooking.html"
     },
     {
         "Title": "Mood",
         "Image": "https://t.scdn.co/images/baf681efc57145e180589e027496b101.jpeg",
         "Color": "rgb(80, 155, 245)",
-        "Url": "http://10.0.15.12/projects/pg01tep/json/box/Mood.json"
+        "Url": "http://10.0.15.12/projects/pg01tep/spotify/SubSearch/Mood.html"
     },
     {
         "Title": "Travel",
         "Image": "https://t.scdn.co/images/296edba89b464025865781eee1b2a2a1.jpeg",
         "Color": "rgb(255, 200, 100)",
-        "Url": "http://10.0.15.12/projects/pg01tep/json/box/Travel.json"
+        "Url": "http://10.0.15.12/projects/pg01tep/spotify/SubSearch/Travel.html"
     }
 ]
