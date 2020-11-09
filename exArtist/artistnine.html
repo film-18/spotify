@@ -17,6 +17,9 @@
         crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/94195324d2.js" crossorigin="anonymous"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-firestore.js"></script>
+    <script src="../scirpt/follow.js"></script>
     <link rel="stylesheet" href="../style/style.css">
     <link rel="stylesheet" href="../style/player.css">
     <title>Artist9</title>
@@ -63,7 +66,7 @@
                     <div class="row" style="display: block; height: 350px;">
                         <img src="https://i.scdn.co/image/82e3645294934d14c5dd5df6483b1a65fddcddbe" alt="aetist9"
                             class="mt-0 ml-0 sizeArtist" >
-                        <h1 class="col-12 textBottom font-weight-bold" style="font-size: 96px;">BOWKYLION</h1>
+                        <h1 class="col-12 textBottom font-weight-bold" style="font-size: 96px;" id="personFollow">BOWKYLION</h1>
                     </div>
 
 
@@ -74,7 +77,7 @@
             <div class="w-100" style="height: 100px;">
                 <button class="buttonplayartist positionplay border-0" onclick="go0()"><i
                         class="fas fa-play ibutton pl-1"></i></button>
-                <button class="buttonfollow bg">FOLLOW</button>
+                <button class="buttonfollow bg"  onclick="follow()">FOLLOW</button>
             </div>
 
             <h2 class="pt-2 font-weight-bold plpopular" style="font-size: 23px;">Popular</h2>

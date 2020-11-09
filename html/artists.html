@@ -15,16 +15,24 @@
         crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/94195324d2.js" crossorigin="anonymous"></script>
-
     <link rel="stylesheet" href="../style/style.css">
     <title>Spotify - Search</title>
     <script>
         function loadContent0() {
             $("#lists").load("http://10.0.15.12/projects/pg01tep/spotify/exArtist/artistone.html");
         };
+        // function loadContent0() {
+        //     $("#lists").load("/exArtist/artistone.html");
+        // };
+        // function loadContent1() {
+        //     $("#lists").load("/exArtist/artisttwo.html");
+        // };
         function loadContent1() {
             $("#lists").load("http://10.0.15.12/projects/pg01tep/spotify/exArtist/artisttwo.html");
         };
+        // function loadContent2() {
+        //     $("#lists").load("/exArtist/artistthree.html");
+        // };
         function loadContent2() {
             $("#lists").load("http://10.0.15.12/projects/pg01tep/spotify/exArtist/artistthree.html");
         };
@@ -64,11 +72,11 @@
                             <span class="spanSpotify d-inline"><i class="fab fa-spotify"></i></span>
                         </span>
                         <span>
-                        <a href="./profile.html" style="color: white;">
-                            <div class="py-2 px-2">
-                                <p class="h4 d-inline">Spotify</p>
-                                <p style="font-size: 10px;" class="m-0">By Among Us Gangters</p>
-                            </div>
+                            <a href="./profile.html" style="color: white;">
+                                <div class="py-2 px-2">
+                                    <p class="h4 d-inline">Spotify</p>
+                                    <p style="font-size: 10px;" class="m-0">By Among Us Gangters</p>
+                                </div>
                             </a>
                         </span>
                     </div>
@@ -234,8 +242,8 @@
         function goforward() {
             window.history.forward();
         }
-        let requestURL = '/artist/artist.json';
-        // let requestURL = 'http://10.0.15.12/projects/pg01tep/json/artist.json';
+        // let requestURL = '/artist/artist.json';
+        let requestURL = 'http://10.0.15.12/projects/pg01tep/json/artist.json';
         let request = new XMLHttpRequest();
         let output = document.getElementById('lists');
         request.onreadystatechange = function () {
@@ -353,6 +361,7 @@
     </script>
     <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-firestore.js"></script>
+    <script src="../scirpt/follow.js"></script>
     <script>
         firebase.initializeApp({
             apiKey: 'AIzaSyAIlXUZEeQ9jwTaIGr5C9uEUQYOd8KEWpA',
@@ -372,9 +381,9 @@
 
         //show playlist
         var db = firebase.firestore();
-            db.collection("playlist").doc(name).get().then(data => {
+        db.collection("playlist").doc(name).get().then(data => {
 
-                for (let i = 0; i < data.data().Playlist.length; i++) {
+            for (let i = 0; i < data.data().Playlist.length; i++) {
                 let table = document.getElementById("table0"); //id @table
                 table.setAttribute("class", "border-top-0 pb-3");
                 let row = table.insertRow(-1);
@@ -383,9 +392,9 @@
                 newrow.innerHTML = playlist1;
 
                 newrow.style.color = "white";
-                }
-                console.log(data.data().Playlist);
-            });
+            }
+            console.log(data.data().Playlist);
+        });
     </script>
 </body>
 

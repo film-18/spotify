@@ -203,7 +203,8 @@
         function goforward() {
             window.history.forward();
         }
-        let requestURL = 'http://10.0.15.12/projects/pg01tep/json/iconsearch.json';
+        // let requestURL = 'http://10.0.15.12/projects/pg01tep/json/iconsearch.json';
+        let requestURL = '/music/iconsearch.json';
         let request = new XMLHttpRequest();
         let output = document.getElementById("lists");
         request.onreadystatechange = function () {
@@ -271,7 +272,7 @@
             kpop.innerHTML = "K-pop";
             kpop.style.fontSize = "40px";
             let alink3 = document.createElement('a');
-            alink3.setAttribute("href", "/SubSearch/K-Pop.html");
+            alink3.setAttribute("href", "http://10.0.15.12/projects/pg01tep/spotify/SubSearch/K-Pop.html");
 
             genre2.append(kpop);
             alink3.append(genre2);
