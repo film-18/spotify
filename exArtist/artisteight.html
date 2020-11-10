@@ -104,29 +104,32 @@
     <div class="row">
         <div id="nav_play" class=" fixed-bottom w-100">
             <!-- <span class="navbar-brand mb-0">Navbar</span> -->
-            <div class="row px-2">
+            <div class="row px-3 pb-0">
 
-                <div class="col-md-4">
+                <div class="col-md-4 pb-2">
 
-                    <div class="row py-2 px-2">
-                        <div class="col-md-3 py-2 px-1">
-                            <img src="" class="img-fluid w-100 rounded" id="thumbnail" />
+                    <div class="row pt-1">
+                        <div class="col-md-3 pt-1">
+                            <img src="../assets/icons/play-circle-solid.png" class="img-fluid w-100 rounded"
+                                style="min-width : 60px;max-width : 70px;" id="thumbnail" />
                         </div>
-                        <div class="col-md-9 py-3">
+                        <div class="col-md-9 py-2">
                             <div class="row">
-                                <div class="col-md-6 pl-3 pr-0">
+                                <div class="col-md-6 pl-2 pr-0">
                                     <span>
-                                        <div class="song-title" style="font-size: 1.25vw;" id="songti"></div>
+                                        <div class="song-title" style="font-size: 1.1vw;" id="songti">Song</div>
                                     </span>
                                     <span>
-                                        <div class="song-artist" style="font-size: 1.1vw;color: gray;" id="songar">
+                                        <div class="song-artist" style="font-size: 1vw;color: gray;" id="songar">Artist
                                         </div>
                                     </span>
                                 </div>
                                 <div class="col-md-6 px-0 pt-2">
-                                    <span class="spanLike">
+                                    <span class="spanLike" onclick="likeSong()">
+                                        <i class="fas fa-heart" style="cursor: pointer;"></i>
                                     </span>
                                     <span class="spanLike px-2">
+                                        <i class="fas fa-globe-asia" onclick="" style="cursor: pointer;"></i>
                                     </span>
                                 </div>
                             </div>
@@ -136,23 +139,27 @@
 
                 </div>
 
+
                 <div class="col-md-8">
                     <div class="row">
 
                         <div class="container">
                             <div class="player text-center">
-                                <button class="btn spanBack mt-1" onclick="nextSong()">
-                                    <img src="step-backward-solid.png" id="previous-song" class="img-fluid">
-                                </button>
+                                <a class="btn spanBack mt-1" onclick="previousSong()">
+                                    <img src="http://10.0.15.12/projects/pg01tep/spotify/assets/icons/step-backward-solid.png"
+                                        id="previous-song" class="img-fluid">
+                                </a>
                                 <!-- <img  src="step-backward-solid.png" onclick="previousSong()" width="30px" height="30px" id="previous-song"/> -->
                                 <!-- <img src="./assets/icons/backward.png" onclick="previousSong()" id="previous-song"  class="img-fluid w-25" /> -->
-                                <button class="btn spanBack ml-2">
-                                    <img src="play-circle-solid.png" id="play-pause" onclick="playPause()">
-                                </button>
+                                <a class="btn spanBack ml-2" onclick="playPause()">
+                                    <img src="http://10.0.15.12/projects/pg01tep/spotify/assets/icons/play-circle-solid.png"
+                                        id="play-pause">
+                                </a>
                                 <!-- <img src="play-circle-solid.png" onclick="playPause()" width="50px" height="50px" id="play-pause"/> -->
-                                <button class="btn spanBack ml-3 mt-1" onclick="nextSong()">
-                                    <img src="step-forward-solid.png" id="previous-song">
-                                </button>
+                                <a class="btn spanBack ml-3 mt-1" onclick="nextSong()">
+                                    <img src="http://10.0.15.12/projects/pg01tep/spotify/assets/icons/step-forward-solid.png"
+                                        id="next-song">
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -185,7 +192,7 @@
         let pPause = document.querySelector('#play-pause'); // element where play and pause image appears
 
         songIndex = 0;
-        let songs = ["music/music-t/ฝนตกไหม.mp3"]; // object storing paths for audio objects
+        let songs = ["http://10.0.15.12/projects/pg01tep/spotify/music/music-t/ฝนตกไหม.mp3"]; // object storing paths for audio objects
         let thumbnails = ["https://i.scdn.co/image/ab67616d00001e027cdb9ebead2e749f5eee81ad"]; // object storing paths for album covers and backgrounds
         let songArtists = ["Three man down"]; // object storing track artists
         let songTitles = ["ฝนตกไหม"]; // object storing track titles
@@ -193,7 +200,7 @@
         let playing = true;
         function go0() {
             document.getElementById("song").setAttribute("src", songs[0]);
-            pPause.src = "./pause-circle-solid.png"
+            pPause.src = "http://10.0.15.12/projects/pg01tep/spotify/assets/icons/pause-circle-solid.png"
             song.play();
             playing = false;
             let song_ti = document.getElementById("songti");
@@ -208,11 +215,11 @@
                 const song = document.querySelector('#song'),
                     thumbnail = document.querySelector('#thumbnail');
 
-                pPause.src = "./pause-circle-solid.png"
+                pPause.src = "http://10.0.15.12/projects/pg01tep/spotify/assets/icons/pause-circle-solid.png"
                 song.play();
                 playing = false;
             } else {
-                pPause.src = "./play-circle-solid.png"
+                pPause.src = "http://10.0.15.12/projects/pg01tep/spotify/assets/icons/play-circle-solid.png"
                 song.pause();
                 playing = true;
             }
