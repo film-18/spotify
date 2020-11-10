@@ -231,7 +231,7 @@
             projectId: 'spotify-8da9e'
         });
 
-        var db = firebase.firestore();
+        const db = firebase.firestore();
     </script>
 
     <script>
@@ -258,13 +258,13 @@
             song_ti.innerText = songTitles[0];
             song_ar.innerText = songArtists[0];
             song_th.setAttribute("src", thumbnails[0]);
-            pPause.src = "./pause-circle-solid.png"
+            pPause.src = "http://10.0.15.12/projects/pg01tep/spotify/assets/icons/pause-circle-solid.png"
             song.play();
             playing = false;
         }
         function go0() {
             document.getElementById("song").setAttribute("src", songs[0]);
-            pPause.src = "./pause-circle-solid.png"
+            pPause.src = "http://10.0.15.12/projects/pg01tep/spotify/assets/icons/pause-circle-solid.png"
             song.play();
             playing = false;
             let song_ti = document.getElementById("songti");
@@ -277,7 +277,7 @@
         function go1() {
 
             document.getElementById("song").setAttribute("src", songs[1]);
-            pPause.src = "./pause-circle-solid.png"
+            pPause.src = "http://10.0.15.12/projects/pg01tep/spotify/assets/icons/pause-circle-solid.png"
             song.play();
             playing = false;
             let song_ti = document.getElementById("songti");
@@ -290,7 +290,7 @@
         function go2() {
 
             document.getElementById("song").setAttribute("src", songs[2]);
-            pPause.src = "./pause-circle-solid.png"
+            pPause.src = "http://10.0.15.12/projects/pg01tep/spotify/assets/icons/pause-circle-solid.png"
             song.play();
             playing = false;
             let song_ti = document.getElementById("songti");
@@ -303,7 +303,7 @@
         function go3() {
 
             document.getElementById("song").setAttribute("src", songs[3]);
-            pPause.src = "./pause-circle-solid.png"
+            pPause.src = "http://10.0.15.12/projects/pg01tep/spotify/assets/icons/pause-circle-solid.png"
             song.play();
             playing = false;
             let song_ti = document.getElementById("songti");
@@ -318,11 +318,11 @@
                 const song = document.querySelector('#song'),
                     thumbnail = document.querySelector('#thumbnail');
 
-                pPause.src = "./pause-circle-solid.png"
+                pPause.src = "http://10.0.15.12/projects/pg01tep/spotify/assets/icons/pause-circle-solid.png"
                 song.play();
                 playing = false;
             } else {
-                pPause.src = "./play-circle-solid.png"
+                pPause.src = "http://10.0.15.12/projects/pg01tep/spotify/assets/icons/play-circle-solid.png"
                 song.pause();
                 playing = true;
             }
