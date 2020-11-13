@@ -5,6 +5,7 @@ firebase.initializeApp({
 
 const db = firebase.firestore();
 
+//Follow Artist
 async function follow() {
     let personFollow = document.getElementById("personFollow").innerHTML;
 

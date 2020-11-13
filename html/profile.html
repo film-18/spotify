@@ -288,6 +288,7 @@
                 projectId: 'spotify-8da9e'
             });
 
+            //Cilck Edit Profile
             function change() {
                 let x = document.getElementById("showimg");
                 if (x.style.display === "block") {
@@ -299,7 +300,9 @@
                     document.getElementById('button1').innerHTML = "OK";
                 }
             }
+            
 
+            //Show Image & Refresh
             function getvalue(_src) {
                 var pic = "../icon proflie/icon " + _src.id
                 document.getElementById('imgprofile').src = "/icon proflie/plus-circle-solid.png";
@@ -323,6 +326,7 @@
 
             }
 
+            //getCookie
             let getname = document.getElementById('profileName');
             let getname2 = document.getElementById('name2');
             let mail = ''
@@ -344,7 +348,7 @@
             // db.collection("playlist").doc(name).update({
             // })
 
-            // let addplaylist = []
+            //CreatPlaylist
             function creatplaylist() {
                 let namePlaylist = document.getElementById("playlistNew").value;
                 console.log(namePlaylist);
@@ -354,7 +358,6 @@
                 db.collection("playlist").doc(name).update({
                     Playlist: firebase.firestore.FieldValue.arrayUnion(namePlaylist)
                 })
-
                 namePlaylist.innerHTML = "";
 
             }
@@ -373,14 +376,16 @@
 
                     newrow.style.color = "white";
                 }
+
+                //ShowNumberofPlaylist
                 console.log(data.data().Playlist);
                 document.getElementById('numberOfplaylist').innerHTML = data.data().Playlist.length;
             });
-
+                //ShowNumberofArtist
             db.collection("likeSong").doc(name).get().then(data => {
                 document.getElementById('numberOfArtist').innerHTML = data.data().Song.Artist.length;
             });
-
+                //ShowNumberofFollow
             db.collection("follow").doc(name).get().then(data => {
                 document.getElementById('numberOfFollow').innerHTML = data.data().following.length;
             });

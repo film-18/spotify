@@ -325,6 +325,24 @@
             console.log(data.data().Playlist);
         });
 
+        db.collection("likeSong").doc(name1).get().then(data => {
+    // doc.data() is never undefined for query doc snapshots
+
+    for (let i = 0; i < data.data().Song.Artist.length; i++) {
+        let droptable = document.getElementById("dropdownLike"); //id @droptable
+        droptable.style.color = "#fff";
+        droptable.style.backgroundColor = "#282828";
+        let droprow = droptable.insertRow(-1);
+        let info = droprow.insertCell(0);
+        let likesS = data.data().Song.NameSong[i];
+        info.innerHTML = likesS ;
+
+    }
+    console.log(1111)
+    console.log(data.data().Song);
+
+});
+
         function creatplaylist(email) {
             let namePlaylist = document.getElementById("playlistNew").value;
             console.log(namePlaylist);
@@ -469,7 +487,7 @@
                 let song = document.querySelectorAll("source")[i].getAttribute("src");
                 songs.push(song);
                 thumbnails.push(document.getElementsByTagName("img")[i + 1].getAttribute("src"));
-                songArtists.push(document.getElementsByTagName('p')[i + 8].innerHTML);
+                songArtists.push(document.getElementsByTagName('p')[i + 9].innerHTML);
                 songTitles.push(document.getElementsByTagName('b')[i].innerHTML);
             }
         }

@@ -19,7 +19,7 @@ while (currentChar !== "-") {
 let name = mail.slice(0, -1);
 
 
-
+//Click Like
 async function likeSong() {
     const db = firebase.firestore();
     let mail = ''
@@ -30,16 +30,12 @@ async function likeSong() {
         mail += currentChar;
         index += 1;
     }
-
     let name = mail.slice(0, -1);
-
     let nameSong = document.getElementById("songti").innerHTML;
     let nameArtist = document.getElementById("songar").innerHTML;
     let img = document.getElementById("thumbnail").getAttribute("src");
-
     let doc = await db.collection('likeSong').doc(name).get();
     let data = doc.data();
-
     data.Song.Artist.push(nameArtist)
     data.Song.NameSong.push(nameSong)
     data.Song.Img.push(img)
@@ -58,16 +54,16 @@ async function likeSong() {
     db.collection("likeSong").doc(name).get().then(data => {
         // doc.data() is never undefined for query doc snapshots
 
-        for (let i = 0; i < data.data().Song.Artist.length; i++) {
+        let index = data.data().Song.Artist.length;
             let droptable = document.getElementById("dropdownLike"); //id @droptable
             droptable.style.color = "#fff";
             droptable.style.backgroundColor = "#282828";
             let droprow = droptable.insertRow(-1);
             let info = droprow.insertCell(0);
-            let likesS = data.data().Song.NameSong[i];
+            let likesS = data.data().Song.NameSong[index-1];
             info.innerHTML = likesS ;
 
-        }
+        
 
         console.log(data.data().Song);
 
